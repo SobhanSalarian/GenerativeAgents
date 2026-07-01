@@ -1,0 +1,170 @@
+{
+  "decision_9a7818f42f": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_4dbb35fce6": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_7551a68e6c": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_e538b08a8d": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_3442ff4e1f": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_360f09ec89": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_86c9ca3ce8": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_fac6d1b2cc": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_8c715c41d0": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_fbdc79b292": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_e50e3129f9": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_a67c90b684": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_e5a9faac7b": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_242bf5a213": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_e3eb4f389d": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_64c69b55d0": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_87bca14c64": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_a8f4d860cc": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_ad7fadffc8": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_35131ddd15": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_b2b35b4aba": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_392f52d58d": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_1509e11950": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  },
+  "decision_2ed21ccb13": {
+    "scenario": "commons_dilemma",
+    "trial": 3,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "static_reflection_placebo",
+    "sim_code": "cd_experiment_p1_static_reflection_placebo_trial_3"
+  }
+}

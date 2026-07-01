@@ -1,0 +1,366 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\setstretch{1.2}
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=2pt}
+\setlist[enumerate]{leftmargin=*, topsep=2pt, itemsep=2pt}
+
+\title{
+    \IfFileExists{Macquarie_University (1).png}
+    {
+        \includegraphics[width=0.60\textwidth]{Macquarie_University (1).png}\\[1.5cm]
+    }
+    {
+        \fbox{\textbf{Macquarie University Logo}}\\[1.5cm]
+    }
+    Validation of Generative Agents in Agent-Based Models:\\
+    Linking Individual Believability to Emergent Group Coordination
+}
+
+\author{
+    Sayedali Mohseni \\
+    Student ID: [Insert Student ID] \\
+    Supervisor: Prof. Amin Beheshti \\
+    Co-Supervisor: A/Prof. Xuyun Zhang
+}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+Generative agents powered by large language models are increasingly used as autonomous actors in agent-based models to simulate social and organisational behaviour. Although these agents can produce realistic-looking conversations, memories, plans, and interactions, a central methodological problem remains unresolved: an agent that appears believable at the individual level does not necessarily produce valid or realistic group-level behaviour. This project addresses that problem by developing and evaluating a dual-level validation framework for generative agent-based models. The framework links micro-level assessment of individual agent believability with macro-level assessment of emergent group coordination. The study uses a controlled computational experiment in which agents with four levels of cognitive architecture --- baseline, memory, memory plus planning, and full memory-planning-reflection --- participate in a resource-allocation coordination scenario. Individual-level metrics include behavioural consistency, memory coherence, planning plausibility, and response naturalness. System-level metrics include coordination success, convergence speed, sustainability, inequality, outcome robustness, and failure traceability. Evaluation combines automated metrics with structured human ratings where feasible. The expected outcomes are a reusable validation framework, an experimental assessment of the relationship between believability and coordination, and practical recommendations for designing and evaluating generative agents in agent-based simulations.
+
+\section{Introduction}
+Agent-based modelling (ABM) is widely used to study complex systems in which large-scale patterns emerge from interactions among individual agents. In traditional ABM, the behaviour of each agent is usually specified through explicit rules, equations, or decision heuristics. Recent progress in large language models (LLMs) has changed this design space. Instead of relying only on hand-coded behavioural rules, researchers can now build ``generative agents'' that reason in natural language, maintain memories, form plans, and interact socially within simulated environments \cite{park2023generative, gao2024survey, ghaffarzadegan2024tutorial}. These capabilities make generative agents attractive for modelling social, organisational, economic, and behavioural systems in which human-like interpretation and communication matter.
+
+However, the use of LLM-based generative agents creates a validation problem. A simulation may appear convincing because individual agents produce fluent explanations, coherent dialogue, or contextually appropriate actions. Yet this does not automatically mean that the simulation is valid as an ABM. In the ABM tradition, validity depends not only on whether individual agents behave plausibly, but also on whether the model produces system-level patterns that are consistent, meaningful, and explainable \cite{windrum2007empirical, moss2005towards}. In other words, a model must be assessed at both the micro level and the macro level. The micro level concerns the plausibility of individual agent behaviour; the macro level concerns the emergent behaviour of the whole system.
+
+This project addresses the problem of validating generative agent-based models (GABMs) by asking whether individual-level believability is meaningfully related to group-level coordination. This is important because many existing LLM-agent benchmarks evaluate agents in isolation or in task-based environments, while many ABM validation methods focus on aggregate outcomes without closely analysing the natural-language reasoning and cognitive traces produced by generative agents \cite{li2024agentbench, mohammadi2025evaluation, sen2025validating}. If these two levels are not connected, researchers may overstate the quality of a simulation: they may assume that believable agents imply valid social dynamics, even when the group-level behaviour is unstable, unrealistic, or difficult to interpret.
+
+The project therefore aims to develop and apply a dual-level validation framework. At the individual level, the framework assesses behavioural consistency, memory coherence, planning plausibility, and response naturalness. At the system level, it assesses coordination effectiveness, convergence, emergent structure, robustness across repeated runs, and the traceability of failures back to agent-level behaviour. The empirical component places generative agents in a controlled coordination scenario and compares four architectural conditions: baseline, memory, memory plus planning, and full memory-planning-reflection. This ablation design makes it possible to examine whether richer cognitive architecture improves agent believability and whether such improvements translate into better group coordination.
+
+The remainder of this report is structured as follows. Section 2 reviews background and related work on ABM validation, generative agents, and LLM-agent evaluation. Section 3 presents the aims and significance of the project. Section 4 describes the research methods, including the experimental design, implementation plan, metrics, human evaluation protocol, and analysis strategy. Section 5 outlines the timeline and milestones. Section 6 concludes with expected contributions, limitations, risks, and future work.
+
+\section{Background and Related Work}
+
+\subsection{Agent-Based Modelling and Validation}
+Agent-based modelling is a computational approach for studying systems composed of interacting autonomous agents. Each agent follows behavioural rules or decision processes, and macro-level patterns emerge from local interactions among agents \cite{epstein1996growing}. ABM is particularly useful when a system cannot be explained only by top-down aggregate equations, because outcomes depend on heterogeneity, adaptation, feedback, and interaction structure.
+
+A central challenge in ABM is validation: showing that a model is an adequate representation of the target phenomenon for a given research purpose. Windrum et al. distinguish between microface validation and macroface validation \cite{windrum2007empirical}. Microface validation asks whether individual agents behave in ways that are plausible or empirically grounded. Macroface validation asks whether the aggregate model outputs resemble observed or expected system-level patterns. Moss and Edmonds also emphasise the idea of generative sufficiency: the model should demonstrate that the proposed individual-level mechanisms are sufficient to generate the relevant macro-level phenomena \cite{moss2005towards}. This micro-macro relationship is especially important in social simulation because the explanatory value of an ABM depends on whether plausible local mechanisms produce credible collective outcomes.
+
+Traditional ABM validation is already difficult because social systems are open, multi-causal, and often hard to measure directly. GABMs add a further challenge: the agent's decision process may be partly hidden inside an LLM, while its outputs are open-ended natural-language responses rather than fixed rule outputs. This means that validation must attend not only to numerical outputs, but also to the quality of agent reasoning, memory use, planning, and communication.
+
+\subsection{Generative Agents in Simulation}
+Generative agents are LLM-based agents designed to simulate believable human-like behaviour in interactive environments. Park et al. introduced a generative-agent architecture with memory, reflection, and planning modules, showing that LLM-based agents could produce coherent daily routines and social interactions in a simulated town \cite{park2023generative}. Subsequent work has explored the use of LLM agents in ABM and computational social simulation, including applications in social dynamics, epidemiology, economics, information diffusion, and organisational behaviour \cite{gao2024survey, ma2024computational, ghaffarzadegan2024tutorial}.
+
+The appeal of generative agents is that they can reduce the need for oversimplified hand-coded behavioural rules. Instead, agent behaviour can be conditioned on persona descriptions, memories, goals, situational context, and natural-language interaction histories. This can make simulations richer and more interpretable. However, LLM agents also introduce risks. They may hallucinate, behave inconsistently, overfit to prompt wording, reflect biases from training data, or produce fluent explanations that are not behaviourally reliable \cite{larooij2025critical}. Therefore, validation cannot rely only on surface plausibility.
+
+Recent work has begun to address validation in generative-agent systems. Adornetto et al. propose a validation workflow for generative agents in ABM and distinguish methods for assessing agent behaviour, interaction coherence, and aggregate dynamics \cite{adornetto2025overview}. Sen et al. propose a quality framework for validating GABMs, organised around representation, measurement, and reliability across input, process, and output stages \cite{sen2025validating}. These studies demonstrate that validation is now recognised as a central issue. However, much of the literature remains conceptual or workflow-oriented; fewer studies empirically test how individual-level believability relates to macro-level simulation validity.
+
+\subsection{LLM-Agent Evaluation and Multi-Agent Coordination}
+LLM-agent evaluation has developed rapidly, but much of it focuses on agent capability in task environments rather than ABM validity. AgentBench evaluates LLMs as agents across multiple environments \cite{li2024agentbench}. Other surveys and frameworks classify evaluation objectives such as behaviour, capability, reliability, and safety \cite{mohammadi2025evaluation}. Metrics such as consistency, believability, task success, effort, and failure interpretation have also been proposed \cite{chen2024evaluating, barkur2024magenta, sung2025verila}.
+
+Multi-agent LLM systems reveal additional issues that may not appear when evaluating agents individually. Zhang et al. identify a communication-reasoning gap in distributed multi-agent coordination, where agents may form reasonable communication structures but still fail to integrate distributed information effectively \cite{zhang2026silo}. Kulshreshtha et al. show that a single uncooperative agent can destabilise group behaviour in multi-agent systems \cite{kulshreshtha2026defection}. Hishiki et al. demonstrate that memory design can substantially affect collective cooperation outcomes \cite{hishiki2026memory}. These findings suggest that individual agent properties can shape group-level outcomes, but the relationship is not guaranteed or simple.
+
+The gap addressed by this project lies at the intersection of these fields. ABM validation emphasises micro-macro linkage, while LLM-agent evaluation provides tools for assessing individual agents. What remains underdeveloped is an integrated framework that uses both perspectives to test whether believable generative agents actually produce valid emergent coordination. This project contributes to that gap by operationalising both levels of validation and empirically examining their relationship.
+
+\section{Aims and Significance}
+
+The overall aim of this project is to develop and evaluate a dual-level validation framework for generative agent-based models. The framework is designed to connect individual-level believability with system-level coordination validity. This aim is refined into three specific objectives:
+
+\begin{enumerate}
+    \item To define a micro-macro validation framework for GABMs by synthesising ABM validation theory and LLM-agent evaluation methods.
+    \item To implement a controlled experimental platform in which generative agents with different cognitive architectures can be compared under the same coordination task.
+    \item To analyse whether higher individual believability is associated with stronger emergent group coordination, and which micro-level features best predict coordination success or failure.
+\end{enumerate}
+
+The project is guided by three research questions:
+
+\begin{description}[leftmargin=1.4cm, style=nextline]
+    \item[RQ1] What evaluation criteria are appropriate for assessing generative agents at the individual and system levels in agent-based models?
+    \item[RQ2] To what extent does higher individual agent believability lead to more effective emergent group coordination?
+    \item[RQ3] What patterns of micro-level agent behaviour are most predictive of macro-level coordination success or failure?
+\end{description}
+
+The corresponding hypotheses are:
+
+\begin{description}[leftmargin=1.4cm, style=nextline]
+    \item[H1] Agents with higher composite believability scores will produce higher group coordination effectiveness than agents with lower believability scores.
+    \item[H2] The relationship between believability and coordination effectiveness will be non-linear, such that coordination is unlikely below a minimum believability threshold.
+    \item[H3] Conditions with richer cognitive architecture are expected to show higher believability scores than weaker conditions.
+    % FIX 1: H4 restated as a clean directional prediction without the awkward hedge.
+    % The relative importance of planning plausibility is acknowledged as an open empirical
+    % question rather than something already known, which is correct for a methods report.
+    \item[H4] Memory coherence and behavioural consistency are expected to be the strongest predictors of coordination success, consistent with prior work linking behavioural regularity and memory use to collective performance \cite{hishiki2026memory}. The relative contributions of planning plausibility and response naturalness are less well-established in generative multi-agent settings and will be examined empirically to determine the full predictor ranking.
+\end{description}
+
+The theoretical significance of the project is that it links two bodies of work that are often treated separately: ABM validation and LLM-agent evaluation. It adapts the microface/macroface validation distinction from ABM to the specific case of generative agents, where natural-language reasoning and cognitive traces are available for analysis. The practical significance is that it provides a more rigorous way to assess whether GABMs are suitable for simulating social or organisational systems. If GABMs are to be used in research, decision support, policy exploration, or organisational analysis, researchers need methods for detecting when apparently believable agents fail to generate reliable collective outcomes.
+
+\section{Methods / Approach}
+
+\subsection{Overview of Approach}
+The study uses a controlled computational experimental design. A set of generative agents is placed in a repeated multi-agent coordination task. The task is held constant while the agents' cognitive architecture is varied across four conditions. This allows the study to test whether architecture-driven differences in memory, planning, and reflection affect micro-level believability and macro-level coordination.
+
+The research process has four phases. First, the validation framework is developed by translating concepts from ABM validation and LLM-agent evaluation into measurable micro- and macro-level criteria. Second, the experimental platform is implemented using a Park et al.-style generative-agent architecture as the base engine. Third, agents are run through repeated trials of a resource-allocation scenario under four architectural conditions. Fourth, the resulting logs are analysed using automated metrics, human evaluation where feasible, and statistical tests aligned with H1--H4.
+
+The primary scenario is a commons-dilemma resource-allocation task. A group of agents shares a renewable community fund. Each round, every agent decides how many credits to request. If group demand remains within the replenishment rate, the fund remains sustainable. If agents collectively over-request, the fund degrades and may collapse. The scenario is appropriate because it has a clear group-level outcome, requires restraint and coordination, and creates a natural role for memory, planning, and reflection.
+
+\subsection{Methods and Techniques}
+
+\subsubsection{Generative-Agent Architecture}
+The experiment uses a generative-agent architecture based on the key components introduced by Park et al.: persona identity, memory, planning, and reflection \cite{park2023generative}. The implementation is organised around a base simulated environment containing multiple personas. Each persona has identity information and can be conditionally given access to cognitive modules. The conditions are implemented as configuration objects rather than separate codebases, which reduces implementation confounds.
+
+The four experimental conditions are shown in Table \ref{tab:conditions}.
+
+\begin{table}[h]
+\centering
+\caption{Experimental conditions}
+\label{tab:conditions}
+\begin{tabular}{lllll}
+\toprule
+Condition & Label & Memory & Planning & Reflection \\
+\midrule
+C1 & Baseline & No & No & No \\
+C2 & Memory & Yes & No & No \\
+C3 & Memory + Planning & Yes & Yes & No \\
+C4 & Full & Yes & Yes & Yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The baseline condition retains persona identity and current task context but does not use the experimental memory, planning, or reflection modules. This means that the baseline is not a completely empty agent; it is a grounded persona without access to the richer cognitive scaffolding. This is a methodological boundary condition and will be stated as such in the final thesis. The memory condition adds task-relevant episodic memory from previous coordination rounds. The memory-planning condition adds explicit planning context. The full condition adds scenario-level reflection, allowing agents to use higher-level lessons from previous rounds.
+
+\subsubsection{Coordination Scenario: Commons Dilemma}
+% FIX 2: Added a sentence on the theoretical significance of the commons dilemma
+% (tragedy of the commons, cooperative norm emergence) to motivate the scenario choice
+% beyond purely technical grounds.
+In the commons-dilemma scenario, eight agents share a community fund. This scenario instantiates the classical tragedy of the commons: when each agent acts in individual self-interest, the collectively rational outcome --- resource conservation --- becomes unachievable. The scenario is therefore a standard test case for the emergence of cooperative norms in agent populations, with a well-understood equilibrium structure and a clear failure mode.
+
+The default parameters are an initial fund of 1000 credits, a replenishment rate of 50 credits per round, a maximum request of 100 credits per agent per round, and a fund capacity of 1000 credits. The sustainable equal share is therefore approximately 6.25 credits per agent per round. Each trial runs for up to 100 steps unless the resource collapses earlier.
+
+At each step, the scenario constructs a plain-English resource context describing the current pool level, replenishment rate, number of community members, and fair share. Each agent then produces a JSON-style decision containing the requested amount, reasoning, memory reference, and plan reference. If total requests are within the available fund, agents receive what they requested. If requests exceed the fund, allocation is proportional to request size. The fund is then updated according to:
+
+\[
+\text{new pool} = \min(\text{capacity},\; \text{old pool} - \text{total granted} + \text{replenishment rate})
+\]
+
+where total granted may be less than total requested when the pool cannot satisfy all demands. If the new pool reaches zero, the trial is marked as collapsed. This design produces both individual-level data, such as each agent's request and reasoning, and system-level data, such as sustainability, coordination, inequality, convergence, and collapse.
+
+A key design decision is that memory is operationalised as scenario-specific episodic memory rather than generic environmental memory. Earlier pilot inspection showed that generic recent memories could contain irrelevant world-state observations such as objects being idle or agents sleeping. For this study, memory coherence is intended to measure the appropriate use of prior coordination-task interactions. Therefore, the memory context records prior commons rounds, including group demand relative to replenishment, pool changes, fair-share deviations, whether the group exceeded the replenishment limit, and which agents requested above or below fair share.
+
+\subsubsection{Data Collection and Output Files}
+Each trial produces raw and summary output files. The main individual-level file is \texttt{micro\_log.json}, which stores one entry per agent per step (800 entries per trial). It includes the agent's request, granted amount, reasoning, memory reference, plan reference, condition, resource context, fair-share ratio, and available cognitive context. The main system-level file is \texttt{macro\_log.json}, which stores the group state at each step, including resource level, total requested, total granted, sustainability score, inequality, and collapse status.
+
+The experiment also produces \texttt{micro\_summary.json} and \texttt{macro\_summary.json} for per-trial summary metrics, as well as condition-level summaries across repeated trials. A run manifest records metadata such as condition, selected personas, random seed, step count, and LLM usage. These outputs support reproducibility and make it possible to connect raw agent decisions to aggregated hypothesis testing.
+
+\subsubsection{Micro-Level Metrics}
+The micro-level validation framework assesses individual agent believability across four dimensions:
+
+\begin{itemize}
+    \item \textbf{Behavioural consistency}: whether the agent's requests and reasoning are consistent with its persona and prior behaviour.
+    \item \textbf{Memory coherence}: whether the agent appropriately refers to and uses relevant prior coordination-task events.
+    \item \textbf{Planning plausibility}: whether the agent's decision plausibly follows from its current goals, plans, and constraints.
+    \item \textbf{Response naturalness}: whether the agent's explanation reads as a believable human-like response in context.
+\end{itemize}
+
+Automated metrics are used to provide scalable first-pass measurement. Behavioural consistency uses request consistency, cooperation rate, and embedding-based alignment between action text and persona profile. Memory coherence uses memory-reference rates and embedding relevance between cited memories and available scenario memories. Planning plausibility is assessed with an LLM-assisted rubric judge, and response naturalness is assessed using an LLM-as-judge distinction-style score, with heuristic fallback where needed. These automated scores are treated as proxies unless combined with human ratings.
+
+% FIX 3: Added justification for the composite believability weights rather than
+% stating them without explanation.
+The composite believability score is computed as a weighted combination of the four sub-dimensions with weights 0.30, 0.25, 0.25, and 0.20 for behavioural consistency, memory coherence, planning plausibility, and response naturalness respectively. Behavioural consistency receives the highest weight (0.30) because stable persona-aligned behaviour is the foundational requirement for believability: an agent that behaves inconsistently undermines every other cognitive quality. Memory coherence and planning plausibility are equally weighted (0.25 each) as the two primary cognitive mechanisms under ablation in this study. Response naturalness is weighted least (0.20) because modern fluent LLMs tend to produce natural-sounding text regardless of cognitive architecture, making this dimension the most susceptible to ceiling effects and therefore the weakest discriminator across conditions.
+
+\subsubsection{Macro-Level Metrics}
+The macro-level validation framework assesses system behaviour. The main metrics are:
+
+\begin{itemize}
+    \item \textbf{Coordination success}: whether a trial achieves sustained coordination according to the scenario-specific threshold.
+    \item \textbf{Coordination score}: the proportion of steps that meet the coordination criterion.
+    \item \textbf{Sustainability score}: the mean per-step pool health across the trial, computed as the average of per-step $(\text{resource level} / \text{initial resource})$ across all steps.
+    \item \textbf{Demand pressure}: total demand relative to the sustainable replenishment rate.
+    \item \textbf{Gini coefficient}: inequality in resource allocation across agents.
+    \item \textbf{Convergence speed}: number of rounds required to reach sustained coordination, or timeout if coordination is not reached.
+    \item \textbf{Outcome variance}: variability across repeated trials, used to assess robustness.
+    \item \textbf{Failure traceability}: qualitative and structured evidence linking coordination failures to micro-level causes.
+\end{itemize}
+
+The macro metrics are particularly important because they are based on observable simulation state rather than subjective interpretation. They determine whether a condition produces reliable group-level outcomes, even if individual agents appear plausible.
+
+\subsubsection{Human Evaluation}
+The human evaluation protocol is designed to strengthen construct validity for the micro-level metrics. Human raters will evaluate sampled decision packets rather than the full output of every trial. Each packet represents one agent at one of three sampled time points (early, middle, and late in the trial) and includes an anonymised agent identifier, condition-hidden transcript information, persona background, local resource context, available memory and plan context, and the agent's decision explanation.
+
+Raters will score behavioural consistency, memory coherence, planning plausibility, and response naturalness on 1--5 Likert rubrics. They may also answer a binary believability question. A feasible MRes sampling strategy is to select a balanced subset across all four conditions, successful and failed runs, early/middle/late steps, and multiple agent personas, yielding approximately 96 decision packets per condition set (8 agents $\times$ 3 phases $\times$ 4 conditions), plus additional overlap items for reliability checking.
+
+% FIX 4: Removed "where possible" hedge and replaced with a concrete commitment
+% including estimated time and budget.
+Three to five trained raters will be recruited for a dedicated rating session. A minimum of three raters is required to compute Krippendorff's alpha. Each rater is estimated to require approximately 7 hours to complete the balanced packet set, and the human evaluation phase is budgeted and scheduled for July--August 2026. Inter-rater reliability will be assessed using Krippendorff's alpha, with a minimum acceptable threshold of 0.67. Where reliability falls below threshold for a dimension, the human component will be treated cautiously or excluded from the blended score for that dimension.
+
+\subsubsection{Statistical Analysis}
+The analysis will proceed in stages aligned with the hypotheses. H1 will be tested by examining the association between composite believability and coordination score, using Spearman rank correlation and group comparisons between high- and low-believability runs using Mann-Whitney U tests.
+
+% FIX 5: H2 analysis expanded with the specific mechanism: tertile banding,
+% empirical threshold detection, and Mann-Whitney U comparison.
+H2 will be tested by dividing trials into tertile bands by composite believability score, computing coordination success rates within each band, and identifying the empirical threshold as the highest believability value below which every trial failed to coordinate. A Mann-Whitney U test will compare outcomes between the high and low believability bands to assess whether the difference is statistically significant.
+
+H3 will be tested by comparing believability scores across the four architecture conditions using non-parametric tests: a Kruskal-Wallis test for overall condition differences and pairwise Mann-Whitney tests for consecutive condition pairs to assess whether the expected monotonic improvement holds at each architectural step. H4 will be tested by computing Spearman rank correlations between each of the four micro-level sub-dimensions and macro-level coordination score, and ranking them by absolute correlation. This will be supplemented by ordinary least squares regression, reporting standardised coefficients, \textit{p}-values, and R$^{2}$, to identify which sub-dimensions independently predict coordination outcomes after controlling for others.
+
+The analysis will also include qualitative failure tracing. For failed or unstable runs, interaction logs and failure bundles will be inspected to identify whether breakdowns appear to arise from memory failures, inconsistent behaviour, implausible planning, excessive self-interest, weak reflection, or poor integration of shared information. This qualitative layer is important because it helps explain why a numerical condition difference occurred.
+
+\subsection{Implementation Plan}
+The implementation plan follows the research design. First, the existing generative-agent repository is adapted into a headless experimental platform. This includes configuring the four architecture conditions, enforcing behavioural gating for memory, planning, and reflection, and ensuring deterministic persona sampling from the base environment. Second, the commons-dilemma scenario is implemented with task-relevant prompts, resource-pool dynamics, and per-step logging. Third, the measurement modules compute micro and macro summaries from the logs. Fourth, the runner executes a multi-condition experiment matrix: four conditions, 20 trials per condition, eight agents per trial, and 100 steps per trial. Fifth, human-evaluation packets and rater sheets are exported for a sampled subset. Sixth, statistical analysis scripts generate hypothesis reports and feature tables.
+
+The implementation is designed around reproducibility. Fixed seeds are used for persona selection and per-trial variation. Run manifests record metadata and LLM usage. Corrected scenario-memory outputs are stored separately from older pilot outputs so that pre-fix and post-fix results are not mixed. The design also separates automated metrics from final human-validated scores, avoiding overclaiming before human ratings are collected.
+
+\subsection{Evaluation Strategy}
+Evaluation combines framework validation, computational experiment outcomes, and methodological reflection. The first evaluation question is whether the framework covers the key micro and macro validation dimensions required for GABMs. This will be assessed conceptually by mapping each metric to the research questions and to prior validation literature. The second evaluation question is whether the implementation faithfully operationalises the framework. This will be assessed using the output schema, data dictionary, and fidelity checklist. The third evaluation question is empirical: whether higher believability is associated with better coordination, and which agent-level features explain success or failure.
+
+% FIX 6: Renamed "Level" column to "Dimension" in Table 2 so that Mixed-method
+% and Statistical rows are consistent — those are analytical dimensions, not levels.
+Table \ref{tab:metrics} summarises the main evaluation dimensions.
+
+\begin{table}[h]
+\centering
+\caption{Summary of evaluation strategy}
+\label{tab:metrics}
+\begin{tabular}{p{0.22\textwidth}p{0.35\textwidth}p{0.32\textwidth}}
+\toprule
+Dimension & Metric group & Main purpose \\
+\midrule
+Micro & Behavioural consistency, memory coherence, planning plausibility, response naturalness & Assess individual agent believability and identify cognitive mechanisms \\
+Macro & Coordination, convergence, sustainability, inequality, robustness, failure traceability & Assess whether the group produces valid and stable emergent outcomes \\
+Mixed-method & Human ratings blended with automated proxies via reliability-gated weighting & Strengthen construct validity for micro-level scores and reduce reliance on automated scoring alone \\
+Statistical & Spearman correlation, Mann-Whitney U, Kruskal-Wallis, OLS regression, empirical threshold detection & Test H1--H4 and quantify the micro-macro relationship \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Expected Outcomes}
+The project is expected to produce five main outcomes. First, it will produce a reusable dual-level validation framework for GABMs. Second, it will produce an implemented experimental platform that compares generative-agent architectures under controlled conditions. Third, it will produce empirical evidence about whether and how individual believability relates to group coordination. Fourth, it will identify which micro-level factors are most predictive of macro-level success or failure. Fifth, it will produce practical recommendations for researchers designing GABMs, especially regarding when memory, planning, and reflection are useful and how their effects should be evaluated.
+
+A cautious expected finding is that richer architectures will improve micro-level believability, but that micro-level improvements may not translate linearly into coordination success. It is possible that memory and planning improve decision grounding without guaranteeing reliable group coordination, while reflection or other higher-level coordination mechanisms may be necessary for sustained collective outcomes. This would be an important result because it would show that generative-agent validity cannot be judged from individual believability alone.
+
+\section{Research Plan and Timeline}
+
+The project timeline is aligned with the MRes candidature period from January to November 2026. Table \ref{tab:timeline} presents the main stages, milestones, and dependencies.
+
+% FIX 7: Timeline updated to reflect that the main 80-trial experiment was completed
+% ahead of schedule in May 2026 (approximately 6-8 weeks early), and that an additional
+% information_consensus scenario is under active development rather than a "possible
+% extension." Human evaluation and thesis drafting phases remain on track.
+\begin{table}[h]
+\centering
+\caption{Research timeline}
+\label{tab:timeline}
+\begin{tabular}{p{0.22\textwidth}p{0.52\textwidth}p{0.18\textwidth}}
+\toprule
+Period & Main tasks & Milestone \\
+\midrule
+Jan--Feb 2026 & Literature review on ABM validation, generative agents, and LLM-agent evaluation; draft validation framework & Framework draft \\
+Mar--Apr 2026 & Finalise research plan, research questions, hypotheses, and metric definitions & Research plan submitted \\
+Apr--May 2026 & Implement all four architecture conditions; implement and run the commons-dilemma scenario across the full 4$\times$20 experiment matrix; complete H1--H4 automated analysis. The main experiment was completed in May 2026, approximately 6--8 weeks ahead of the original schedule. & Data collected (ahead of schedule) \\
+Jun--Jul 2026 & Implement and run the information-consensus scenario (currently under development as a second coordination scenario); prepare human-evaluation packets from commons-dilemma trials & Second scenario results \\
+Jul--Aug 2026 & Recruit 3--5 raters; conduct human evaluation; compute inter-rater reliability; blend human ratings into final micro-level scores; re-run H1--H4 analysis on blended scores & Analysis complete \\
+Aug--Oct 2026 & Draft methodology, results, discussion, and conclusion chapters; revise framework presentation & Full thesis draft \\
+Nov 2026 & Final revision, formatting, supervisor feedback, and submission & Thesis submitted \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The main dependencies are the completion of reliable experimental runs and the collection of human ratings. The computational infrastructure is designed so that automated analysis can proceed immediately after the multi-condition runs, while human ratings can be blended into the final micro-level scores once collected. An information-consensus scenario is currently under active development as a second coordination task; its results will test whether the framework findings generalise beyond a resource-restraint paradigm and will be included in the thesis if completed within the Jul--Aug 2026 window.
+
+\section{Conclusion}
+This report has presented a research methods plan for validating generative agents in agent-based models by linking individual believability to emergent group coordination. The problem is important because fluent and believable individual LLM-agent behaviour does not automatically imply valid simulation outcomes. ABM methodology requires attention to both micro-level mechanisms and macro-level patterns. This project responds to that requirement by proposing a dual-level validation framework and applying it through a controlled computational experiment.
+
+The proposed approach compares four generative-agent architectures in a commons-dilemma coordination scenario. The method combines automated proxy metrics, structured human evaluation, reproducible experiment logging, and statistical analysis of the relationship between micro-level believability and macro-level coordination. The expected contribution is not a new LLM or a new ABM engine, but a rigorous validation approach for assessing whether generative agents are useful and trustworthy as components of agent-based simulations.
+
+Several limitations must be recognised. First, the commons-dilemma scenario offers strong internal validity but limited ecological breadth; results may be task-specific unless replicated in additional scenarios such as information consensus or emergency coordination. Second, automated micro-level metrics are proxies and should not be treated as definitive evidence of human-like believability without human evaluation. Third, LLM outputs remain stochastic even with seed control, so repeated trials and transparent logging are necessary. Fourth, the baseline condition retains persona identity and world grounding, so it is better described as a minimal cognitive condition rather than a fully stateless agent. Fifth, the reflection condition may underestimate the full value of reflection because each trial is relatively short and begins from a shared fork point rather than from deeply accumulated reflective histories; observed differences between the memory-planning and full conditions should therefore be interpreted as conservative lower-bound estimates of the reflection module's contribution.
+
+Despite these limitations, the project is methodologically feasible and academically significant. It directly addresses the validation gap in GABMs, provides a concrete framework for evaluating micro-macro relationships, and offers practical guidance for future researchers using LLM-based agents in social and organisational simulations.
+
+\section*{References}
+\begin{thebibliography}{99}
+
+\bibitem{gao2024survey}
+C. Gao et al., ``Large language models empowered agent-based modeling and simulation: A survey and perspectives,'' \emph{Humanities and Social Sciences Communications}, vol. 11, 2024.
+
+\bibitem{ma2024computational}
+Q. Ma et al., ``Computational experiments meet large language model based agents: A survey and perspective,'' arXiv:2402.00262, 2024.
+
+\bibitem{park2023generative}
+J. S. Park, J. C. O'Brien, C. J. Cai, M. R. Morris, P. Liang, and M. S. Bernstein, ``Generative agents: Interactive simulacra of human behavior,'' in \emph{Proc. 36th Annual ACM Symposium on User Interface Software and Technology}, 2023.
+
+\bibitem{ghaffarzadegan2024tutorial}
+N. Ghaffarzadegan, A. Majumdar, R. Williams, and N. Hosseinichimeh, ``Generative agent-based modeling: An introduction and tutorial,'' \emph{System Dynamics Review}, vol. 40, no. 4, 2024.
+
+\bibitem{windrum2007empirical}
+P. Windrum, G. Fagiolo, and A. Moneta, ``Empirical validation of agent-based models: Alternatives and prospects,'' \emph{Journal of Artificial Societies and Social Simulation}, vol. 10, no. 2, 2007.
+
+\bibitem{moss2005towards}
+S. Moss and B. Edmonds, ``Towards good social science,'' \emph{Journal of Artificial Societies and Social Simulation}, vol. 8, no. 4, 2005.
+
+\bibitem{sen2025validating}
+I. Sen, G. Ahnert, M. Strohmaier, and J. Lasser, ``Validating generative agent-based models,'' arXiv:2502.09153, 2025.
+
+\bibitem{larooij2025critical}
+M. Larooij and P. Tornberg, ``Validation is the central challenge for generative social simulation: A critical review of LLMs in agent-based modeling,'' \emph{Artificial Intelligence Review}, vol. 58, 2025.
+
+\bibitem{li2024agentbench}
+X. Liu et al., ``AgentBench: Evaluating LLMs as agents,'' in \emph{Proc. International Conference on Learning Representations}, 2024.
+
+\bibitem{mohammadi2025evaluation}
+M. Mohammadi, Y. Li, J. Lo, and W. Yip, ``Evaluation and benchmarking of LLM agents: A survey,'' in \emph{Proc. ACM SIGKDD Conference on Knowledge Discovery and Data Mining}, 2025.
+
+\bibitem{epstein1996growing}
+J. M. Epstein and R. Axtell, \emph{Growing Artificial Societies: Social Science from the Bottom Up}. Washington, DC, USA: Brookings Institution Press, 1996.
+
+\bibitem{mitsopoulos2023psychologically}
+K. Mitsopoulos, R. Bose, B. Mather, A. Bhatia, K. Gluck, and B. Dorr, ``Psychologically-valid generative agents: A novel approach to agent-based modeling in social sciences,'' in \emph{Proc. AAAI Fall Symposium Series}, 2023.
+
+\bibitem{adornetto2025overview}
+C. Adornetto et al., ``Generative agents in agent-based modeling: Overview, validation, and emerging challenges,'' \emph{IEEE Transactions on Artificial Intelligence}, vol. 6, no. 12, pp. 3165--3183, 2025.
+
+\bibitem{hishiki2026memory}
+T. Hishiki, T. Arita, and R. Suzuki, ``How memory can affect collective and cooperative behaviors in an LLM-based social particle swarm,'' arXiv:2604.12250, 2026.
+
+\bibitem{chen2024evaluating}
+C. Chen, B. Yao, Y. Ye, D. Wang, and T. J.-J. Li, ``Evaluating the LLM agents for simulating humanoid behavior,'' in \emph{Proc. AAAI Workshop on Human-Focused Artificial Intelligence}, 2024.
+
+\bibitem{barkur2024magenta}
+S. K. Barkur, P. Sitapara, S. Leuschner, and S. Schacht, ``MAGENTA: Metrics and evaluation framework for generative agents based on LLMs,'' in \emph{Proc. Intelligent Human Systems Integration}, 2024.
+
+\bibitem{sung2025verila}
+Y. Y. Sung, H. Kim, and D. Zhang, ``VeriLA: A human-centered evaluation framework for interpretable verification of LLM agent failures,'' arXiv:2503.26501, 2025.
+
+\bibitem{zhang2026silo}
+Y. Zhang et al., ``SILO-BENCH: A scalable environment for evaluating distributed coordination in multi-agent LLM systems,'' arXiv:2603.01045, 2026.
+
+\bibitem{kulshreshtha2026defection}
+D. Kulshreshtha et al., ``The subtle art of defection: Understanding uncooperative behaviors in LLM based multi-agent systems,'' in \emph{Proc. 19th Conference of the European Chapter of the Association for Computational Linguistics}, 2026.
+
+\bibitem{hashemi2026collective}
+F. Hashemi and M. W. Macy, ``An empirical study of collective behaviors and social dynamics in large language model agents,'' in \emph{Proc. 19th Conference of the European Chapter of the Association for Computational Linguistics}, 2026.
+
+\bibitem{lee2026slalom}
+J. Lee and J. Seering, ``SLALOM: Simulation lifecycle analysis via longitudinal observation metrics for social simulation,'' arXiv:2604.11466, 2026.
+
+\bibitem{munker2026benchmark}
+S. Munker, N. Schwager, and A. Rettinger, ``Don't trust generative agents to mimic communication on social networks unless you benchmarked their empirical realism,'' in \emph{Proc. 19th Conference of the European Chapter of the Association for Computational Linguistics}, 2026.
+
+\end{thebibliography}
+
+\section*{Appendix}
+No appendix is required for the main submission. Possible appendix material for a later thesis version includes example human-rating packets, sample JSON output schemas, extended metric definitions, and screenshots of the experiment directory structure.
+
+\end{document}

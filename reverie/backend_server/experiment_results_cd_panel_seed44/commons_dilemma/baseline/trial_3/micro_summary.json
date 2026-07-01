@@ -1,0 +1,235 @@
+{
+  "average_request": {
+    "Ayesha Khan": 9.96,
+    "Carmen Ortiz": 6.4,
+    "Francisco Lopez": 10.1,
+    "Hailey Johnson": 10.85,
+    "Jennifer Moore": 6.04,
+    "John Lin": 6.0,
+    "Maria Lopez": 10.0,
+    "Mei Lin": 6.08
+  },
+  "consistency_score": {
+    "Ayesha Khan": 0.96,
+    "Carmen Ortiz": 0.813,
+    "Francisco Lopez": 0.901,
+    "Hailey Johnson": 0.747,
+    "Jennifer Moore": 0.934,
+    "John Lin": 1.0,
+    "Maria Lopez": 1.0,
+    "Mei Lin": 0.908
+  },
+  "request_consistency": {
+    "Ayesha Khan": 0.96,
+    "Carmen Ortiz": 0.813,
+    "Francisco Lopez": 0.901,
+    "Hailey Johnson": 0.747,
+    "Jennifer Moore": 0.934,
+    "John Lin": 1.0,
+    "Maria Lopez": 1.0,
+    "Mei Lin": 0.908
+  },
+  "cooperation_rate": {
+    "Ayesha Khan": 0.01,
+    "Carmen Ortiz": 0.9,
+    "Francisco Lopez": 0.0,
+    "Hailey Johnson": 0.0,
+    "Jennifer Moore": 0.99,
+    "John Lin": 1.0,
+    "Maria Lopez": 0.0,
+    "Mei Lin": 0.98
+  },
+  "profile_alignment": {
+    "Ayesha Khan": 0.275,
+    "Carmen Ortiz": 0.108,
+    "Francisco Lopez": 0.16,
+    "Hailey Johnson": 0.216,
+    "Jennifer Moore": 0.143,
+    "John Lin": 0.27,
+    "Maria Lopez": 0.232,
+    "Mei Lin": 0.169
+  },
+  "behavioural_consistency": {
+    "Ayesha Khan": 0.53,
+    "Mei Lin": 0.664,
+    "Carmen Ortiz": 0.584,
+    "Hailey Johnson": 0.412,
+    "John Lin": 0.744,
+    "Jennifer Moore": 0.668,
+    "Maria Lopez": 0.531,
+    "Francisco Lopez": 0.461
+  },
+  "behavioural_consistency_band": {
+    "Ayesha Khan": "medium",
+    "Mei Lin": "medium",
+    "Carmen Ortiz": "medium",
+    "Hailey Johnson": "medium",
+    "John Lin": "high",
+    "Jennifer Moore": "medium",
+    "Maria Lopez": "medium",
+    "Francisco Lopez": "medium"
+  },
+  "memory_reference_rate": {
+    "Ayesha Khan": 0.0,
+    "Carmen Ortiz": 0.0,
+    "Francisco Lopez": 0.0,
+    "Hailey Johnson": 0.0,
+    "Jennifer Moore": 0.0,
+    "John Lin": 0.0,
+    "Maria Lopez": 0.0,
+    "Mei Lin": 0.0
+  },
+  "memory_reference_relevance": {
+    "Ayesha Khan": 0.0,
+    "Carmen Ortiz": 0.0,
+    "Francisco Lopez": 0.0,
+    "Hailey Johnson": 0.0,
+    "Jennifer Moore": 0.0,
+    "John Lin": 0.0,
+    "Maria Lopez": 0.0,
+    "Mei Lin": 0.0
+  },
+  "memory_coherence": {
+    "Ayesha Khan": 0.0,
+    "Carmen Ortiz": 0.0,
+    "Francisco Lopez": 0.0,
+    "Hailey Johnson": 0.0,
+    "Jennifer Moore": 0.0,
+    "John Lin": 0.0,
+    "Maria Lopez": 0.0,
+    "Mei Lin": 0.0
+  },
+  "memory_coherence_band": {
+    "Ayesha Khan": "low",
+    "Carmen Ortiz": "low",
+    "Francisco Lopez": "low",
+    "Hailey Johnson": "low",
+    "Jennifer Moore": "low",
+    "John Lin": "low",
+    "Maria Lopez": "low",
+    "Mei Lin": "low"
+  },
+  "planning_reference_rate": {
+    "Ayesha Khan": 0.0,
+    "Carmen Ortiz": 0.0,
+    "Francisco Lopez": 0.0,
+    "Hailey Johnson": 0.0,
+    "Jennifer Moore": 0.0,
+    "John Lin": 0.0,
+    "Maria Lopez": 0.0,
+    "Mei Lin": 0.0
+  },
+  "planning_alignment": {
+    "Ayesha Khan": 0.0,
+    "Carmen Ortiz": 0.0,
+    "Francisco Lopez": 0.0,
+    "Hailey Johnson": 0.0,
+    "Jennifer Moore": 0.0,
+    "John Lin": 0.0,
+    "Maria Lopez": 0.0,
+    "Mei Lin": 0.0
+  },
+  "planning_plausibility": {
+    "Ayesha Khan": 0.0,
+    "Carmen Ortiz": 0.0,
+    "Francisco Lopez": 0.0,
+    "Hailey Johnson": 0.0,
+    "Jennifer Moore": 0.0,
+    "John Lin": 0.0,
+    "Maria Lopez": 0.0,
+    "Mei Lin": 0.0
+  },
+  "planning_plausibility_llm": {},
+  "planning_plausibility_rubric": {
+    "Ayesha Khan": 1.0,
+    "Carmen Ortiz": 1.0,
+    "Francisco Lopez": 1.0,
+    "Hailey Johnson": 1.0,
+    "Jennifer Moore": 1.0,
+    "John Lin": 1.0,
+    "Maria Lopez": 1.0,
+    "Mei Lin": 1.0
+  },
+  "planning_plausibility_band": {
+    "Ayesha Khan": "low",
+    "Carmen Ortiz": "low",
+    "Francisco Lopez": "low",
+    "Hailey Johnson": "low",
+    "Jennifer Moore": "low",
+    "John Lin": "low",
+    "Maria Lopez": "low",
+    "Mei Lin": "low"
+  },
+  "response_naturalness": {
+    "Ayesha Khan": 0.97,
+    "Carmen Ortiz": 1.0,
+    "Francisco Lopez": 0.97,
+    "Hailey Johnson": 0.955,
+    "Jennifer Moore": 1.0,
+    "John Lin": 0.97,
+    "Maria Lopez": 0.985,
+    "Mei Lin": 0.94
+  },
+  "response_naturalness_proxy": {
+    "Ayesha Khan": 0.97,
+    "Carmen Ortiz": 1.0,
+    "Francisco Lopez": 0.97,
+    "Hailey Johnson": 0.955,
+    "Jennifer Moore": 1.0,
+    "John Lin": 0.97,
+    "Maria Lopez": 0.985,
+    "Mei Lin": 0.94
+  },
+  "response_naturalness_llm": {
+    "Ayesha Khan": 0.95,
+    "Carmen Ortiz": 1.0,
+    "Francisco Lopez": 0.95,
+    "Hailey Johnson": 0.925,
+    "Jennifer Moore": 1.0,
+    "John Lin": 0.95,
+    "Maria Lopez": 0.975,
+    "Mei Lin": 0.9
+  },
+  "response_naturalness_band": {
+    "Ayesha Khan": "high",
+    "Carmen Ortiz": "high",
+    "Francisco Lopez": "high",
+    "Hailey Johnson": "high",
+    "Jennifer Moore": "high",
+    "John Lin": "high",
+    "Maria Lopez": "high",
+    "Mei Lin": "high"
+  },
+  "composite_believability": {
+    "Ayesha Khan": 0.353,
+    "Mei Lin": 0.387,
+    "Carmen Ortiz": 0.375,
+    "Hailey Johnson": 0.315,
+    "John Lin": 0.417,
+    "Jennifer Moore": 0.4,
+    "Maria Lopez": 0.356,
+    "Francisco Lopez": 0.332
+  },
+  "composite_believability_band": {
+    "Ayesha Khan": "low",
+    "Mei Lin": "low",
+    "Carmen Ortiz": "low",
+    "Hailey Johnson": "low",
+    "John Lin": "medium",
+    "Jennifer Moore": "medium",
+    "Maria Lopez": "low",
+    "Francisco Lopez": "low"
+  },
+  "believability_proxy": {
+    "Ayesha Khan": 0.353,
+    "Mei Lin": 0.387,
+    "Carmen Ortiz": 0.375,
+    "Hailey Johnson": 0.315,
+    "John Lin": 0.417,
+    "Jennifer Moore": 0.4,
+    "Maria Lopez": 0.356,
+    "Francisco Lopez": 0.332
+  },
+  "llm_judges_used": true,
+  "embedding_method": "cosine"
+}

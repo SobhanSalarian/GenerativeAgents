@@ -1,0 +1,58 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code": "ic_neutral_correct_A_as_X_baseline_trial_2",
+  "experimental_condition": "baseline",
+  "selected_personas": [
+    "Abigail Chen",
+    "Ayesha Khan",
+    "Carlos Gomez",
+    "Francisco Lopez",
+    "Giorgio Rossi",
+    "Sam Moore",
+    "Wolfgang Schulz",
+    "Yuriko Yamamoto"
+  ],
+  "maze_name": "the_ville",
+  "persona_count": 8,
+  "run_seed": 20260632,
+  "start_time": "February 13, 2023, 00:00:00",
+  "curr_time": "February 13, 2023, 09:05:00",
+  "step": 30,
+  "llm_usage": {
+    "chat_requests": 272,
+    "embedding_requests": 237,
+    "chat_prompt_tokens": 169039,
+    "chat_completion_tokens": 21521,
+    "chat_total_tokens": 190560,
+    "embedding_prompt_tokens": 8611,
+    "embedding_total_tokens": 8611,
+    "estimated_cost_usd": 0.0,
+    "models": {
+      "gpt-4o-mini": {
+        "chat_requests": 272,
+        "embedding_requests": 0,
+        "prompt_tokens": 169039,
+        "completion_tokens": 21521,
+        "total_tokens": 190560
+      },
+      "text-embedding-3-small": {
+        "chat_requests": 0,
+        "embedding_requests": 237,
+        "prompt_tokens": 8611,
+        "completion_tokens": 0,
+        "total_tokens": 8611
+      }
+    },
+    "errors": []
+  },
+  "notes": "MRes experiment run with deterministic persona selection and seeded local RNGs.",
+  "scenario": "information_consensus_neutral",
+  "trial": 2,
+  "output_dir": "experiment_results_ic_neutral_correct_A_as_X/information_consensus_neutral/baseline/trial_2",
+  "selection_strategy": "deterministic_sample",
+  "selection_seed": 42,
+  "base_seed": 20260630,
+  "trial_seed": 20260632,
+  "python_random_seed_applied": true,
+  "numpy_random_seed_applied": true
+}

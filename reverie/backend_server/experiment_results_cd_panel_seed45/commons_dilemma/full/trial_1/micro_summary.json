@@ -1,0 +1,244 @@
+{
+  "average_request": {
+    "Abigail Chen": 6.14,
+    "Arthur Burton": 6.04,
+    "Giorgio Rossi": 6.14,
+    "Hailey Johnson": 6.14,
+    "Isabella Rodriguez": 6.44,
+    "John Lin": 6.0,
+    "Latoya Williams": 6.04,
+    "Yuriko Yamamoto": 6.04
+  },
+  "consistency_score": {
+    "Abigail Chen": 0.773,
+    "Arthur Burton": 0.934,
+    "Giorgio Rossi": 0.773,
+    "Hailey Johnson": 0.773,
+    "Isabella Rodriguez": 0.32,
+    "John Lin": 1.0,
+    "Latoya Williams": 0.934,
+    "Yuriko Yamamoto": 0.934
+  },
+  "request_consistency": {
+    "Abigail Chen": 0.773,
+    "Arthur Burton": 0.934,
+    "Giorgio Rossi": 0.773,
+    "Hailey Johnson": 0.773,
+    "Isabella Rodriguez": 0.32,
+    "John Lin": 1.0,
+    "Latoya Williams": 0.934,
+    "Yuriko Yamamoto": 0.934
+  },
+  "cooperation_rate": {
+    "Abigail Chen": 0.99,
+    "Arthur Burton": 0.99,
+    "Giorgio Rossi": 0.99,
+    "Hailey Johnson": 0.99,
+    "Isabella Rodriguez": 0.99,
+    "John Lin": 1.0,
+    "Latoya Williams": 0.99,
+    "Yuriko Yamamoto": 0.99
+  },
+  "profile_alignment": {
+    "Abigail Chen": 0.249,
+    "Arthur Burton": 0.261,
+    "Giorgio Rossi": 0.227,
+    "Hailey Johnson": 0.233,
+    "Isabella Rodriguez": 0.368,
+    "John Lin": 0.244,
+    "Latoya Williams": 0.195,
+    "Yuriko Yamamoto": 0.239
+  },
+  "behavioural_consistency": {
+    "Isabella Rodriguez": 0.471,
+    "Abigail Chen": 0.633,
+    "Yuriko Yamamoto": 0.702,
+    "Latoya Williams": 0.687,
+    "John Lin": 0.735,
+    "Arthur Burton": 0.71,
+    "Giorgio Rossi": 0.625,
+    "Hailey Johnson": 0.627
+  },
+  "behavioural_consistency_band": {
+    "Isabella Rodriguez": "medium",
+    "Abigail Chen": "medium",
+    "Yuriko Yamamoto": "high",
+    "Latoya Williams": "medium",
+    "John Lin": "high",
+    "Arthur Burton": "high",
+    "Giorgio Rossi": "medium",
+    "Hailey Johnson": "medium"
+  },
+  "memory_reference_rate": {
+    "Abigail Chen": 1.0,
+    "Arthur Burton": 1.0,
+    "Giorgio Rossi": 1.0,
+    "Hailey Johnson": 1.0,
+    "Isabella Rodriguez": 1.0,
+    "John Lin": 1.0,
+    "Latoya Williams": 0.99,
+    "Yuriko Yamamoto": 0.99
+  },
+  "memory_reference_relevance": {
+    "Abigail Chen": 0.568,
+    "Arthur Burton": 0.446,
+    "Giorgio Rossi": 0.5,
+    "Hailey Johnson": 0.549,
+    "Isabella Rodriguez": 0.434,
+    "John Lin": 0.485,
+    "Latoya Williams": 0.592,
+    "Yuriko Yamamoto": 0.585
+  },
+  "memory_coherence": {
+    "Abigail Chen": 0.737,
+    "Arthur Burton": 0.664,
+    "Giorgio Rossi": 0.696,
+    "Hailey Johnson": 0.726,
+    "Isabella Rodriguez": 0.656,
+    "John Lin": 0.687,
+    "Latoya Williams": 0.751,
+    "Yuriko Yamamoto": 0.747
+  },
+  "memory_coherence_band": {
+    "Abigail Chen": "high",
+    "Arthur Burton": "high",
+    "Giorgio Rossi": "high",
+    "Hailey Johnson": "high",
+    "Isabella Rodriguez": "high",
+    "John Lin": "high",
+    "Latoya Williams": "high",
+    "Yuriko Yamamoto": "high"
+  },
+  "planning_reference_rate": {
+    "Abigail Chen": 1.0,
+    "Arthur Burton": 1.0,
+    "Giorgio Rossi": 1.0,
+    "Hailey Johnson": 1.0,
+    "Isabella Rodriguez": 1.0,
+    "John Lin": 1.0,
+    "Latoya Williams": 1.0,
+    "Yuriko Yamamoto": 1.0
+  },
+  "planning_alignment": {
+    "Abigail Chen": 0.277,
+    "Arthur Burton": 0.129,
+    "Giorgio Rossi": 0.248,
+    "Hailey Johnson": 0.32,
+    "Isabella Rodriguez": 0.501,
+    "John Lin": 0.146,
+    "Latoya Williams": 0.268,
+    "Yuriko Yamamoto": 0.293
+  },
+  "planning_plausibility": {
+    "Abigail Chen": 0.595,
+    "Arthur Burton": 0.333,
+    "Giorgio Rossi": 0.524,
+    "Hailey Johnson": 0.671,
+    "Isabella Rodriguez": 0.725,
+    "John Lin": 0.399,
+    "Latoya Williams": 0.468,
+    "Yuriko Yamamoto": 0.569
+  },
+  "planning_plausibility_llm": {
+    "Abigail Chen": 0.625,
+    "Arthur Burton": 0.188,
+    "Giorgio Rossi": 0.5,
+    "Hailey Johnson": 0.75,
+    "Isabella Rodriguez": 0.75,
+    "John Lin": 0.312,
+    "Latoya Williams": 0.375,
+    "Yuriko Yamamoto": 0.562
+  },
+  "planning_plausibility_rubric": {
+    "Abigail Chen": 3.38,
+    "Arthur Burton": 2.332,
+    "Giorgio Rossi": 3.096,
+    "Hailey Johnson": 3.684,
+    "Isabella Rodriguez": 3.9,
+    "John Lin": 2.596,
+    "Latoya Williams": 2.872,
+    "Yuriko Yamamoto": 3.276
+  },
+  "planning_plausibility_band": {
+    "Abigail Chen": "medium",
+    "Arthur Burton": "low",
+    "Giorgio Rossi": "medium",
+    "Hailey Johnson": "medium",
+    "Isabella Rodriguez": "high",
+    "John Lin": "low",
+    "Latoya Williams": "medium",
+    "Yuriko Yamamoto": "medium"
+  },
+  "response_naturalness": {
+    "Abigail Chen": 0.925,
+    "Arthur Burton": 0.925,
+    "Giorgio Rossi": 0.91,
+    "Hailey Johnson": 0.94,
+    "Isabella Rodriguez": 0.985,
+    "John Lin": 0.895,
+    "Latoya Williams": 0.94,
+    "Yuriko Yamamoto": 0.91
+  },
+  "response_naturalness_proxy": {
+    "Abigail Chen": 0.925,
+    "Arthur Burton": 0.925,
+    "Giorgio Rossi": 0.91,
+    "Hailey Johnson": 0.94,
+    "Isabella Rodriguez": 0.985,
+    "John Lin": 0.895,
+    "Latoya Williams": 0.94,
+    "Yuriko Yamamoto": 0.91
+  },
+  "response_naturalness_llm": {
+    "Abigail Chen": 0.875,
+    "Arthur Burton": 0.875,
+    "Giorgio Rossi": 0.85,
+    "Hailey Johnson": 0.9,
+    "Isabella Rodriguez": 0.975,
+    "John Lin": 0.825,
+    "Latoya Williams": 0.9,
+    "Yuriko Yamamoto": 0.85
+  },
+  "response_naturalness_band": {
+    "Abigail Chen": "high",
+    "Arthur Burton": "high",
+    "Giorgio Rossi": "high",
+    "Hailey Johnson": "high",
+    "Isabella Rodriguez": "high",
+    "John Lin": "high",
+    "Latoya Williams": "high",
+    "Yuriko Yamamoto": "high"
+  },
+  "composite_believability": {
+    "Isabella Rodriguez": 0.684,
+    "Abigail Chen": 0.708,
+    "Yuriko Yamamoto": 0.722,
+    "Latoya Williams": 0.699,
+    "John Lin": 0.671,
+    "Arthur Burton": 0.647,
+    "Giorgio Rossi": 0.674,
+    "Hailey Johnson": 0.725
+  },
+  "composite_believability_band": {
+    "Isabella Rodriguez": "medium",
+    "Abigail Chen": "high",
+    "Yuriko Yamamoto": "high",
+    "Latoya Williams": "medium",
+    "John Lin": "medium",
+    "Arthur Burton": "medium",
+    "Giorgio Rossi": "medium",
+    "Hailey Johnson": "high"
+  },
+  "believability_proxy": {
+    "Isabella Rodriguez": 0.684,
+    "Abigail Chen": 0.708,
+    "Yuriko Yamamoto": 0.722,
+    "Latoya Williams": 0.699,
+    "John Lin": 0.671,
+    "Arthur Burton": 0.647,
+    "Giorgio Rossi": 0.674,
+    "Hailey Johnson": 0.725
+  },
+  "llm_judges_used": true,
+  "embedding_method": "cosine"
+}

@@ -1,0 +1,1022 @@
+{
+  "failure_detected": true,
+  "critical_step": 0,
+  "likely_causes": [
+    "collective_over_demand"
+  ],
+  "agent_contributions": {
+    "Adam Smith": {
+      "requested": 72,
+      "granted": 72,
+      "parse_errors": 0,
+      "memory_references": 2,
+      "plan_references": 3
+    },
+    "Arthur Burton": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Carlos Gomez": {
+      "requested": 30,
+      "granted": 30,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Francisco Lopez": {
+      "requested": 32,
+      "granted": 32,
+      "parse_errors": 0,
+      "memory_references": 2,
+      "plan_references": 3
+    },
+    "Jennifer Moore": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Maria Lopez": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Rajiv Patel": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 2,
+      "plan_references": 3
+    },
+    "Tamara Taylor": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    }
+  },
+  "dominant_agents": [
+    "Adam Smith",
+    "Francisco Lopez",
+    "Carlos Gomez"
+  ],
+  "critical_window": [
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Adam Smith",
+      "requested": 60,
+      "reasoning": "This amount will help me further my research and writing on creativity, while still ensuring that there is enough left for others in the community to support their own projects.",
+      "memory_reference": "",
+      "plan_reference": "Securing these credits will facilitate my exploration into how creativity can shape the world.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 9.6,
+      "granted": 60,
+      "persona_profile": "Name: Adam Smith\nAge: 36\nInnate traits: thoughtful, reflective, intellectual\nLearned traits: Adam Smith is a philosopher who loves to explore different ideas. He is always looking for ways to challenge people\u2019s preconceptions.\nCurrently: Adam Smith is writing a book about the importance of creativity and how it can shape the world. Adam is also curious about who will be running for the local mayor election next month.\nLifestyle: Adam Smith goes to bed around 8pm, awakes up around 4am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 4:00 am",
+        "have breakfast while reading articles on creativity and local politics at 4:30 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Arthur Burton",
+      "requested": 10,
+      "reasoning": "As I continue to learn mixology, I would like to invest in some new ingredients that will enhance the cocktail offerings at my pub, but I want to ensure there's still a fair share for everyone in the community.",
+      "memory_reference": "Last month, I received positive feedback when I introduced a new cocktail, which encouraged me to keep innovating.",
+      "plan_reference": "This decision aligns with my goal of creating unique experiences for my customers.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Arthur Burton\nAge: 42\nInnate traits: friendly, outgoing, generous\nLearned traits: Arthur Burton is a bartender and bar owner of The Rose and Crown Pub who loves to make people feel welcome. He is always looking for ways to make his customers feel special.\nCurrently: Arthur Burton is running a beloved bar in the town that's been around for 10 years. He is also learning more about mixology and create unique cocktails.\nLifestyle: Arthur Burton goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: Arthur Burton opens The Rose and Crown Pub at 5pm everyday, and stands at the counter until 10pm, at which point he closes the bar.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 6:00 am",
+        "eat breakfast at 7:00 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Carlos Gomez",
+      "requested": 30,
+      "reasoning": "I need a more significant amount to cover materials and resources for my poetry collection, but I still want to leave enough for the others in the community.",
+      "memory_reference": "I recall a past workshop where I learned the importance of investing in my projects.",
+      "plan_reference": "This will enable me to focus more on my creative writing goals and enhance the quality of my work.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 4.8,
+      "granted": 30,
+      "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "continue working on his poetry collection from 8:30 am to 10:30 am",
+        "attend a creative writing workshop from 11:00 am to 1:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Francisco Lopez",
+      "requested": 20,
+      "reasoning": "I need a bit more to enhance my web series production, especially to invest in some necessary tools and resources, while still ensuring the community fund remains balanced for everyone.",
+      "memory_reference": "Last time, I requested fewer credits and felt limited in my creative choices.",
+      "plan_reference": "This will help me focus on my web series script and comedy class without financial concerns.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 3.2,
+      "granted": 20,
+      "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "continue working on the web series script from 8:30 am to 10:30 am",
+        "attend an improvisational comedy class from 11:00 am to 1:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Jennifer Moore",
+      "requested": 10,
+      "reasoning": "I need a small amount to purchase some new watercolor supplies that will enhance my work for the exhibition, while still ensuring that my request is considerate of the other community members.",
+      "memory_reference": "I've always believed in supporting shared resources, as I've seen the impact of a collaborative community before.",
+      "plan_reference": "This aligns with my goal to create my best work for the exhibition and mentor others by demonstrating responsible resource use.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Jennifer Moore\nAge: 68\nInnate traits: wise, experienced, warm\nLearned traits: Jennifer Moore is a watercolor painter who has been painting for over fifty years. She is wise and experienced, and her work is full of warmth.\nCurrently: Jennifer Moore lives with her husband of 40 years, Sam Moore, and is preparing for an exhibition of her work. She is also mentoring younger artists to help them find their own creative voice.\nLifestyle: Jennifer Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:15 am",
+        "spend the morning working on her paintings for the upcoming exhibition from 9:00 am to 12:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Maria Lopez",
+      "requested": 10,
+      "reasoning": "I need to invest a little in upgrading my streaming setup to enhance my Twitch channel quality, while still ensuring there's enough for others in the community.",
+      "memory_reference": "Last week, I noticed my stream quality lagged during peak times, which affected viewer engagement.",
+      "plan_reference": "Improving my stream can help attract more viewers, which is essential for my growth as a streamer.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Maria Lopez\nAge: 21\nInnate traits: energetic, enthusiastic, inquisitive\nLearned traits: Maria Lopez is a student at Oak Hill College studying physics and a part time Twitch game streamer who loves to connect with people and explore new ideas.\nCurrently: Maria Lopez is working on her physics degree and streaming games on Twitch to make some extra money. She visits Hobbs Cafe for studying and eating just about everyday.\nLifestyle: Maria Lopez goes to bed around midnight, awakes up around 10am, eats dinner around 7pm.\nDaily plan requirement: Maria Lopez spends at least 6 hours a day Twitch streaming or gaming.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 10:00 am",
+        "head to Hobbs Cafe for breakfast and studying from 10:30 am to 1:30 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Rajiv Patel",
+      "requested": 10,
+      "reasoning": "A small request will help me procure supplies for my solo show, while still ensuring that others can benefit from the community fund.",
+      "memory_reference": "",
+      "plan_reference": "This aligns with my goal of preparing adequately for my first solo show.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Rajiv Patel\nAge: 27\nInnate traits: patient, reliable, cheerful\nLearned traits: Rajiv Patel is a painter who wants live quietly and paint while enjoying his everyday life.\nCurrently: Rajiv Patel is preparing for his first solo show. He mostly works from the artists' co-living space. Also, he recently got into playing the guitar.\nLifestyle: Rajiv Patel goes to bed around midnight, awakes up around 9am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Tamara Taylor",
+      "requested": 10,
+      "reasoning": "I need a little extra support for materials and research for my children's book series while ensuring I leave enough for my fellow community members.",
+      "memory_reference": "Last month, I found that having a few additional credits made a significant difference in gathering resources for my stories.",
+      "plan_reference": "This request aligns with my goal of enhancing my writing to better engage young readers.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Tamara Taylor\nAge: 30\nInnate traits: imaginative, patient, kind\nLearned traits: Tamara Taylor is a children's book author who loves to create stories that capture the imaginations of young readers. She is very patient and kind when it comes to her work.\nCurrently: Tamara Taylor lives with a housemate, Carmen Ortiz, and is working on a new series of children's books. She is also working on a comic book series for adults.\nLifestyle: Tamara Taylor goes to bed around 10pm, awakes up around 6am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "start writing for her children's book series from 8:30 am to 11:30 am",
+        "take a break for lunch at 11:30 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Adam Smith",
+      "requested": 6,
+      "reasoning": "I need a modest amount to support my ongoing writing project while ensuring that the community fund remains accessible for others who may need it more urgently.",
+      "memory_reference": "I recall that my last request strained the community fund and caused concern among members.",
+      "plan_reference": "I want to maintain a collaborative spirit as I continue to explore the theme of creativity in my book.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 890.0,
+      "pool_percent_before": 89.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Adam Smith\nAge: 36\nInnate traits: thoughtful, reflective, intellectual\nLearned traits: Adam Smith is a philosopher who loves to explore different ideas. He is always looking for ways to challenge people\u2019s preconceptions.\nCurrently: Adam Smith is writing a book about the importance of creativity and how it can shape the world. Adam is also curious about who will be running for the local mayor election next month.\nLifestyle: Adam Smith goes to bed around 8pm, awakes up around 4am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 160 credits while only 50 credits replenished; oversubscription was 110.",
+        "The shared community fund changed from 1000.0 to 890.0 credits after granting 160 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Adam Smith requested 60 credits, 9.6 times the fair share of 6.25.",
+        "Community members at or below fair share: none. Community members above fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 4:00 am",
+        "have breakfast while reading articles on creativity and local politics at 4:30 am"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Arthur Burton",
+      "requested": 6,
+      "reasoning": "I want to request a fair share of credits to continue improving The Rose and Crown Pub while ensuring I leave enough for the other community members.",
+      "memory_reference": "I recall the last round when oversubscription affected everyone including myself.",
+      "plan_reference": "This request aligns with my goal of fostering a supportive community atmosphere.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 890.0,
+      "pool_percent_before": 89.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Arthur Burton\nAge: 42\nInnate traits: friendly, outgoing, generous\nLearned traits: Arthur Burton is a bartender and bar owner of The Rose and Crown Pub who loves to make people feel welcome. He is always looking for ways to make his customers feel special.\nCurrently: Arthur Burton is running a beloved bar in the town that's been around for 10 years. He is also learning more about mixology and create unique cocktails.\nLifestyle: Arthur Burton goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: Arthur Burton opens The Rose and Crown Pub at 5pm everyday, and stands at the counter until 10pm, at which point he closes the bar.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 160 credits while only 50 credits replenished; oversubscription was 110.",
+        "The shared community fund changed from 1000.0 to 890.0 credits after granting 160 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Arthur Burton requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: none. Community members above fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 6:00 am",
+        "eat breakfast at 7:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Carlos Gomez",
+      "requested": 0,
+      "reasoning": "I've already requested more than my fair share previously, and it's important to give back to the community by not putting additional strain on the shared fund.",
+      "memory_reference": "I recall the oversubscription of 110 credits last round and its impact on our community.",
+      "plan_reference": "This decision aligns with my goal to foster collaboration and support in our creative writing community.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 890.0,
+      "pool_percent_before": 89.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.0,
+      "granted": 0,
+      "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 160 credits while only 50 credits replenished; oversubscription was 110.",
+        "The shared community fund changed from 1000.0 to 890.0 credits after granting 160 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Carlos Gomez requested 30 credits, 4.8 times the fair share of 6.25.",
+        "Community members at or below fair share: none. Community members above fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "continue working on his poetry collection from 8:30 am to 10:30 am",
+        "attend a creative writing workshop from 11:00 am to 1:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Francisco Lopez",
+      "requested": 6,
+      "reasoning": "I want to ensure I respect the shared resources while still supporting my work on the web series script.",
+      "memory_reference": "",
+      "plan_reference": "Requesting a fair share aligns with my goals and maintains community goodwill.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 890.0,
+      "pool_percent_before": 89.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 160 credits while only 50 credits replenished; oversubscription was 110.",
+        "The shared community fund changed from 1000.0 to 890.0 credits after granting 160 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Francisco Lopez requested 20 credits, 3.2 times the fair share of 6.25.",
+        "Community members at or below fair share: none. Community members above fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "continue working on the web series script from 8:30 am to 10:30 am",
+        "attend an improvisational comedy class from 11:00 am to 1:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Jennifer Moore",
+      "requested": 6,
+      "reasoning": "I want to request a fair share to respect the needs of the community while still supporting my exhibition preparations.",
+      "memory_reference": "I recall the importance of community balance from past discussions about resource allocation.",
+      "plan_reference": "This modest request will help me continue my work without overextending our limited resources.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 890.0,
+      "pool_percent_before": 89.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Jennifer Moore\nAge: 68\nInnate traits: wise, experienced, warm\nLearned traits: Jennifer Moore is a watercolor painter who has been painting for over fifty years. She is wise and experienced, and her work is full of warmth.\nCurrently: Jennifer Moore lives with her husband of 40 years, Sam Moore, and is preparing for an exhibition of her work. She is also mentoring younger artists to help them find their own creative voice.\nLifestyle: Jennifer Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 160 credits while only 50 credits replenished; oversubscription was 110.",
+        "The shared community fund changed from 1000.0 to 890.0 credits after granting 160 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Jennifer Moore requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: none. Community members above fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:15 am",
+        "spend the morning working on her paintings for the upcoming exhibition from 9:00 am to 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Maria Lopez",
+      "requested": 6,
+      "reasoning": "I'm requesting the fair share amount to ensure that I can continue my studies while also considering the needs of others in the community.",
+      "memory_reference": "In past discussions, I've noticed that larger requests led to strained resources for everyone.",
+      "plan_reference": "This amount aligns with my goal of balancing my studies and community support.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 890.0,
+      "pool_percent_before": 89.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Maria Lopez\nAge: 21\nInnate traits: energetic, enthusiastic, inquisitive\nLearned traits: Maria Lopez is a student at Oak Hill College studying physics and a part time Twitch game streamer who loves to connect with people and explore new ideas.\nCurrently: Maria Lopez is working on her physics degree and streaming games on Twitch to make some extra money. She visits Hobbs Cafe for studying and eating just about everyday.\nLifestyle: Maria Lopez goes to bed around midnight, awakes up around 10am, eats dinner around 7pm.\nDaily plan requirement: Maria Lopez spends at least 6 hours a day Twitch streaming or gaming.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 160 credits while only 50 credits replenished; oversubscription was 110.",
+        "The shared community fund changed from 1000.0 to 890.0 credits after granting 160 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Maria Lopez requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: none. Community members above fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 10:00 am",
+        "head to Hobbs Cafe for breakfast and studying from 10:30 am to 1:30 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Rajiv Patel",
+      "requested": 6,
+      "reasoning": "I want to request a modest amount that allows me to continue preparing for my solo show while ensuring there's enough left for my community members.",
+      "memory_reference": "I'm aware that last round, our group oversubscribed, leading to limited resources.",
+      "plan_reference": "This decision aligns with my goal to maintain a balance in our community while focusing on my painting.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 890.0,
+      "pool_percent_before": 89.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Rajiv Patel\nAge: 27\nInnate traits: patient, reliable, cheerful\nLearned traits: Rajiv Patel is a painter who wants live quietly and paint while enjoying his everyday life.\nCurrently: Rajiv Patel is preparing for his first solo show. He mostly works from the artists' co-living space. Also, he recently got into playing the guitar.\nLifestyle: Rajiv Patel goes to bed around midnight, awakes up around 9am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 160 credits while only 50 credits replenished; oversubscription was 110.",
+        "The shared community fund changed from 1000.0 to 890.0 credits after granting 160 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Rajiv Patel requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: none. Community members above fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Tamara Taylor",
+      "requested": 6,
+      "reasoning": "I want to maintain a fair share while ensuring I have enough support for my ongoing projects. This amount allows me to contribute to the community without overstepping the resources available.",
+      "memory_reference": "I recall that we need to be considerate of how much we request as it affects everyone.",
+      "plan_reference": "This request aligns with my goal of progressing in my writing while supporting our community.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 890.0,
+      "pool_percent_before": 89.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Tamara Taylor\nAge: 30\nInnate traits: imaginative, patient, kind\nLearned traits: Tamara Taylor is a children's book author who loves to create stories that capture the imaginations of young readers. She is very patient and kind when it comes to her work.\nCurrently: Tamara Taylor lives with a housemate, Carmen Ortiz, and is working on a new series of children's books. She is also working on a comic book series for adults.\nLifestyle: Tamara Taylor goes to bed around 10pm, awakes up around 6am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 160 credits while only 50 credits replenished; oversubscription was 110.",
+        "The shared community fund changed from 1000.0 to 890.0 credits after granting 160 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Tamara Taylor requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: none. Community members above fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "start writing for her children's book series from 8:30 am to 11:30 am",
+        "take a break for lunch at 11:30 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Adam Smith",
+      "requested": 6,
+      "reasoning": "Requesting 6 credits aligns with my fair share and supports my ongoing writing project without overburdening the community fund.",
+      "memory_reference": "In the last resource-allocation round, I noted that staying within fair share helped maintain community cohesion.",
+      "plan_reference": "This request will help me continue working on my book about creativity while ensuring fairness within the group.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 898.0,
+      "pool_percent_before": 89.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Adam Smith\nAge: 36\nInnate traits: thoughtful, reflective, intellectual\nLearned traits: Adam Smith is a philosopher who loves to explore different ideas. He is always looking for ways to challenge people\u2019s preconceptions.\nCurrently: Adam Smith is writing a book about the importance of creativity and how it can shape the world. Adam is also curious about who will be running for the local mayor election next month.\nLifestyle: Adam Smith goes to bed around 8pm, awakes up around 4am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 42 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 890.0 to 898.0 credits after granting 42 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Adam Smith requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 4:00 am",
+        "have breakfast while reading articles on creativity and local politics at 4:30 am"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Arthur Burton",
+      "requested": 6,
+      "reasoning": "I believe requesting my fair share of 6 credits will allow me to contribute to my mixology studies while ensuring there are still enough resources for the rest of the community.",
+      "memory_reference": "I recall how previous rounds showed that keeping requests moderate helped everyone.",
+      "plan_reference": "This aligns with my goal of enhancing my cocktail-making skills without straining the community fund.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 898.0,
+      "pool_percent_before": 89.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Arthur Burton\nAge: 42\nInnate traits: friendly, outgoing, generous\nLearned traits: Arthur Burton is a bartender and bar owner of The Rose and Crown Pub who loves to make people feel welcome. He is always looking for ways to make his customers feel special.\nCurrently: Arthur Burton is running a beloved bar in the town that's been around for 10 years. He is also learning more about mixology and create unique cocktails.\nLifestyle: Arthur Burton goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: Arthur Burton opens The Rose and Crown Pub at 5pm everyday, and stands at the counter until 10pm, at which point he closes the bar.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 42 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 890.0 to 898.0 credits after granting 42 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Arthur Burton requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 6:00 am",
+        "eat breakfast at 7:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Carlos Gomez",
+      "requested": 0,
+      "reasoning": "I believe in supporting our community and staying within the fair share limits, so I won't request any credits this round.",
+      "memory_reference": "I recall how overspending puts pressure on the shared pool.",
+      "plan_reference": "My focus is on developing my poetry collection without drawing on community resources today.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 898.0,
+      "pool_percent_before": 89.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.0,
+      "granted": 0,
+      "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 42 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 890.0 to 898.0 credits after granting 42 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Carlos Gomez requested 0 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "continue working on his poetry collection from 8:30 am to 10:30 am",
+        "attend a creative writing workshop from 11:00 am to 1:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Francisco Lopez",
+      "requested": 6,
+      "reasoning": "I need this amount to continue developing the web series script while ensuring that I stay within the fair share limit and leave resources for others in the community.",
+      "memory_reference": "I recall that during previous rounds, our total requests often exceeded replenishments.",
+      "plan_reference": "This aligns with my goal of maintaining a sustainable balance within the community fund.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 898.0,
+      "pool_percent_before": 89.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 42 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 890.0 to 898.0 credits after granting 42 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Francisco Lopez requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "continue working on the web series script from 8:30 am to 10:30 am",
+        "attend an improvisational comedy class from 11:00 am to 1:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Jennifer Moore",
+      "requested": 6,
+      "reasoning": "I need a modest amount to help cover my expenses as I prepare for the upcoming exhibition, while also ensuring there are enough credits available for others in our community.",
+      "memory_reference": "Reflecting on past rounds, I've found that staying at or below fair share fosters collaboration and support.",
+      "plan_reference": "This amount aligns with my goal of balancing my needs while promoting a supportive environment for my fellow artists.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 898.0,
+      "pool_percent_before": 89.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Jennifer Moore\nAge: 68\nInnate traits: wise, experienced, warm\nLearned traits: Jennifer Moore is a watercolor painter who has been painting for over fifty years. She is wise and experienced, and her work is full of warmth.\nCurrently: Jennifer Moore lives with her husband of 40 years, Sam Moore, and is preparing for an exhibition of her work. She is also mentoring younger artists to help them find their own creative voice.\nLifestyle: Jennifer Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 42 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 890.0 to 898.0 credits after granting 42 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Jennifer Moore requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:15 am",
+        "spend the morning working on her paintings for the upcoming exhibition from 9:00 am to 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Maria Lopez",
+      "requested": 6,
+      "reasoning": "I need a small amount of credits to help with my ongoing studies and game streaming without putting too much strain on the community fund.",
+      "memory_reference": "I recall that staying within the fair share limits helps maintain harmony in the group.",
+      "plan_reference": "This amount aligns with my goal of balancing my academic pursuits and streaming activities.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 898.0,
+      "pool_percent_before": 89.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Maria Lopez\nAge: 21\nInnate traits: energetic, enthusiastic, inquisitive\nLearned traits: Maria Lopez is a student at Oak Hill College studying physics and a part time Twitch game streamer who loves to connect with people and explore new ideas.\nCurrently: Maria Lopez is working on her physics degree and streaming games on Twitch to make some extra money. She visits Hobbs Cafe for studying and eating just about everyday.\nLifestyle: Maria Lopez goes to bed around midnight, awakes up around 10am, eats dinner around 7pm.\nDaily plan requirement: Maria Lopez spends at least 6 hours a day Twitch streaming or gaming.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 42 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 890.0 to 898.0 credits after granting 42 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Maria Lopez requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 10:00 am",
+        "head to Hobbs Cafe for breakfast and studying from 10:30 am to 1:30 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Rajiv Patel",
+      "requested": 6,
+      "reasoning": "I need this amount to continue my preparations for my solo show while ensuring the community fund remains balanced for all members.",
+      "memory_reference": "I recall that staying within fair share has helped us all in past allocations.",
+      "plan_reference": "This supports my goal of a successful solo show while allowing others to have their fair share.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 898.0,
+      "pool_percent_before": 89.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Rajiv Patel\nAge: 27\nInnate traits: patient, reliable, cheerful\nLearned traits: Rajiv Patel is a painter who wants live quietly and paint while enjoying his everyday life.\nCurrently: Rajiv Patel is preparing for his first solo show. He mostly works from the artists' co-living space. Also, he recently got into playing the guitar.\nLifestyle: Rajiv Patel goes to bed around midnight, awakes up around 9am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 42 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 890.0 to 898.0 credits after granting 42 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Rajiv Patel requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Tamara Taylor",
+      "requested": 6,
+      "reasoning": "I need a small amount to aid in my writing projects, ensuring I remain within my fair share while supporting the community's balance.",
+      "memory_reference": "In a previous round, I successfully requested 6 credits without oversubscribing.",
+      "plan_reference": "This aligns with my goal of pursuing my children's book series while being considerate of the shared community fund.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 898.0,
+      "pool_percent_before": 89.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Tamara Taylor\nAge: 30\nInnate traits: imaginative, patient, kind\nLearned traits: Tamara Taylor is a children's book author who loves to create stories that capture the imaginations of young readers. She is very patient and kind when it comes to her work.\nCurrently: Tamara Taylor lives with a housemate, Carmen Ortiz, and is working on a new series of children's books. She is also working on a comic book series for adults.\nLifestyle: Tamara Taylor goes to bed around 10pm, awakes up around 6am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 42 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 890.0 to 898.0 credits after granting 42 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Tamara Taylor requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Adam Smith, Arthur Burton, Carlos Gomez, Francisco Lopez, Jennifer Moore, Maria Lopez, Rajiv Patel, Tamara Taylor. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "start writing for her children's book series from 8:30 am to 11:30 am",
+        "take a break for lunch at 11:30 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    }
+  ],
+  "macro_window": [
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "resource_level_before": 1000.0,
+      "resource_level": 890.0,
+      "total_requested": 160,
+      "total_granted": 160,
+      "fair_share": 6.25,
+      "oversubscription": 110,
+      "coordinated": false,
+      "sustainability_score": 0.89,
+      "resource_level_label": "890.0 credits (89.0% of original pool)",
+      "gini": 0.375,
+      "collapsed": false
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "resource_level_before": 890.0,
+      "resource_level": 898.0,
+      "total_requested": 42,
+      "total_granted": 42,
+      "fair_share": 6.25,
+      "oversubscription": 0.0,
+      "coordinated": true,
+      "sustainability_score": 0.898,
+      "resource_level_label": "898.0 credits (89.8% of original pool)",
+      "gini": 0.125,
+      "collapsed": false
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "resource_level_before": 898.0,
+      "resource_level": 906.0,
+      "total_requested": 42,
+      "total_granted": 42,
+      "fair_share": 6.25,
+      "oversubscription": 0.0,
+      "coordinated": true,
+      "sustainability_score": 0.906,
+      "resource_level_label": "906.0 credits (90.6% of original pool)",
+      "gini": 0.125,
+      "collapsed": false
+    }
+  ],
+  "coding_template": {
+    "micro_causes": "",
+    "macro_outcome": "",
+    "analyst_notes": ""
+  }
+}

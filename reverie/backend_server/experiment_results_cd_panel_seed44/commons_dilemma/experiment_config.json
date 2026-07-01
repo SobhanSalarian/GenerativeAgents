@@ -1,0 +1,22 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code_prefix": "cd_panel_seed44",
+  "scenario": "commons_dilemma",
+  "scenario_parameters": {
+    "initial_resource": 1000,
+    "replenishment_rate": 50,
+    "max_request": 100,
+    "capacity": 1000
+  },
+  "experimental_conditions": [
+    "baseline",
+    "full"
+  ],
+  "n_steps": 100,
+  "n_trials": 5,
+  "persona_names": null,
+  "persona_sample_size": 8,
+  "selection_seed": 44,
+  "base_seed": 20260524,
+  "export_human_eval": false
+}

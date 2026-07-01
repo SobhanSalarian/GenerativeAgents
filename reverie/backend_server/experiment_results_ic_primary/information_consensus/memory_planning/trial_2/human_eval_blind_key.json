@@ -1,0 +1,170 @@
+{
+  "decision_95ed8266cf": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_a50493b15a": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_a2a33d57e9": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_1080bb5d2c": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_7e9ae16b17": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_494e700ffe": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_b50e656a84": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_e0cf9d96c1": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_767d205e65": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_72dc329624": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_705e2b1d13": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_d552cce3b0": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_81406cc6b5": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_d8d2a447f3": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_3912cfbe0b": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_f3ae8f6c1b": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_baefa54ce0": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_c64f48c1d5": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_a941fb63d3": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_d4856eb217": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_82e88876e1": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_177cc29fa8": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_21657fb8ad": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  },
+  "decision_3b3072e4d6": {
+    "scenario": "information_consensus",
+    "trial": 2,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "memory_planning",
+    "sim_code": "ic_v3_memory_planning_trial_2"
+  }
+}

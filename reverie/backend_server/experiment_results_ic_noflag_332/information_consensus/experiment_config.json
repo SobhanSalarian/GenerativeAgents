@@ -1,0 +1,24 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code_prefix": "ic_noflag_332",
+  "scenario": "information_consensus",
+  "scenario_parameters": {
+    "true_option": "A",
+    "signal_counts": {
+      "A": 3,
+      "B": 3,
+      "C": 2
+    }
+  },
+  "experimental_conditions": [
+    "baseline",
+    "memory"
+  ],
+  "n_steps": 30,
+  "n_trials": 5,
+  "persona_names": null,
+  "persona_sample_size": 8,
+  "selection_seed": 42,
+  "base_seed": 20260630,
+  "export_human_eval": false
+}

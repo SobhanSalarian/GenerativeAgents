@@ -1,0 +1,244 @@
+{
+  "average_request": {
+    "Abigail Chen": 0.0,
+    "Ayesha Khan": 0.0,
+    "Carlos Gomez": 0.0,
+    "Francisco Lopez": 0.0,
+    "Giorgio Rossi": 0.0,
+    "Sam Moore": 0.0,
+    "Wolfgang Schulz": 0.0,
+    "Yuriko Yamamoto": 0.0
+  },
+  "consistency_score": {
+    "Abigail Chen": 1.0,
+    "Ayesha Khan": 1.0,
+    "Carlos Gomez": 1.0,
+    "Francisco Lopez": 1.0,
+    "Giorgio Rossi": 1.0,
+    "Sam Moore": 1.0,
+    "Wolfgang Schulz": 1.0,
+    "Yuriko Yamamoto": 1.0
+  },
+  "request_consistency": {
+    "Abigail Chen": 1.0,
+    "Ayesha Khan": 1.0,
+    "Carlos Gomez": 1.0,
+    "Francisco Lopez": 1.0,
+    "Giorgio Rossi": 1.0,
+    "Sam Moore": 1.0,
+    "Wolfgang Schulz": 1.0,
+    "Yuriko Yamamoto": 1.0
+  },
+  "cooperation_rate": {
+    "Abigail Chen": 1.0,
+    "Ayesha Khan": 1.0,
+    "Carlos Gomez": 1.0,
+    "Francisco Lopez": 1.0,
+    "Giorgio Rossi": 1.0,
+    "Sam Moore": 1.0,
+    "Wolfgang Schulz": 1.0,
+    "Yuriko Yamamoto": 1.0
+  },
+  "profile_alignment": {
+    "Abigail Chen": 0.235,
+    "Ayesha Khan": 0.144,
+    "Carlos Gomez": 0.116,
+    "Francisco Lopez": 0.109,
+    "Giorgio Rossi": 0.171,
+    "Sam Moore": 0.161,
+    "Wolfgang Schulz": 0.119,
+    "Yuriko Yamamoto": 0.204
+  },
+  "behavioural_consistency": {
+    "Giorgio Rossi": 0.71,
+    "Yuriko Yamamoto": 0.721,
+    "Ayesha Khan": 0.7,
+    "Wolfgang Schulz": 0.692,
+    "Francisco Lopez": 0.688,
+    "Sam Moore": 0.706,
+    "Abigail Chen": 0.732,
+    "Carlos Gomez": 0.691
+  },
+  "behavioural_consistency_band": {
+    "Giorgio Rossi": "high",
+    "Yuriko Yamamoto": "high",
+    "Ayesha Khan": "high",
+    "Wolfgang Schulz": "medium",
+    "Francisco Lopez": "medium",
+    "Sam Moore": "high",
+    "Abigail Chen": "high",
+    "Carlos Gomez": "medium"
+  },
+  "memory_reference_rate": {
+    "Abigail Chen": 0.967,
+    "Ayesha Khan": 0.967,
+    "Carlos Gomez": 0.967,
+    "Francisco Lopez": 0.967,
+    "Giorgio Rossi": 0.967,
+    "Sam Moore": 0.967,
+    "Wolfgang Schulz": 0.967,
+    "Yuriko Yamamoto": 0.967
+  },
+  "memory_reference_relevance": {
+    "Abigail Chen": 0.656,
+    "Ayesha Khan": 0.661,
+    "Carlos Gomez": 0.674,
+    "Francisco Lopez": 0.678,
+    "Giorgio Rossi": 0.697,
+    "Sam Moore": 0.673,
+    "Wolfgang Schulz": 0.682,
+    "Yuriko Yamamoto": 0.676
+  },
+  "memory_coherence": {
+    "Abigail Chen": 0.78,
+    "Ayesha Khan": 0.783,
+    "Carlos Gomez": 0.791,
+    "Francisco Lopez": 0.794,
+    "Giorgio Rossi": 0.805,
+    "Sam Moore": 0.79,
+    "Wolfgang Schulz": 0.796,
+    "Yuriko Yamamoto": 0.792
+  },
+  "memory_coherence_band": {
+    "Abigail Chen": "high",
+    "Ayesha Khan": "high",
+    "Carlos Gomez": "high",
+    "Francisco Lopez": "high",
+    "Giorgio Rossi": "high",
+    "Sam Moore": "high",
+    "Wolfgang Schulz": "high",
+    "Yuriko Yamamoto": "high"
+  },
+  "planning_reference_rate": {
+    "Abigail Chen": 0.733,
+    "Ayesha Khan": 0.5,
+    "Carlos Gomez": 0.667,
+    "Francisco Lopez": 0.767,
+    "Giorgio Rossi": 0.9,
+    "Sam Moore": 0.933,
+    "Wolfgang Schulz": 0.467,
+    "Yuriko Yamamoto": 0.867
+  },
+  "planning_alignment": {
+    "Abigail Chen": 0.171,
+    "Ayesha Khan": 0.142,
+    "Carlos Gomez": 0.109,
+    "Francisco Lopez": 0.182,
+    "Giorgio Rossi": 0.217,
+    "Sam Moore": 0.15,
+    "Wolfgang Schulz": 0.119,
+    "Yuriko Yamamoto": 0.167
+  },
+  "planning_plausibility": {
+    "Abigail Chen": 0.475,
+    "Ayesha Khan": 0.443,
+    "Carlos Gomez": 0.283,
+    "Francisco Lopez": 0.44,
+    "Giorgio Rossi": 0.421,
+    "Sam Moore": 0.425,
+    "Wolfgang Schulz": 0.682,
+    "Yuriko Yamamoto": 0.361
+  },
+  "planning_plausibility_llm": {
+    "Abigail Chen": 0.5,
+    "Ayesha Khan": 0.5,
+    "Carlos Gomez": 0.167,
+    "Francisco Lopez": 0.417,
+    "Giorgio Rossi": 0.333,
+    "Sam Moore": 0.375,
+    "Wolfgang Schulz": 1.0,
+    "Yuriko Yamamoto": 0.25
+  },
+  "planning_plausibility_rubric": {
+    "Abigail Chen": 2.9,
+    "Ayesha Khan": 2.772,
+    "Carlos Gomez": 2.132,
+    "Francisco Lopez": 2.76,
+    "Giorgio Rossi": 2.684,
+    "Sam Moore": 2.7,
+    "Wolfgang Schulz": 3.728,
+    "Yuriko Yamamoto": 2.444
+  },
+  "planning_plausibility_band": {
+    "Abigail Chen": "medium",
+    "Ayesha Khan": "medium",
+    "Carlos Gomez": "low",
+    "Francisco Lopez": "medium",
+    "Giorgio Rossi": "medium",
+    "Sam Moore": "medium",
+    "Wolfgang Schulz": "medium",
+    "Yuriko Yamamoto": "low"
+  },
+  "response_naturalness": {
+    "Abigail Chen": 0.863,
+    "Ayesha Khan": 0.908,
+    "Carlos Gomez": 0.908,
+    "Francisco Lopez": 0.951,
+    "Giorgio Rossi": 0.925,
+    "Sam Moore": 0.91,
+    "Wolfgang Schulz": 0.861,
+    "Yuriko Yamamoto": 0.861
+  },
+  "response_naturalness_proxy": {
+    "Abigail Chen": 0.863,
+    "Ayesha Khan": 0.908,
+    "Carlos Gomez": 0.908,
+    "Francisco Lopez": 0.951,
+    "Giorgio Rossi": 0.925,
+    "Sam Moore": 0.91,
+    "Wolfgang Schulz": 0.861,
+    "Yuriko Yamamoto": 0.861
+  },
+  "response_naturalness_llm": {
+    "Abigail Chen": 0.775,
+    "Ayesha Khan": 0.85,
+    "Carlos Gomez": 0.85,
+    "Francisco Lopez": 0.925,
+    "Giorgio Rossi": 0.875,
+    "Sam Moore": 0.85,
+    "Wolfgang Schulz": 0.775,
+    "Yuriko Yamamoto": 0.775
+  },
+  "response_naturalness_band": {
+    "Abigail Chen": "high",
+    "Ayesha Khan": "high",
+    "Carlos Gomez": "high",
+    "Francisco Lopez": "high",
+    "Giorgio Rossi": "high",
+    "Sam Moore": "high",
+    "Wolfgang Schulz": "high",
+    "Yuriko Yamamoto": "high"
+  },
+  "composite_believability": {
+    "Giorgio Rossi": 0.705,
+    "Yuriko Yamamoto": 0.677,
+    "Ayesha Khan": 0.698,
+    "Wolfgang Schulz": 0.749,
+    "Francisco Lopez": 0.705,
+    "Sam Moore": 0.698,
+    "Abigail Chen": 0.706,
+    "Carlos Gomez": 0.657
+  },
+  "composite_believability_band": {
+    "Giorgio Rossi": "high",
+    "Yuriko Yamamoto": "medium",
+    "Ayesha Khan": "medium",
+    "Wolfgang Schulz": "high",
+    "Francisco Lopez": "high",
+    "Sam Moore": "medium",
+    "Abigail Chen": "high",
+    "Carlos Gomez": "medium"
+  },
+  "believability_proxy": {
+    "Giorgio Rossi": 0.705,
+    "Yuriko Yamamoto": 0.677,
+    "Ayesha Khan": 0.698,
+    "Wolfgang Schulz": 0.749,
+    "Francisco Lopez": 0.705,
+    "Sam Moore": 0.698,
+    "Abigail Chen": 0.706,
+    "Carlos Gomez": 0.657
+  },
+  "llm_judges_used": true,
+  "embedding_method": "cosine"
+}

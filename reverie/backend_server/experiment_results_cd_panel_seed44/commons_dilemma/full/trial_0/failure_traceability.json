@@ -1,0 +1,1028 @@
+{
+  "failure_detected": true,
+  "critical_step": 0,
+  "likely_causes": [
+    "collective_over_demand"
+  ],
+  "agent_contributions": {
+    "Ayesha Khan": {
+      "requested": 32,
+      "granted": 32,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Carmen Ortiz": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Francisco Lopez": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Hailey Johnson": {
+      "requested": 32,
+      "granted": 32,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Jennifer Moore": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "John Lin": {
+      "requested": 18,
+      "granted": 18,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Maria Lopez": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Mei Lin": {
+      "requested": 18,
+      "granted": 18,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    }
+  },
+  "dominant_agents": [
+    "Ayesha Khan",
+    "Hailey Johnson",
+    "Carmen Ortiz"
+  ],
+  "critical_window": [
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Ayesha Khan",
+      "requested": 20,
+      "reasoning": "I need this amount to purchase some specific resources and books for my research on Shakespeare's plays, while still leaving a fair share for others.",
+      "memory_reference": "I recall how important having access to the right materials was during my last project.",
+      "plan_reference": "This funding will directly support my studies and help me complete my senior thesis.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 3.2,
+      "granted": 20,
+      "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "head to the library by 9:30 am",
+        "attend classes from 10:00 am to 2:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Carmen Ortiz",
+      "requested": 10,
+      "reasoning": "I want to request a small amount to assist with expanding my shop online while still leaving a fair share for others in the community.",
+      "memory_reference": "Last week, I realized that enhancing our online presence could significantly boost our sales.",
+      "plan_reference": "This fits into my goal of growing Harvey Oak Supply Store's online reach.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Carmen Ortiz\nAge: 33\nInnate traits: friendly, outgoing, helpful\nLearned traits: Carmen Ortiz is a shopkeeper at Harvey Oak Supply Store who loves to help people find the supplies they need. She is always looking for ways to make her customers feel welcome.\nCurrently: Carmen Ortiz is managing Harvey Oak Supply Store and lives with a housemate, Tamara Taylor. She is also working on expanding her shop online.\nLifestyle: Carmen Ortiz goes to bed around 11pm, awakes up around 7am, eats dinner around 8pm.\nDaily plan requirement: Carmen opens Harvey Oak Supply Store at 8am, stands behind its counter, and closes it at 6pm, at which point, she likes to go to The Rose and Crown Pub to relax\nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "open Harvey Oak Supply Store at 8:00 am and start the day\u2019s activities",
+        "assist customers and manage store operations from 8:00 am to 6:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Francisco Lopez",
+      "requested": 10,
+      "reasoning": "I need a small amount to purchase some props for my web series, while still ensuring a fair distribution for others in the community.",
+      "memory_reference": "Last week, I borrowed props from a friend, and I want to be more self-sufficient now.",
+      "plan_reference": "This request aligns with my goal of enhancing the quality of my web series.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "work on scripting for the web series from 9:00 am to 11:00 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Hailey Johnson",
+      "requested": 20,
+      "reasoning": "I need additional resources to enhance my novel writing and podcast planning, as I aim to explore more diverse themes and narratives.",
+      "memory_reference": "I recall the last community meeting where we discussed the importance of supporting individual projects for the greater creativity of our group.",
+      "plan_reference": "This request aligns with my goal of developing my novel and launching my podcast effectively.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 3.2,
+      "granted": 20,
+      "persona_profile": "Name: Hailey Johnson\nAge: 30\nInnate traits: imaginative, energetic, resourceful\nLearned traits: Hailey Johnson is a writer who is always looking for new ways to tell stories. She loves to immerse herself in different cultures and explore their literature.\nCurrently: Hailey Johnson is writing a novel about a group of artists living in a co-living space. She is also planning to start a podcast.\nLifestyle: Hailey Johnson goes to bed around 2am, awakes up around 10am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 10:00 am",
+        "spend time brainstorming and outlining for her novel from 11:00 am to 1:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Jennifer Moore",
+      "requested": 10,
+      "reasoning": "I need a small amount to purchase some new watercolor supplies to enhance my exhibition pieces while still ensuring there is enough left for others in the community.",
+      "memory_reference": "Last year, I struggled with supplies for my exhibition, which taught me the importance of planning ahead.",
+      "plan_reference": "This request aligns with my goal of preparing for the upcoming exhibition while being mindful of the community's needs.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Jennifer Moore\nAge: 68\nInnate traits: wise, experienced, warm\nLearned traits: Jennifer Moore is a watercolor painter who has been painting for over fifty years. She is wise and experienced, and her work is full of warmth.\nCurrently: Jennifer Moore lives with her husband of 40 years, Sam Moore, and is preparing for an exhibition of her work. She is also mentoring younger artists to help them find their own creative voice.\nLifestyle: Jennifer Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "prepare her art supplies and set up her studio for painting from 9:30 am to 11:30 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "John Lin",
+      "requested": 6,
+      "reasoning": "I want to maintain a fair share of the community fund while ensuring I have some credits for small projects related to the pharmacy.",
+      "memory_reference": "I recall our last community meeting where sharing resources was emphasized for harmony.",
+      "plan_reference": "This aligns with my ongoing commitment to support both my pharmacy operations and the community.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: John Lin\nAge: 45\nInnate traits: patient, kind, organized\nLearned traits: John Lin is a pharmacy shop keeper at the Willow Market and Pharmacy who loves to help people. He is always looking for ways to make the process of getting medication easier for his customers.\nCurrently: John Lin is living with his wife, Mei Lin, and son, Eddy Lin, and is shop keeping a pharmacy at the Willow Market and Pharmacy. He is also taking online classes to stay up to date on new medications and treatments. John is also curious about who will be running for the local mayor election next month and he is asking everyone he meets about who will be running in the election.\nLifestyle: John Lin goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: John Lin goes to the Willow Market and Pharmacy around 9am to open the pharmacy counter. He stands behind the counter until 5pm and returns home.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "go to the Willow Market and Pharmacy to open the pharmacy counter by 9:00 am",
+        "assist customers and manage pharmacy operations from 9:00 am to 5:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Maria Lopez",
+      "requested": 10,
+      "reasoning": "I need a bit more to enhance my streaming setup, which will help me connect better with my audience while still leaving a fair share for others.",
+      "memory_reference": "Last week, I realized I could improve my stream quality if I had better equipment.",
+      "plan_reference": "This aligns with my goal of expanding my Twitch channel and creating a more engaging experience for viewers.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Maria Lopez\nAge: 21\nInnate traits: energetic, enthusiastic, inquisitive\nLearned traits: Maria Lopez is a student at Oak Hill College studying physics and a part time Twitch game streamer who loves to connect with people and explore new ideas.\nCurrently: Maria Lopez is working on her physics degree and streaming games on Twitch to make some extra money. She visits Hobbs Cafe for studying and eating just about everyday.\nLifestyle: Maria Lopez goes to bed around midnight, awakes up around 10am, eats dinner around 7pm.\nDaily plan requirement: Maria Lopez spends at least 6 hours a day Twitch streaming or gaming.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 6:00 am",
+        "eat breakfast at 7:00 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Mei Lin",
+      "requested": 6,
+      "reasoning": "I want to ensure that I can continue my research without overstepping on the community fund, leaving enough for others who might need support.",
+      "memory_reference": "Last time, I requested too many credits and felt guilty when others expressed their needs.",
+      "plan_reference": "This fits into my goal of balancing my work with fairness to the community.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Mei Lin\nAge: 44\nInnate traits: nurturing, kind, patient\nLearned traits: Mei Lin is a college professor and a mom who loves to help people reach their goals. She is always looking for ways to support her students and her family.\nCurrently: Mei Lin is living with her husband, John Lin, and son, Eddy Lin, and is teaching a course on philosophy and working on her research paper. She also is helping her two kids with their schoolwork.\nLifestyle: Mei Lin goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: Mei Lin goes to Oak Hill college to teach starting 10 am, teaches until 2pm, and returns home to work.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast with the family at 8:15 am",
+        "review her lecture notes and prepare for class from 9:00 am to 9:45 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Ayesha Khan",
+      "requested": 6,
+      "reasoning": "I recognize the pressure on the shared community fund and want to request only my fair share to support my thesis research while ensuring others have access as well.",
+      "memory_reference": "In a previous round, we oversubscribed, which reminded me of the importance of community support.",
+      "plan_reference": "This decision aligns with my goal of maintaining balance in the community while pursuing my education.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 958.0,
+      "pool_percent_before": 95.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 92 credits while only 50 credits replenished; oversubscription was 42.",
+        "The shared community fund changed from 1000.0 to 958.0 credits after granting 92 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Ayesha Khan requested 20 credits, 3.2 times the fair share of 6.25.",
+        "Community members at or below fair share: John Lin, Mei Lin. Community members above fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, Maria Lopez."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "head to the library by 9:30 am",
+        "attend classes from 10:00 am to 2:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Carmen Ortiz",
+      "requested": 6,
+      "reasoning": "I want to request a fair share to support my ongoing efforts while ensuring the community fund remains accessible for others who may need it more urgently.",
+      "memory_reference": "I recall the last round where our oversubscription created tension in the community.",
+      "plan_reference": "This aligns with my goal to manage my resources responsibly while continuing to expand my shop's online presence.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 958.0,
+      "pool_percent_before": 95.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Carmen Ortiz\nAge: 33\nInnate traits: friendly, outgoing, helpful\nLearned traits: Carmen Ortiz is a shopkeeper at Harvey Oak Supply Store who loves to help people find the supplies they need. She is always looking for ways to make her customers feel welcome.\nCurrently: Carmen Ortiz is managing Harvey Oak Supply Store and lives with a housemate, Tamara Taylor. She is also working on expanding her shop online.\nLifestyle: Carmen Ortiz goes to bed around 11pm, awakes up around 7am, eats dinner around 8pm.\nDaily plan requirement: Carmen opens Harvey Oak Supply Store at 8am, stands behind its counter, and closes it at 6pm, at which point, she likes to go to The Rose and Crown Pub to relax\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 92 credits while only 50 credits replenished; oversubscription was 42.",
+        "The shared community fund changed from 1000.0 to 958.0 credits after granting 92 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Carmen Ortiz requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: John Lin, Mei Lin. Community members above fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, Maria Lopez."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "open Harvey Oak Supply Store at 8:00 am and start the day\u2019s activities",
+        "assist customers and manage store operations from 8:00 am to 6:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Francisco Lopez",
+      "requested": 6,
+      "reasoning": "I want to keep my request modest to ensure that I support my ongoing work while also being considerate of the limited resources for others in the community.",
+      "memory_reference": "I recall the oversubscription situation from the last meeting and the importance of teamwork.",
+      "plan_reference": "This amount will help me continue scripting for the web series and leave adequate credits for others.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 958.0,
+      "pool_percent_before": 95.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 92 credits while only 50 credits replenished; oversubscription was 42.",
+        "The shared community fund changed from 1000.0 to 958.0 credits after granting 92 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Francisco Lopez requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: John Lin, Mei Lin. Community members above fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, Maria Lopez."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "work on scripting for the web series from 9:00 am to 11:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Hailey Johnson",
+      "requested": 6,
+      "reasoning": "I want to ensure I have support for my writing project while being mindful of the community's fund and needs.",
+      "memory_reference": "I recalled the oversubscription issue from last round and its impact on our community.",
+      "plan_reference": "This aligns with my goal of maintaining cooperation while I brainstorm for my novel.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 958.0,
+      "pool_percent_before": 95.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Hailey Johnson\nAge: 30\nInnate traits: imaginative, energetic, resourceful\nLearned traits: Hailey Johnson is a writer who is always looking for new ways to tell stories. She loves to immerse herself in different cultures and explore their literature.\nCurrently: Hailey Johnson is writing a novel about a group of artists living in a co-living space. She is also planning to start a podcast.\nLifestyle: Hailey Johnson goes to bed around 2am, awakes up around 10am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 92 credits while only 50 credits replenished; oversubscription was 42.",
+        "The shared community fund changed from 1000.0 to 958.0 credits after granting 92 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Hailey Johnson requested 20 credits, 3.2 times the fair share of 6.25.",
+        "Community members at or below fair share: John Lin, Mei Lin. Community members above fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, Maria Lopez."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 10:00 am",
+        "spend time brainstorming and outlining for her novel from 11:00 am to 1:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Jennifer Moore",
+      "requested": 6,
+      "reasoning": "I need a modest amount to support ongoing art supplies while ensuring that I leave enough for others in our community.",
+      "memory_reference": "I recall the importance of shared resources from our last meeting.",
+      "plan_reference": "This aligns with my goal of preparing for my exhibition while also mentoring younger artists.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 958.0,
+      "pool_percent_before": 95.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Jennifer Moore\nAge: 68\nInnate traits: wise, experienced, warm\nLearned traits: Jennifer Moore is a watercolor painter who has been painting for over fifty years. She is wise and experienced, and her work is full of warmth.\nCurrently: Jennifer Moore lives with her husband of 40 years, Sam Moore, and is preparing for an exhibition of her work. She is also mentoring younger artists to help them find their own creative voice.\nLifestyle: Jennifer Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 92 credits while only 50 credits replenished; oversubscription was 42.",
+        "The shared community fund changed from 1000.0 to 958.0 credits after granting 92 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Jennifer Moore requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: John Lin, Mei Lin. Community members above fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, Maria Lopez."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "prepare her art supplies and set up her studio for painting from 9:30 am to 11:30 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "John Lin",
+      "requested": 6,
+      "reasoning": "I believe requesting 6 credits will help support my ongoing education about new medications while ensuring that I leave enough for the other community members.",
+      "memory_reference": "I recall that in the last round, our group exceeded the replenishment limit due to high demands, which made me more cautious.",
+      "plan_reference": "This aligns with my goal of staying updated on healthcare practices for my customers.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 958.0,
+      "pool_percent_before": 95.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: John Lin\nAge: 45\nInnate traits: patient, kind, organized\nLearned traits: John Lin is a pharmacy shop keeper at the Willow Market and Pharmacy who loves to help people. He is always looking for ways to make the process of getting medication easier for his customers.\nCurrently: John Lin is living with his wife, Mei Lin, and son, Eddy Lin, and is shop keeping a pharmacy at the Willow Market and Pharmacy. He is also taking online classes to stay up to date on new medications and treatments. John is also curious about who will be running for the local mayor election next month and he is asking everyone he meets about who will be running in the election.\nLifestyle: John Lin goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: John Lin goes to the Willow Market and Pharmacy around 9am to open the pharmacy counter. He stands behind the counter until 5pm and returns home.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 92 credits while only 50 credits replenished; oversubscription was 42.",
+        "The shared community fund changed from 1000.0 to 958.0 credits after granting 92 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "John Lin requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: John Lin, Mei Lin. Community members above fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, Maria Lopez."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "go to the Willow Market and Pharmacy to open the pharmacy counter by 9:00 am",
+        "assist customers and manage pharmacy operations from 9:00 am to 5:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Maria Lopez",
+      "requested": 6,
+      "reasoning": "I'm aiming to balance my needs with the ongoing support for others in our community, as I have ongoing projects to fund.",
+      "memory_reference": "Last round, our demands exceeded supply, creating tension within the group.",
+      "plan_reference": "I want to ensure that my request allows me to pursue my studies and streaming while being fair to others.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 958.0,
+      "pool_percent_before": 95.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Maria Lopez\nAge: 21\nInnate traits: energetic, enthusiastic, inquisitive\nLearned traits: Maria Lopez is a student at Oak Hill College studying physics and a part time Twitch game streamer who loves to connect with people and explore new ideas.\nCurrently: Maria Lopez is working on her physics degree and streaming games on Twitch to make some extra money. She visits Hobbs Cafe for studying and eating just about everyday.\nLifestyle: Maria Lopez goes to bed around midnight, awakes up around 10am, eats dinner around 7pm.\nDaily plan requirement: Maria Lopez spends at least 6 hours a day Twitch streaming or gaming.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 92 credits while only 50 credits replenished; oversubscription was 42.",
+        "The shared community fund changed from 1000.0 to 958.0 credits after granting 92 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Maria Lopez requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: John Lin, Mei Lin. Community members above fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, Maria Lopez."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 6:00 am",
+        "eat breakfast at 7:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Mei Lin",
+      "requested": 6,
+      "reasoning": "I need a modest amount to support my ongoing research paper while being mindful of our community's limited resources.",
+      "memory_reference": "I recall that the last resource-allocation round saw a significant oversubscription, affecting everyone.",
+      "plan_reference": "This request aligns with my goal of balancing my needs with the support of my students and family.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 958.0,
+      "pool_percent_before": 95.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Mei Lin\nAge: 44\nInnate traits: nurturing, kind, patient\nLearned traits: Mei Lin is a college professor and a mom who loves to help people reach their goals. She is always looking for ways to support her students and her family.\nCurrently: Mei Lin is living with her husband, John Lin, and son, Eddy Lin, and is teaching a course on philosophy and working on her research paper. She also is helping her two kids with their schoolwork.\nLifestyle: Mei Lin goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: Mei Lin goes to Oak Hill college to teach starting 10 am, teaches until 2pm, and returns home to work.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 92 credits while only 50 credits replenished; oversubscription was 42.",
+        "The shared community fund changed from 1000.0 to 958.0 credits after granting 92 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Mei Lin requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: John Lin, Mei Lin. Community members above fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, Maria Lopez."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast with the family at 8:15 am",
+        "review her lecture notes and prepare for class from 9:00 am to 9:45 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Ayesha Khan",
+      "requested": 6,
+      "reasoning": "I need this amount to assist with my research for my thesis on Shakespeare's use of language, while still leaving credits available for others in the community.",
+      "memory_reference": "I recall that previous allocations at or below fair share have helped maintain balance in our community.",
+      "plan_reference": "This request aligns with my goal of focusing on my studies while being mindful of the shared pool.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 960.0,
+      "pool_percent_before": 96.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 48 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 958.0 to 960.0 credits after granting 48 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Ayesha Khan requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, John Lin, Maria Lopez, Mei Lin. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "head to the library by 9:30 am",
+        "attend classes from 10:00 am to 2:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Carmen Ortiz",
+      "requested": 6,
+      "reasoning": "I believe requesting 6 credits aligns with my fair share and allows me to contribute to our community fund while still having enough for my needs.",
+      "memory_reference": "In previous rounds, staying within the fair share helped us all succeed without oversubscribing the fund.",
+      "plan_reference": "This decision supports my goal of managing my shop efficiently while ensuring fair access for everyone in our community.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 960.0,
+      "pool_percent_before": 96.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Carmen Ortiz\nAge: 33\nInnate traits: friendly, outgoing, helpful\nLearned traits: Carmen Ortiz is a shopkeeper at Harvey Oak Supply Store who loves to help people find the supplies they need. She is always looking for ways to make her customers feel welcome.\nCurrently: Carmen Ortiz is managing Harvey Oak Supply Store and lives with a housemate, Tamara Taylor. She is also working on expanding her shop online.\nLifestyle: Carmen Ortiz goes to bed around 11pm, awakes up around 7am, eats dinner around 8pm.\nDaily plan requirement: Carmen opens Harvey Oak Supply Store at 8am, stands behind its counter, and closes it at 6pm, at which point, she likes to go to The Rose and Crown Pub to relax\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 48 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 958.0 to 960.0 credits after granting 48 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Carmen Ortiz requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, John Lin, Maria Lopez, Mei Lin. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "open Harvey Oak Supply Store at 8:00 am and start the day\u2019s activities",
+        "assist customers and manage store operations from 8:00 am to 6:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Francisco Lopez",
+      "requested": 6,
+      "reasoning": "I want to request a fair share to support my scripting work for the web series while ensuring that the community fund remains sustainable for everyone.",
+      "memory_reference": "I recall that staying within the fair share limit helped us maintain a healthy balance in the past.",
+      "plan_reference": "This amount will help me progress on my project without burdening the community fund.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 960.0,
+      "pool_percent_before": 96.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 48 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 958.0 to 960.0 credits after granting 48 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Francisco Lopez requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, John Lin, Maria Lopez, Mei Lin. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "work on scripting for the web series from 9:00 am to 11:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Hailey Johnson",
+      "requested": 6,
+      "reasoning": "I want to request the fair share to ensure I have enough support for my novel while maintaining balance within the community's resources.",
+      "memory_reference": "The last round, our team successfully stayed within the replenishment limit by being mindful of requests.",
+      "plan_reference": "This request aligns with my goal of brainstorming and outlining for my novel today.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 960.0,
+      "pool_percent_before": 96.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Hailey Johnson\nAge: 30\nInnate traits: imaginative, energetic, resourceful\nLearned traits: Hailey Johnson is a writer who is always looking for new ways to tell stories. She loves to immerse herself in different cultures and explore their literature.\nCurrently: Hailey Johnson is writing a novel about a group of artists living in a co-living space. She is also planning to start a podcast.\nLifestyle: Hailey Johnson goes to bed around 2am, awakes up around 10am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 48 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 958.0 to 960.0 credits after granting 48 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Hailey Johnson requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, John Lin, Maria Lopez, Mei Lin. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 10:00 am",
+        "spend time brainstorming and outlining for her novel from 11:00 am to 1:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Jennifer Moore",
+      "requested": 6,
+      "reasoning": "I believe a modest request will help me cover my upcoming exhibition expenses while also being considerate of the community's needs.",
+      "memory_reference": "I recall the importance of balance to ensure everyone's work is supported.",
+      "plan_reference": "This will help me prepare for my exhibition while mentoring others in their artistic journeys.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 960.0,
+      "pool_percent_before": 96.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Jennifer Moore\nAge: 68\nInnate traits: wise, experienced, warm\nLearned traits: Jennifer Moore is a watercolor painter who has been painting for over fifty years. She is wise and experienced, and her work is full of warmth.\nCurrently: Jennifer Moore lives with her husband of 40 years, Sam Moore, and is preparing for an exhibition of her work. She is also mentoring younger artists to help them find their own creative voice.\nLifestyle: Jennifer Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 48 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 958.0 to 960.0 credits after granting 48 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Jennifer Moore requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, John Lin, Maria Lopez, Mei Lin. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "prepare her art supplies and set up her studio for painting from 9:30 am to 11:30 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "John Lin",
+      "requested": 6,
+      "reasoning": "Requesting the fair share of 6 credits will help me stay updated on pharmacy operations and continue assisting my customers without overburdening the community fund.",
+      "memory_reference": "I recall that staying within the fair share limit helped maintain community harmony last round.",
+      "plan_reference": "This decision aligns with my goal of supporting my pharmacy while allowing others in the community to access necessary resources.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 960.0,
+      "pool_percent_before": 96.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: John Lin\nAge: 45\nInnate traits: patient, kind, organized\nLearned traits: John Lin is a pharmacy shop keeper at the Willow Market and Pharmacy who loves to help people. He is always looking for ways to make the process of getting medication easier for his customers.\nCurrently: John Lin is living with his wife, Mei Lin, and son, Eddy Lin, and is shop keeping a pharmacy at the Willow Market and Pharmacy. He is also taking online classes to stay up to date on new medications and treatments. John is also curious about who will be running for the local mayor election next month and he is asking everyone he meets about who will be running in the election.\nLifestyle: John Lin goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: John Lin goes to the Willow Market and Pharmacy around 9am to open the pharmacy counter. He stands behind the counter until 5pm and returns home.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 48 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 958.0 to 960.0 credits after granting 48 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "John Lin requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, John Lin, Maria Lopez, Mei Lin. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "go to the Willow Market and Pharmacy to open the pharmacy counter by 9:00 am",
+        "assist customers and manage pharmacy operations from 9:00 am to 5:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Maria Lopez",
+      "requested": 6,
+      "reasoning": "I want to request the fair share of 6 credits to support my studies and streaming activities while ensuring we stay within the community's replenishment limits.",
+      "memory_reference": "In previous resource allocation rounds, our group faced challenges when overspending.",
+      "plan_reference": "This request aligns with my goal of maintaining a balanced budget to maximize my productivity in both studying and streaming.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 960.0,
+      "pool_percent_before": 96.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Maria Lopez\nAge: 21\nInnate traits: energetic, enthusiastic, inquisitive\nLearned traits: Maria Lopez is a student at Oak Hill College studying physics and a part time Twitch game streamer who loves to connect with people and explore new ideas.\nCurrently: Maria Lopez is working on her physics degree and streaming games on Twitch to make some extra money. She visits Hobbs Cafe for studying and eating just about everyday.\nLifestyle: Maria Lopez goes to bed around midnight, awakes up around 10am, eats dinner around 7pm.\nDaily plan requirement: Maria Lopez spends at least 6 hours a day Twitch streaming or gaming.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 48 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 958.0 to 960.0 credits after granting 48 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Maria Lopez requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, John Lin, Maria Lopez, Mei Lin. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 6:00 am",
+        "eat breakfast at 7:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Mei Lin",
+      "requested": 6,
+      "reasoning": "I believe a request of 6 credits will help me continue to support my research while ensuring that I stay within the fair share for our community.",
+      "memory_reference": "I recall how previous requests were successful when they aligned with the fair share.",
+      "plan_reference": "This amount aligns with my need to balance my responsibilities as a professor and a supportive family member.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 960.0,
+      "pool_percent_before": 96.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Mei Lin\nAge: 44\nInnate traits: nurturing, kind, patient\nLearned traits: Mei Lin is a college professor and a mom who loves to help people reach their goals. She is always looking for ways to support her students and her family.\nCurrently: Mei Lin is living with her husband, John Lin, and son, Eddy Lin, and is teaching a course on philosophy and working on her research paper. She also is helping her two kids with their schoolwork.\nLifestyle: Mei Lin goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: Mei Lin goes to Oak Hill college to teach starting 10 am, teaches until 2pm, and returns home to work.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 48 credits while only 50 credits replenished; oversubscription was 0.0.",
+        "The shared community fund changed from 958.0 to 960.0 credits after granting 48 credits.",
+        "The group stayed within the replenishment limit this round.",
+        "Mei Lin requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Carmen Ortiz, Francisco Lopez, Hailey Johnson, Jennifer Moore, John Lin, Maria Lopez, Mei Lin. Community members above fair share: none."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast with the family at 8:15 am",
+        "review her lecture notes and prepare for class from 9:00 am to 9:45 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requesting at or below fair share helped keep the group within the replenishment limit."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    }
+  ],
+  "macro_window": [
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "resource_level_before": 1000.0,
+      "resource_level": 958.0,
+      "total_requested": 92,
+      "total_granted": 92,
+      "fair_share": 6.25,
+      "oversubscription": 42,
+      "coordinated": false,
+      "sustainability_score": 0.958,
+      "resource_level_label": "958.0 credits (95.8% of original pool)",
+      "gini": 0.228,
+      "collapsed": false
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "resource_level_before": 958.0,
+      "resource_level": 960.0,
+      "total_requested": 48,
+      "total_granted": 48,
+      "fair_share": 6.25,
+      "oversubscription": 0.0,
+      "coordinated": true,
+      "sustainability_score": 0.96,
+      "resource_level_label": "960.0 credits (96.0% of original pool)",
+      "gini": 0.0,
+      "collapsed": false
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "resource_level_before": 960.0,
+      "resource_level": 962.0,
+      "total_requested": 48,
+      "total_granted": 48,
+      "fair_share": 6.25,
+      "oversubscription": 0.0,
+      "coordinated": true,
+      "sustainability_score": 0.962,
+      "resource_level_label": "962.0 credits (96.2% of original pool)",
+      "gini": 0.0,
+      "collapsed": false
+    }
+  ],
+  "coding_template": {
+    "micro_causes": "",
+    "macro_outcome": "",
+    "analyst_notes": ""
+  }
+}

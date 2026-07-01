@@ -1,0 +1,58 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code": "cd_panel_seed43_baseline_trial_3",
+  "experimental_condition": "baseline",
+  "selected_personas": [
+    "Adam Smith",
+    "Ayesha Khan",
+    "Carlos Gomez",
+    "Hailey Johnson",
+    "Jane Moreno",
+    "Klaus Mueller",
+    "Sam Moore",
+    "Tom Moreno"
+  ],
+  "maze_name": "the_ville",
+  "persona_count": 8,
+  "run_seed": 20260527,
+  "start_time": "February 13, 2023, 00:00:00",
+  "curr_time": "February 13, 2023, 09:16:40",
+  "step": 100,
+  "llm_usage": {
+    "chat_requests": 832,
+    "embedding_requests": 165,
+    "chat_prompt_tokens": 350868,
+    "chat_completion_tokens": 42656,
+    "chat_total_tokens": 393524,
+    "embedding_prompt_tokens": 6039,
+    "embedding_total_tokens": 6039,
+    "estimated_cost_usd": 0.0,
+    "models": {
+      "gpt-4o-mini": {
+        "chat_requests": 832,
+        "embedding_requests": 0,
+        "prompt_tokens": 350868,
+        "completion_tokens": 42656,
+        "total_tokens": 393524
+      },
+      "text-embedding-3-small": {
+        "chat_requests": 0,
+        "embedding_requests": 165,
+        "prompt_tokens": 6039,
+        "completion_tokens": 0,
+        "total_tokens": 6039
+      }
+    },
+    "errors": []
+  },
+  "notes": "MRes experiment run with deterministic persona selection and seeded local RNGs.",
+  "scenario": "commons_dilemma",
+  "trial": 3,
+  "output_dir": "experiment_results_cd_panel_seed43/commons_dilemma/baseline/trial_3",
+  "selection_strategy": "deterministic_sample",
+  "selection_seed": 43,
+  "base_seed": 20260524,
+  "trial_seed": 20260527,
+  "python_random_seed_applied": true,
+  "numpy_random_seed_applied": true
+}

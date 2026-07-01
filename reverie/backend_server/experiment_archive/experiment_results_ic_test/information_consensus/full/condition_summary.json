@@ -1,0 +1,84 @@
+{
+  "trial_count": 1,
+  "collapsed_runs": 0,
+  "collapse_rate": 0.0,
+  "mean_collapse_step": null,
+  "coordination_success_rate": 0.0,
+  "coordination_success_band": "low",
+  "convergence_timeout_rate": 0.0,
+  "outcome_variance": {
+    "sustainability_score": 0.0,
+    "coordination_score": 0.0,
+    "average_gini": 0.0,
+    "demand_pressure": 0.0,
+    "convergence_speed": 0.0
+  },
+  "variance_bands": {
+    "sustainability_score": "high",
+    "coordination_score": "high",
+    "average_gini": "high",
+    "demand_pressure": "high",
+    "convergence_speed": "high"
+  },
+  "metrics": {
+    "sustainability_score": {
+      "mean": 0.804,
+      "std": 0.0,
+      "min": 0.804,
+      "max": 0.804
+    },
+    "coordination_score": {
+      "mean": 0.714,
+      "std": 0.0,
+      "min": 0.714,
+      "max": 0.714
+    },
+    "average_gini": {
+      "mean": 0.512,
+      "std": 0.0,
+      "min": 0.512,
+      "max": 0.512
+    },
+    "demand_pressure": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "final_resource_level": {
+      "mean": 8.0,
+      "std": 0.0,
+      "min": 8.0,
+      "max": 8.0
+    },
+    "total_steps": {
+      "mean": 7.0,
+      "std": 0.0,
+      "min": 7,
+      "max": 7
+    },
+    "convergence_speed": {
+      "mean": 2.0,
+      "std": 0.0,
+      "min": 2,
+      "max": 2
+    }
+  },
+  "failure_modes": {
+    "allocation_inequality": 1,
+    "response_parse_instability": 1,
+    "weak_memory_use": 1
+  },
+  "scenario": "information_consensus",
+  "experimental_condition": "full",
+  "selected_personas": [
+    "Abigail Chen",
+    "Ayesha Khan",
+    "Carlos Gomez",
+    "Francisco Lopez",
+    "Giorgio Rossi",
+    "Sam Moore",
+    "Wolfgang Schulz",
+    "Yuriko Yamamoto"
+  ]
+}

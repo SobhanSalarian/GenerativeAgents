@@ -1,0 +1,75 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code": "commons_experiment_scenario_memory_full_trial_15",
+  "experimental_condition": "full",
+  "selected_personas": [
+    "Abigail Chen",
+    "Ayesha Khan",
+    "Carlos Gomez",
+    "Francisco Lopez",
+    "Giorgio Rossi",
+    "Sam Moore",
+    "Wolfgang Schulz",
+    "Yuriko Yamamoto"
+  ],
+  "maze_name": "the_ville",
+  "persona_count": 8,
+  "run_seed": 20260445,
+  "start_time": "February 13, 2023, 00:00:00",
+  "curr_time": "February 13, 2023, 09:16:40",
+  "step": 100,
+  "llm_usage": {
+    "chat_requests": 1288,
+    "embedding_requests": 2151,
+    "chat_prompt_tokens": 841023,
+    "chat_completion_tokens": 86201,
+    "chat_total_tokens": 927224,
+    "embedding_prompt_tokens": 73033,
+    "embedding_total_tokens": 73033,
+    "estimated_cost_usd": 0.0,
+    "models": {
+      "text-embedding-3-small": {
+        "chat_requests": 0,
+        "embedding_requests": 2151,
+        "prompt_tokens": 73033,
+        "completion_tokens": 0,
+        "total_tokens": 73033
+      },
+      "gpt-4o-mini": {
+        "chat_requests": 1288,
+        "embedding_requests": 0,
+        "prompt_tokens": 841023,
+        "completion_tokens": 86201,
+        "total_tokens": 927224
+      }
+    },
+    "errors": [
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-IQisoVUTggJmjBp3naEET12n on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-IQisoVUTggJmjBp3naEET12n on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      }
+    ]
+  },
+  "notes": "MRes experiment run with deterministic persona selection and seeded local RNGs.",
+  "scenario": "commons_dilemma",
+  "trial": 15,
+  "output_dir": "experiment_results_scenario_memory/commons_dilemma/full/trial_15",
+  "selection_strategy": "deterministic_sample",
+  "selection_seed": 42,
+  "base_seed": 20260430,
+  "trial_seed": 20260445,
+  "python_random_seed_applied": true,
+  "numpy_random_seed_applied": true,
+  "human_evaluation_exports": {
+    "packets_path": "experiment_results_scenario_memory/commons_dilemma/full/trial_15/human_eval_packets.jsonl",
+    "blind_key_path": "experiment_results_scenario_memory/commons_dilemma/full/trial_15/human_eval_blind_key.json",
+    "ratings_path": "experiment_results_scenario_memory/commons_dilemma/full/trial_15/human_eval_ratings.csv",
+    "packet_count": 24
+  }
+}

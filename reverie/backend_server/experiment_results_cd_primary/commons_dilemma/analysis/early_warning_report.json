@@ -1,0 +1,1121 @@
+{
+  "H7": {
+    "hypothesis": "H7",
+    "description": "Coordination failure is predictable from first-K-step micro traces, beyond what architectural condition alone explains.",
+    "scenario": "commons_dilemma",
+    "label_key": "coordination_success",
+    "k_results": {
+      "5": {
+        "n": 80,
+        "n_failure": 63,
+        "n_success": 17,
+        "precision": 0.8493,
+        "recall": 0.9841,
+        "f1": 0.9118,
+        "auc_roc": 0.7965,
+        "tp": 62,
+        "fp": 11,
+        "tn": 6,
+        "fn": 1,
+        "k": 5
+      },
+      "10": {
+        "n": 80,
+        "n_failure": 63,
+        "n_success": 17,
+        "precision": 0.8857,
+        "recall": 0.9841,
+        "f1": 0.9323,
+        "auc_roc": 0.8562,
+        "tp": 62,
+        "fp": 8,
+        "tn": 9,
+        "fn": 1,
+        "k": 10
+      },
+      "15": {
+        "n": 80,
+        "n_failure": 63,
+        "n_success": 17,
+        "precision": 0.8857,
+        "recall": 0.9841,
+        "f1": 0.9323,
+        "auc_roc": 0.8964,
+        "tp": 62,
+        "fp": 8,
+        "tn": 9,
+        "fn": 1,
+        "k": 15
+      },
+      "20": {
+        "n": 80,
+        "n_failure": 63,
+        "n_success": 17,
+        "precision": 0.9265,
+        "recall": 1.0,
+        "f1": 0.9618,
+        "auc_roc": 0.9188,
+        "tp": 63,
+        "fp": 5,
+        "tn": 12,
+        "fn": 0,
+        "k": 20
+      }
+    },
+    "within_condition": {
+      "baseline": {
+        "status": "no_variance",
+        "note": "All 20 trials have label=1; within-condition test uninformative.",
+        "n": 20
+      },
+      "full": {
+        "n": 20,
+        "n_failure": 6,
+        "n_success": 14,
+        "precision": 0.4286,
+        "recall": 0.5,
+        "f1": 0.4615,
+        "auc_roc": 0.7857,
+        "tp": 3,
+        "fp": 4,
+        "tn": 10,
+        "fn": 3,
+        "condition": "full",
+        "k": 20
+      },
+      "memory": {
+        "status": "insufficient_variance",
+        "n": 19,
+        "note": "Only one class present \u2014 metrics undefined.",
+        "condition": "memory",
+        "k": 20
+      },
+      "memory_planning": {
+        "n": 20,
+        "n_failure": 18,
+        "n_success": 2,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9474,
+        "auc_roc": 0.6111,
+        "tp": 18,
+        "fp": 2,
+        "tn": 0,
+        "fn": 0,
+        "condition": "memory_planning",
+        "k": 20
+      }
+    },
+    "lead_time": 5,
+    "feature_importances": {
+      "mean_coordinated_rate": 1.0731,
+      "plan_citation_rate": 0.8024,
+      "memory_citation_rate": 0.4349,
+      "request_ratio_slope": 0.3239,
+      "mean_gini": 0.2712,
+      "sustainability_slope": 0.1179,
+      "resource_slope": 0.1179,
+      "mean_oversubscription": 0.0636,
+      "mean_sustainability": 0.0515,
+      "resource_at_step_k": 0.0444,
+      "mean_request_ratio": 0.0444,
+      "oversubscription_slope": 0.0334,
+      "parse_error_rate": 0.0
+    },
+    "note": "Best pooled AUC at K=20: 0.9188 (P=0.9265, R=1.0, F1=0.9618). Within-condition (full): AUC=0.7857, P=0.4286, R=0.5. Within-condition (memory_planning): AUC=0.6111, P=0.9, R=1.0. Lead time (P>0.6 & R>0.6 first met): K=5."
+  },
+  "C4": {
+    "contribution": "C4",
+    "description": "Recurring micro-level failure patterns linking believability breakdown to macro-level coordination failure.",
+    "n_failed_trials": 63,
+    "failure_types": {
+      "D_persistent_oversubscription": {
+        "description": "Requests consistently and heavily exceed replenishment; resource stressed throughout; coordination threshold not met.",
+        "n_trials": 38,
+        "conditions": [
+          "baseline",
+          "memory",
+          "memory_planning"
+        ],
+        "mean_believability": 0.4586,
+        "representative_trial": "baseline/trial_0",
+        "representative_details": {
+          "sust_slope": -0.0036,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 62.16,
+          "mean_ratio": 2.243,
+          "collapse_step": null,
+          "n_steps": 100
+        }
+      },
+      "E_subthreshold_coordination_failure": {
+        "description": "Agents request just above fair share; no collapse, but cumulative pressure keeps coordination below threshold. Typical of high-believability gap cases (full condition).",
+        "n_trials": 25,
+        "conditions": [
+          "full",
+          "memory",
+          "memory_planning"
+        ],
+        "mean_believability": 0.641,
+        "representative_trial": "full/trial_0",
+        "representative_details": {
+          "sust_slope": -0.0021,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 3.78,
+          "mean_ratio": 1.076,
+          "collapse_step": null,
+          "n_steps": 100
+        }
+      }
+    },
+    "per_trial": [
+      {
+        "condition": "baseline",
+        "trial": "trial_0",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0036,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 62.16,
+          "mean_ratio": 2.243,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3584
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_1",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0034,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.36,
+          "mean_ratio": 1.847,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3469
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_10",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0047,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 30.28,
+          "mean_ratio": 1.606,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3499
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_11",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0057,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 28.53,
+          "mean_ratio": 1.571,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3628
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_12",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0045,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 26.55,
+          "mean_ratio": 1.531,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.35
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_13",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0033,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 50.54,
+          "mean_ratio": 2.011,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3526
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_14",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0051,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 39.1,
+          "mean_ratio": 1.782,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3511
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_15",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0029,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 35.98,
+          "mean_ratio": 1.72,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3274
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_16",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0076,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 24.64,
+          "mean_ratio": 1.493,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3561
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_17",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0045,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 29.43,
+          "mean_ratio": 1.589,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3461
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_18",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0031,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 54.5,
+          "mean_ratio": 2.09,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3491
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_19",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.005,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 40.23,
+          "mean_ratio": 1.805,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3506
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_2",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0057,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 25.5,
+          "mean_ratio": 1.51,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3426
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_3",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0047,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 35.04,
+          "mean_ratio": 1.701,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.345
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_4",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0038,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 34.5,
+          "mean_ratio": 1.69,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3415
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_5",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0039,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 43.53,
+          "mean_ratio": 1.871,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.345
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_6",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0042,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 29.66,
+          "mean_ratio": 1.593,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3381
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_7",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0031,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 66.72,
+          "mean_ratio": 2.334,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3434
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_8",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0031,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 46.1,
+          "mean_ratio": 1.922,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.3367
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_9",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0062,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 25.18,
+          "mean_ratio": 1.504,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.348
+      },
+      {
+        "condition": "full",
+        "trial": "trial_0",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0021,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 3.78,
+          "mean_ratio": 1.076,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6466
+      },
+      {
+        "condition": "full",
+        "trial": "trial_1",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.002,
+          "early_coord": 0.0,
+          "late_coord": 1.0,
+          "mean_osub": 2.68,
+          "mean_ratio": 1.054,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6772
+      },
+      {
+        "condition": "full",
+        "trial": "trial_11",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": 0.0009,
+          "early_coord": 0.0,
+          "late_coord": 1.0,
+          "mean_osub": 1.34,
+          "mean_ratio": 1.001,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6856
+      },
+      {
+        "condition": "full",
+        "trial": "trial_14",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": 0.0002,
+          "early_coord": 0.0,
+          "late_coord": 1.0,
+          "mean_osub": 1.75,
+          "mean_ratio": 1.012,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6706
+      },
+      {
+        "condition": "full",
+        "trial": "trial_18",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": 0.0005,
+          "early_coord": 0.0,
+          "late_coord": 1.0,
+          "mean_osub": 1.66,
+          "mean_ratio": 1.01,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.667
+      },
+      {
+        "condition": "full",
+        "trial": "trial_3",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.002,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 2.5,
+          "mean_ratio": 1.05,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6979
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_0",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.005,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.2,
+          "mean_ratio": 1.844,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5524
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_1",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.005,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.24,
+          "mean_ratio": 1.845,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5599
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_10",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0101,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 12.41,
+          "mean_ratio": 1.248,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5483
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_11",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0102,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 12.32,
+          "mean_ratio": 1.246,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5329
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_12",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0057,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 8.14,
+          "mean_ratio": 1.145,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5445
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_13",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0048,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.36,
+          "mean_ratio": 1.847,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.545
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_14",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0082,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 22.22,
+          "mean_ratio": 1.444,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.541
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_15",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0075,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 22.75,
+          "mean_ratio": 1.455,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5234
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_16",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0099,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 16.12,
+          "mean_ratio": 1.322,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5311
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_17",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0046,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 46.22,
+          "mean_ratio": 1.924,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5507
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_18",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0049,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.3,
+          "mean_ratio": 1.846,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5471
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_19",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0101,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 12.41,
+          "mean_ratio": 1.248,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5535
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_2",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0103,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 12.23,
+          "mean_ratio": 1.245,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5446
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_4",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0047,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.49,
+          "mean_ratio": 1.85,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5404
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_5",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0048,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.43,
+          "mean_ratio": 1.849,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5427
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_6",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0049,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.35,
+          "mean_ratio": 1.847,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5471
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_7",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0048,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.38,
+          "mean_ratio": 1.848,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5614
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_8",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0059,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 32.56,
+          "mean_ratio": 1.651,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5393
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_9",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.005,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 42.16,
+          "mean_ratio": 1.843,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.5594
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_1",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.008,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 17.52,
+          "mean_ratio": 1.35,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6575
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_10",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0074,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 22.82,
+          "mean_ratio": 1.456,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6851
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_11",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0096,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 16.3,
+          "mean_ratio": 1.326,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6839
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_12",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0081,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 18.65,
+          "mean_ratio": 1.373,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6688
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_13",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0084,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 16.23,
+          "mean_ratio": 1.325,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6591
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_14",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0103,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 12.27,
+          "mean_ratio": 1.245,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.674
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_16",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0098,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 21.81,
+          "mean_ratio": 1.436,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6541
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_17",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.01,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 18.56,
+          "mean_ratio": 1.371,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6811
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_18",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.009,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 16.86,
+          "mean_ratio": 1.337,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6575
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_19",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.007,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 7.68,
+          "mean_ratio": 1.154,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6671
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_2",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0074,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 15.18,
+          "mean_ratio": 1.304,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6587
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_3",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0049,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 34.28,
+          "mean_ratio": 1.686,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6799
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_4",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0085,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 18.17,
+          "mean_ratio": 1.363,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6904
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_5",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0103,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 12.16,
+          "mean_ratio": 1.243,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6785
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_6",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.008,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 21.64,
+          "mean_ratio": 1.433,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6746
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_7",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.0089,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 13.52,
+          "mean_ratio": 1.27,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.662
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_8",
+        "failure_type": "D_persistent_oversubscription",
+        "details": {
+          "sust_slope": -0.0079,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 22.44,
+          "mean_ratio": 1.449,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.6809
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_9",
+        "failure_type": "E_subthreshold_coordination_failure",
+        "details": {
+          "sust_slope": -0.01,
+          "early_coord": 0.0,
+          "late_coord": 0.0,
+          "mean_osub": 12.54,
+          "mean_ratio": 1.251,
+          "collapse_step": null,
+          "n_steps": 100
+        },
+        "believability": 0.686
+      }
+    ]
+  }
+}

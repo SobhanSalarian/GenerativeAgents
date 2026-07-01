@@ -1,0 +1,244 @@
+{
+  "average_request": {
+    "Adam Smith": 6.54,
+    "Arthur Burton": 6.04,
+    "Carlos Gomez": 6.12,
+    "Francisco Lopez": 6.14,
+    "Jennifer Moore": 6.04,
+    "Maria Lopez": 6.04,
+    "Rajiv Patel": 6.04,
+    "Tamara Taylor": 6.04
+  },
+  "consistency_score": {
+    "Adam Smith": 0.178,
+    "Arthur Burton": 0.934,
+    "Carlos Gomez": 0.585,
+    "Francisco Lopez": 0.773,
+    "Jennifer Moore": 0.934,
+    "Maria Lopez": 0.934,
+    "Rajiv Patel": 0.934,
+    "Tamara Taylor": 0.934
+  },
+  "request_consistency": {
+    "Adam Smith": 0.178,
+    "Arthur Burton": 0.934,
+    "Carlos Gomez": 0.585,
+    "Francisco Lopez": 0.773,
+    "Jennifer Moore": 0.934,
+    "Maria Lopez": 0.934,
+    "Rajiv Patel": 0.934,
+    "Tamara Taylor": 0.934
+  },
+  "cooperation_rate": {
+    "Adam Smith": 0.99,
+    "Arthur Burton": 0.99,
+    "Carlos Gomez": 0.99,
+    "Francisco Lopez": 0.99,
+    "Jennifer Moore": 0.99,
+    "Maria Lopez": 0.99,
+    "Rajiv Patel": 0.99,
+    "Tamara Taylor": 0.99
+  },
+  "profile_alignment": {
+    "Adam Smith": 0.187,
+    "Arthur Burton": 0.276,
+    "Carlos Gomez": 0.198,
+    "Francisco Lopez": 0.195,
+    "Jennifer Moore": 0.236,
+    "Maria Lopez": 0.242,
+    "Rajiv Patel": 0.23,
+    "Tamara Taylor": 0.246
+  },
+  "behavioural_consistency": {
+    "Tamara Taylor": 0.704,
+    "Francisco Lopez": 0.614,
+    "Arthur Burton": 0.715,
+    "Rajiv Patel": 0.699,
+    "Jennifer Moore": 0.701,
+    "Adam Smith": 0.344,
+    "Carlos Gomez": 0.531,
+    "Maria Lopez": 0.703
+  },
+  "behavioural_consistency_band": {
+    "Tamara Taylor": "high",
+    "Francisco Lopez": "medium",
+    "Arthur Burton": "high",
+    "Rajiv Patel": "medium",
+    "Jennifer Moore": "high",
+    "Adam Smith": "low",
+    "Carlos Gomez": "medium",
+    "Maria Lopez": "high"
+  },
+  "memory_reference_rate": {
+    "Adam Smith": 0.98,
+    "Arthur Burton": 1.0,
+    "Carlos Gomez": 0.93,
+    "Francisco Lopez": 0.99,
+    "Jennifer Moore": 1.0,
+    "Maria Lopez": 1.0,
+    "Rajiv Patel": 0.95,
+    "Tamara Taylor": 1.0
+  },
+  "memory_reference_relevance": {
+    "Adam Smith": 0.582,
+    "Arthur Burton": 0.46,
+    "Carlos Gomez": 0.49,
+    "Francisco Lopez": 0.503,
+    "Jennifer Moore": 0.438,
+    "Maria Lopez": 0.505,
+    "Rajiv Patel": 0.498,
+    "Tamara Taylor": 0.586
+  },
+  "memory_coherence": {
+    "Adam Smith": 0.741,
+    "Arthur Burton": 0.672,
+    "Carlos Gomez": 0.662,
+    "Francisco Lopez": 0.694,
+    "Jennifer Moore": 0.659,
+    "Maria Lopez": 0.699,
+    "Rajiv Patel": 0.679,
+    "Tamara Taylor": 0.748
+  },
+  "memory_coherence_band": {
+    "Adam Smith": "high",
+    "Arthur Burton": "high",
+    "Carlos Gomez": "high",
+    "Francisco Lopez": "high",
+    "Jennifer Moore": "high",
+    "Maria Lopez": "high",
+    "Rajiv Patel": "high",
+    "Tamara Taylor": "high"
+  },
+  "planning_reference_rate": {
+    "Adam Smith": 1.0,
+    "Arthur Burton": 1.0,
+    "Carlos Gomez": 1.0,
+    "Francisco Lopez": 1.0,
+    "Jennifer Moore": 1.0,
+    "Maria Lopez": 1.0,
+    "Rajiv Patel": 1.0,
+    "Tamara Taylor": 1.0
+  },
+  "planning_alignment": {
+    "Adam Smith": 0.261,
+    "Arthur Burton": 0.137,
+    "Carlos Gomez": 0.389,
+    "Francisco Lopez": 0.398,
+    "Jennifer Moore": 0.315,
+    "Maria Lopez": 0.208,
+    "Rajiv Patel": 0.15,
+    "Tamara Taylor": 0.303
+  },
+  "planning_plausibility": {
+    "Adam Smith": 0.403,
+    "Arthur Burton": 0.366,
+    "Carlos Gomez": 0.723,
+    "Francisco Lopez": 0.663,
+    "Jennifer Moore": 0.607,
+    "Maria Lopez": 0.45,
+    "Rajiv Patel": 0.37,
+    "Tamara Taylor": 0.666
+  },
+  "planning_plausibility_llm": {
+    "Adam Smith": 0.25,
+    "Arthur Burton": 0.25,
+    "Carlos Gomez": 0.812,
+    "Francisco Lopez": 0.688,
+    "Jennifer Moore": 0.625,
+    "Maria Lopez": 0.375,
+    "Rajiv Patel": 0.25,
+    "Tamara Taylor": 0.75
+  },
+  "planning_plausibility_rubric": {
+    "Adam Smith": 2.612,
+    "Arthur Burton": 2.464,
+    "Carlos Gomez": 3.892,
+    "Francisco Lopez": 3.652,
+    "Jennifer Moore": 3.428,
+    "Maria Lopez": 2.8,
+    "Rajiv Patel": 2.48,
+    "Tamara Taylor": 3.664
+  },
+  "planning_plausibility_band": {
+    "Adam Smith": "medium",
+    "Arthur Burton": "low",
+    "Carlos Gomez": "high",
+    "Francisco Lopez": "medium",
+    "Jennifer Moore": "medium",
+    "Maria Lopez": "medium",
+    "Rajiv Patel": "low",
+    "Tamara Taylor": "medium"
+  },
+  "response_naturalness": {
+    "Adam Smith": 0.91,
+    "Arthur Burton": 0.94,
+    "Carlos Gomez": 0.97,
+    "Francisco Lopez": 0.955,
+    "Jennifer Moore": 0.94,
+    "Maria Lopez": 0.94,
+    "Rajiv Patel": 0.955,
+    "Tamara Taylor": 0.97
+  },
+  "response_naturalness_proxy": {
+    "Adam Smith": 0.91,
+    "Arthur Burton": 0.94,
+    "Carlos Gomez": 0.97,
+    "Francisco Lopez": 0.955,
+    "Jennifer Moore": 0.94,
+    "Maria Lopez": 0.94,
+    "Rajiv Patel": 0.955,
+    "Tamara Taylor": 0.97
+  },
+  "response_naturalness_llm": {
+    "Adam Smith": 0.85,
+    "Arthur Burton": 0.9,
+    "Carlos Gomez": 0.95,
+    "Francisco Lopez": 0.925,
+    "Jennifer Moore": 0.9,
+    "Maria Lopez": 0.9,
+    "Rajiv Patel": 0.925,
+    "Tamara Taylor": 0.95
+  },
+  "response_naturalness_band": {
+    "Adam Smith": "high",
+    "Arthur Burton": "high",
+    "Carlos Gomez": "high",
+    "Francisco Lopez": "high",
+    "Jennifer Moore": "high",
+    "Maria Lopez": "high",
+    "Rajiv Patel": "high",
+    "Tamara Taylor": "high"
+  },
+  "composite_believability": {
+    "Tamara Taylor": 0.759,
+    "Francisco Lopez": 0.714,
+    "Arthur Burton": 0.662,
+    "Rajiv Patel": 0.663,
+    "Jennifer Moore": 0.715,
+    "Adam Smith": 0.571,
+    "Carlos Gomez": 0.7,
+    "Maria Lopez": 0.686
+  },
+  "composite_believability_band": {
+    "Tamara Taylor": "high",
+    "Francisco Lopez": "high",
+    "Arthur Burton": "medium",
+    "Rajiv Patel": "medium",
+    "Jennifer Moore": "high",
+    "Adam Smith": "medium",
+    "Carlos Gomez": "high",
+    "Maria Lopez": "medium"
+  },
+  "believability_proxy": {
+    "Tamara Taylor": 0.759,
+    "Francisco Lopez": 0.714,
+    "Arthur Burton": 0.662,
+    "Rajiv Patel": 0.663,
+    "Jennifer Moore": 0.715,
+    "Adam Smith": 0.571,
+    "Carlos Gomez": 0.7,
+    "Maria Lopez": 0.686
+  },
+  "llm_judges_used": true,
+  "embedding_method": "cosine"
+}

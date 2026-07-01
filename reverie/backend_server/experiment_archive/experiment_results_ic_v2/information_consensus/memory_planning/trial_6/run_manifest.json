@@ -1,0 +1,64 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code": "ic_v2_memory_planning_trial_6",
+  "experimental_condition": "memory_planning",
+  "selected_personas": [
+    "Abigail Chen",
+    "Ayesha Khan",
+    "Carlos Gomez",
+    "Francisco Lopez",
+    "Giorgio Rossi",
+    "Sam Moore",
+    "Wolfgang Schulz",
+    "Yuriko Yamamoto"
+  ],
+  "maze_name": "the_ville",
+  "persona_count": 8,
+  "run_seed": 20260516,
+  "start_time": "February 13, 2023, 00:00:00",
+  "curr_time": "February 13, 2023, 09:05:00",
+  "step": 30,
+  "llm_usage": {
+    "chat_requests": 582,
+    "embedding_requests": 1319,
+    "chat_prompt_tokens": 411949,
+    "chat_completion_tokens": 39796,
+    "chat_total_tokens": 451745,
+    "embedding_prompt_tokens": 43012,
+    "embedding_total_tokens": 43012,
+    "estimated_cost_usd": 0.0,
+    "models": {
+      "text-embedding-3-small": {
+        "chat_requests": 0,
+        "embedding_requests": 1319,
+        "prompt_tokens": 43012,
+        "completion_tokens": 0,
+        "total_tokens": 43012
+      },
+      "gpt-4o-mini": {
+        "chat_requests": 582,
+        "embedding_requests": 0,
+        "prompt_tokens": 411949,
+        "completion_tokens": 39796,
+        "total_tokens": 451745
+      }
+    },
+    "errors": []
+  },
+  "notes": "MRes experiment run with deterministic persona selection and seeded local RNGs.",
+  "scenario": "information_consensus",
+  "trial": 6,
+  "output_dir": "experiment_results_ic_v2/information_consensus/memory_planning/trial_6",
+  "selection_strategy": "deterministic_sample",
+  "selection_seed": 42,
+  "base_seed": 20260510,
+  "trial_seed": 20260516,
+  "python_random_seed_applied": true,
+  "numpy_random_seed_applied": true,
+  "human_evaluation_exports": {
+    "packets_path": "experiment_results_ic_v2/information_consensus/memory_planning/trial_6/human_eval_packets.jsonl",
+    "blind_key_path": "experiment_results_ic_v2/information_consensus/memory_planning/trial_6/human_eval_blind_key.json",
+    "ratings_path": "experiment_results_ic_v2/information_consensus/memory_planning/trial_6/human_eval_ratings.csv",
+    "packet_count": 24
+  }
+}

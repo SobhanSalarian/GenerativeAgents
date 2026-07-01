@@ -1,0 +1,170 @@
+{
+  "decision_f8feaa0d4d": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_5225646c8e": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_48e3dde3e4": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_b845119902": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_2b487fbbce": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_a3139fc088": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_7cb3bc3118": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_9217a252ce": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_b3f241977f": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_a90addcc30": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_d9c61ef9bd": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_6dd21587f8": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_bf50a27ce0": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_98e0ed28e3": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_0232373e56": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_c870ffa846": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_06b8a69460": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_6a594887c9": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_28fd3b9d85": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_d367ead678": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_492d3b8618": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_f0e09a746a": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_90674e8540": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  },
+  "decision_03dc24a10f": {
+    "scenario": "information_consensus",
+    "trial": 5,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "memory",
+    "sim_code": "ic_v3_memory_trial_5"
+  }
+}

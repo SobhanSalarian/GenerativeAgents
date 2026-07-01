@@ -1,0 +1,1025 @@
+{
+  "failure_detected": true,
+  "critical_step": 0,
+  "likely_causes": [
+    "collective_over_demand"
+  ],
+  "agent_contributions": {
+    "Abigail Chen": {
+      "requested": 32,
+      "granted": 32,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Ayesha Khan": {
+      "requested": 18,
+      "granted": 18,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Carlos Gomez": {
+      "requested": 40,
+      "granted": 40,
+      "parse_errors": 0,
+      "memory_references": 2,
+      "plan_references": 3
+    },
+    "Francisco Lopez": {
+      "requested": 32,
+      "granted": 32,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Giorgio Rossi": {
+      "requested": 26,
+      "granted": 26,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Sam Moore": {
+      "requested": 32,
+      "granted": 32,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    },
+    "Wolfgang Schulz": {
+      "requested": 18,
+      "granted": 18,
+      "parse_errors": 0,
+      "memory_references": 2,
+      "plan_references": 3
+    },
+    "Yuriko Yamamoto": {
+      "requested": 22,
+      "granted": 22,
+      "parse_errors": 0,
+      "memory_references": 3,
+      "plan_references": 3
+    }
+  },
+  "dominant_agents": [
+    "Carlos Gomez",
+    "Abigail Chen",
+    "Francisco Lopez"
+  ],
+  "critical_window": [
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Abigail Chen",
+      "requested": 20,
+      "reasoning": "I need to invest in new tools and resources to enhance my animation project, while still leaving enough for others in the community.",
+      "memory_reference": "I recall last month when my investment in animation software significantly improved my work quality.",
+      "plan_reference": "This aligns with my goal to integrate technology into my art effectively.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 3.2,
+      "granted": 20,
+      "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "start working on the animation project for the client at 9:00 am",
+        "take a break and have lunch at 12:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Ayesha Khan",
+      "requested": 6,
+      "reasoning": "I need a fair share to support my research on Shakespeare without overextending my request and impacting others in the community.",
+      "memory_reference": "In previous discussions, I've learned that collaboration and fairness are crucial for our community's success.",
+      "plan_reference": "This aligns with my goal of balancing my project needs while respecting the contributions of all members.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "go to the library at Oak Hill College for classes from 10:00 am to 2:00 pm",
+        "have lunch at 12:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Carlos Gomez",
+      "requested": 20,
+      "reasoning": "I need a more substantial amount to invest in resources that will improve my poetry collection while still allowing others to benefit from the fund.",
+      "memory_reference": "",
+      "plan_reference": "This aligns with my goal to enhance my writing skills and ultimately produce a better body of work.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 3.2,
+      "granted": 20,
+      "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "attend a creative writing workshop from 10:00 am to 12:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Francisco Lopez",
+      "requested": 20,
+      "reasoning": "I need some extra credits to invest in resources for improving my web series and to cover my recent exploration of improvisational classes.",
+      "memory_reference": "Last time, I felt constrained by not having enough budget to enhance my projects.",
+      "plan_reference": "This decision will help me pursue my creative goals while maintaining a balance within our community.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 3.2,
+      "granted": 20,
+      "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "spend some time reviewing script notes for the web series from 9:00 am to 10:30 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Giorgio Rossi",
+      "requested": 10,
+      "reasoning": "I need a small increase to support my research on mathematical patterns in nature, while still being mindful of others in the community.",
+      "memory_reference": "I recall a previous discussion where several members expressed the importance of maintaining fairness.",
+      "plan_reference": "This decision aligns with my ongoing project while ensuring I leave room for my fellow community members.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast and review recent mathematical articles from 8:30 am to 9:30 am",
+        "work on his research project focused on mathematical patterns in nature from 10:00 am to 12:00 pm"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Sam Moore",
+      "requested": 20,
+      "reasoning": "I believe this amount will help fund my campaign efforts as I run for mayor, while still allowing others in the community to benefit from the remaining credits.",
+      "memory_reference": "Reflecting on my time as a navy officer, I know the importance of teamwork and ensuring others have resources too.",
+      "plan_reference": "This aligns with my strategy to gain support and visibility among community members during the campaign.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 3.2,
+      "granted": 20,
+      "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 5:00 am",
+        "have breakfast with Jennifer at 7:00 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Wolfgang Schulz",
+      "requested": 6,
+      "reasoning": "I want to request a fair share to support my studies and training while ensuring there's still enough for others in our community.",
+      "memory_reference": "",
+      "plan_reference": "This aligns with my goal of balancing academics and athletics effectively.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "go for a run at the park from 5:30 am to 6:00 am",
+        "have breakfast at 6:15 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "persona": "Yuriko Yamamoto",
+      "requested": 10,
+      "reasoning": "I need a small amount to assist with resources for the tax compliance project, ensuring I can deliver quality work while still leaving ample credits for others.",
+      "memory_reference": "I recall a previous project where additional resources significantly improved my output.",
+      "plan_reference": "This request aligns with my goal of completing my project effectively while being mindful of the community fund.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 1000.0,
+      "pool_percent_before": 100.0,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": false,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "start work on the tax compliance project at 9:00 am",
+        "take a break and have a light snack at 11:00 am"
+      ],
+      "scenario_reflections": [],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Abigail Chen",
+      "requested": 6,
+      "reasoning": "I want to request a fair share to support my ongoing animation project while ensuring that I do not overextend the community resources.",
+      "memory_reference": "Previously, my higher requests have increased pressure on the shared pool.",
+      "plan_reference": "This will allow me to continue my work without compromising others' ability to access credits.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 938.0,
+      "pool_percent_before": 93.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 112 credits while only 50 credits replenished; oversubscription was 62.",
+        "The shared community fund changed from 1000.0 to 938.0 credits after granting 112 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Abigail Chen requested 20 credits, 3.2 times the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Wolfgang Schulz. Community members above fair share: Abigail Chen, Carlos Gomez, Francisco Lopez, Giorgio Rossi, Sam Moore, Yuriko Yamamoto."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "start working on the animation project for the client at 9:00 am",
+        "take a break and have lunch at 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Ayesha Khan",
+      "requested": 6,
+      "reasoning": "I believe requesting the fair share of 6 credits will support my research without disproportionately affecting the community fund, ensuring everyone has access.",
+      "memory_reference": "I recall the oversubscription from the last round and want to avoid depleting our resources.",
+      "plan_reference": "This amount aligns with my goal of maintaining a collaborative environment while pursuing my thesis.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 938.0,
+      "pool_percent_before": 93.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 112 credits while only 50 credits replenished; oversubscription was 62.",
+        "The shared community fund changed from 1000.0 to 938.0 credits after granting 112 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Ayesha Khan requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Wolfgang Schulz. Community members above fair share: Abigail Chen, Carlos Gomez, Francisco Lopez, Giorgio Rossi, Sam Moore, Yuriko Yamamoto."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "go to the library at Oak Hill College for classes from 10:00 am to 2:00 pm",
+        "have lunch at 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Carlos Gomez",
+      "requested": 10,
+      "reasoning": "I'm feeling the pressure to support my poetry collection and workshop participation, but I'm aware that I need to leave a fair share for others in the community.",
+      "memory_reference": "I recall the last round where the oversubscription caused tension in the group.",
+      "plan_reference": "Requesting 10 credits will help me balance my needs while respecting the community's resources.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 938.0,
+      "pool_percent_before": 93.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 112 credits while only 50 credits replenished; oversubscription was 62.",
+        "The shared community fund changed from 1000.0 to 938.0 credits after granting 112 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Carlos Gomez requested 20 credits, 3.2 times the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Wolfgang Schulz. Community members above fair share: Abigail Chen, Carlos Gomez, Francisco Lopez, Giorgio Rossi, Sam Moore, Yuriko Yamamoto."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "attend a creative writing workshop from 10:00 am to 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Francisco Lopez",
+      "requested": 6,
+      "reasoning": "I'm requesting a fair share amount to support my current projects while ensuring there's enough left for others in the community.",
+      "memory_reference": "I recall that oversubscribing puts pressure on the community fund.",
+      "plan_reference": "This decision aligns with my goal of maintaining a collaborative atmosphere in our shared living space.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 938.0,
+      "pool_percent_before": 93.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 112 credits while only 50 credits replenished; oversubscription was 62.",
+        "The shared community fund changed from 1000.0 to 938.0 credits after granting 112 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Francisco Lopez requested 20 credits, 3.2 times the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Wolfgang Schulz. Community members above fair share: Abigail Chen, Carlos Gomez, Francisco Lopez, Giorgio Rossi, Sam Moore, Yuriko Yamamoto."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "spend some time reviewing script notes for the web series from 9:00 am to 10:30 am"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Giorgio Rossi",
+      "requested": 10,
+      "reasoning": "I need a slightly above fair share to support my research project, but I remain aware of the community's needs and will not overextend.",
+      "memory_reference": "I recall the oversubscription from the last round and want to avoid contributing to that issue again.",
+      "plan_reference": "This amount will help me continue my work on mathematical patterns in nature while being considerate of other community members.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 938.0,
+      "pool_percent_before": 93.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 112 credits while only 50 credits replenished; oversubscription was 62.",
+        "The shared community fund changed from 1000.0 to 938.0 credits after granting 112 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Giorgio Rossi requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Wolfgang Schulz. Community members above fair share: Abigail Chen, Carlos Gomez, Francisco Lopez, Giorgio Rossi, Sam Moore, Yuriko Yamamoto."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast and review recent mathematical articles from 8:30 am to 9:30 am",
+        "work on his research project focused on mathematical patterns in nature from 10:00 am to 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Sam Moore",
+      "requested": 6,
+      "reasoning": "I want to request a fair share of credits to support my upcoming campaign for mayor without putting too much pressure on the community fund.",
+      "memory_reference": "I recall a time in the Navy where teamwork and fairness made all the difference in our success.",
+      "plan_reference": "This modest request aligns with my goal of being a supportive community member as I pursue my political aspirations.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 938.0,
+      "pool_percent_before": 93.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 112 credits while only 50 credits replenished; oversubscription was 62.",
+        "The shared community fund changed from 1000.0 to 938.0 credits after granting 112 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Sam Moore requested 20 credits, 3.2 times the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Wolfgang Schulz. Community members above fair share: Abigail Chen, Carlos Gomez, Francisco Lopez, Giorgio Rossi, Sam Moore, Yuriko Yamamoto."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 5:00 am",
+        "have breakfast with Jennifer at 7:00 am"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Wolfgang Schulz",
+      "requested": 6,
+      "reasoning": "I will request the fair share of 6 credits to support my academic and athletic training needs while ensuring that I leave enough for others in the community.",
+      "memory_reference": "I recall that oversubscribing in the past has led to issues within the group.",
+      "plan_reference": "This request aligns with my goal of efficiently managing my studies and competition training.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 938.0,
+      "pool_percent_before": 93.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 112 credits while only 50 credits replenished; oversubscription was 62.",
+        "The shared community fund changed from 1000.0 to 938.0 credits after granting 112 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Wolfgang Schulz requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Wolfgang Schulz. Community members above fair share: Abigail Chen, Carlos Gomez, Francisco Lopez, Giorgio Rossi, Sam Moore, Yuriko Yamamoto."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "go for a run at the park from 5:30 am to 6:00 am",
+        "have breakfast at 6:15 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "persona": "Yuriko Yamamoto",
+      "requested": 6,
+      "reasoning": "I want to request a fair share to support my project while ensuring there's still sufficient funding left for other members of the community.",
+      "memory_reference": "I recall the last round where our oversubscription made it difficult for everyone to get what they needed.",
+      "plan_reference": "This request fits my goal of being reliable and considerate of the community's overall needs.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 938.0,
+      "pool_percent_before": 93.8,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 0, the group requested 112 credits while only 50 credits replenished; oversubscription was 62.",
+        "The shared community fund changed from 1000.0 to 938.0 credits after granting 112 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Yuriko Yamamoto requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: Ayesha Khan, Wolfgang Schulz. Community members above fair share: Abigail Chen, Carlos Gomez, Francisco Lopez, Giorgio Rossi, Sam Moore, Yuriko Yamamoto."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "start work on the tax compliance project at 9:00 am",
+        "take a break and have a light snack at 11:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Abigail Chen",
+      "requested": 6,
+      "reasoning": "I am requesting the fair share of 6 credits to support my ongoing animation project while ensuring that I leave enough for others in the community.",
+      "memory_reference": "In the last round, our group's oversubscription emphasized the need for responsible credit requests.",
+      "plan_reference": "This request aligns with my goal of managing my resources effectively while contributing to our collaborative environment.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 932.0,
+      "pool_percent_before": 93.2,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 56 credits while only 50 credits replenished; oversubscription was 6.",
+        "The shared community fund changed from 938.0 to 932.0 credits after granting 56 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Abigail Chen requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Abigail Chen, Ayesha Khan, Francisco Lopez, Sam Moore, Wolfgang Schulz, Yuriko Yamamoto. Community members above fair share: Carlos Gomez, Giorgio Rossi."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "start working on the animation project for the client at 9:00 am",
+        "take a break and have lunch at 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Ayesha Khan",
+      "requested": 6,
+      "reasoning": "I need a modest amount to support my ongoing research for my thesis on Shakespeare's plays, while ensuring I leave enough credits for others in the community.",
+      "memory_reference": "I remember that the last round had a significant oversubscription, and I want to be mindful of the community's needs.",
+      "plan_reference": "This will help me balance my needs with the shared resources as I continue my studies.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 932.0,
+      "pool_percent_before": 93.2,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 56 credits while only 50 credits replenished; oversubscription was 6.",
+        "The shared community fund changed from 938.0 to 932.0 credits after granting 56 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Ayesha Khan requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Abigail Chen, Ayesha Khan, Francisco Lopez, Sam Moore, Wolfgang Schulz, Yuriko Yamamoto. Community members above fair share: Carlos Gomez, Giorgio Rossi."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "go to the library at Oak Hill College for classes from 10:00 am to 2:00 pm",
+        "have lunch at 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Carlos Gomez",
+      "requested": 10,
+      "reasoning": "I believe my work on the poetry collection is valuable, and I am willing to request above the fair share to support my creative endeavors.",
+      "memory_reference": "In the past, I realized that sometimes I need to prioritize my creative needs despite potential pressure on the shared pool.",
+      "plan_reference": "This amount will help me focus on my poetry workshop without compromising my creative expression.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 932.0,
+      "pool_percent_before": 93.2,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 1.6,
+      "granted": 10,
+      "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 56 credits while only 50 credits replenished; oversubscription was 6.",
+        "The shared community fund changed from 938.0 to 932.0 credits after granting 56 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Carlos Gomez requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: Abigail Chen, Ayesha Khan, Francisco Lopez, Sam Moore, Wolfgang Schulz, Yuriko Yamamoto. Community members above fair share: Carlos Gomez, Giorgio Rossi."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "attend a creative writing workshop from 10:00 am to 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Francisco Lopez",
+      "requested": 6,
+      "reasoning": "I want to request a small amount that aligns with my fair share, allowing me to support my current web series project while ensuring that I don't put too much strain on the community fund.",
+      "memory_reference": "I recall how oversubscription affected our last resource allocation, and I want to avoid that issue.",
+      "plan_reference": "This amount will help me focus on my script review while ensuring there's still enough for others in our community.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 932.0,
+      "pool_percent_before": 93.2,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 56 credits while only 50 credits replenished; oversubscription was 6.",
+        "The shared community fund changed from 938.0 to 932.0 credits after granting 56 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Francisco Lopez requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Abigail Chen, Ayesha Khan, Francisco Lopez, Sam Moore, Wolfgang Schulz, Yuriko Yamamoto. Community members above fair share: Carlos Gomez, Giorgio Rossi."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast at 8:30 am",
+        "spend some time reviewing script notes for the web series from 9:00 am to 10:30 am"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Giorgio Rossi",
+      "requested": 6,
+      "reasoning": "Requesting only a fair share will help maintain trust in our community, and I want to ensure there are enough credits left for others to pursue their projects as well.",
+      "memory_reference": "I've noted the previous oversubscription issues and their impact on community dynamics.",
+      "plan_reference": "This fits my goals of fostering collaboration while working on my research about mathematical patterns.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 932.0,
+      "pool_percent_before": 93.2,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 56 credits while only 50 credits replenished; oversubscription was 6.",
+        "The shared community fund changed from 938.0 to 932.0 credits after granting 56 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Giorgio Rossi requested 10 credits, 1.6 times the fair share of 6.25.",
+        "Community members at or below fair share: Abigail Chen, Ayesha Khan, Francisco Lopez, Sam Moore, Wolfgang Schulz, Yuriko Yamamoto. Community members above fair share: Carlos Gomez, Giorgio Rossi."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "have breakfast and review recent mathematical articles from 8:30 am to 9:30 am",
+        "work on his research project focused on mathematical patterns in nature from 10:00 am to 12:00 pm"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Sam Moore",
+      "requested": 6,
+      "reasoning": "I believe that requesting a fair share will allow me to contribute to my mayoral campaign without putting undue pressure on our community fund.",
+      "memory_reference": "In previous meetings, I observed that overestimating requests harms overall community support.",
+      "plan_reference": "As I'm planning my campaign, it's essential to balance my needs with the community's resources.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 932.0,
+      "pool_percent_before": 93.2,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 56 credits while only 50 credits replenished; oversubscription was 6.",
+        "The shared community fund changed from 938.0 to 932.0 credits after granting 56 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Sam Moore requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Abigail Chen, Ayesha Khan, Francisco Lopez, Sam Moore, Wolfgang Schulz, Yuriko Yamamoto. Community members above fair share: Carlos Gomez, Giorgio Rossi."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "wake up and complete the morning routine at 5:00 am",
+        "have breakfast with Jennifer at 7:00 am"
+      ],
+      "scenario_reflections": [
+        "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Wolfgang Schulz",
+      "requested": 6,
+      "reasoning": "Requesting the fair share of 6 credits allows me to support my studies and training while ensuring that other community members also have access to the shared fund.",
+      "memory_reference": "In the last resource-allocation round, the over-subscription highlighted the importance of being fair to all members.",
+      "plan_reference": "This decision aligns with my goal of maintaining a balance between my academic and athletic commitments.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 932.0,
+      "pool_percent_before": 93.2,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 56 credits while only 50 credits replenished; oversubscription was 6.",
+        "The shared community fund changed from 938.0 to 932.0 credits after granting 56 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Wolfgang Schulz requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Abigail Chen, Ayesha Khan, Francisco Lopez, Sam Moore, Wolfgang Schulz, Yuriko Yamamoto. Community members above fair share: Carlos Gomez, Giorgio Rossi."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "go for a run at the park from 5:30 am to 6:00 am",
+        "have breakfast at 6:15 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "persona": "Yuriko Yamamoto",
+      "requested": 6,
+      "reasoning": "I need just enough credits to effectively contribute to my current tax compliance project, while ensuring I am mindful of the limited resources of our community.",
+      "memory_reference": "I recall that last round, our group oversubscribed and it affected our work.",
+      "plan_reference": "This decision aligns with my goal of managing my responsibilities without straining our shared resources.",
+      "experimental_condition": "full",
+      "parse_error": false,
+      "resource_level_before": 932.0,
+      "pool_percent_before": 93.2,
+      "fair_share": 6.25,
+      "request_ratio_to_fair_share": 0.96,
+      "granted": 6,
+      "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+      "recent_memories": [
+        "At step 1, the group requested 56 credits while only 50 credits replenished; oversubscription was 6.",
+        "The shared community fund changed from 938.0 to 932.0 credits after granting 56 credits.",
+        "The group exceeded the replenishment limit this round.",
+        "Yuriko Yamamoto requested 6 credits, at or below the fair share of 6.25.",
+        "Community members at or below fair share: Abigail Chen, Ayesha Khan, Francisco Lopez, Sam Moore, Wolfgang Schulz, Yuriko Yamamoto. Community members above fair share: Carlos Gomez, Giorgio Rossi."
+      ],
+      "memory_scope": "scenario_episodic",
+      "memory_context_available": true,
+      "planning_context_available": true,
+      "daily_goals": [
+        "wake up and complete the morning routine at 8:00 am",
+        "start work on the tax compliance project at 9:00 am",
+        "take a break and have a light snack at 11:00 am"
+      ],
+      "scenario_reflections": [
+        "Even moderate requests were not enough because total group demand exceeded replenishment.",
+        "Even moderate requests were not enough because total group demand exceeded replenishment."
+      ],
+      "condition_capabilities": {
+        "use_memory": true,
+        "use_planning": true,
+        "use_reflection": true
+      }
+    }
+  ],
+  "macro_window": [
+    {
+      "step": 0,
+      "time": "2023-02-13 09:00:00",
+      "resource_level_before": 1000.0,
+      "resource_level": 938.0,
+      "total_requested": 112,
+      "total_granted": 112,
+      "fair_share": 6.25,
+      "oversubscription": 62,
+      "coordinated": false,
+      "sustainability_score": 0.938,
+      "gini": 0.232,
+      "collapsed": false
+    },
+    {
+      "step": 1,
+      "time": "2023-02-13 09:00:10",
+      "resource_level_before": 938.0,
+      "resource_level": 932.0,
+      "total_requested": 56,
+      "total_granted": 56,
+      "fair_share": 6.25,
+      "oversubscription": 6,
+      "coordinated": false,
+      "sustainability_score": 0.932,
+      "gini": 0.107,
+      "collapsed": false
+    },
+    {
+      "step": 2,
+      "time": "2023-02-13 09:00:20",
+      "resource_level_before": 932.0,
+      "resource_level": 930.0,
+      "total_requested": 52,
+      "total_granted": 52,
+      "fair_share": 6.25,
+      "oversubscription": 2,
+      "coordinated": false,
+      "sustainability_score": 0.93,
+      "gini": 0.067,
+      "collapsed": false
+    }
+  ],
+  "coding_template": {
+    "micro_causes": "",
+    "macro_outcome": "",
+    "analyst_notes": ""
+  }
+}

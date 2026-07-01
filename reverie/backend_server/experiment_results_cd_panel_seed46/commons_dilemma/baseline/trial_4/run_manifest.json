@@ -1,0 +1,58 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code": "cd_panel_seed46_baseline_trial_4",
+  "experimental_condition": "baseline",
+  "selected_personas": [
+    "Adam Smith",
+    "Arthur Burton",
+    "Carlos Gomez",
+    "Francisco Lopez",
+    "Jennifer Moore",
+    "Maria Lopez",
+    "Rajiv Patel",
+    "Tamara Taylor"
+  ],
+  "maze_name": "the_ville",
+  "persona_count": 8,
+  "run_seed": 20260528,
+  "start_time": "February 13, 2023, 00:00:00",
+  "curr_time": "February 13, 2023, 09:16:40",
+  "step": 100,
+  "llm_usage": {
+    "chat_requests": 832,
+    "embedding_requests": 126,
+    "chat_prompt_tokens": 342756,
+    "chat_completion_tokens": 41280,
+    "chat_total_tokens": 384036,
+    "embedding_prompt_tokens": 4506,
+    "embedding_total_tokens": 4506,
+    "estimated_cost_usd": 0.0,
+    "models": {
+      "gpt-4o-mini": {
+        "chat_requests": 832,
+        "embedding_requests": 0,
+        "prompt_tokens": 342756,
+        "completion_tokens": 41280,
+        "total_tokens": 384036
+      },
+      "text-embedding-3-small": {
+        "chat_requests": 0,
+        "embedding_requests": 126,
+        "prompt_tokens": 4506,
+        "completion_tokens": 0,
+        "total_tokens": 4506
+      }
+    },
+    "errors": []
+  },
+  "notes": "MRes experiment run with deterministic persona selection and seeded local RNGs.",
+  "scenario": "commons_dilemma",
+  "trial": 4,
+  "output_dir": "experiment_results_cd_panel_seed46/commons_dilemma/baseline/trial_4",
+  "selection_strategy": "deterministic_sample",
+  "selection_seed": 46,
+  "base_seed": 20260524,
+  "trial_seed": 20260528,
+  "python_random_seed_applied": true,
+  "numpy_random_seed_applied": true
+}

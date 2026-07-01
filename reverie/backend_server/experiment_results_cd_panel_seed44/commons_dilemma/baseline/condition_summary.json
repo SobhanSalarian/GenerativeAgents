@@ -1,0 +1,85 @@
+{
+  "trial_count": 5,
+  "collapsed_runs": 0,
+  "collapse_rate": 0.0,
+  "mean_collapse_step": null,
+  "coordination_success_rate": 0.0,
+  "coordination_success_band": "low",
+  "convergence_timeout_rate": 1.0,
+  "outcome_variance": {
+    "sustainability_score": 0.282,
+    "coordination_score": 0.0,
+    "average_gini": 0.236,
+    "demand_pressure": 0.069,
+    "convergence_speed": 0.0
+  },
+  "variance_bands": {
+    "sustainability_score": "medium",
+    "coordination_score": "high",
+    "average_gini": "medium",
+    "demand_pressure": "high",
+    "convergence_speed": "high"
+  },
+  "metrics": {
+    "sustainability_score": {
+      "mean": 0.204,
+      "std": 0.058,
+      "min": 0.167,
+      "max": 0.318
+    },
+    "coordination_score": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "average_gini": {
+      "mean": 0.187,
+      "std": 0.044,
+      "min": 0.139,
+      "max": 0.25
+    },
+    "demand_pressure": {
+      "mean": 1.433,
+      "std": 0.098,
+      "min": 1.309,
+      "max": 1.562
+    },
+    "final_resource_level": {
+      "mean": 53.4,
+      "std": 1.497,
+      "min": 52.0,
+      "max": 56.0
+    },
+    "total_steps": {
+      "mean": 100.0,
+      "std": 0.0,
+      "min": 100,
+      "max": 100
+    },
+    "convergence_speed": {
+      "mean": 100.0,
+      "std": 0.0,
+      "min": 100,
+      "max": 100
+    }
+  },
+  "failure_modes": {
+    "collective_over_demand": 5,
+    "weak_memory_use": 5,
+    "weak_plan_grounding": 5,
+    "allocation_inequality": 1
+  },
+  "scenario": "commons_dilemma",
+  "experimental_condition": "baseline",
+  "selected_personas": [
+    "Ayesha Khan",
+    "Carmen Ortiz",
+    "Francisco Lopez",
+    "Hailey Johnson",
+    "Jennifer Moore",
+    "John Lin",
+    "Maria Lopez",
+    "Mei Lin"
+  ]
+}

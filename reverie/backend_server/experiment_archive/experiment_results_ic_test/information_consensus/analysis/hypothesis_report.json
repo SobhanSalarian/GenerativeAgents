@@ -1,0 +1,132 @@
+{
+  "scenario": "information_consensus",
+  "n_trials": 4,
+  "conditions_found": [
+    "baseline",
+    "full",
+    "memory",
+    "memory_planning"
+  ],
+  "H1": {
+    "hypothesis": "H1",
+    "description": "Higher composite believability predicts higher coordination score.",
+    "n": 4,
+    "test": "Spearman rank correlation",
+    "rho": 0.8,
+    "p_value": 0.2,
+    "supported": false,
+    "note": "Spearman rho=0.800, p=0.2000. Positive rho with p < 0.05 supports H1.",
+    "group_comparison": {
+      "status": "insufficient_data",
+      "note": "Need \u2265 2 runs in both high (\u2265 0.7) and low (< 0.4) believability bands. Found 0 high, 1 low."
+    }
+  },
+  "H2": {
+    "hypothesis": "H2",
+    "description": "Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).",
+    "n": 4,
+    "band_cutoffs": {
+      "low_max": 0.5451,
+      "high_min": 0.595
+    },
+    "band_stats": {
+      "low": {
+        "n": 2,
+        "success_rate": 0.0,
+        "fail_rate": 1.0
+      },
+      "mid": {
+        "n": 1,
+        "success_rate": 0.0,
+        "fail_rate": 1.0
+      },
+      "high": {
+        "n": 1,
+        "success_rate": 0.0,
+        "fail_rate": 1.0
+      }
+    },
+    "empirical_threshold": 0.597,
+    "supported": true,
+    "note": "Empirical threshold (all runs below fail): 0.597."
+  },
+  "H3": {
+    "hypothesis": "H3",
+    "description": "Believability increases monotonically: baseline < memory < memory_planning < full.",
+    "condition_means": {
+      "baseline": 0.3776,
+      "memory": 0.5451,
+      "memory_planning": 0.597,
+      "full": 0.595
+    },
+    "condition_n": {
+      "baseline": 1,
+      "memory": 1,
+      "memory_planning": 1,
+      "full": 1
+    },
+    "kruskal_wallis": {
+      "status": "skipped",
+      "note": "Some conditions have fewer than 2 observations."
+    },
+    "pairwise": [
+      {
+        "comparison": "baseline \u2192 memory",
+        "status": "insufficient_data"
+      },
+      {
+        "comparison": "memory \u2192 memory_planning",
+        "status": "insufficient_data"
+      },
+      {
+        "comparison": "memory_planning \u2192 full",
+        "status": "insufficient_data"
+      }
+    ],
+    "monotone_in_means": false,
+    "supported": false,
+    "note": "Mean believability does NOT follow the expected monotone order."
+  },
+  "H4": {
+    "hypothesis": "H4",
+    "description": "Memory coherence and behavioural consistency are stronger predictors of coordination score than planning plausibility or response naturalness.",
+    "correlations": {
+      "behavioural_consistency": {
+        "n": 4,
+        "rho": 0.8,
+        "p_value": 0.2,
+        "abs_rho": 0.8
+      },
+      "memory_coherence": {
+        "n": 4,
+        "rho": 0.2,
+        "p_value": 0.8,
+        "abs_rho": 0.2
+      },
+      "planning_plausibility": {
+        "n": 4,
+        "rho": 0.9487,
+        "p_value": 0.0513,
+        "abs_rho": 0.9487
+      },
+      "response_naturalness": {
+        "n": 4,
+        "rho": -0.4,
+        "p_value": 0.6,
+        "abs_rho": 0.4
+      }
+    },
+    "predictor_ranking": [
+      "planning_plausibility",
+      "behavioural_consistency",
+      "response_naturalness",
+      "memory_coherence"
+    ],
+    "supported": false,
+    "note": "Top-ranked predictors: ['planning_plausibility', 'behavioural_consistency', 'response_naturalness', 'memory_coherence']. H4 supported: False.",
+    "ols_regression": {
+      "status": "insufficient_data",
+      "n": 4
+    }
+  }
+}

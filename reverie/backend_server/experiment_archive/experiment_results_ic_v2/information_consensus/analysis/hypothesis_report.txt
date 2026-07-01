@@ -1,0 +1,66 @@
+==============================================================
+MRes HYPOTHESIS TEST REPORT
+==============================================================
+Scenario        : information_consensus
+Trials analysed : 40
+Conditions found: baseline, full, memory, memory_planning
+
+==============================================================
+H1: Higher composite believability predicts higher coordination score.
+--------------------------------------------------------------
+  STATUS : NOT SUPPORTED
+  n      : 40
+  Note   : Spearman rho=nan, p=nan. Positive rho with p < 0.05 supports H1.
+  Spearman  rho=+nan, p=nan
+  High-believability (≥0.7) mean coord=0.000 (n=8)
+  Low-believability  (<0.4) mean coord=0.000 (n=10), p=1.0000
+
+==============================================================
+H2: Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).
+--------------------------------------------------------------
+  STATUS : SUPPORTED
+  n      : 40
+  Note   : Empirical threshold (all runs below fail): 0.719.
+  Band cutoffs: low ≤ 0.583 < mid ≤ 0.696 < high
+  Low  band: n=14, success_rate=0.00, fail_rate=1.00
+  Mid  band: n=13, success_rate=0.00, fail_rate=1.00
+  High band: n=13, success_rate=0.00, fail_rate=1.00
+  Empirical threshold: 0.719
+
+==============================================================
+H3: Believability increases monotonically: baseline < memory < memory_planning < full.
+--------------------------------------------------------------
+  STATUS : NOT SUPPORTED
+  n      : —
+  Note   : Mean believability does NOT follow the expected monotone order.
+  baseline              mean=0.390  n=10
+  memory                mean=0.585  n=10
+  memory_planning       mean=0.700  n=10
+  full                  mean=0.700  n=10
+  Kruskal-Wallis  H=32.945, p=0.0000, significant=True
+  Monotone in means: False
+    baseline → memory                   ↑ p=0.0001  ✓
+    memory → memory_planning            ↑ p=0.0001  ✓
+    memory_planning → full              ↓ (unexpected) p=0.5750  ✗
+
+==============================================================
+H4: Memory coherence and behavioural consistency are stronger predictors of coordination score than planning plausibility or response naturalness.
+--------------------------------------------------------------
+  STATUS : SUPPORTED
+  n      : —
+  Note   : Top-ranked predictors: ['behavioural_consistency', 'memory_coherence', 'planning_plausibility', 'response_naturalness']. H4 supported: True.
+  Sub-dimension correlations with coordination_score:
+    behavioural_consistency         rho=+nan, p=nan
+    memory_coherence                rho=+nan, p=nan
+    planning_plausibility           rho=+nan, p=nan
+    response_naturalness            rho=+nan, p=nan
+  Spearman ranking : behavioural_consistency > memory_coherence > planning_plausibility > response_naturalness
+  OLS R²           : 0.0000  (n=40)
+    behavioural_consistency         β=+0.0000, p=n/a
+    memory_coherence                β=+0.0000, p=n/a
+    planning_plausibility           β=+0.0000, p=n/a
+    response_naturalness            β=+0.0000, p=n/a
+  Regression rank  : behavioural_consistency > memory_coherence > planning_plausibility > response_naturalness
+  Regression H4 supported: True
+
+==============================================================

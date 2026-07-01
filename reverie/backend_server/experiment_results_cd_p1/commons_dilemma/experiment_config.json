@@ -1,0 +1,23 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code_prefix": "cd_experiment_p1",
+  "scenario": "commons_dilemma",
+  "scenario_parameters": {
+    "initial_resource": 1000,
+    "replenishment_rate": 50,
+    "max_request": 100,
+    "capacity": 1000
+  },
+  "experimental_conditions": [
+    "static_reflection_injection",
+    "static_reflection_placebo",
+    "memory_planning"
+  ],
+  "n_steps": 100,
+  "n_trials": 10,
+  "persona_names": null,
+  "persona_sample_size": 8,
+  "selection_seed": 42,
+  "base_seed": 20260610,
+  "export_human_eval": true
+}

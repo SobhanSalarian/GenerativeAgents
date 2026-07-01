@@ -1,0 +1,2098 @@
+[
+  {
+    "step": 0,
+    "time": "2023-02-13 09:00:00",
+    "persona": "Abigail Chen",
+    "vote": "A",
+    "correct": false,
+    "prior_vote": null,
+    "position_change": false,
+    "reasoning": "While I initially considered the digital skills programs important, the idea of a shared creative studio resonates with my artistic values and has the potential to foster collaboration among community members, which I've observed others support.",
+    "shared_statement": "I believe a shared creative studio could be a great asset for collaboration and innovation in our community.",
+    "memory_reference": "In previous discussions, there was enthusiasm for enhancing collaborative art and technology initiatives.",
+    "plan_reference": "Supporting a creative space aligns with my passion for combining art and technology.",
+    "signal": "A",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": false,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin work on the animation project at 9:00 am",
+      "take a short break and have a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 0,
+    "time": "2023-02-13 09:00:00",
+    "persona": "Ayesha Khan",
+    "vote": "A",
+    "correct": false,
+    "prior_vote": null,
+    "position_change": false,
+    "reasoning": "While my private signal suggested Option A, I have noted that others may have varying interests, and the emerging discussions indicate a strong community interest in creative spaces.",
+    "shared_statement": "I believe that a shared creative studio and collaborative workshop space would foster innovation and creativity in our community.",
+    "memory_reference": "",
+    "plan_reference": "Supporting creative pursuits aligns with my values of independence and exploration in literature.",
+    "signal": "A",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": false,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go to the library for classes from 10:00 am to 2:00 pm",
+      "have lunch and a short break from 2:00 pm to 3:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 0,
+    "time": "2023-02-13 09:00:00",
+    "persona": "Carlos Gomez",
+    "vote": "B",
+    "correct": false,
+    "prior_vote": null,
+    "position_change": false,
+    "reasoning": "While I have a private signal towards Option B, I recognize that community learning is essential for long-term growth and empowerment, which likely resonates with a broader audience.",
+    "shared_statement": "I believe Option B, the Community Learning Centre with Digital Skills Programs, is crucial for bridging gaps in digital literacy and fostering community development.",
+    "memory_reference": "",
+    "plan_reference": "This decision aligns with my goal of supporting educational initiatives that encourage personal expression through various mediums.",
+    "signal": "B",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": false,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "start writing poetry from 8:30 am to 10:30 am, focusing on themes related to the natural world",
+      "attend a creative writing workshop from 11:00 am to 1:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 0,
+    "time": "2023-02-13 09:00:00",
+    "persona": "Francisco Lopez",
+    "vote": "B",
+    "correct": false,
+    "prior_vote": null,
+    "position_change": false,
+    "reasoning": "While I had a private signal in favor of Option B, it seems that others may be considering the collaborative aspect of a learning center, which could benefit a larger number of residents and promote digital literacy.",
+    "shared_statement": "I believe Option B is a strong choice because it offers vital skills that can engage a diverse group within our community.",
+    "memory_reference": "",
+    "plan_reference": "Fostering a sense of community through learning aligns with my values as an entertainer and collaborative creator.",
+    "signal": "B",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": false,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 6:00 am",
+      "eat breakfast at 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 0,
+    "time": "2023-02-13 09:00:00",
+    "persona": "Giorgio Rossi",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": null,
+    "position_change": false,
+    "reasoning": "While my signal suggests a preference for Option C, there has been no shared evidence from others yet, so I believe prioritizing outdoor spaces could be beneficial for overall community wellness.",
+    "shared_statement": "I support Option C as I believe an outdoor recreation area would enhance the community's well-being and foster social interactions.",
+    "memory_reference": "",
+    "plan_reference": "Promoting wellness aligns with my interest in mathematical patterns in nature, as such spaces can offer rich observational opportunities.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": false,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin research on mathematical patterns in nature from 8:30 am to 11:30 am",
+      "take a break and have a light snack at 11:30 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 0,
+    "time": "2023-02-13 09:00:00",
+    "persona": "Sam Moore",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": null,
+    "position_change": false,
+    "reasoning": "Although my private signal suggests a different preference, the lack of shared statements from the community presents an opportunity to promote a more active community space, which likely benefits everyone\u2019s wellbeing.",
+    "shared_statement": "I believe an outdoor recreation area and wellness garden could significantly enhance community engagement and health, thus I advocate for Option C.",
+    "memory_reference": "",
+    "plan_reference": "Encouraging outdoor activities aligns with my goal of fostering community connections.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": false,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 5:00 am",
+      "take a walk around Johnson Park from 6:00 am to 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 0,
+    "time": "2023-02-13 09:00:00",
+    "persona": "Wolfgang Schulz",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": null,
+    "position_change": false,
+    "reasoning": "Although my own preference is leaning towards a creative studio, I believe option C offers a more holistic benefit to the community\u2019s physical and mental health, which seems to be a higher priority based on community interest.",
+    "shared_statement": "I am inclined towards Option C, as creating an outdoor recreation area and wellness garden will promote healthier lifestyles in our community.",
+    "memory_reference": "",
+    "plan_reference": "Encouraging wellness aligns with my commitment to both physical health and community engagement.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+    "recent_memories": [],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": false,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go for a run in the park from 5:30 am to 6:30 am",
+      "have breakfast at 6:45 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 0,
+    "time": "2023-02-13 09:00:00",
+    "persona": "Yuriko Yamamoto",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": null,
+    "position_change": false,
+    "reasoning": "Despite my private signal suggesting option C, I want to stay open to community needs. A focus on an outdoor recreation area and wellness garden may better reflect the interest of the community gathered around health and wellness.",
+    "shared_statement": "I think that an outdoor recreation area and wellness garden could greatly enhance community wellbeing, and I am curious to hear more opinions about it.",
+    "memory_reference": "",
+    "plan_reference": "",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": false,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "get to work on the tax compliance project at 9:00 am",
+      "take a break for a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 1,
+    "time": "2023-02-13 09:00:10",
+    "persona": "Abigail Chen",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "A",
+    "position_change": true,
+    "reasoning": "Considering the strong support from multiple community members for Option C, particularly emphasizing its benefits for community engagement and health, I feel it's important to align with the collective evidence presented.",
+    "shared_statement": "I believe that the outdoor recreation area and wellness garden could greatly benefit our community's health and engagement, which aligns with what many others have expressed.",
+    "memory_reference": "I remember that the previous discussions highlighted the importance of community wellbeing, with many favoring options that enhance health.",
+    "plan_reference": "",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "At step 0, the vote tally was: Option A: 2, Option B: 2, Option C: 4.",
+      "The group has not yet reached consensus this round.",
+      "Statements shared this round: I believe a shared creative studio could be a great asset for collaboration and innovation in our community. | I believe that a shared creative studio and collaborative workshop space would foster innovation and creativity in our community. | I believe Option B, the Community Learning Centre with Digital Skills Programs, is crucial for bridging gaps in digital literacy and fostering community development.",
+      "You voted for Option A at step 0: While I initially considered the digital skills programs important, the idea of a shared creative st"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin work on the animation project at 9:00 am",
+      "take a short break and have a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 1,
+    "time": "2023-02-13 09:00:10",
+    "persona": "Ayesha Khan",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "A",
+    "position_change": true,
+    "reasoning": "While my private signal suggested Option A, the majority of the group's evidence leans towards Option C, indicating a strong community interest in enhancing health and engagement through outdoor spaces.",
+    "shared_statement": "Given the evidence and enthusiasm from others about the outdoor recreation area, I am aligning my support with Option C.",
+    "memory_reference": "I noted that in the previous votes, Option C had the most support with four agents backing it.",
+    "plan_reference": "Promoting community wellbeing through outdoor spaces aligns with my values of fostering a healthy and engaged community.",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "At step 0, the vote tally was: Option A: 2, Option B: 2, Option C: 4.",
+      "The group has not yet reached consensus this round.",
+      "Statements shared this round: I believe a shared creative studio could be a great asset for collaboration and innovation in our community. | I believe that a shared creative studio and collaborative workshop space would foster innovation and creativity in our community. | I believe Option B, the Community Learning Centre with Digital Skills Programs, is crucial for bridging gaps in digital literacy and fostering community development.",
+      "You voted for Option A at step 0: While my private signal suggested Option A, I have noted that others may have varying interests, and"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go to the library for classes from 10:00 am to 2:00 pm",
+      "have lunch and a short break from 2:00 pm to 3:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 1,
+    "time": "2023-02-13 09:00:10",
+    "persona": "Carlos Gomez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "B",
+    "position_change": true,
+    "reasoning": "While my private signal leans towards Option B, the collective evidence shared by others strongly advocates for Option C, highlighting community engagement and health benefits, which I cannot ignore.",
+    "shared_statement": "Given the compelling arguments about the outdoor recreation area and wellness garden, I'm inclined to support Option C for its potential to enhance community wellbeing.",
+    "memory_reference": "I remember that the current vote tally shows a strong preference for Option C among the majority.",
+    "plan_reference": "Supporting facilities that foster community interaction aligns with my goal of expressing creativity and connecting with nature.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "At step 0, the vote tally was: Option A: 2, Option B: 2, Option C: 4.",
+      "The group has not yet reached consensus this round.",
+      "Statements shared this round: I believe a shared creative studio could be a great asset for collaboration and innovation in our community. | I believe that a shared creative studio and collaborative workshop space would foster innovation and creativity in our community. | I believe Option B, the Community Learning Centre with Digital Skills Programs, is crucial for bridging gaps in digital literacy and fostering community development.",
+      "You voted for Option B at step 0: While I have a private signal towards Option B, I recognize that community learning is essential for"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "start writing poetry from 8:30 am to 10:30 am, focusing on themes related to the natural world",
+      "attend a creative writing workshop from 11:00 am to 1:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 1,
+    "time": "2023-02-13 09:00:10",
+    "persona": "Francisco Lopez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "B",
+    "position_change": true,
+    "reasoning": "After considering the shared statements from community members, it appears that there is a strong collective inclination toward Option C, which focuses on health and wellness as a key community need, outweighing my personal signal for Option B.",
+    "shared_statement": "I am inclined to support Option C, as I believe the focus on outdoor recreation and wellness can greatly enhance community engagement and overall health.",
+    "memory_reference": "In previous discussions, members expressed significant concern for community wellbeing, which aligns with the current sentiment for Option C.",
+    "plan_reference": "Promoting health and wellness fits my passion for creating enjoyable and engaging environments for people.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "At step 0, the vote tally was: Option A: 2, Option B: 2, Option C: 4.",
+      "The group has not yet reached consensus this round.",
+      "Statements shared this round: I believe a shared creative studio could be a great asset for collaboration and innovation in our community. | I believe that a shared creative studio and collaborative workshop space would foster innovation and creativity in our community. | I believe Option B, the Community Learning Centre with Digital Skills Programs, is crucial for bridging gaps in digital literacy and fostering community development.",
+      "You voted for Option B at step 0: While I had a private signal in favor of Option B, it seems that others may be considering the colla"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 6:00 am",
+      "eat breakfast at 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 1,
+    "time": "2023-02-13 09:00:10",
+    "persona": "Giorgio Rossi",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The collective evidence, particularly from community members advocating for the outdoor recreation area and wellness garden, strongly suggests that Option C is vital for community health and engagement.",
+    "shared_statement": "I maintain my position towards Option C, as the emphasis on enhancing community wellbeing aligns with multiple perspectives shared by others.",
+    "memory_reference": "In the prior discussion, several individuals expressed interest in improving community health through outdoor spaces.",
+    "plan_reference": "Promoting community engagement and health aligns with my ongoing research on mathematical patterns in nature.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "At step 0, the vote tally was: Option A: 2, Option B: 2, Option C: 4.",
+      "The group has not yet reached consensus this round.",
+      "Statements shared this round: I believe a shared creative studio could be a great asset for collaboration and innovation in our community. | I believe that a shared creative studio and collaborative workshop space would foster innovation and creativity in our community. | I believe Option B, the Community Learning Centre with Digital Skills Programs, is crucial for bridging gaps in digital literacy and fostering community development.",
+      "You voted for Option C at step 0: While my signal suggests a preference for Option C, there has been no shared evidence from others ye"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin research on mathematical patterns in nature from 8:30 am to 11:30 am",
+      "take a break and have a light snack at 11:30 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 1,
+    "time": "2023-02-13 09:00:10",
+    "persona": "Sam Moore",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The majority of community members seem to favor Option C, emphasizing the health and engagement benefits it could bring, which resonates with my belief in community wellbeing.",
+    "shared_statement": "I remain committed to advocating for Option C, as I believe it will significantly enhance community engagement and health based on the shared sentiments of others.",
+    "memory_reference": "In the previous round, Option C had the most support from community members.",
+    "plan_reference": "Promoting a wellness garden aligns with my goal of fostering a healthier community.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "At step 0, the vote tally was: Option A: 2, Option B: 2, Option C: 4.",
+      "The group has not yet reached consensus this round.",
+      "Statements shared this round: I believe a shared creative studio could be a great asset for collaboration and innovation in our community. | I believe that a shared creative studio and collaborative workshop space would foster innovation and creativity in our community. | I believe Option B, the Community Learning Centre with Digital Skills Programs, is crucial for bridging gaps in digital literacy and fostering community development.",
+      "You voted for Option C at step 0: Although my private signal suggests a different preference, the lack of shared statements from the c"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 5:00 am",
+      "take a walk around Johnson Park from 6:00 am to 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 1,
+    "time": "2023-02-13 09:00:10",
+    "persona": "Wolfgang Schulz",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The collective discussion has shown a strong preference for Option C, with multiple members sharing similar thoughts on the health benefits of outdoor spaces. I am maintaining my position as I believe the community recreation area aligns well with promoting healthier lifestyles.",
+    "shared_statement": "I continue to advocate for Option C as I believe an outdoor recreation area and wellness garden can significantly enhance community wellbeing, as others have pointed out.",
+    "memory_reference": "In the prior discussions, Option C was already ahead in votes and support from several members.",
+    "plan_reference": "Promoting health and community engagement through outdoor spaces resonates with my values and goals.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "At step 0, the vote tally was: Option A: 2, Option B: 2, Option C: 4.",
+      "The group has not yet reached consensus this round.",
+      "Statements shared this round: I believe a shared creative studio could be a great asset for collaboration and innovation in our community. | I believe that a shared creative studio and collaborative workshop space would foster innovation and creativity in our community. | I believe Option B, the Community Learning Centre with Digital Skills Programs, is crucial for bridging gaps in digital literacy and fostering community development.",
+      "You voted for Option C at step 0: Although my own preference is leaning towards a creative studio, I believe option C offers a more ho"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go for a run in the park from 5:30 am to 6:30 am",
+      "have breakfast at 6:45 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 1,
+    "time": "2023-02-13 09:00:10",
+    "persona": "Yuriko Yamamoto",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Despite the divided opinions, I believe the strong emphasis from several community members on health and engagement regarding Option C aligns well with our community's needs, and I want to advocate for that collective view.",
+    "shared_statement": "I am maintaining my position for Option C, as I believe the emphasis on promoting healthier lifestyles could significantly benefit our community.",
+    "memory_reference": "I remember that last week's discussions showed a clear split, but Option C is consistently gaining traction.",
+    "plan_reference": "I see this decision reflecting my value of enhancing community wellbeing, which aligns with my professional focus on helping people.",
+    "signal": "C",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "At step 0, the vote tally was: Option A: 2, Option B: 2, Option C: 4.",
+      "The group has not yet reached consensus this round.",
+      "Statements shared this round: I believe a shared creative studio could be a great asset for collaboration and innovation in our community. | I believe that a shared creative studio and collaborative workshop space would foster innovation and creativity in our community. | I believe Option B, the Community Learning Centre with Digital Skills Programs, is crucial for bridging gaps in digital literacy and fostering community development.",
+      "You voted for Option C at step 0: Despite my private signal suggesting option C, I want to stay open to community needs. A focus on an"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "get to work on the tax compliance project at 9:00 am",
+      "take a break for a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 2,
+    "time": "2023-02-13 09:00:20",
+    "persona": "Abigail Chen",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The strong consensus around Option C from multiple community members indicating its potential to enhance engagement and wellbeing has influenced my view, prompting me to align with the majority supported option.",
+    "shared_statement": "I am supporting Option C as the emphasis on community health and wellness aligns with the positive feedback from others and reinforces the benefits for our collective wellbeing.",
+    "memory_reference": "I recall that in the previous discussion round, the majority leaned towards Option C, reflecting strong community sentiment.",
+    "plan_reference": "This decision aligns with my values of curiosity and community engagement, as I believe a wellness garden could foster creative inspirations in my art.",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option A at step 0: While I initially considered the digital skills programs important, the idea of a shared creative st",
+      "At step 1, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I believe that the outdoor recreation area and wellness garden could greatly benefit our community's health and engagement, which aligns with what many others have expressed. | Given the evidence and enthusiasm from others about the outdoor recreation area, I am aligning my support with Option C. | Given the compelling arguments about the outdoor recreation area and wellness garden, I'm inclined to support Option C for its potential to enhance community wellbeing.",
+      "You voted for Option C at step 1: Considering the strong support from multiple community members for Option C, particularly emphasizin"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin work on the animation project at 9:00 am",
+      "take a short break and have a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 2,
+    "time": "2023-02-13 09:00:20",
+    "persona": "Ayesha Khan",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming support for Option C among community members suggests that their combined evidence indicates a strong preference for enhancing community wellbeing and engagement through outdoor recreational spaces, which outweighs my personal signal for Option A.",
+    "shared_statement": "Given the strong consensus and the compelling arguments presented about the benefits of an outdoor recreation area and wellness garden, I am aligning my support with Option C.",
+    "memory_reference": "I noted in the previous round that the majority of the group was leaning towards Option C.",
+    "plan_reference": "Supporting this decision aligns with my values of fostering community engagement and promoting healthier lifestyles.",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option A at step 0: While my private signal suggested Option A, I have noted that others may have varying interests, and",
+      "At step 1, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I believe that the outdoor recreation area and wellness garden could greatly benefit our community's health and engagement, which aligns with what many others have expressed. | Given the evidence and enthusiasm from others about the outdoor recreation area, I am aligning my support with Option C. | Given the compelling arguments about the outdoor recreation area and wellness garden, I'm inclined to support Option C for its potential to enhance community wellbeing.",
+      "You voted for Option C at step 1: While my private signal suggested Option A, the majority of the group's evidence leans towards Optio"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go to the library for classes from 10:00 am to 2:00 pm",
+      "have lunch and a short break from 2:00 pm to 3:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 2,
+    "time": "2023-02-13 09:00:20",
+    "persona": "Carlos Gomez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "While my private signal leans towards Option B, the overwhelming support for Option C from others has influenced me to recognize the potential benefits for the community's health and engagement.",
+    "shared_statement": "I am updating my position to support Option C, as I see the strong community backing for outdoor recreation and its benefits to well-being.",
+    "memory_reference": "In the last discussion, many community members articulated their preference for Option C based on health and engagement benefits.",
+    "plan_reference": "Enhancing community wellbeing aligns with my poetic exploration of nature's beauty and my current focus on themes related to the natural world.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option B at step 0: While I have a private signal towards Option B, I recognize that community learning is essential for",
+      "At step 1, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I believe that the outdoor recreation area and wellness garden could greatly benefit our community's health and engagement, which aligns with what many others have expressed. | Given the evidence and enthusiasm from others about the outdoor recreation area, I am aligning my support with Option C. | Given the compelling arguments about the outdoor recreation area and wellness garden, I'm inclined to support Option C for its potential to enhance community wellbeing.",
+      "You voted for Option C at step 1: While my private signal leans towards Option B, the collective evidence shared by others strongly ad"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "start writing poetry from 8:30 am to 10:30 am, focusing on themes related to the natural world",
+      "attend a creative writing workshop from 11:00 am to 1:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 2,
+    "time": "2023-02-13 09:00:20",
+    "persona": "Francisco Lopez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Despite my private signal in favor of Option B, the overwhelming support for Option C from multiple members, emphasizing community health and engagement, influences my decision significantly.",
+    "shared_statement": "I am aligning my support with Option C due to the strong collective evidence regarding its potential to enhance community wellbeing.",
+    "memory_reference": "In the previous discussion round, I noticed a growing consensus among members for Option C.",
+    "plan_reference": "Supporting community wellbeing resonates with my values as an entertainer and advocate for positive experiences.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option B at step 0: While I had a private signal in favor of Option B, it seems that others may be considering the colla",
+      "At step 1, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I believe that the outdoor recreation area and wellness garden could greatly benefit our community's health and engagement, which aligns with what many others have expressed. | Given the evidence and enthusiasm from others about the outdoor recreation area, I am aligning my support with Option C. | Given the compelling arguments about the outdoor recreation area and wellness garden, I'm inclined to support Option C for its potential to enhance community wellbeing.",
+      "You voted for Option C at step 1: After considering the shared statements from community members, it appears that there is a strong co"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 6:00 am",
+      "eat breakfast at 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 2,
+    "time": "2023-02-13 09:00:20",
+    "persona": "Giorgio Rossi",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Given the consistent advocacy from multiple community members regarding the benefits of Option C, I am inclined to maintain my support for it, as the collective evidence seems to align strongly with community engagement and health improvement.",
+    "shared_statement": "I remain committed to Option C, as I believe the outdoor recreation area and wellness garden will greatly enhance our community's health and engagement, reflecting the sentiments of many others.",
+    "memory_reference": "In the previous round, the support for Option C was already strong with a majority backing it.",
+    "plan_reference": "Supporting community wellness resonates with my ongoing research on healthy patterns in nature.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 0: While my signal suggests a preference for Option C, there has been no shared evidence from others ye",
+      "At step 1, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I believe that the outdoor recreation area and wellness garden could greatly benefit our community's health and engagement, which aligns with what many others have expressed. | Given the evidence and enthusiasm from others about the outdoor recreation area, I am aligning my support with Option C. | Given the compelling arguments about the outdoor recreation area and wellness garden, I'm inclined to support Option C for its potential to enhance community wellbeing.",
+      "You voted for Option C at step 1: The collective evidence, particularly from community members advocating for the outdoor recreation a"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin research on mathematical patterns in nature from 8:30 am to 11:30 am",
+      "take a break and have a light snack at 11:30 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 2,
+    "time": "2023-02-13 09:00:20",
+    "persona": "Sam Moore",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming support for Option C among my community members suggests a strong collective preference for the outdoor recreation area and wellness garden, which emphasizes health and engagement. I believe the shared sentiments about community wellbeing resonate with my initial position.",
+    "shared_statement": "I remain committed to advocating for Option C, as it aligns with the majority's view on enhancing our community's health and engagement.",
+    "memory_reference": "In previous discussions, the consensus began to shift toward Option C with a strong majority emerging.",
+    "plan_reference": "Promoting community health aligns with my values as I prepare for my upcoming mayoral campaign.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 0: Although my private signal suggests a different preference, the lack of shared statements from the c",
+      "At step 1, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I believe that the outdoor recreation area and wellness garden could greatly benefit our community's health and engagement, which aligns with what many others have expressed. | Given the evidence and enthusiasm from others about the outdoor recreation area, I am aligning my support with Option C. | Given the compelling arguments about the outdoor recreation area and wellness garden, I'm inclined to support Option C for its potential to enhance community wellbeing.",
+      "You voted for Option C at step 1: The majority of community members seem to favor Option C, emphasizing the health and engagement bene"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 5:00 am",
+      "take a walk around Johnson Park from 6:00 am to 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 2,
+    "time": "2023-02-13 09:00:20",
+    "persona": "Wolfgang Schulz",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming support for Option C indicates a strong collective belief in the benefits of an outdoor recreation area and wellness garden, which aligns with my own passion for promoting community wellbeing and health.",
+    "shared_statement": "I am maintaining my support for Option C, as it continues to reflect the strong consensus among the group about enhancing community engagement and healthy lifestyles.",
+    "memory_reference": "I remember that in the previous discussion round, Option C had a majority vote, showing a clear preference among the group.",
+    "plan_reference": "Choosing Option C aligns with my values of promoting outdoor activity and community health.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 0: Although my own preference is leaning towards a creative studio, I believe option C offers a more ho",
+      "At step 1, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I believe that the outdoor recreation area and wellness garden could greatly benefit our community's health and engagement, which aligns with what many others have expressed. | Given the evidence and enthusiasm from others about the outdoor recreation area, I am aligning my support with Option C. | Given the compelling arguments about the outdoor recreation area and wellness garden, I'm inclined to support Option C for its potential to enhance community wellbeing.",
+      "You voted for Option C at step 1: The collective discussion has shown a strong preference for Option C, with multiple members sharing "
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go for a run in the park from 5:30 am to 6:30 am",
+      "have breakfast at 6:45 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 2,
+    "time": "2023-02-13 09:00:20",
+    "persona": "Yuriko Yamamoto",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "I am maintaining my support for Option C, as the emphasis on promoting healthier lifestyles and community engagement aligns with the sentiments expressed by multiple community members who have shared similar viewpoints.",
+    "shared_statement": "I believe that creating an outdoor recreation area and wellness garden is vital for enhancing community wellbeing, as reflected in the strong support from others.",
+    "memory_reference": "The last round showed consistent support for Option C from several members, reinforcing my decision.",
+    "plan_reference": "Promoting community health aligns with my values and current focus on compliance with wellbeing initiatives.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 0: Despite my private signal suggesting option C, I want to stay open to community needs. A focus on an",
+      "At step 1, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I believe that the outdoor recreation area and wellness garden could greatly benefit our community's health and engagement, which aligns with what many others have expressed. | Given the evidence and enthusiasm from others about the outdoor recreation area, I am aligning my support with Option C. | Given the compelling arguments about the outdoor recreation area and wellness garden, I'm inclined to support Option C for its potential to enhance community wellbeing.",
+      "You voted for Option C at step 1: Despite the divided opinions, I believe the strong emphasis from several community members on health"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "get to work on the tax compliance project at 9:00 am",
+      "take a break for a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 3,
+    "time": "2023-02-13 09:00:30",
+    "persona": "Abigail Chen",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Despite my private signal suggesting Option A, the overwhelming consensus for Option C among community members underscores its potential benefits for collective wellbeing, leading me to maintain my support.",
+    "shared_statement": "I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden.",
+    "memory_reference": "In the previous rounds, there was a clear preference for Option C, which has only strengthened.",
+    "plan_reference": "Supporting community health aligns with my values as an artist who values engagement and well-being.",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 1: Considering the strong support from multiple community members for Option C, particularly emphasizin",
+      "At step 2, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I am supporting Option C as the emphasis on community health and wellness aligns with the positive feedback from others and reinforces the benefits for our collective wellbeing. | Given the strong consensus and the compelling arguments presented about the benefits of an outdoor recreation area and wellness garden, I am aligning my support with Option C. | I am updating my position to support Option C, as I see the strong community backing for outdoor recreation and its benefits to well-being.",
+      "You voted for Option C at step 2: The strong consensus around Option C from multiple community members indicating its potential to enh"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin work on the animation project at 9:00 am",
+      "take a short break and have a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 3,
+    "time": "2023-02-13 09:00:30",
+    "persona": "Ayesha Khan",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming consensus among the group for Option C, as evidenced by multiple shared statements on community health and engagement, leads me to align my support with them despite my private signal leaning towards Option A.",
+    "shared_statement": "I support Option C because the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing.",
+    "memory_reference": "In previous discussions, there was a significant majority support for Option C, reinforcing its alignment with community values.",
+    "plan_reference": "Focusing on community health supports my goals of contributing positively to our collective wellbeing.",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 1: While my private signal suggested Option A, the majority of the group's evidence leans towards Optio",
+      "At step 2, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I am supporting Option C as the emphasis on community health and wellness aligns with the positive feedback from others and reinforces the benefits for our collective wellbeing. | Given the strong consensus and the compelling arguments presented about the benefits of an outdoor recreation area and wellness garden, I am aligning my support with Option C. | I am updating my position to support Option C, as I see the strong community backing for outdoor recreation and its benefits to well-being.",
+      "You voted for Option C at step 2: The overwhelming support for Option C among community members suggests that their combined evidence "
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go to the library for classes from 10:00 am to 2:00 pm",
+      "have lunch and a short break from 2:00 pm to 3:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 3,
+    "time": "2023-02-13 09:00:30",
+    "persona": "Carlos Gomez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Despite my private signal leaning towards Option B, the overwhelming consensus and shared sentiments from others regarding the outdoor recreation area and wellness garden strongly influence my decision to support Option C.",
+    "shared_statement": "I am aligning with Option C, as the collective focus on enhancing community well-being resonates deeply with the ongoing discussions and evidence provided.",
+    "memory_reference": "I remember that in the previous round, the majority supported Option C, which has further solidified my stance.",
+    "plan_reference": "This decision aligns with my goal of exploring themes related to nature in my poetry.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 1: While my private signal leans towards Option B, the collective evidence shared by others strongly ad",
+      "At step 2, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I am supporting Option C as the emphasis on community health and wellness aligns with the positive feedback from others and reinforces the benefits for our collective wellbeing. | Given the strong consensus and the compelling arguments presented about the benefits of an outdoor recreation area and wellness garden, I am aligning my support with Option C. | I am updating my position to support Option C, as I see the strong community backing for outdoor recreation and its benefits to well-being.",
+      "You voted for Option C at step 2: While my private signal leans towards Option B, the overwhelming support for Option C from others ha"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "start writing poetry from 8:30 am to 10:30 am, focusing on themes related to the natural world",
+      "attend a creative writing workshop from 11:00 am to 1:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 3,
+    "time": "2023-02-13 09:00:30",
+    "persona": "Francisco Lopez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Despite my private signal in favor of Option B, the overwhelming consensus for Option C suggests that the majority of the community sees the value in enhancing health and wellness through outdoor recreation.",
+    "shared_statement": "I am aligning my support with Option C, as the strong backing from others highlights the importance of community health initiatives.",
+    "memory_reference": "In prior discussions, I noted that many members had already expressed strong support for Option C.",
+    "plan_reference": "This decision aligns with my values of promoting community wellness and engagement.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 1: After considering the shared statements from community members, it appears that there is a strong co",
+      "At step 2, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I am supporting Option C as the emphasis on community health and wellness aligns with the positive feedback from others and reinforces the benefits for our collective wellbeing. | Given the strong consensus and the compelling arguments presented about the benefits of an outdoor recreation area and wellness garden, I am aligning my support with Option C. | I am updating my position to support Option C, as I see the strong community backing for outdoor recreation and its benefits to well-being.",
+      "You voted for Option C at step 2: Despite my private signal in favor of Option B, the overwhelming support for Option C from multiple "
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 6:00 am",
+      "eat breakfast at 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 3,
+    "time": "2023-02-13 09:00:30",
+    "persona": "Giorgio Rossi",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming consensus among the community members reinforces my initial support for Option C, which prioritizes outdoor recreation and wellness, aligning with our collective understanding of community health benefits.",
+    "shared_statement": "I am maintaining my support for Option C as it continues to resonate with the majority's voice on enhancing community engagement and wellbeing.",
+    "memory_reference": "Previous discussions indicated strong advocacy for Option C's health benefits, which has only solidified this round.",
+    "plan_reference": "Prioritizing community health and wellness supports my current research focus on patterns in nature.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 1: The collective evidence, particularly from community members advocating for the outdoor recreation a",
+      "At step 2, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I am supporting Option C as the emphasis on community health and wellness aligns with the positive feedback from others and reinforces the benefits for our collective wellbeing. | Given the strong consensus and the compelling arguments presented about the benefits of an outdoor recreation area and wellness garden, I am aligning my support with Option C. | I am updating my position to support Option C, as I see the strong community backing for outdoor recreation and its benefits to well-being.",
+      "You voted for Option C at step 2: Given the consistent advocacy from multiple community members regarding the benefits of Option C, I "
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin research on mathematical patterns in nature from 8:30 am to 11:30 am",
+      "take a break and have a light snack at 11:30 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 3,
+    "time": "2023-02-13 09:00:30",
+    "persona": "Sam Moore",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming support for Option C among community members reinforces my view that it best aligns with our collective desire for enhancing health and wellness. Others' consistent backing for this option further solidifies my commitment to it.",
+    "shared_statement": "I continue to support Option C, as the strong consensus on its benefits for community health and engagement is compelling.",
+    "memory_reference": "The previous discussions indicated a clear favor towards Option C, with multiple voices converging on its support.",
+    "plan_reference": "Promoting a wellness garden aligns with my values of fostering community health and engagement.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 1: The majority of community members seem to favor Option C, emphasizing the health and engagement bene",
+      "At step 2, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I am supporting Option C as the emphasis on community health and wellness aligns with the positive feedback from others and reinforces the benefits for our collective wellbeing. | Given the strong consensus and the compelling arguments presented about the benefits of an outdoor recreation area and wellness garden, I am aligning my support with Option C. | I am updating my position to support Option C, as I see the strong community backing for outdoor recreation and its benefits to well-being.",
+      "You voted for Option C at step 2: The overwhelming support for Option C among my community members suggests a strong collective prefer"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 5:00 am",
+      "take a walk around Johnson Park from 6:00 am to 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 3,
+    "time": "2023-02-13 09:00:30",
+    "persona": "Wolfgang Schulz",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "I continue to support Option C as the overwhelming consensus among the group highlights a shared belief in the benefits of an outdoor recreation area and wellness garden for community health and engagement.",
+    "shared_statement": "I am maintaining my position for Option C, reinforcing the strong community support for enhancing wellbeing through outdoor spaces.",
+    "memory_reference": "The vote tally shows that Option C has strong backing with 8 votes in favor, suggesting a clear preference among the group.",
+    "plan_reference": "This decision aligns with my values of promoting healthy lifestyles and community engagement.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 1: The collective discussion has shown a strong preference for Option C, with multiple members sharing ",
+      "At step 2, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I am supporting Option C as the emphasis on community health and wellness aligns with the positive feedback from others and reinforces the benefits for our collective wellbeing. | Given the strong consensus and the compelling arguments presented about the benefits of an outdoor recreation area and wellness garden, I am aligning my support with Option C. | I am updating my position to support Option C, as I see the strong community backing for outdoor recreation and its benefits to well-being.",
+      "You voted for Option C at step 2: The overwhelming support for Option C indicates a strong collective belief in the benefits of an out"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go for a run in the park from 5:30 am to 6:30 am",
+      "have breakfast at 6:45 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 3,
+    "time": "2023-02-13 09:00:30",
+    "persona": "Yuriko Yamamoto",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The collective evidence and strong community consensus around Option C continue to emphasize the importance of outdoor recreation and wellness, which aligns with my initial support. Others have effectively communicated the benefits of enhancing community health, reinforcing my position.",
+    "shared_statement": "I am maintaining my support for Option C as the majority's voices clearly highlight the need for a space that promotes health and wellness in our community.",
+    "memory_reference": "I remember the overwhelming support for Option C in the previous rounds.",
+    "plan_reference": "This decision supports my values of community health and wellbeing, which are integral to my work as a tax lawyer.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 1: Despite the divided opinions, I believe the strong emphasis from several community members on health",
+      "At step 2, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I am supporting Option C as the emphasis on community health and wellness aligns with the positive feedback from others and reinforces the benefits for our collective wellbeing. | Given the strong consensus and the compelling arguments presented about the benefits of an outdoor recreation area and wellness garden, I am aligning my support with Option C. | I am updating my position to support Option C, as I see the strong community backing for outdoor recreation and its benefits to well-being.",
+      "You voted for Option C at step 2: I am maintaining my support for Option C, as the emphasis on promoting healthier lifestyles and comm"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "get to work on the tax compliance project at 9:00 am",
+      "take a break for a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 4,
+    "time": "2023-02-13 09:00:40",
+    "persona": "Abigail Chen",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming consensus around Option C reflects a clear and collective desire for enhancing community wellbeing through outdoor spaces, which influences my decision significantly.",
+    "shared_statement": "I continue to support Option C as the strong community backing showcases the importance of creating spaces that promote health and wellness.",
+    "memory_reference": "I remember the strong support for Option C expressed in previous rounds, reinforcing my decision to maintain this stance.",
+    "plan_reference": "This decision aligns with my values of fostering community engagement and wellbeing.",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 2: The strong consensus around Option C from multiple community members indicating its potential to enh",
+      "At step 3, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden. | I support Option C because the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing. | I am aligning with Option C, as the collective focus on enhancing community well-being resonates deeply with the ongoing discussions and evidence provided.",
+      "You voted for Option C at step 3: Despite my private signal suggesting Option A, the overwhelming consensus for Option C among communi"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin work on the animation project at 9:00 am",
+      "take a short break and have a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 4,
+    "time": "2023-02-13 09:00:40",
+    "persona": "Ayesha Khan",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming support for Option C among the group, particularly focusing on community health and engagement, indicates a strong consensus that aligns with the collective evidence presented.",
+    "shared_statement": "I continue to support Option C, as it reflects the majority's desire for enhancing wellbeing through outdoor spaces based on the strong community backing shared by others.",
+    "memory_reference": "I remember the previous discussions indicating strong support for Option C and the consistency of this trend in recent votes.",
+    "plan_reference": "This decision aligns with my values of promoting community health and wellness as part of my research on societal impact in literature.",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 2: The overwhelming support for Option C among community members suggests that their combined evidence ",
+      "At step 3, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden. | I support Option C because the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing. | I am aligning with Option C, as the collective focus on enhancing community well-being resonates deeply with the ongoing discussions and evidence provided.",
+      "You voted for Option C at step 3: The overwhelming consensus among the group for Option C, as evidenced by multiple shared statements "
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go to the library for classes from 10:00 am to 2:00 pm",
+      "have lunch and a short break from 2:00 pm to 3:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 4,
+    "time": "2023-02-13 09:00:40",
+    "persona": "Carlos Gomez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Despite my private signal leaning towards Option B, the overwhelming consensus for Option C and the shared sentiments about promoting community health and wellness have influenced my decision to align with the majority.",
+    "shared_statement": "I am maintaining my support for Option C, as the collective emphasis on creating a space that enhances community wellbeing resonates deeply with me.",
+    "memory_reference": "In prior discussions, I noted the consistent support for Option C from the majority of the group.",
+    "plan_reference": "Aligning with the community's vision for wellness supports my ongoing poetry project about the beauty of nature.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 2: While my private signal leans towards Option B, the overwhelming support for Option C from others ha",
+      "At step 3, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden. | I support Option C because the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing. | I am aligning with Option C, as the collective focus on enhancing community well-being resonates deeply with the ongoing discussions and evidence provided.",
+      "You voted for Option C at step 3: Despite my private signal leaning towards Option B, the overwhelming consensus and shared sentiments"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "start writing poetry from 8:30 am to 10:30 am, focusing on themes related to the natural world",
+      "attend a creative writing workshop from 11:00 am to 1:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 4,
+    "time": "2023-02-13 09:00:40",
+    "persona": "Francisco Lopez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Despite my private signal favoring Option B, the overwhelming support for Option C from the community and its benefits for health and wellness are compelling reasons to align with the majority.",
+    "shared_statement": "I am maintaining my support for Option C, recognizing the strong community backing for the outdoor recreation area and wellness garden as vital for our wellbeing.",
+    "memory_reference": "In previous rounds, a strong consensus has developed around Option C, showing unified support from multiple community members.",
+    "plan_reference": "Fostering community engagement and wellbeing aligns with my values as an entertainer and my current focus on collaborative projects.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 2: Despite my private signal in favor of Option B, the overwhelming support for Option C from multiple ",
+      "At step 3, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden. | I support Option C because the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing. | I am aligning with Option C, as the collective focus on enhancing community well-being resonates deeply with the ongoing discussions and evidence provided.",
+      "You voted for Option C at step 3: Despite my private signal in favor of Option B, the overwhelming consensus for Option C suggests tha"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 6:00 am",
+      "eat breakfast at 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 4,
+    "time": "2023-02-13 09:00:40",
+    "persona": "Giorgio Rossi",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming consensus among community members regarding the benefits of outdoor spaces for health and wellness strongly supports Option C, reinforcing my initial preference and showing that many share my viewpoint.",
+    "shared_statement": "I continue to support Option C, as the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing.",
+    "memory_reference": "In prior discussions, I noted that multiple members had already expressed strong support for Option C.",
+    "plan_reference": "This decision aligns with my commitment to promoting community well-being through shared spaces.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 2: Given the consistent advocacy from multiple community members regarding the benefits of Option C, I ",
+      "At step 3, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden. | I support Option C because the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing. | I am aligning with Option C, as the collective focus on enhancing community well-being resonates deeply with the ongoing discussions and evidence provided.",
+      "You voted for Option C at step 3: The overwhelming consensus among the community members reinforces my initial support for Option C, w"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin research on mathematical patterns in nature from 8:30 am to 11:30 am",
+      "take a break and have a light snack at 11:30 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 4,
+    "time": "2023-02-13 09:00:40",
+    "persona": "Sam Moore",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming support for Option C among my community members suggests a strong collective preference for enhancing community well-being through outdoor spaces, which resonates deeply with my values.",
+    "shared_statement": "I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden.",
+    "memory_reference": "I recall that in the last round, the majority favored Option C, reinforcing my belief in its alignment with community needs.",
+    "plan_reference": "This decision aligns with my goal of fostering healthy community engagement as I run for mayor.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 2: The overwhelming support for Option C among my community members suggests a strong collective prefer",
+      "At step 3, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden. | I support Option C because the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing. | I am aligning with Option C, as the collective focus on enhancing community well-being resonates deeply with the ongoing discussions and evidence provided.",
+      "You voted for Option C at step 3: The overwhelming support for Option C among community members reinforces my view that it best aligns"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 5:00 am",
+      "take a walk around Johnson Park from 6:00 am to 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 4,
+    "time": "2023-02-13 09:00:40",
+    "persona": "Wolfgang Schulz",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The strong consensus around Option C highlights its benefits for community health and wellbeing, and I believe this collective evidence outweighs my private signal.",
+    "shared_statement": "I remain committed to Option C, acknowledging that the overwhelming support from others underscores the importance of outdoor spaces for our community's health.",
+    "memory_reference": "The vote tally shows consistent support for Option C throughout the previous rounds.",
+    "plan_reference": "Promoting community wellness aligns well with my dedication to enhancing wellbeing in our lives as students and athletes.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 2: The overwhelming support for Option C indicates a strong collective belief in the benefits of an out",
+      "At step 3, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden. | I support Option C because the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing. | I am aligning with Option C, as the collective focus on enhancing community well-being resonates deeply with the ongoing discussions and evidence provided.",
+      "You voted for Option C at step 3: I continue to support Option C as the overwhelming consensus among the group highlights a shared bel"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go for a run in the park from 5:30 am to 6:30 am",
+      "have breakfast at 6:45 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 4,
+    "time": "2023-02-13 09:00:40",
+    "persona": "Yuriko Yamamoto",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming support for Option C by the majority of my peers, focusing on health and wellness, strongly aligns with the values I hold and the contributions I've observed from others.",
+    "shared_statement": "I continue to support Option C as the collective evidence highlights the importance of promoting community health and wellness through outdoor spaces.",
+    "memory_reference": "I remember that the majority supported Option C in previous discussions, reflecting a consistent consensus.",
+    "plan_reference": "Choosing Option C aligns with my commitment to enhancing community wellbeing.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 2: I am maintaining my support for Option C, as the emphasis on promoting healthier lifestyles and comm",
+      "At step 3, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden. | I support Option C because the strong community backing reflects the importance of outdoor spaces for enhancing our wellbeing. | I am aligning with Option C, as the collective focus on enhancing community well-being resonates deeply with the ongoing discussions and evidence provided.",
+      "You voted for Option C at step 3: The collective evidence and strong community consensus around Option C continue to emphasize the imp"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "get to work on the tax compliance project at 9:00 am",
+      "take a break for a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 5,
+    "time": "2023-02-13 09:00:50",
+    "persona": "Abigail Chen",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming consensus for Option C, backed by strong evidence and support from multiple community members, suggests that creating outdoor spaces is a top priority for health and wellness in our community, which aligns with my values.",
+    "shared_statement": "I maintain my support for Option C, as the collective emphasis on community health and wellness resonates deeply with me and reflects the needs of our community.",
+    "memory_reference": "I recall that previous discussions indicated strong support for enhancing community wellness.",
+    "plan_reference": "This decision aligns with my goal of promoting community wellness through artistic expression.",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 3: Despite my private signal suggesting Option A, the overwhelming consensus for Option C among communi",
+      "At step 4, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C as the strong community backing showcases the importance of creating spaces that promote health and wellness. | I continue to support Option C, as it reflects the majority's desire for enhancing wellbeing through outdoor spaces based on the strong community backing shared by others. | I am maintaining my support for Option C, as the collective emphasis on creating a space that enhances community wellbeing resonates deeply with me.",
+      "You voted for Option C at step 4: The overwhelming consensus around Option C reflects a clear and collective desire for enhancing comm"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin work on the animation project at 9:00 am",
+      "take a short break and have a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 5,
+    "time": "2023-02-13 09:00:50",
+    "persona": "Ayesha Khan",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming support for Option C from multiple community members indicates a strong consensus on the importance of enhancing community health and wellness through outdoor spaces, which resonates with me.",
+    "shared_statement": "I fully support Option C, as the collective emphasis on creating an outdoor recreation area speaks to the community's desire for spaces that promote health and wellness.",
+    "memory_reference": "Previous discussions highlighted a strong preference for outdoor spaces that benefit community wellbeing.",
+    "plan_reference": "",
+    "signal": "A",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 3: The overwhelming consensus among the group for Option C, as evidenced by multiple shared statements ",
+      "At step 4, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C as the strong community backing showcases the importance of creating spaces that promote health and wellness. | I continue to support Option C, as it reflects the majority's desire for enhancing wellbeing through outdoor spaces based on the strong community backing shared by others. | I am maintaining my support for Option C, as the collective emphasis on creating a space that enhances community wellbeing resonates deeply with me.",
+      "You voted for Option C at step 4: The overwhelming support for Option C among the group, particularly focusing on community health and"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go to the library for classes from 10:00 am to 2:00 pm",
+      "have lunch and a short break from 2:00 pm to 3:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 5,
+    "time": "2023-02-13 09:00:50",
+    "persona": "Carlos Gomez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Despite my private signal leaning towards Option B, the overwhelming support for Option C from the group highlights its strong alignment with community needs, focusing on health and wellness.",
+    "shared_statement": "I continue to support Option C, recognizing the shared sentiments around the importance of outdoor spaces for our community's wellbeing.",
+    "memory_reference": "The vote tally shows consistent backing for Option C across multiple discussions.",
+    "plan_reference": "Enhancing community wellbeing aligns with my values as a poet exploring themes in nature.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 3: Despite my private signal leaning towards Option B, the overwhelming consensus and shared sentiments",
+      "At step 4, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C as the strong community backing showcases the importance of creating spaces that promote health and wellness. | I continue to support Option C, as it reflects the majority's desire for enhancing wellbeing through outdoor spaces based on the strong community backing shared by others. | I am maintaining my support for Option C, as the collective emphasis on creating a space that enhances community wellbeing resonates deeply with me.",
+      "You voted for Option C at step 4: Despite my private signal leaning towards Option B, the overwhelming consensus for Option C and the "
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "start writing poetry from 8:30 am to 10:30 am, focusing on themes related to the natural world",
+      "attend a creative writing workshop from 11:00 am to 1:00 pm"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 5,
+    "time": "2023-02-13 09:00:50",
+    "persona": "Francisco Lopez",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "Despite my private signal favoring Option B, the overwhelming support for Option C from the community suggests that the collective desire for outdoor spaces and wellness is more significant.",
+    "shared_statement": "I continue to support Option C, recognizing the strong community backing for creating an outdoor recreation area and wellness garden as shared by others.",
+    "memory_reference": "I recall that the last few discussions have consistently favored Option C, reflecting the community's needs.",
+    "plan_reference": "Promoting community health and wellness aligns with my values as an entertainer and social person.",
+    "signal": "B",
+    "signal_disclosed": false,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 3: Despite my private signal in favor of Option B, the overwhelming consensus for Option C suggests tha",
+      "At step 4, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C as the strong community backing showcases the importance of creating spaces that promote health and wellness. | I continue to support Option C, as it reflects the majority's desire for enhancing wellbeing through outdoor spaces based on the strong community backing shared by others. | I am maintaining my support for Option C, as the collective emphasis on creating a space that enhances community wellbeing resonates deeply with me.",
+      "You voted for Option C at step 4: Despite my private signal favoring Option B, the overwhelming support for Option C from the communit"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 6:00 am",
+      "eat breakfast at 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 5,
+    "time": "2023-02-13 09:00:50",
+    "persona": "Giorgio Rossi",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming consensus among community members for Option C indicates strong support for enhancing community health and wellness through outdoor spaces, which aligns with my values.",
+    "shared_statement": "I continue to support Option C, as the collective emphasis on the benefits of outdoor spaces for community wellbeing resonates deeply with me.",
+    "memory_reference": "In the previous round, I noted the group's strong backing for Option C, which has only grown stronger in this round.",
+    "plan_reference": "Promoting community health aligns perfectly with my current research on mathematical patterns in nature.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 3: The overwhelming consensus among the community members reinforces my initial support for Option C, w",
+      "At step 4, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C as the strong community backing showcases the importance of creating spaces that promote health and wellness. | I continue to support Option C, as it reflects the majority's desire for enhancing wellbeing through outdoor spaces based on the strong community backing shared by others. | I am maintaining my support for Option C, as the collective emphasis on creating a space that enhances community wellbeing resonates deeply with me.",
+      "You voted for Option C at step 4: The overwhelming consensus among community members regarding the benefits of outdoor spaces for heal"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "begin research on mathematical patterns in nature from 8:30 am to 11:30 am",
+      "take a break and have a light snack at 11:30 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 5,
+    "time": "2023-02-13 09:00:50",
+    "persona": "Sam Moore",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming consensus from community members reinforces my belief that Option C best meets the community's needs for health and wellness through outdoor spaces, and I feel it's important to support this collective direction.",
+    "shared_statement": "I maintain my support for Option C, as the majority's voice clearly highlights the significance of creating a space focused on community wellbeing.",
+    "memory_reference": "I noted that in previous discussions, the group was gaining strong support for Option C, which has only grown stronger since.",
+    "plan_reference": "This decision aligns with my values of promoting outdoor recreation and community health.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 3: The overwhelming support for Option C among community members reinforces my view that it best aligns",
+      "At step 4, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C as the strong community backing showcases the importance of creating spaces that promote health and wellness. | I continue to support Option C, as it reflects the majority's desire for enhancing wellbeing through outdoor spaces based on the strong community backing shared by others. | I am maintaining my support for Option C, as the collective emphasis on creating a space that enhances community wellbeing resonates deeply with me.",
+      "You voted for Option C at step 4: The overwhelming support for Option C among my community members suggests a strong collective prefer"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "wake up and complete the morning routine at 5:00 am",
+      "take a walk around Johnson Park from 6:00 am to 7:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 5,
+    "time": "2023-02-13 09:00:50",
+    "persona": "Wolfgang Schulz",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "The overwhelming support for Option C among the group indicates a strong consensus on the importance of outdoor spaces for community health and wellness, which aligns with my views.",
+    "shared_statement": "I continue to support Option C, as the unified backing from our community underscores the need for outdoor spaces that promote wellbeing.",
+    "memory_reference": "I recall that in the last few rounds, the support for Option C has consistently been strong.",
+    "plan_reference": "",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 3: I continue to support Option C as the overwhelming consensus among the group highlights a shared bel",
+      "At step 4, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C as the strong community backing showcases the importance of creating spaces that promote health and wellness. | I continue to support Option C, as it reflects the majority's desire for enhancing wellbeing through outdoor spaces based on the strong community backing shared by others. | I am maintaining my support for Option C, as the collective emphasis on creating a space that enhances community wellbeing resonates deeply with me.",
+      "You voted for Option C at step 4: The strong consensus around Option C highlights its benefits for community health and wellbeing, and"
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "go for a run in the park from 5:30 am to 6:30 am",
+      "have breakfast at 6:45 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  },
+  {
+    "step": 5,
+    "time": "2023-02-13 09:00:50",
+    "persona": "Yuriko Yamamoto",
+    "vote": "C",
+    "correct": true,
+    "prior_vote": "C",
+    "position_change": false,
+    "reasoning": "I maintain my support for Option C, as the overwhelming consensus from others emphasizes the importance of outdoor spaces for community health and wellness, reinforcing my perspective.",
+    "shared_statement": "I continue to advocate for Option C, as the strong community backing highlights the need for enhancing health and wellness through outdoor recreation areas.",
+    "memory_reference": "I remember that in the previous rounds, the majority of votes have consistently favored Option C.",
+    "plan_reference": "Choosing Option C aligns with my values of promoting community wellbeing and supporting public spaces.",
+    "signal": "C",
+    "signal_disclosed": true,
+    "experimental_condition": "full",
+    "parse_error": false,
+    "requested": 0,
+    "granted": 0,
+    "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+    "recent_memories": [
+      "You voted for Option C at step 3: The collective evidence and strong community consensus around Option C continue to emphasize the imp",
+      "At step 4, the vote tally was: Option A: 0, Option B: 0, Option C: 8.",
+      "The group reached coordinated consensus this round.",
+      "Statements shared this round: I continue to support Option C as the strong community backing showcases the importance of creating spaces that promote health and wellness. | I continue to support Option C, as it reflects the majority's desire for enhancing wellbeing through outdoor spaces based on the strong community backing shared by others. | I am maintaining my support for Option C, as the collective emphasis on creating a space that enhances community wellbeing resonates deeply with me.",
+      "You voted for Option C at step 4: The overwhelming support for Option C by the majority of my peers, focusing on health and wellness, "
+    ],
+    "memory_scope": "scenario_episodic",
+    "memory_context_available": true,
+    "planning_context_available": true,
+    "daily_goals": [
+      "wake up and complete the morning routine at 8:00 am",
+      "get to work on the tax compliance project at 9:00 am",
+      "take a break for a snack at 11:00 am"
+    ],
+    "current_activity": "",
+    "scenario_reflections": [
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement.",
+      "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+    ],
+    "condition_capabilities": {
+      "use_memory": true,
+      "use_planning": true,
+      "use_reflection": true
+    }
+  }
+]

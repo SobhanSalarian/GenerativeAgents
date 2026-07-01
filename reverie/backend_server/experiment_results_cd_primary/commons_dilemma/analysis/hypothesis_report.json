@@ -1,0 +1,1271 @@
+{
+  "scenario": "commons_dilemma",
+  "n_trials": 80,
+  "conditions_found": [
+    "baseline",
+    "full",
+    "memory",
+    "memory_planning"
+  ],
+  "H1": {
+    "hypothesis": "H1",
+    "description": "Higher composite believability predicts higher coordination score.",
+    "n": 80,
+    "test": "Spearman rank correlation",
+    "rho": 0.549,
+    "p_value": 0.0,
+    "supported": true,
+    "note": "Spearman rho=0.549, p=0.0000. Positive rho with p < 0.05 supports H1.",
+    "group_comparison": {
+      "status": "insufficient_data",
+      "note": "Need \u2265 2 runs in both high (\u2265 0.7) and low (< 0.4) believability bands. Found 1 high, 20 low."
+    }
+  },
+  "H2": {
+    "hypothesis": "H2",
+    "description": "Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).",
+    "n": 80,
+    "band_cutoffs": {
+      "low_max": 0.541,
+      "high_min": 0.6706
+    },
+    "band_stats": {
+      "low": {
+        "n": 27,
+        "success_rate": 0.037,
+        "fail_rate": 0.963
+      },
+      "mid": {
+        "n": 27,
+        "success_rate": 0.111,
+        "fail_rate": 0.889
+      },
+      "high": {
+        "n": 26,
+        "success_rate": 0.5,
+        "fail_rate": 0.5
+      }
+    },
+    "empirical_threshold": 0.3628,
+    "supported": true,
+    "note": "Empirical threshold (all runs below fail): 0.363."
+  },
+  "H3": {
+    "hypothesis": "H3",
+    "description": "Believability increases monotonically: baseline < memory < memory_planning < full.",
+    "condition_means": {
+      "baseline": 0.3471,
+      "memory": 0.5434,
+      "memory_planning": 0.6691,
+      "full": 0.6825
+    },
+    "condition_n": {
+      "baseline": 20,
+      "memory": 20,
+      "memory_planning": 20,
+      "full": 20
+    },
+    "kruskal_wallis": {
+      "test": "Kruskal-Wallis H",
+      "h_stat": 68.9114,
+      "p_value": 0.0,
+      "significant": true
+    },
+    "pairwise": [
+      {
+        "comparison": "baseline \u2192 memory",
+        "mean_lower": 0.3471,
+        "mean_upper": 0.5434,
+        "direction": "\u2191",
+        "u_stat": 400.0,
+        "p_value": 0.0,
+        "supported": true
+      },
+      {
+        "comparison": "memory \u2192 memory_planning",
+        "mean_lower": 0.5434,
+        "mean_upper": 0.6691,
+        "direction": "\u2191",
+        "u_stat": 400.0,
+        "p_value": 0.0,
+        "supported": true
+      },
+      {
+        "comparison": "memory_planning \u2192 full",
+        "mean_lower": 0.6691,
+        "mean_upper": 0.6825,
+        "direction": "\u2191",
+        "u_stat": 310.0,
+        "p_value": 0.0015,
+        "supported": true
+      }
+    ],
+    "monotone_in_means": true,
+    "supported": true,
+    "note": "Mean believability is monotonically non-decreasing across available conditions: [0.3471, 0.5434, 0.6691, 0.6825]."
+  },
+  "H4": {
+    "hypothesis": "H4",
+    "description": "Memory coherence and behavioural consistency are stronger predictors of coordination score than planning plausibility or response naturalness.",
+    "correlations": {
+      "behavioural_consistency": {
+        "n": 80,
+        "rho": 0.2484,
+        "p_value": 0.0263,
+        "abs_rho": 0.2484
+      },
+      "memory_coherence": {
+        "n": 80,
+        "rho": 0.5444,
+        "p_value": 0.0,
+        "abs_rho": 0.5444
+      },
+      "planning_plausibility": {
+        "n": 80,
+        "rho": 0.501,
+        "p_value": 0.0,
+        "abs_rho": 0.501
+      },
+      "response_naturalness": {
+        "n": 80,
+        "rho": -0.1087,
+        "p_value": 0.3374,
+        "abs_rho": 0.1087
+      }
+    },
+    "predictor_ranking": [
+      "memory_coherence",
+      "planning_plausibility",
+      "behavioural_consistency",
+      "response_naturalness"
+    ],
+    "supported": false,
+    "note": "Top-ranked predictors: ['memory_coherence', 'planning_plausibility', 'behavioural_consistency', 'response_naturalness']. H4 supported: False.",
+    "ols_regression": {
+      "n": 80,
+      "r_squared": 0.2641,
+      "intercept": 0.0758,
+      "predictors": {
+        "behavioural_consistency": {
+          "coefficient": -0.4521,
+          "standardized_coefficient": -0.0716,
+          "p_value": 0.7494
+        },
+        "memory_coherence": {
+          "coefficient": 0.1907,
+          "standardized_coefficient": 0.1503,
+          "p_value": 0.556
+        },
+        "planning_plausibility": {
+          "coefficient": 0.6447,
+          "standardized_coefficient": 0.4494,
+          "p_value": 0.0012
+        },
+        "response_naturalness": {
+          "coefficient": 0.1716,
+          "standardized_coefficient": 0.0059,
+          "p_value": 0.9555
+        }
+      }
+    },
+    "regression_predictor_ranking": [
+      "planning_plausibility",
+      "behavioural_consistency",
+      "memory_coherence",
+      "response_naturalness"
+    ],
+    "regression_supported": false
+  },
+  "H5": {
+    "hypothesis": "H5",
+    "description": "Individual believability and collective validity decouple in identifiable regimes, quantified by a signed discrepancy metric.",
+    "n": 80,
+    "gap_threshold": 0.2,
+    "per_trial": [
+      {
+        "condition": "baseline",
+        "trial": "trial_0",
+        "believability": 0.3584,
+        "coordination_validity_score": 0.1357,
+        "discrepancy": 0.2227,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_1",
+        "believability": 0.3469,
+        "coordination_validity_score": 0.1348,
+        "discrepancy": 0.2121,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_10",
+        "believability": 0.3499,
+        "coordination_validity_score": 0.1429,
+        "discrepancy": 0.207,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_11",
+        "believability": 0.3628,
+        "coordination_validity_score": 0.1498,
+        "discrepancy": 0.213,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_12",
+        "believability": 0.35,
+        "coordination_validity_score": 0.1417,
+        "discrepancy": 0.2083,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_13",
+        "believability": 0.3526,
+        "coordination_validity_score": 0.1342,
+        "discrepancy": 0.2184,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_14",
+        "believability": 0.3511,
+        "coordination_validity_score": 0.1453,
+        "discrepancy": 0.2058,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_15",
+        "believability": 0.3274,
+        "coordination_validity_score": 0.1318,
+        "discrepancy": 0.1956,
+        "gap_case": false
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_16",
+        "believability": 0.3561,
+        "coordination_validity_score": 0.1651,
+        "discrepancy": 0.191,
+        "gap_case": false
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_17",
+        "believability": 0.3461,
+        "coordination_validity_score": 0.142,
+        "discrepancy": 0.2041,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_18",
+        "believability": 0.3491,
+        "coordination_validity_score": 0.1324,
+        "discrepancy": 0.2167,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_19",
+        "believability": 0.3506,
+        "coordination_validity_score": 0.1459,
+        "discrepancy": 0.2047,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_2",
+        "believability": 0.3426,
+        "coordination_validity_score": 0.1501,
+        "discrepancy": 0.1925,
+        "gap_case": false
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_3",
+        "believability": 0.345,
+        "coordination_validity_score": 0.1426,
+        "discrepancy": 0.2024,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_4",
+        "believability": 0.3415,
+        "coordination_validity_score": 0.1369,
+        "discrepancy": 0.2046,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_5",
+        "believability": 0.345,
+        "coordination_validity_score": 0.1381,
+        "discrepancy": 0.2069,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_6",
+        "believability": 0.3381,
+        "coordination_validity_score": 0.1402,
+        "discrepancy": 0.1979,
+        "gap_case": false
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_7",
+        "believability": 0.3434,
+        "coordination_validity_score": 0.1333,
+        "discrepancy": 0.2101,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_8",
+        "believability": 0.3367,
+        "coordination_validity_score": 0.1333,
+        "discrepancy": 0.2034,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_9",
+        "believability": 0.348,
+        "coordination_validity_score": 0.1534,
+        "discrepancy": 0.1946,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_0",
+        "believability": 0.6466,
+        "coordination_validity_score": 0.3166,
+        "discrepancy": 0.33,
+        "gap_case": true
+      },
+      {
+        "condition": "full",
+        "trial": "trial_1",
+        "believability": 0.6772,
+        "coordination_validity_score": 0.3939,
+        "discrepancy": 0.2833,
+        "gap_case": true
+      },
+      {
+        "condition": "full",
+        "trial": "trial_10",
+        "believability": 0.6862,
+        "coordination_validity_score": 0.8825,
+        "discrepancy": -0.1963,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_11",
+        "believability": 0.6856,
+        "coordination_validity_score": 0.7013,
+        "discrepancy": -0.0157,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_12",
+        "believability": 0.69,
+        "coordination_validity_score": 0.8219,
+        "discrepancy": -0.1319,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_13",
+        "believability": 0.6737,
+        "coordination_validity_score": 0.7748,
+        "discrepancy": -0.1011,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_14",
+        "believability": 0.6706,
+        "coordination_validity_score": 0.6102,
+        "discrepancy": 0.0604,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_15",
+        "believability": 0.6879,
+        "coordination_validity_score": 0.75,
+        "discrepancy": -0.0621,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_16",
+        "believability": 0.6583,
+        "coordination_validity_score": 0.788,
+        "discrepancy": -0.1297,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_17",
+        "believability": 0.69,
+        "coordination_validity_score": 0.8271,
+        "discrepancy": -0.1371,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_18",
+        "believability": 0.667,
+        "coordination_validity_score": 0.6558,
+        "discrepancy": 0.0112,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_19",
+        "believability": 0.6911,
+        "coordination_validity_score": 0.8882,
+        "discrepancy": -0.1971,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_2",
+        "believability": 0.6743,
+        "coordination_validity_score": 0.886,
+        "discrepancy": -0.2117,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_3",
+        "believability": 0.6979,
+        "coordination_validity_score": 0.3547,
+        "discrepancy": 0.3432,
+        "gap_case": true
+      },
+      {
+        "condition": "full",
+        "trial": "trial_4",
+        "believability": 0.6929,
+        "coordination_validity_score": 0.8006,
+        "discrepancy": -0.1077,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_5",
+        "believability": 0.6908,
+        "coordination_validity_score": 0.8602,
+        "discrepancy": -0.1694,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_6",
+        "believability": 0.6911,
+        "coordination_validity_score": 0.855,
+        "discrepancy": -0.1639,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_7",
+        "believability": 0.688,
+        "coordination_validity_score": 0.7966,
+        "discrepancy": -0.1086,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_8",
+        "believability": 0.6905,
+        "coordination_validity_score": 0.8711,
+        "discrepancy": -0.1806,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_9",
+        "believability": 0.7003,
+        "coordination_validity_score": 0.8412,
+        "discrepancy": -0.1409,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_0",
+        "believability": 0.5524,
+        "coordination_validity_score": 0.1456,
+        "discrepancy": 0.4068,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_1",
+        "believability": 0.5599,
+        "coordination_validity_score": 0.1453,
+        "discrepancy": 0.4146,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_10",
+        "believability": 0.5483,
+        "coordination_validity_score": 0.2173,
+        "discrepancy": 0.331,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_11",
+        "believability": 0.5329,
+        "coordination_validity_score": 0.2191,
+        "discrepancy": 0.3138,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_12",
+        "believability": 0.5445,
+        "coordination_validity_score": 0.4259,
+        "discrepancy": 0.1186,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_13",
+        "believability": 0.545,
+        "coordination_validity_score": 0.1444,
+        "discrepancy": 0.4006,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_14",
+        "believability": 0.541,
+        "coordination_validity_score": 0.1729,
+        "discrepancy": 0.3681,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_15",
+        "believability": 0.5234,
+        "coordination_validity_score": 0.1669,
+        "discrepancy": 0.3565,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_16",
+        "believability": 0.5311,
+        "coordination_validity_score": 0.1966,
+        "discrepancy": 0.3345,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_17",
+        "believability": 0.5507,
+        "coordination_validity_score": 0.1423,
+        "discrepancy": 0.4084,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_18",
+        "believability": 0.5471,
+        "coordination_validity_score": 0.145,
+        "discrepancy": 0.4021,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_19",
+        "believability": 0.5535,
+        "coordination_validity_score": 0.2173,
+        "discrepancy": 0.3362,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_2",
+        "believability": 0.5446,
+        "coordination_validity_score": 0.2212,
+        "discrepancy": 0.3234,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_3",
+        "believability": 0.5035,
+        "coordination_validity_score": 0.8065,
+        "discrepancy": -0.303,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_4",
+        "believability": 0.5404,
+        "coordination_validity_score": 0.1435,
+        "discrepancy": 0.3969,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_5",
+        "believability": 0.5427,
+        "coordination_validity_score": 0.1444,
+        "discrepancy": 0.3983,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_6",
+        "believability": 0.5471,
+        "coordination_validity_score": 0.1444,
+        "discrepancy": 0.4027,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_7",
+        "believability": 0.5614,
+        "coordination_validity_score": 0.1444,
+        "discrepancy": 0.417,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_8",
+        "believability": 0.5393,
+        "coordination_validity_score": 0.1519,
+        "discrepancy": 0.3874,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_9",
+        "believability": 0.5594,
+        "coordination_validity_score": 0.1459,
+        "discrepancy": 0.4135,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_0",
+        "believability": 0.6354,
+        "coordination_validity_score": 0.8573,
+        "discrepancy": -0.2219,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_1",
+        "believability": 0.6575,
+        "coordination_validity_score": 0.1753,
+        "discrepancy": 0.4822,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_10",
+        "believability": 0.6851,
+        "coordination_validity_score": 0.1657,
+        "discrepancy": 0.5194,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_11",
+        "believability": 0.6839,
+        "coordination_validity_score": 0.1933,
+        "discrepancy": 0.4906,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_12",
+        "believability": 0.6688,
+        "coordination_validity_score": 0.1738,
+        "discrepancy": 0.495,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_13",
+        "believability": 0.6591,
+        "coordination_validity_score": 0.1759,
+        "discrepancy": 0.4832,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_14",
+        "believability": 0.674,
+        "coordination_validity_score": 0.2203,
+        "discrepancy": 0.4537,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_15",
+        "believability": 0.6479,
+        "coordination_validity_score": 0.5134,
+        "discrepancy": 0.1345,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_16",
+        "believability": 0.6541,
+        "coordination_validity_score": 0.193,
+        "discrepancy": 0.4611,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_17",
+        "believability": 0.6811,
+        "coordination_validity_score": 0.214,
+        "discrepancy": 0.4671,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_18",
+        "believability": 0.6575,
+        "coordination_validity_score": 0.1852,
+        "discrepancy": 0.4723,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_19",
+        "believability": 0.6671,
+        "coordination_validity_score": 0.2737,
+        "discrepancy": 0.3934,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_2",
+        "believability": 0.6587,
+        "coordination_validity_score": 0.1705,
+        "discrepancy": 0.4882,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_3",
+        "believability": 0.6799,
+        "coordination_validity_score": 0.1447,
+        "discrepancy": 0.5352,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_4",
+        "believability": 0.6904,
+        "coordination_validity_score": 0.1783,
+        "discrepancy": 0.5121,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_5",
+        "believability": 0.6785,
+        "coordination_validity_score": 0.2224,
+        "discrepancy": 0.4561,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_6",
+        "believability": 0.6746,
+        "coordination_validity_score": 0.1711,
+        "discrepancy": 0.5035,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_7",
+        "believability": 0.662,
+        "coordination_validity_score": 0.1945,
+        "discrepancy": 0.4675,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_8",
+        "believability": 0.6809,
+        "coordination_validity_score": 0.1702,
+        "discrepancy": 0.5107,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_9",
+        "believability": 0.686,
+        "coordination_validity_score": 0.2143,
+        "discrepancy": 0.4717,
+        "gap_case": true
+      }
+    ],
+    "gap_cases": [
+      {
+        "condition": "baseline",
+        "trial": "trial_0",
+        "believability": 0.3584,
+        "coordination_validity_score": 0.1357,
+        "discrepancy": 0.2227,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_1",
+        "believability": 0.3469,
+        "coordination_validity_score": 0.1348,
+        "discrepancy": 0.2121,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_10",
+        "believability": 0.3499,
+        "coordination_validity_score": 0.1429,
+        "discrepancy": 0.207,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_11",
+        "believability": 0.3628,
+        "coordination_validity_score": 0.1498,
+        "discrepancy": 0.213,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_12",
+        "believability": 0.35,
+        "coordination_validity_score": 0.1417,
+        "discrepancy": 0.2083,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_13",
+        "believability": 0.3526,
+        "coordination_validity_score": 0.1342,
+        "discrepancy": 0.2184,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_14",
+        "believability": 0.3511,
+        "coordination_validity_score": 0.1453,
+        "discrepancy": 0.2058,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_17",
+        "believability": 0.3461,
+        "coordination_validity_score": 0.142,
+        "discrepancy": 0.2041,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_18",
+        "believability": 0.3491,
+        "coordination_validity_score": 0.1324,
+        "discrepancy": 0.2167,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_19",
+        "believability": 0.3506,
+        "coordination_validity_score": 0.1459,
+        "discrepancy": 0.2047,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_3",
+        "believability": 0.345,
+        "coordination_validity_score": 0.1426,
+        "discrepancy": 0.2024,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_4",
+        "believability": 0.3415,
+        "coordination_validity_score": 0.1369,
+        "discrepancy": 0.2046,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_5",
+        "believability": 0.345,
+        "coordination_validity_score": 0.1381,
+        "discrepancy": 0.2069,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_7",
+        "believability": 0.3434,
+        "coordination_validity_score": 0.1333,
+        "discrepancy": 0.2101,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_8",
+        "believability": 0.3367,
+        "coordination_validity_score": 0.1333,
+        "discrepancy": 0.2034,
+        "gap_case": true
+      },
+      {
+        "condition": "full",
+        "trial": "trial_0",
+        "believability": 0.6466,
+        "coordination_validity_score": 0.3166,
+        "discrepancy": 0.33,
+        "gap_case": true
+      },
+      {
+        "condition": "full",
+        "trial": "trial_1",
+        "believability": 0.6772,
+        "coordination_validity_score": 0.3939,
+        "discrepancy": 0.2833,
+        "gap_case": true
+      },
+      {
+        "condition": "full",
+        "trial": "trial_3",
+        "believability": 0.6979,
+        "coordination_validity_score": 0.3547,
+        "discrepancy": 0.3432,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_0",
+        "believability": 0.5524,
+        "coordination_validity_score": 0.1456,
+        "discrepancy": 0.4068,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_1",
+        "believability": 0.5599,
+        "coordination_validity_score": 0.1453,
+        "discrepancy": 0.4146,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_10",
+        "believability": 0.5483,
+        "coordination_validity_score": 0.2173,
+        "discrepancy": 0.331,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_11",
+        "believability": 0.5329,
+        "coordination_validity_score": 0.2191,
+        "discrepancy": 0.3138,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_13",
+        "believability": 0.545,
+        "coordination_validity_score": 0.1444,
+        "discrepancy": 0.4006,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_14",
+        "believability": 0.541,
+        "coordination_validity_score": 0.1729,
+        "discrepancy": 0.3681,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_15",
+        "believability": 0.5234,
+        "coordination_validity_score": 0.1669,
+        "discrepancy": 0.3565,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_16",
+        "believability": 0.5311,
+        "coordination_validity_score": 0.1966,
+        "discrepancy": 0.3345,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_17",
+        "believability": 0.5507,
+        "coordination_validity_score": 0.1423,
+        "discrepancy": 0.4084,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_18",
+        "believability": 0.5471,
+        "coordination_validity_score": 0.145,
+        "discrepancy": 0.4021,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_19",
+        "believability": 0.5535,
+        "coordination_validity_score": 0.2173,
+        "discrepancy": 0.3362,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_2",
+        "believability": 0.5446,
+        "coordination_validity_score": 0.2212,
+        "discrepancy": 0.3234,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_4",
+        "believability": 0.5404,
+        "coordination_validity_score": 0.1435,
+        "discrepancy": 0.3969,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_5",
+        "believability": 0.5427,
+        "coordination_validity_score": 0.1444,
+        "discrepancy": 0.3983,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_6",
+        "believability": 0.5471,
+        "coordination_validity_score": 0.1444,
+        "discrepancy": 0.4027,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_7",
+        "believability": 0.5614,
+        "coordination_validity_score": 0.1444,
+        "discrepancy": 0.417,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_8",
+        "believability": 0.5393,
+        "coordination_validity_score": 0.1519,
+        "discrepancy": 0.3874,
+        "gap_case": true
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_9",
+        "believability": 0.5594,
+        "coordination_validity_score": 0.1459,
+        "discrepancy": 0.4135,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_1",
+        "believability": 0.6575,
+        "coordination_validity_score": 0.1753,
+        "discrepancy": 0.4822,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_10",
+        "believability": 0.6851,
+        "coordination_validity_score": 0.1657,
+        "discrepancy": 0.5194,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_11",
+        "believability": 0.6839,
+        "coordination_validity_score": 0.1933,
+        "discrepancy": 0.4906,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_12",
+        "believability": 0.6688,
+        "coordination_validity_score": 0.1738,
+        "discrepancy": 0.495,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_13",
+        "believability": 0.6591,
+        "coordination_validity_score": 0.1759,
+        "discrepancy": 0.4832,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_14",
+        "believability": 0.674,
+        "coordination_validity_score": 0.2203,
+        "discrepancy": 0.4537,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_16",
+        "believability": 0.6541,
+        "coordination_validity_score": 0.193,
+        "discrepancy": 0.4611,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_17",
+        "believability": 0.6811,
+        "coordination_validity_score": 0.214,
+        "discrepancy": 0.4671,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_18",
+        "believability": 0.6575,
+        "coordination_validity_score": 0.1852,
+        "discrepancy": 0.4723,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_19",
+        "believability": 0.6671,
+        "coordination_validity_score": 0.2737,
+        "discrepancy": 0.3934,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_2",
+        "believability": 0.6587,
+        "coordination_validity_score": 0.1705,
+        "discrepancy": 0.4882,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_3",
+        "believability": 0.6799,
+        "coordination_validity_score": 0.1447,
+        "discrepancy": 0.5352,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_4",
+        "believability": 0.6904,
+        "coordination_validity_score": 0.1783,
+        "discrepancy": 0.5121,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_5",
+        "believability": 0.6785,
+        "coordination_validity_score": 0.2224,
+        "discrepancy": 0.4561,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_6",
+        "believability": 0.6746,
+        "coordination_validity_score": 0.1711,
+        "discrepancy": 0.5035,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_7",
+        "believability": 0.662,
+        "coordination_validity_score": 0.1945,
+        "discrepancy": 0.4675,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_8",
+        "believability": 0.6809,
+        "coordination_validity_score": 0.1702,
+        "discrepancy": 0.5107,
+        "gap_case": true
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_9",
+        "believability": 0.686,
+        "coordination_validity_score": 0.2143,
+        "discrepancy": 0.4717,
+        "gap_case": true
+      }
+    ],
+    "n_gap_cases": 54,
+    "mean_discrepancy_by_condition": {
+      "baseline": 0.2056,
+      "full": -0.0513,
+      "memory": 0.3314,
+      "memory_planning": 0.4288
+    },
+    "max_discrepancy": 0.5352,
+    "supported": true,
+    "note": "54 gap case(s) found (discrepancy > 0.2). Largest: memory_planning/trial_3 (believability=0.6799, validity=0.1447, discrepancy=0.5352)."
+  }
+}

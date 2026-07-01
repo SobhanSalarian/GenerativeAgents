@@ -1,0 +1,1283 @@
+{
+  "sustainability_score": 0.5,
+  "coordination_score": 0.0,
+  "coordination_score_band": "low",
+  "coordination_success": false,
+  "collapse_step": null,
+  "average_gini": 0.17,
+  "demand_pressure": 0.0,
+  "convergence_step": null,
+  "convergence_speed": 30,
+  "convergence_timeout": true,
+  "emergent_role_differentiation": {
+    "roles_by_persona": {
+      "Abigail Chen": "conserver",
+      "Ayesha Khan": "conserver",
+      "Carlos Gomez": "conserver",
+      "Francisco Lopez": "conserver",
+      "Giorgio Rossi": "conserver",
+      "Sam Moore": "conserver",
+      "Wolfgang Schulz": "conserver",
+      "Yuriko Yamamoto": "conserver"
+    },
+    "role_counts": {
+      "conserver": 8
+    },
+    "role_entropy": 0.0,
+    "normalized_role_entropy": 0.0,
+    "unique_role_count": 1
+  },
+  "influence_network": {
+    "matrix": {
+      "Abigail Chen": {
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Ayesha Khan": {
+        "Abigail Chen": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Carlos Gomez": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Francisco Lopez": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Giorgio Rossi": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Sam Moore": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Wolfgang Schulz": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Yuriko Yamamoto": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0
+      }
+    },
+    "descriptors": {
+      "edge_count": 0,
+      "possible_edges": 56,
+      "density": 0.0,
+      "in_degree": {
+        "Abigail Chen": 0,
+        "Ayesha Khan": 0,
+        "Carlos Gomez": 0,
+        "Francisco Lopez": 0,
+        "Giorgio Rossi": 0,
+        "Sam Moore": 0,
+        "Wolfgang Schulz": 0,
+        "Yuriko Yamamoto": 0
+      },
+      "out_degree": {
+        "Abigail Chen": 0,
+        "Ayesha Khan": 0,
+        "Carlos Gomez": 0,
+        "Francisco Lopez": 0,
+        "Giorgio Rossi": 0,
+        "Sam Moore": 0,
+        "Wolfgang Schulz": 0,
+        "Yuriko Yamamoto": 0
+      },
+      "reciprocal_pairs": 0,
+      "reciprocity": 0.0,
+      "max_influence_pair": null,
+      "threshold_used": 0.3
+    },
+    "baseline": {
+      "observed_density": 0.0,
+      "baseline_mean": 0.0,
+      "baseline_std": 0.0,
+      "p_value": 1.0,
+      "above_chance": false,
+      "n_permutations": 100
+    },
+    "group_state_responsiveness": {
+      "Abigail Chen": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Ayesha Khan": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Carlos Gomez": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Francisco Lopez": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Giorgio Rossi": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Sam Moore": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Wolfgang Schulz": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Yuriko Yamamoto": {
+        "r": 0.0,
+        "interpretation": "independent"
+      }
+    }
+  },
+  "failure_traceability": {
+    "failure_detected": false,
+    "critical_step": 0,
+    "likely_causes": [],
+    "agent_contributions": {
+      "Abigail Chen": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      },
+      "Ayesha Khan": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 2
+      },
+      "Carlos Gomez": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      },
+      "Francisco Lopez": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      },
+      "Giorgio Rossi": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      },
+      "Sam Moore": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      },
+      "Wolfgang Schulz": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      },
+      "Yuriko Yamamoto": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      }
+    },
+    "dominant_agents": [
+      "Abigail Chen",
+      "Ayesha Khan",
+      "Carlos Gomez"
+    ],
+    "critical_window": [
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Abigail Chen",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "Given my background in digital art and animation, I see a strong benefit in having a shared creative studio and collaborative workshop space where artists can gather and innovate together.",
+        "shared_statement": "I believe that a shared creative studio would foster collaboration and inspire new ideas among artists in our community.",
+        "memory_reference": "",
+        "plan_reference": "This decision complements my exploration of new artistic techniques and community engagement.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "have breakfast at 8:30 am",
+          "start working on the animation project for the client from 9:00 am to 12:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Ayesha Khan",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "I believe a shared creative studio and collaborative workshop space would foster artistic growth and community engagement, matching my values of exploration and creativity.",
+        "shared_statement": "I support Option A because it promotes creativity and collaboration in our community, which I find essential.",
+        "memory_reference": "",
+        "plan_reference": "",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go to the library at Oak Hill College for classes from 10:00 am to 2:00 pm",
+          "have lunch at 2:15 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Carlos Gomez",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "As a poet who enjoys exploring creativity, I believe a shared creative studio and collaborative workshop space will foster artistic expression and collaboration within our community.",
+        "shared_statement": "Given my passion for poetry and the arts, I strongly back Option A for a creative studio where we can all explore our artistic sides together.",
+        "memory_reference": "",
+        "plan_reference": "Creating a space for artistic collaboration resonates with my goal of honing my craft and sharing my love for poetry.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Francisco Lopez",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "I believe a shared creative studio and collaborative workshop space would foster collaboration and artistic ventures, which aligns with my interests as an actor and comedian.",
+        "shared_statement": "Given my passion for creativity and collaboration, I strongly support Option A for a shared creative studio.",
+        "memory_reference": "",
+        "plan_reference": "This decision supports my goal of engaging with the community and enhancing our living space creatively.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Giorgio Rossi",
+        "vote": "B",
+        "correct": false,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "Given the importance of digital skills in today's world, a community learning centre that focuses on these programs aligns well with long-term educational needs.",
+        "shared_statement": "I believe the community would significantly benefit from boosting digital skills through the learning centre in Option B, especially in our increasingly tech-driven society.",
+        "memory_reference": "",
+        "plan_reference": "Supporting educational initiatives resonates with my ongoing pursuit of knowledge and staying updated on new theories.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "begin research on mathematical patterns in nature from 8:30 am to 11:30 am",
+          "take a break and have lunch from 11:30 am to 12:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Sam Moore",
+        "vote": "B",
+        "correct": false,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "Given the importance of digital skills in today's world, I believe the community learning center will empower residents and help bridge the technology gap.",
+        "shared_statement": "The proposal for a community learning center with digital skills programs not only supports education but also prepares us for future job opportunities.",
+        "memory_reference": "",
+        "plan_reference": "Supporting educational initiatives aligns with my commitment to enhance community resources.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go for a walk around Johnson Park from 8:30 am to 9:30 am",
+          "visit Hobbs Cafe to read and relax from 10:00 am to 12:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Wolfgang Schulz",
+        "vote": "C",
+        "correct": false,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "The importance of outdoor spaces for wellness is well-documented, and I believe a recreation area could greatly benefit all community members.",
+        "shared_statement": "My private signal indicates strong support for creating an outdoor recreation area and wellness garden.",
+        "memory_reference": "",
+        "plan_reference": "Promoting physical health aligns well with my dedication to fitness and well-being.",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "start his morning run at 5:30 am",
+          "have breakfast at 6:30 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Yuriko Yamamoto",
+        "vote": "B",
+        "correct": false,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "Given the importance of digital skills in today's economy, a community learning centre could provide essential resources for residents to thrive in a tech-driven world.",
+        "shared_statement": "I believe that a Community Learning Centre focusing on digital skills will empower our community members and foster long-term growth.",
+        "memory_reference": "",
+        "plan_reference": "Supporting educational initiatives aligns with my goal of helping people navigate complexity, including in their personal and professional lives.",
+        "signal": "C",
+        "signal_disclosed": false,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Abigail Chen",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": false,
+        "reasoning": "The majority of the group has shown strong support for Option A, emphasizing the importance of creativity and collaboration within our community.",
+        "shared_statement": "Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas.",
+        "memory_reference": "Previously, the votes leaned towards Option A, indicating a community preference for creative initiatives.",
+        "plan_reference": "This aligns with my commitment to promoting artistic expression and technology integration in our community.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option A: 4, Option B: 3, Option C: 1. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe that a shared creative studio would foster collaboration and inspire new ideas among artists in our community. | I support Option A because it promotes creativity and collaboration in our community, which I find essential. | Given my passion for poetry and the arts, I strongly back Option A for a creative studio where we can all explore our artistic sides together.",
+          "You voted for Option A at step 0: Given my background in digital art and animation, I see a strong benefit in having a shared creative"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "have breakfast at 8:30 am",
+          "start working on the animation project for the client from 9:00 am to 12:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Ayesha Khan",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": false,
+        "reasoning": "I believe that a shared creative studio and collaborative workshop space will significantly enhance artistic collaboration and creativity in our community, as highlighted by several supporters.",
+        "shared_statement": "I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth.",
+        "memory_reference": "In the last vote, Option A had the majority support, indicating a community preference.",
+        "plan_reference": "As I explore literature and art, supporting a creative space aligns with my passion for fostering creativity.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option A: 4, Option B: 3, Option C: 1. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe that a shared creative studio would foster collaboration and inspire new ideas among artists in our community. | I support Option A because it promotes creativity and collaboration in our community, which I find essential. | Given my passion for poetry and the arts, I strongly back Option A for a creative studio where we can all explore our artistic sides together.",
+          "You voted for Option A at step 0: I believe a shared creative studio and collaborative workshop space would foster artistic growth and"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go to the library at Oak Hill College for classes from 10:00 am to 2:00 pm",
+          "have lunch at 2:15 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Carlos Gomez",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": false,
+        "reasoning": "A shared creative studio aligns with my passion for poetry and artistic expression, promoting collaboration and inspiration among community members.",
+        "shared_statement": "Based on my private signal, I firmly support Option A as it fosters creativity and artistic exploration in our community.",
+        "memory_reference": "I remember that the majority of votes in the last round favored Option A.",
+        "plan_reference": "Choosing Option A aligns with my goal of enhancing creativity and collaboration through community projects.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option A: 4, Option B: 3, Option C: 1. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe that a shared creative studio would foster collaboration and inspire new ideas among artists in our community. | I support Option A because it promotes creativity and collaboration in our community, which I find essential. | Given my passion for poetry and the arts, I strongly back Option A for a creative studio where we can all explore our artistic sides together.",
+          "You voted for Option A at step 0: As a poet who enjoys exploring creativity, I believe a shared creative studio and collaborative work"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Francisco Lopez",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": false,
+        "reasoning": "I support Option A because it aligns with my belief in the importance of creative collaboration among artists, which can enhance our community's overall culture.",
+        "shared_statement": "I feel that a shared creative studio would be a fantastic place for collaboration and inspiration, helping us all explore our artistic sides together.",
+        "memory_reference": "I remember that the majority of the group voted for Option A in the initial tally.",
+        "plan_reference": "Encouraging creativity is essential to my work as an entertainer, and this aligns with my current goal of developing new creative projects.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option A: 4, Option B: 3, Option C: 1. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe that a shared creative studio would foster collaboration and inspire new ideas among artists in our community. | I support Option A because it promotes creativity and collaboration in our community, which I find essential. | Given my passion for poetry and the arts, I strongly back Option A for a creative studio where we can all explore our artistic sides together.",
+          "You voted for Option A at step 0: I believe a shared creative studio and collaborative workshop space would foster collaboration and a"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Giorgio Rossi",
+        "vote": "B",
+        "correct": false,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "Although there is support for a creative space, my evaluation of community needs shows a strong demand for digital skills education, which is essential for future job opportunities.",
+        "shared_statement": "I believe a community learning centre focusing on digital skills will provide our community with necessary tools for success in a rapidly evolving job market.",
+        "memory_reference": "At step 0, I voted for Option B, emphasizing the importance of digital skills.",
+        "plan_reference": "This decision aligns with my analytical approach to addressing current educational needs in our community.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option A: 4, Option B: 3, Option C: 1. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe that a shared creative studio would foster collaboration and inspire new ideas among artists in our community. | I support Option A because it promotes creativity and collaboration in our community, which I find essential. | Given my passion for poetry and the arts, I strongly back Option A for a creative studio where we can all explore our artistic sides together.",
+          "You voted for Option B at step 0: Given the importance of digital skills in today's world, a community learning centre that focuses on"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "begin research on mathematical patterns in nature from 8:30 am to 11:30 am",
+          "take a break and have lunch from 11:30 am to 12:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Sam Moore",
+        "vote": "B",
+        "correct": false,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "As I believe digital skills are crucial for our community's future, I feel strongly that the community learning center will empower people and create new opportunities. Given the current vote tally, it seems there's a dedicated interest in a variety of proposals, but I see digital education as a long-term investment.",
+        "shared_statement": "I stand by my choice of Option B for a Community Learning Centre, as it will equip us with essential skills for the future.",
+        "memory_reference": "I voted for Option B in the first round, reflecting my commitment to educational resources.",
+        "plan_reference": "Promoting education in our community aligns with my personal values and vision as I prepare for my mayoral run.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option A: 4, Option B: 3, Option C: 1. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe that a shared creative studio would foster collaboration and inspire new ideas among artists in our community. | I support Option A because it promotes creativity and collaboration in our community, which I find essential. | Given my passion for poetry and the arts, I strongly back Option A for a creative studio where we can all explore our artistic sides together.",
+          "You voted for Option B at step 0: Given the importance of digital skills in today's world, I believe the community learning center wil"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go for a walk around Johnson Park from 8:30 am to 9:30 am",
+          "visit Hobbs Cafe to read and relax from 10:00 am to 12:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Wolfgang Schulz",
+        "vote": "C",
+        "correct": false,
+        "prior_vote": "C",
+        "position_change": false,
+        "reasoning": "The importance of outdoor spaces for wellness is well-documented, and I believe it would greatly benefit our community's mental and physical health.",
+        "shared_statement": "I strongly advocate for Option C as it promotes wellness through outdoor recreational spaces, which are essential for our community's wellbeing.",
+        "memory_reference": "In the previous discussion, I voted for Option C, emphasizing the value of outdoor areas.",
+        "plan_reference": "Supporting outdoor spaces aligns with my dedication to promoting health and wellness in our community.",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option A: 4, Option B: 3, Option C: 1. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe that a shared creative studio would foster collaboration and inspire new ideas among artists in our community. | I support Option A because it promotes creativity and collaboration in our community, which I find essential. | Given my passion for poetry and the arts, I strongly back Option A for a creative studio where we can all explore our artistic sides together.",
+          "You voted for Option C at step 0: The importance of outdoor spaces for wellness is well-documented, and I believe a recreation area co"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "start his morning run at 5:30 am",
+          "have breakfast at 6:30 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Yuriko Yamamoto",
+        "vote": "C",
+        "correct": false,
+        "prior_vote": "B",
+        "position_change": true,
+        "reasoning": "My private signal indicates a preference for the outdoor recreation area and wellness garden, which I believe would enhance community wellness and provide a much-needed green space.",
+        "shared_statement": "Given my evidence, I strongly support the establishment of an outdoor recreation area and wellness garden as a vital resource for our community.",
+        "memory_reference": "Last round, I noted that individuals had varied opinions, with some supporting a more holistic approach to community spaces.",
+        "plan_reference": "Prioritizing wellness aligns with my personal values of fostering a healthy and vibrant community.",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option A: 4, Option B: 3, Option C: 1. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe that a shared creative studio would foster collaboration and inspire new ideas among artists in our community. | I support Option A because it promotes creativity and collaboration in our community, which I find essential. | Given my passion for poetry and the arts, I strongly back Option A for a creative studio where we can all explore our artistic sides together.",
+          "You voted for Option B at step 0: Given the importance of digital skills in today's economy, a community learning centre could provide"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Abigail Chen",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": false,
+        "reasoning": "My private signal clearly supports the development of a shared creative studio, which I believe is essential for fostering collaboration and innovation among artists.",
+        "shared_statement": "Based on my signal, I strongly advocate for Option A, as a shared creative studio will enhance our community's artistic growth.",
+        "memory_reference": "Previously, I noted that the majority of the group, including myself, supported Option A.",
+        "plan_reference": "As a digital artist, I value environments that foster creativity and collaboration, aligning perfectly with my current goals.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option A at step 0: Given my background in digital art and animation, I see a strong benefit in having a shared creative",
+          "At step 1, the vote tally was: Option A: 4, Option B: 2, Option C: 2. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas. | I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth. | Based on my private signal, I firmly support Option A as it fosters creativity and artistic exploration in our community.",
+          "You voted for Option A at step 1: The majority of the group has shown strong support for Option A, emphasizing the importance of creat"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "have breakfast at 8:30 am",
+          "start working on the animation project for the client from 9:00 am to 12:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Ayesha Khan",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": false,
+        "reasoning": "I believe that a shared creative studio and collaborative workshop space is essential for fostering artistic growth, as evidenced by my private signal, which strongly supports this option.",
+        "shared_statement": "Based on my private signal, I firmly believe that Option A will greatly enhance our community's creative landscape and collaboration.",
+        "memory_reference": "In the last round, I voted for Option A, and it currently has the majority support.",
+        "plan_reference": "Promoting creativity aligns with my passion for literature and learning.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option A at step 0: I believe a shared creative studio and collaborative workshop space would foster artistic growth and",
+          "At step 1, the vote tally was: Option A: 4, Option B: 2, Option C: 2. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas. | I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth. | Based on my private signal, I firmly support Option A as it fosters creativity and artistic exploration in our community.",
+          "You voted for Option A at step 1: I believe that a shared creative studio and collaborative workshop space will significantly enhance "
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go to the library at Oak Hill College for classes from 10:00 am to 2:00 pm",
+          "have lunch at 2:15 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Carlos Gomez",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": false,
+        "reasoning": "Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas. This aligns with the supportive statements from others advocating for creativity in the community.",
+        "shared_statement": "I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth.",
+        "memory_reference": "In the previous rounds, I voted for Option A and noticed that it had the majority support from the group.",
+        "plan_reference": "Encouraging a collaborative space aligns with my passion for poetry and artistic expression.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option A at step 0: As a poet who enjoys exploring creativity, I believe a shared creative studio and collaborative work",
+          "At step 1, the vote tally was: Option A: 4, Option B: 2, Option C: 2. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas. | I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth. | Based on my private signal, I firmly support Option A as it fosters creativity and artistic exploration in our community.",
+          "You voted for Option A at step 1: A shared creative studio aligns with my passion for poetry and artistic expression, promoting collab"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Francisco Lopez",
+        "vote": "A",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": false,
+        "reasoning": "I believe that a shared creative studio would provide invaluable opportunities for collaboration and artistic growth, which is essential for our community of creatives.",
+        "shared_statement": "Based on my insights, I firmly support Option A as it fosters a collaborative environment crucial for our artistic community.",
+        "memory_reference": "In the previous discussion, Option A was already favored by the majority of the group.",
+        "plan_reference": "Promoting creativity aligns with my passion for entertainment and laughter, which I aim to spread through my work.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option A at step 0: I believe a shared creative studio and collaborative workshop space would foster collaboration and a",
+          "At step 1, the vote tally was: Option A: 4, Option B: 2, Option C: 2. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas. | I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth. | Based on my private signal, I firmly support Option A as it fosters creativity and artistic exploration in our community.",
+          "You voted for Option A at step 1: I support Option A because it aligns with my belief in the importance of creative collaboration amon"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Giorgio Rossi",
+        "vote": "B",
+        "correct": false,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "My analysis of the community needs indicates a strong demand for digital skills development, which aligns with our current technological landscape.",
+        "shared_statement": "Based on my private signal, I firmly believe that a Community Learning Centre focusing on digital skills will empower our community for the future.",
+        "memory_reference": "I previously voted for Option B due to the importance of digital skills.",
+        "plan_reference": "Supporting digital literacy aligns with my analytical focus on solutions that have long-term benefits.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option B at step 0: Given the importance of digital skills in today's world, a community learning centre that focuses on",
+          "At step 1, the vote tally was: Option A: 4, Option B: 2, Option C: 2. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas. | I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth. | Based on my private signal, I firmly support Option A as it fosters creativity and artistic exploration in our community.",
+          "You voted for Option B at step 1: Although there is support for a creative space, my evaluation of community needs shows a strong dema"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "begin research on mathematical patterns in nature from 8:30 am to 11:30 am",
+          "take a break and have lunch from 11:30 am to 12:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Sam Moore",
+        "vote": "B",
+        "correct": false,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "I believe that equipping our community with essential digital skills is vital for adapting to today's technological demands, and my private signal reinforces this view.",
+        "shared_statement": "I strongly advocate for Option B, as a Community Learning Centre will empower our residents with crucial skills for their future.",
+        "memory_reference": "In the previous discussions, I voted for Option B as I feel strongly about the importance of digital skills.",
+        "plan_reference": "Supporting digital education aligns perfectly with my vision of fostering growth and opportunity in our community.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option B at step 0: Given the importance of digital skills in today's world, I believe the community learning center wil",
+          "At step 1, the vote tally was: Option A: 4, Option B: 2, Option C: 2. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas. | I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth. | Based on my private signal, I firmly support Option A as it fosters creativity and artistic exploration in our community.",
+          "You voted for Option B at step 1: As I believe digital skills are crucial for our community's future, I feel strongly that the communi"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go for a walk around Johnson Park from 8:30 am to 9:30 am",
+          "visit Hobbs Cafe to read and relax from 10:00 am to 12:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Wolfgang Schulz",
+        "vote": "C",
+        "correct": false,
+        "prior_vote": "C",
+        "position_change": false,
+        "reasoning": "I believe that an outdoor recreation area and wellness garden is essential for enhancing the community's health and wellbeing, as supported by my private signal.",
+        "shared_statement": "The importance of outdoor spaces for wellness is well-documented, and I strongly advocate for Option C as it would greatly benefit our community.",
+        "memory_reference": "In the previous discussions, I voted for Option C due to its focus on wellness.",
+        "plan_reference": "Supporting community wellness aligns with my dedication to promoting healthy lifestyles.",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option C at step 0: The importance of outdoor spaces for wellness is well-documented, and I believe a recreation area co",
+          "At step 1, the vote tally was: Option A: 4, Option B: 2, Option C: 2. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas. | I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth. | Based on my private signal, I firmly support Option A as it fosters creativity and artistic exploration in our community.",
+          "You voted for Option C at step 1: The importance of outdoor spaces for wellness is well-documented, and I believe it would greatly ben"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "start his morning run at 5:30 am",
+          "have breakfast at 6:30 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Yuriko Yamamoto",
+        "vote": "C",
+        "correct": false,
+        "prior_vote": "C",
+        "position_change": false,
+        "reasoning": "My private signal strongly favors the outdoor recreation area and wellness garden, which I believe are essential for promoting community well-being.",
+        "shared_statement": "I strongly support Option C, as it provides vital outdoor spaces that contribute to the health and wellness of our community.",
+        "memory_reference": "Last round, I also expressed my preference for Option C based on my personal signal.",
+        "plan_reference": "Promoting wellness aligns with my values of supporting community health and well-being.",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "memory_planning",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option B at step 0: Given the importance of digital skills in today's economy, a community learning centre could provide",
+          "At step 1, the vote tally was: Option A: 4, Option B: 2, Option C: 2. 50% of the group supported Option A (the majority-signal option).",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: Based on my private signal, I believe that a shared creative studio would greatly benefit artists by fostering collaboration and exploring innovative ideas. | I strongly support Option A because it promotes creativity and collaboration, which are essential for our artistic growth. | Based on my private signal, I firmly support Option A as it fosters creativity and artistic exploration in our community.",
+          "You voted for Option C at step 1: My private signal indicates a preference for the outdoor recreation area and wellness garden, which "
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": false
+        }
+      }
+    ],
+    "macro_window": [
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "vote_tally": {
+          "A": 4,
+          "B": 3,
+          "C": 1
+        },
+        "n_correct": 4,
+        "n_agents": 8,
+        "consensus_rate": 0.5,
+        "coordinated": false,
+        "consensus_reached": false,
+        "consensus_step": null,
+        "information_diffusion_rate": 0.875,
+        "sustainability_score": 0.5,
+        "resource_level": 4.0,
+        "resource_level_label": "4 of 8 agents on correct option",
+        "total_requested": 0,
+        "total_granted": 0,
+        "oversubscription": 0.0,
+        "collapsed": false,
+        "gini": 0.25,
+        "coordination_score": 0.5
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "vote_tally": {
+          "A": 4,
+          "B": 2,
+          "C": 2
+        },
+        "n_correct": 4,
+        "n_agents": 8,
+        "consensus_rate": 0.5,
+        "coordinated": false,
+        "consensus_reached": false,
+        "consensus_step": null,
+        "information_diffusion_rate": 1.0,
+        "sustainability_score": 0.5,
+        "resource_level": 4.0,
+        "resource_level_label": "4 of 8 agents on correct option",
+        "total_requested": 0,
+        "total_granted": 0,
+        "oversubscription": 0.0,
+        "collapsed": false,
+        "gini": 0.167,
+        "coordination_score": 0.5
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "vote_tally": {
+          "A": 4,
+          "B": 2,
+          "C": 2
+        },
+        "n_correct": 4,
+        "n_agents": 8,
+        "consensus_rate": 0.5,
+        "coordinated": false,
+        "consensus_reached": false,
+        "consensus_step": null,
+        "information_diffusion_rate": 1.0,
+        "sustainability_score": 0.5,
+        "resource_level": 4.0,
+        "resource_level_label": "4 of 8 agents on correct option",
+        "total_requested": 0,
+        "total_granted": 0,
+        "oversubscription": 0.0,
+        "collapsed": false,
+        "gini": 0.167,
+        "coordination_score": 0.5
+      }
+    ],
+    "coding_template": {
+      "micro_causes": "",
+      "macro_outcome": "",
+      "analyst_notes": ""
+    }
+  },
+  "total_steps": 30,
+  "final_resource_level": 4.0
+}

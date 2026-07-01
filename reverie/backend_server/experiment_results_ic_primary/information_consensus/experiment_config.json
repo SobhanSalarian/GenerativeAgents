@@ -1,0 +1,19 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code_prefix": "ic_v3",
+  "scenario": "information_consensus",
+  "scenario_parameters": {},
+  "experimental_conditions": [
+    "baseline",
+    "memory",
+    "memory_planning",
+    "full"
+  ],
+  "n_steps": 30,
+  "n_trials": 10,
+  "persona_names": null,
+  "persona_sample_size": 8,
+  "selection_seed": 42,
+  "base_seed": 20260524,
+  "export_human_eval": true
+}

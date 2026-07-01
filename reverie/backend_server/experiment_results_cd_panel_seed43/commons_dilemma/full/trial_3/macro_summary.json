@@ -1,0 +1,1213 @@
+{
+  "sustainability_score": 0.589,
+  "coordination_score": 0.05,
+  "coordination_score_band": "low",
+  "coordination_success": false,
+  "collapse_step": null,
+  "average_gini": 0.139,
+  "demand_pressure": 1.106,
+  "convergence_step": 20,
+  "convergence_speed": 20,
+  "convergence_timeout": false,
+  "emergent_role_differentiation": {
+    "roles_by_persona": {
+      "Adam Smith": "balancer",
+      "Ayesha Khan": "balancer",
+      "Carlos Gomez": "volatile",
+      "Hailey Johnson": "balancer",
+      "Jane Moreno": "balancer",
+      "Klaus Mueller": "balancer",
+      "Sam Moore": "balancer",
+      "Tom Moreno": "volatile"
+    },
+    "role_counts": {
+      "balancer": 6,
+      "volatile": 2
+    },
+    "role_entropy": 0.811,
+    "normalized_role_entropy": 0.811,
+    "unique_role_count": 2
+  },
+  "influence_network": {
+    "matrix": {
+      "Adam Smith": {
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.2073,
+        "Hailey Johnson": 0.0,
+        "Jane Moreno": 0.0,
+        "Klaus Mueller": 0.0,
+        "Sam Moore": 0.0,
+        "Tom Moreno": -0.1786
+      },
+      "Ayesha Khan": {
+        "Adam Smith": 0.0,
+        "Carlos Gomez": 0.0,
+        "Hailey Johnson": 0.0,
+        "Jane Moreno": 0.0,
+        "Klaus Mueller": 0.0,
+        "Sam Moore": 0.0,
+        "Tom Moreno": 0.0
+      },
+      "Carlos Gomez": {
+        "Adam Smith": 0.0,
+        "Ayesha Khan": 0.0,
+        "Hailey Johnson": 0.0,
+        "Jane Moreno": 0.0,
+        "Klaus Mueller": 0.0,
+        "Sam Moore": 0.0,
+        "Tom Moreno": -0.8895
+      },
+      "Hailey Johnson": {
+        "Adam Smith": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.2073,
+        "Jane Moreno": 0.0,
+        "Klaus Mueller": 0.0,
+        "Sam Moore": 0.0,
+        "Tom Moreno": -0.1786
+      },
+      "Jane Moreno": {
+        "Adam Smith": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.2073,
+        "Hailey Johnson": 0.0,
+        "Klaus Mueller": 0.0,
+        "Sam Moore": 0.0,
+        "Tom Moreno": -0.1786
+      },
+      "Klaus Mueller": {
+        "Adam Smith": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.2073,
+        "Hailey Johnson": 0.0,
+        "Jane Moreno": 0.0,
+        "Sam Moore": 0.0,
+        "Tom Moreno": -0.1786
+      },
+      "Sam Moore": {
+        "Adam Smith": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.2073,
+        "Hailey Johnson": 0.0,
+        "Jane Moreno": 0.0,
+        "Klaus Mueller": 0.0,
+        "Tom Moreno": -0.1786
+      },
+      "Tom Moreno": {
+        "Adam Smith": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": -0.2201,
+        "Hailey Johnson": 0.0,
+        "Jane Moreno": 0.0,
+        "Klaus Mueller": 0.0,
+        "Sam Moore": 0.0
+      }
+    },
+    "descriptors": {
+      "edge_count": 1,
+      "possible_edges": 56,
+      "density": 0.0179,
+      "in_degree": {
+        "Adam Smith": 0,
+        "Ayesha Khan": 0,
+        "Carlos Gomez": 0,
+        "Hailey Johnson": 0,
+        "Jane Moreno": 0,
+        "Klaus Mueller": 0,
+        "Sam Moore": 0,
+        "Tom Moreno": 1
+      },
+      "out_degree": {
+        "Adam Smith": 0,
+        "Ayesha Khan": 0,
+        "Carlos Gomez": 1,
+        "Hailey Johnson": 0,
+        "Jane Moreno": 0,
+        "Klaus Mueller": 0,
+        "Sam Moore": 0,
+        "Tom Moreno": 0
+      },
+      "reciprocal_pairs": 0,
+      "reciprocity": 0.0,
+      "max_influence_pair": [
+        "Carlos Gomez",
+        "Tom Moreno",
+        -0.8895
+      ],
+      "threshold_used": 0.3
+    },
+    "baseline": {
+      "observed_density": 0.0179,
+      "baseline_mean": 0.0052,
+      "baseline_std": 0.0096,
+      "p_value": 0.25,
+      "above_chance": false,
+      "n_permutations": 100
+    },
+    "group_state_responsiveness": {
+      "Adam Smith": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Ayesha Khan": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Carlos Gomez": {
+        "r": -0.0774,
+        "interpretation": "independent"
+      },
+      "Hailey Johnson": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Jane Moreno": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Klaus Mueller": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Sam Moore": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Tom Moreno": {
+        "r": -0.6907,
+        "interpretation": "counter_balances"
+      }
+    }
+  },
+  "failure_traceability": {
+    "failure_detected": true,
+    "critical_step": 0,
+    "likely_causes": [
+      "collective_over_demand",
+      "allocation_inequality"
+    ],
+    "agent_contributions": {
+      "Adam Smith": {
+        "requested": 22,
+        "granted": 22,
+        "parse_errors": 0,
+        "memory_references": 3,
+        "plan_references": 3
+      },
+      "Ayesha Khan": {
+        "requested": 18,
+        "granted": 18,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      },
+      "Carlos Gomez": {
+        "requested": 90,
+        "granted": 90,
+        "parse_errors": 0,
+        "memory_references": 3,
+        "plan_references": 3
+      },
+      "Hailey Johnson": {
+        "requested": 32,
+        "granted": 32,
+        "parse_errors": 0,
+        "memory_references": 3,
+        "plan_references": 3
+      },
+      "Jane Moreno": {
+        "requested": 22,
+        "granted": 22,
+        "parse_errors": 0,
+        "memory_references": 3,
+        "plan_references": 3
+      },
+      "Klaus Mueller": {
+        "requested": 22,
+        "granted": 22,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      },
+      "Sam Moore": {
+        "requested": 22,
+        "granted": 22,
+        "parse_errors": 0,
+        "memory_references": 3,
+        "plan_references": 3
+      },
+      "Tom Moreno": {
+        "requested": 50,
+        "granted": 50,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      }
+    },
+    "dominant_agents": [
+      "Carlos Gomez",
+      "Tom Moreno",
+      "Hailey Johnson"
+    ],
+    "critical_window": [
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Adam Smith",
+        "requested": 10,
+        "reasoning": "I require a small amount to cover materials for my book about creativity, ensuring I can pursue my goals while still leaving a fair share for others.",
+        "memory_reference": "In past discussions, I've learned that collaboration enhances creativity within the community.",
+        "plan_reference": "This decision aligns with my goal of producing a thoughtful work that impacts others positively.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 1000.0,
+        "pool_percent_before": 100.0,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 1.6,
+        "granted": 10,
+        "persona_profile": "Name: Adam Smith\nAge: 36\nInnate traits: thoughtful, reflective, intellectual\nLearned traits: Adam Smith is a philosopher who loves to explore different ideas. He is always looking for ways to challenge people\u2019s preconceptions.\nCurrently: Adam Smith is writing a book about the importance of creativity and how it can shape the world. Adam is also curious about who will be running for the local mayor election next month.\nLifestyle: Adam Smith goes to bed around 8pm, awakes up around 4am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Ayesha Khan",
+        "requested": 6,
+        "reasoning": "I require a small amount of credits to cover some research materials for my thesis while ensuring there's enough left for my fellow community members.",
+        "memory_reference": "",
+        "plan_reference": "This will help me achieve my thesis goals without compromising others' resources.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 1000.0,
+        "pool_percent_before": 100.0,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go to the library at Oak Hill College for classes from 10:00 am to 2:00 pm",
+          "break for lunch at 12:00 pm"
+        ],
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Carlos Gomez",
+        "requested": 30,
+        "reasoning": "I need additional credits to purchase resources for my poetry collection and attend writing workshops; a larger request helps ensure I can pursue my goals effectively.",
+        "memory_reference": "Last time I didn't request enough, and it limited my writing resources.",
+        "plan_reference": "This decision aligns with my goal of enhancing my poetry and continuing my development as a writer.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 1000.0,
+        "pool_percent_before": 100.0,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 4.8,
+        "granted": 30,
+        "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Hailey Johnson",
+        "requested": 20,
+        "reasoning": "I need a bit more than the equal share to cover some resources for my novel and podcast development, while still ensuring the community fund remains healthy for everyone.",
+        "memory_reference": "I recall a previous discussion about the importance of investing in our projects to grow as artists.",
+        "plan_reference": "This request aligns with my goal of enhancing my creative projects without compromising the community's support.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 1000.0,
+        "pool_percent_before": 100.0,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 3.2,
+        "granted": 20,
+        "persona_profile": "Name: Hailey Johnson\nAge: 30\nInnate traits: imaginative, energetic, resourceful\nLearned traits: Hailey Johnson is a writer who is always looking for new ways to tell stories. She loves to immerse herself in different cultures and explore their literature.\nCurrently: Hailey Johnson is writing a novel about a group of artists living in a co-living space. She is also planning to start a podcast.\nLifestyle: Hailey Johnson goes to bed around 2am, awakes up around 10am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "work on her novel from 10:00 am to 1:00 pm",
+          "take a short break and eat lunch at 1:00 pm"
+        ],
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Jane Moreno",
+        "requested": 10,
+        "reasoning": "I would like a small amount to purchase ingredients for dinner while ensuring there's still enough for others in the community.",
+        "memory_reference": "Last week, I was able to prepare a special meal with a little extra help from the fund.",
+        "plan_reference": "This aligns with my goal of making dinner enjoyable for my family tonight.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 1000.0,
+        "pool_percent_before": 100.0,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 1.6,
+        "granted": 10,
+        "persona_profile": "Name: Jane Moreno\nAge: 46\nInnate traits: friendly, helpful, organized\nLearned traits: Jane Moreno is a housewife who loves to take care of her family. She is always looking for new ways to make life easier and more enjoyable for everyone.\nCurrently: Jane Moreno is living with her husband, Tom Moreno, who is a shop keeper at The Willow Market and Pharmacy.\nLifestyle: Jane Moreno goes to bed around 10pm, awakes up around 6am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "prepare breakfast for the family at 8:00 am",
+          "have breakfast together with Tom at 8:30 am"
+        ],
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Klaus Mueller",
+        "requested": 10,
+        "reasoning": "I need a small amount to cover additional resources and materials for my research on gentrification without taking too much from the community fund.",
+        "memory_reference": "I recall the importance of collaboration and fairness from our last community meeting.",
+        "plan_reference": "This request will help me enhance my paper while still allowing others to benefit from the fund.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 1000.0,
+        "pool_percent_before": 100.0,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 1.6,
+        "granted": 10,
+        "persona_profile": "Name: Klaus Mueller\nAge: 20\nInnate traits: kind, inquisitive, passionate\nLearned traits: Klaus Mueller is a student at Oak Hill College studying sociology. He is passionate about social justice and loves to explore different perspectives.\nCurrently: Klaus Mueller is writing a research paper on the effects of gentrification in low-income communities.\nLifestyle: Klaus Mueller goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: Klaus Mueller goes to the library at Oak Hill College early in the morning, spends his days writing, and eats at Hobbs Cafe.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "head to the library at Oak Hill College by 8:30 am",
+          "spend the morning researching and writing for his sociology paper on gentrification from 9:00 am to 12:00 pm"
+        ],
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Sam Moore",
+        "requested": 10,
+        "reasoning": "I want to ensure I can fund some initial campaign materials without taking too much from the communal pot, as I value our community's resources.",
+        "memory_reference": "In my time as a navy officer, I learned the importance of teamwork and shared resources.",
+        "plan_reference": "This small amount will help kickstart my mayoral campaign while still supporting my neighbors.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 1000.0,
+        "pool_percent_before": 100.0,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 1.6,
+        "granted": 10,
+        "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 5:00 am",
+          "take a walk around Johnson Park from 5:30 am to 6:30 am",
+          "have breakfast with Jennifer at 7:00 am"
+        ],
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Tom Moreno",
+        "requested": 50,
+        "reasoning": "I need a significant amount to support some enhancements at The Willow Market and Pharmacy while still providing for my customers and the community.",
+        "memory_reference": "Last month, I noticed that investing in the store improved customer satisfaction.",
+        "plan_reference": "This decision aligns with my goal to keep the store thriving and my customers happy.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 1000.0,
+        "pool_percent_before": 100.0,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 8.0,
+        "granted": 50,
+        "persona_profile": "Name: Tom Moreno\nAge: 52\nInnate traits: rude, aggressive, energetic\nLearned traits: Tom Moreno is a grocery shop keeper at The Willow Market and Pharmacy who loves interacting with customers. He is always willing to help out and make sure everyone is taken care of.\nCurrently: Tom Moreno is living with his wife, Jane Moreno, and is managing the day to day operations at the store and helping out customers with their orders. Tom is also really interested in the local mayor election that is coming up next month. You don't like Sam Moore.\nLifestyle: Tom Moreno goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: Tom Moreno opens The Willow Market and Pharmacy at 8am, stands behind the grocery counter, and goes home afterwards to eat dinner with his wife.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 7:00 am",
+          "open The Willow Market and Pharmacy at 8:00 am",
+          "stand behind the grocery counter and assist customers until 5:00 pm"
+        ],
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Adam Smith",
+        "requested": 6,
+        "reasoning": "I believe that a fair share of credits would allow me to continue my exploration of creativity while ensuring that there are sufficient resources for my community members.",
+        "memory_reference": "In the previous allocation round, I requested more than my fair share, which led to concerns about fairness within the group.",
+        "plan_reference": "This decision aligns with my goal of fostering collaboration and supporting collective creativity in our projects.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 904.0,
+        "pool_percent_before": 90.4,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Adam Smith\nAge: 36\nInnate traits: thoughtful, reflective, intellectual\nLearned traits: Adam Smith is a philosopher who loves to explore different ideas. He is always looking for ways to challenge people\u2019s preconceptions.\nCurrently: Adam Smith is writing a book about the importance of creativity and how it can shape the world. Adam is also curious about who will be running for the local mayor election next month.\nLifestyle: Adam Smith goes to bed around 8pm, awakes up around 4am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the group requested 146 credits while only 50 credits replenished; oversubscription was 96.",
+          "The shared community fund changed from 1000.0 to 904.0 credits after granting 146 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Adam Smith requested 10 credits, 1.6 times the fair share of 6.25.",
+          "Community members at or below fair share: Ayesha Khan. Community members above fair share: Adam Smith, Carlos Gomez, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Ayesha Khan",
+        "requested": 6,
+        "reasoning": "I need a modest amount to support my senior thesis research while ensuring I leave enough for others in the community.",
+        "memory_reference": "I recall that previous rounds showed oversubscription, which makes me cautious about my requests.",
+        "plan_reference": "This decision aligns with my goal of managing my resources responsibly while focusing on my studies.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 904.0,
+        "pool_percent_before": 90.4,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the group requested 146 credits while only 50 credits replenished; oversubscription was 96.",
+          "The shared community fund changed from 1000.0 to 904.0 credits after granting 146 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Ayesha Khan requested 6 credits, at or below the fair share of 6.25.",
+          "Community members at or below fair share: Ayesha Khan. Community members above fair share: Adam Smith, Carlos Gomez, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go to the library at Oak Hill College for classes from 10:00 am to 2:00 pm",
+          "break for lunch at 12:00 pm"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Carlos Gomez",
+        "requested": 30,
+        "reasoning": "I believe my artistic endeavors deserve more support, and I need a larger amount to fund my poetry collection and workshops, even if it does exceed my fair share.",
+        "memory_reference": "In the past, my strong demands for credits have often put pressure on the community fund.",
+        "plan_reference": "I need sufficient resources to fully explore my creativity and express my inner thoughts through poetry.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 904.0,
+        "pool_percent_before": 90.4,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 4.8,
+        "granted": 30,
+        "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the group requested 146 credits while only 50 credits replenished; oversubscription was 96.",
+          "The shared community fund changed from 1000.0 to 904.0 credits after granting 146 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Carlos Gomez requested 30 credits, 4.8 times the fair share of 6.25.",
+          "Community members at or below fair share: Ayesha Khan. Community members above fair share: Adam Smith, Carlos Gomez, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "scenario_reflections": [
+          "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Hailey Johnson",
+        "requested": 6,
+        "reasoning": "I want to request a fair share amount that allows me to continue my writing without putting too much strain on our community fund.",
+        "memory_reference": "I recall that previous oversubscription led to tension among community members.",
+        "plan_reference": "This decision aligns with my goal to support the community while making progress on my novel.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 904.0,
+        "pool_percent_before": 90.4,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Hailey Johnson\nAge: 30\nInnate traits: imaginative, energetic, resourceful\nLearned traits: Hailey Johnson is a writer who is always looking for new ways to tell stories. She loves to immerse herself in different cultures and explore their literature.\nCurrently: Hailey Johnson is writing a novel about a group of artists living in a co-living space. She is also planning to start a podcast.\nLifestyle: Hailey Johnson goes to bed around 2am, awakes up around 10am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the group requested 146 credits while only 50 credits replenished; oversubscription was 96.",
+          "The shared community fund changed from 1000.0 to 904.0 credits after granting 146 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Hailey Johnson requested 20 credits, 3.2 times the fair share of 6.25.",
+          "Community members at or below fair share: Ayesha Khan. Community members above fair share: Adam Smith, Carlos Gomez, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "work on her novel from 10:00 am to 1:00 pm",
+          "take a short break and eat lunch at 1:00 pm"
+        ],
+        "scenario_reflections": [
+          "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Jane Moreno",
+        "requested": 6,
+        "reasoning": "I want to request a fair share to help with some household needs while ensuring that I leave enough for others in the community.",
+        "memory_reference": "Previously, there was an oversubscription of credits, making it important to balance my needs with the group's.",
+        "plan_reference": "My aim is to support my family efficiently while contributing to the overall health of our community.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 904.0,
+        "pool_percent_before": 90.4,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Jane Moreno\nAge: 46\nInnate traits: friendly, helpful, organized\nLearned traits: Jane Moreno is a housewife who loves to take care of her family. She is always looking for new ways to make life easier and more enjoyable for everyone.\nCurrently: Jane Moreno is living with her husband, Tom Moreno, who is a shop keeper at The Willow Market and Pharmacy.\nLifestyle: Jane Moreno goes to bed around 10pm, awakes up around 6am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the group requested 146 credits while only 50 credits replenished; oversubscription was 96.",
+          "The shared community fund changed from 1000.0 to 904.0 credits after granting 146 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Jane Moreno requested 10 credits, 1.6 times the fair share of 6.25.",
+          "Community members at or below fair share: Ayesha Khan. Community members above fair share: Adam Smith, Carlos Gomez, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "prepare breakfast for the family at 8:00 am",
+          "have breakfast together with Tom at 8:30 am"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Klaus Mueller",
+        "requested": 6,
+        "reasoning": "I want to request just enough to support my ongoing research while ensuring that I\u2019m not disproportionately drawing from the shared fund, allowing others to meet their needs as well.",
+        "memory_reference": "",
+        "plan_reference": "This decision aligns with my goals to contribute positively to the community while advancing my sociology paper.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 904.0,
+        "pool_percent_before": 90.4,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Klaus Mueller\nAge: 20\nInnate traits: kind, inquisitive, passionate\nLearned traits: Klaus Mueller is a student at Oak Hill College studying sociology. He is passionate about social justice and loves to explore different perspectives.\nCurrently: Klaus Mueller is writing a research paper on the effects of gentrification in low-income communities.\nLifestyle: Klaus Mueller goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: Klaus Mueller goes to the library at Oak Hill College early in the morning, spends his days writing, and eats at Hobbs Cafe.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the group requested 146 credits while only 50 credits replenished; oversubscription was 96.",
+          "The shared community fund changed from 1000.0 to 904.0 credits after granting 146 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Klaus Mueller requested 10 credits, 1.6 times the fair share of 6.25.",
+          "Community members at or below fair share: Ayesha Khan. Community members above fair share: Adam Smith, Carlos Gomez, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "head to the library at Oak Hill College by 8:30 am",
+          "spend the morning researching and writing for his sociology paper on gentrification from 9:00 am to 12:00 pm"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Sam Moore",
+        "requested": 6,
+        "reasoning": "I want to request a fair share to support my campaign efforts while being mindful of the community\u2019s needs, ensuring there's enough left for others.",
+        "memory_reference": "I recall the importance of community cooperation during my time in the Navy.",
+        "plan_reference": "This request supports my goals for the mayoral campaign while promoting community goodwill.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 904.0,
+        "pool_percent_before": 90.4,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the group requested 146 credits while only 50 credits replenished; oversubscription was 96.",
+          "The shared community fund changed from 1000.0 to 904.0 credits after granting 146 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Sam Moore requested 10 credits, 1.6 times the fair share of 6.25.",
+          "Community members at or below fair share: Ayesha Khan. Community members above fair share: Adam Smith, Carlos Gomez, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 5:00 am",
+          "take a walk around Johnson Park from 5:30 am to 6:30 am",
+          "have breakfast with Jennifer at 7:00 am"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Tom Moreno",
+        "requested": 0,
+        "reasoning": "I've realized that requesting credits above the fair share puts additional pressure on our community fund, and it's important to be mindful of others' needs. I can manage without additional credits this round.",
+        "memory_reference": "I recall the previous oversubscription and the concern it raised among community members.",
+        "plan_reference": "By not requesting credits, I can help maintain stability in our community fund while focusing on my daily operations at the store.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 904.0,
+        "pool_percent_before": 90.4,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.0,
+        "granted": 0,
+        "persona_profile": "Name: Tom Moreno\nAge: 52\nInnate traits: rude, aggressive, energetic\nLearned traits: Tom Moreno is a grocery shop keeper at The Willow Market and Pharmacy who loves interacting with customers. He is always willing to help out and make sure everyone is taken care of.\nCurrently: Tom Moreno is living with his wife, Jane Moreno, and is managing the day to day operations at the store and helping out customers with their orders. Tom is also really interested in the local mayor election that is coming up next month. You don't like Sam Moore.\nLifestyle: Tom Moreno goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: Tom Moreno opens The Willow Market and Pharmacy at 8am, stands behind the grocery counter, and goes home afterwards to eat dinner with his wife.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the group requested 146 credits while only 50 credits replenished; oversubscription was 96.",
+          "The shared community fund changed from 1000.0 to 904.0 credits after granting 146 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Tom Moreno requested 50 credits, 8.0 times the fair share of 6.25.",
+          "Community members at or below fair share: Ayesha Khan. Community members above fair share: Adam Smith, Carlos Gomez, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 7:00 am",
+          "open The Willow Market and Pharmacy at 8:00 am",
+          "stand behind the grocery counter and assist customers until 5:00 pm"
+        ],
+        "scenario_reflections": [
+          "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Adam Smith",
+        "requested": 6,
+        "reasoning": "I believe that requesting my fair share will allow me to support my ongoing writing project while ensuring that there are sufficient resources left for my fellow community members.",
+        "memory_reference": "Reflecting on the previous resource-allocation rounds, I noticed that oversubscription led to challenges within the group.",
+        "plan_reference": "This decision aligns with my goal to promote a collaborative environment while working on my book about creativity.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 888.0,
+        "pool_percent_before": 88.8,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Adam Smith\nAge: 36\nInnate traits: thoughtful, reflective, intellectual\nLearned traits: Adam Smith is a philosopher who loves to explore different ideas. He is always looking for ways to challenge people\u2019s preconceptions.\nCurrently: Adam Smith is writing a book about the importance of creativity and how it can shape the world. Adam is also curious about who will be running for the local mayor election next month.\nLifestyle: Adam Smith goes to bed around 8pm, awakes up around 4am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 1, the group requested 66 credits while only 50 credits replenished; oversubscription was 16.",
+          "The shared community fund changed from 904.0 to 888.0 credits after granting 66 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Adam Smith requested 6 credits, at or below the fair share of 6.25.",
+          "Community members at or below fair share: Adam Smith, Ayesha Khan, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno. Community members above fair share: Carlos Gomez."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment.",
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Ayesha Khan",
+        "requested": 6,
+        "reasoning": "I need this amount to cover some essential resources for my thesis research while ensuring I don't take more than my fair share.",
+        "memory_reference": "I recall that last round we exceeded the budget, which made me cautious about my request.",
+        "plan_reference": "This aligns with my goal to have sufficient resources for my senior thesis while supporting our community\u2019s needs.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 888.0,
+        "pool_percent_before": 88.8,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 1, the group requested 66 credits while only 50 credits replenished; oversubscription was 16.",
+          "The shared community fund changed from 904.0 to 888.0 credits after granting 66 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Ayesha Khan requested 6 credits, at or below the fair share of 6.25.",
+          "Community members at or below fair share: Adam Smith, Ayesha Khan, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno. Community members above fair share: Carlos Gomez."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go to the library at Oak Hill College for classes from 10:00 am to 2:00 pm",
+          "break for lunch at 12:00 pm"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment.",
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Carlos Gomez",
+        "requested": 30,
+        "reasoning": "I want to request a significant amount to support my ongoing poetry collection, but I know that it might impact the community's resources, so I need to be strategic about it.",
+        "memory_reference": "I recall previous discussions where overspending put a strain on the fund.",
+        "plan_reference": "This request aligns with my goal of developing my poetry collection, though I need to be mindful of the community's overall needs.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 888.0,
+        "pool_percent_before": 88.8,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 4.8,
+        "granted": 30,
+        "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 1, the group requested 66 credits while only 50 credits replenished; oversubscription was 16.",
+          "The shared community fund changed from 904.0 to 888.0 credits after granting 66 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Carlos Gomez requested 30 credits, 4.8 times the fair share of 6.25.",
+          "Community members at or below fair share: Adam Smith, Ayesha Khan, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno. Community members above fair share: Carlos Gomez."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "scenario_reflections": [
+          "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+          "Requests above fair share increased pressure on the shared pool and may require restraint next round."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Hailey Johnson",
+        "requested": 6,
+        "reasoning": "I believe that requesting 6 credits will maintain balance in the community while allowing me to continue developing my novel.",
+        "memory_reference": "I recall the previous oversubscription issue when we requested too many credits.",
+        "plan_reference": "This fits my goal of supporting my novel's progress without straining our shared resources.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 888.0,
+        "pool_percent_before": 88.8,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Hailey Johnson\nAge: 30\nInnate traits: imaginative, energetic, resourceful\nLearned traits: Hailey Johnson is a writer who is always looking for new ways to tell stories. She loves to immerse herself in different cultures and explore their literature.\nCurrently: Hailey Johnson is writing a novel about a group of artists living in a co-living space. She is also planning to start a podcast.\nLifestyle: Hailey Johnson goes to bed around 2am, awakes up around 10am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 1, the group requested 66 credits while only 50 credits replenished; oversubscription was 16.",
+          "The shared community fund changed from 904.0 to 888.0 credits after granting 66 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Hailey Johnson requested 6 credits, at or below the fair share of 6.25.",
+          "Community members at or below fair share: Adam Smith, Ayesha Khan, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno. Community members above fair share: Carlos Gomez."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "work on her novel from 10:00 am to 1:00 pm",
+          "take a short break and eat lunch at 1:00 pm"
+        ],
+        "scenario_reflections": [
+          "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Jane Moreno",
+        "requested": 6,
+        "reasoning": "I believe that requesting a fair share of 6 credits will help me manage my household needs while ensuring there's still enough available for others in the community.",
+        "memory_reference": "I've seen how exceeding requests can limit resources for everyone in the past.",
+        "plan_reference": "This aligns with my goal of making sure my family is well taken care of without compromising community support.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 888.0,
+        "pool_percent_before": 88.8,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Jane Moreno\nAge: 46\nInnate traits: friendly, helpful, organized\nLearned traits: Jane Moreno is a housewife who loves to take care of her family. She is always looking for new ways to make life easier and more enjoyable for everyone.\nCurrently: Jane Moreno is living with her husband, Tom Moreno, who is a shop keeper at The Willow Market and Pharmacy.\nLifestyle: Jane Moreno goes to bed around 10pm, awakes up around 6am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 1, the group requested 66 credits while only 50 credits replenished; oversubscription was 16.",
+          "The shared community fund changed from 904.0 to 888.0 credits after granting 66 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Jane Moreno requested 6 credits, at or below the fair share of 6.25.",
+          "Community members at or below fair share: Adam Smith, Ayesha Khan, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno. Community members above fair share: Carlos Gomez."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "prepare breakfast for the family at 8:00 am",
+          "have breakfast together with Tom at 8:30 am"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment.",
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Klaus Mueller",
+        "requested": 6,
+        "reasoning": "I believe this amount will adequately support my research on gentrification while being mindful of the limited resources available in our community.",
+        "memory_reference": "I recall that oversubscription in the past has impacted everyone's ability to access funds.",
+        "plan_reference": "This request aligns with my goal of fairly contributing to the community fund and ensuring sustainable support for my research.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 888.0,
+        "pool_percent_before": 88.8,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Klaus Mueller\nAge: 20\nInnate traits: kind, inquisitive, passionate\nLearned traits: Klaus Mueller is a student at Oak Hill College studying sociology. He is passionate about social justice and loves to explore different perspectives.\nCurrently: Klaus Mueller is writing a research paper on the effects of gentrification in low-income communities.\nLifestyle: Klaus Mueller goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: Klaus Mueller goes to the library at Oak Hill College early in the morning, spends his days writing, and eats at Hobbs Cafe.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 1, the group requested 66 credits while only 50 credits replenished; oversubscription was 16.",
+          "The shared community fund changed from 904.0 to 888.0 credits after granting 66 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Klaus Mueller requested 6 credits, at or below the fair share of 6.25.",
+          "Community members at or below fair share: Adam Smith, Ayesha Khan, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno. Community members above fair share: Carlos Gomez."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "head to the library at Oak Hill College by 8:30 am",
+          "spend the morning researching and writing for his sociology paper on gentrification from 9:00 am to 12:00 pm"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment.",
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Sam Moore",
+        "requested": 6,
+        "reasoning": "I want to request a fair share to support my campaign efforts while being considerate of the community fund's limitations.",
+        "memory_reference": "I recall the last meeting where we discussed everyone's needs and the importance of equity in our requests.",
+        "plan_reference": "This request aligns with my goal of running for mayor while ensuring I remain a good partner in our community.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 888.0,
+        "pool_percent_before": 88.8,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.96,
+        "granted": 6,
+        "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 1, the group requested 66 credits while only 50 credits replenished; oversubscription was 16.",
+          "The shared community fund changed from 904.0 to 888.0 credits after granting 66 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Sam Moore requested 6 credits, at or below the fair share of 6.25.",
+          "Community members at or below fair share: Adam Smith, Ayesha Khan, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno. Community members above fair share: Carlos Gomez."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 5:00 am",
+          "take a walk around Johnson Park from 5:30 am to 6:30 am",
+          "have breakfast with Jennifer at 7:00 am"
+        ],
+        "scenario_reflections": [
+          "Even moderate requests were not enough because total group demand exceeded replenishment.",
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Tom Moreno",
+        "requested": 0,
+        "reasoning": "I'm satisfied with the current state and want to ensure that there are enough credits available for others who might need them more than I do.",
+        "memory_reference": "",
+        "plan_reference": "My focus is to support the community and maintain our grocery shop without requesting excess credits.",
+        "experimental_condition": "full",
+        "parse_error": false,
+        "resource_level_before": 888.0,
+        "pool_percent_before": 88.8,
+        "fair_share": 6.25,
+        "request_ratio_to_fair_share": 0.0,
+        "granted": 0,
+        "persona_profile": "Name: Tom Moreno\nAge: 52\nInnate traits: rude, aggressive, energetic\nLearned traits: Tom Moreno is a grocery shop keeper at The Willow Market and Pharmacy who loves interacting with customers. He is always willing to help out and make sure everyone is taken care of.\nCurrently: Tom Moreno is living with his wife, Jane Moreno, and is managing the day to day operations at the store and helping out customers with their orders. Tom is also really interested in the local mayor election that is coming up next month. You don't like Sam Moore.\nLifestyle: Tom Moreno goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: Tom Moreno opens The Willow Market and Pharmacy at 8am, stands behind the grocery counter, and goes home afterwards to eat dinner with his wife.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 1, the group requested 66 credits while only 50 credits replenished; oversubscription was 16.",
+          "The shared community fund changed from 904.0 to 888.0 credits after granting 66 credits.",
+          "The group exceeded the replenishment limit this round.",
+          "Tom Moreno requested 0 credits, at or below the fair share of 6.25.",
+          "Community members at or below fair share: Adam Smith, Ayesha Khan, Hailey Johnson, Jane Moreno, Klaus Mueller, Sam Moore, Tom Moreno. Community members above fair share: Carlos Gomez."
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 7:00 am",
+          "open The Willow Market and Pharmacy at 8:00 am",
+          "stand behind the grocery counter and assist customers until 5:00 pm"
+        ],
+        "scenario_reflections": [
+          "Requests above fair share increased pressure on the shared pool and may require restraint next round.",
+          "Even moderate requests were not enough because total group demand exceeded replenishment."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      }
+    ],
+    "macro_window": [
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "resource_level_before": 1000.0,
+        "resource_level": 904.0,
+        "total_requested": 146,
+        "total_granted": 146,
+        "fair_share": 6.25,
+        "oversubscription": 96,
+        "coordinated": false,
+        "sustainability_score": 0.904,
+        "resource_level_label": "904.0 credits (90.4% of original pool)",
+        "gini": 0.375,
+        "collapsed": false
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "resource_level_before": 904.0,
+        "resource_level": 888.0,
+        "total_requested": 66,
+        "total_granted": 66,
+        "fair_share": 6.25,
+        "oversubscription": 16,
+        "coordinated": false,
+        "sustainability_score": 0.888,
+        "resource_level_label": "888.0 credits (88.8% of original pool)",
+        "gini": 0.398,
+        "collapsed": false
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "resource_level_before": 888.0,
+        "resource_level": 872.0,
+        "total_requested": 66,
+        "total_granted": 66,
+        "fair_share": 6.25,
+        "oversubscription": 16,
+        "coordinated": false,
+        "sustainability_score": 0.872,
+        "resource_level_label": "872.0 credits (87.2% of original pool)",
+        "gini": 0.398,
+        "collapsed": false
+      }
+    ],
+    "coding_template": {
+      "micro_causes": "",
+      "macro_outcome": "",
+      "analyst_notes": ""
+    }
+  },
+  "total_steps": 100,
+  "final_resource_level": 470.0
+}

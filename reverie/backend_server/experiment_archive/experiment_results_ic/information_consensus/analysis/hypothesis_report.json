@@ -1,0 +1,175 @@
+{
+  "scenario": "information_consensus",
+  "n_trials": 40,
+  "conditions_found": [
+    "baseline",
+    "full",
+    "memory",
+    "memory_planning"
+  ],
+  "H1": {
+    "hypothesis": "H1",
+    "description": "Higher composite believability predicts higher coordination score.",
+    "n": 40,
+    "test": "Spearman rank correlation",
+    "rho": 0.3373,
+    "p_value": 0.0333,
+    "supported": true,
+    "note": "Spearman rho=0.337, p=0.0333. Positive rho with p < 0.05 supports H1.",
+    "group_comparison": {
+      "status": "insufficient_data",
+      "note": "Need \u2265 2 runs in both high (\u2265 0.7) and low (< 0.4) believability bands. Found 0 high, 10 low."
+    }
+  },
+  "H2": {
+    "hypothesis": "H2",
+    "description": "Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).",
+    "n": 40,
+    "band_cutoffs": {
+      "low_max": 0.5421,
+      "high_min": 0.6365
+    },
+    "band_stats": {
+      "low": {
+        "n": 14,
+        "success_rate": 0.143,
+        "fail_rate": 0.857
+      },
+      "mid": {
+        "n": 13,
+        "success_rate": 0.538,
+        "fail_rate": 0.462
+      },
+      "high": {
+        "n": 13,
+        "success_rate": 0.692,
+        "fail_rate": 0.308
+      }
+    },
+    "empirical_threshold": 0.3833,
+    "supported": true,
+    "note": "Empirical threshold (all runs below fail): 0.383."
+  },
+  "H3": {
+    "hypothesis": "H3",
+    "description": "Believability increases monotonically: baseline < memory < memory_planning < full.",
+    "condition_means": {
+      "baseline": 0.3734,
+      "memory": 0.5453,
+      "memory_planning": 0.6431,
+      "full": 0.6464
+    },
+    "condition_n": {
+      "baseline": 10,
+      "memory": 10,
+      "memory_planning": 10,
+      "full": 10
+    },
+    "kruskal_wallis": {
+      "test": "Kruskal-Wallis H",
+      "h_stat": 33.0205,
+      "p_value": 0.0,
+      "significant": true
+    },
+    "pairwise": [
+      {
+        "comparison": "baseline \u2192 memory",
+        "mean_lower": 0.3734,
+        "mean_upper": 0.5453,
+        "direction": "\u2191",
+        "u_stat": 100.0,
+        "p_value": 0.0001,
+        "supported": true
+      },
+      {
+        "comparison": "memory \u2192 memory_planning",
+        "mean_lower": 0.5453,
+        "mean_upper": 0.6431,
+        "direction": "\u2191",
+        "u_stat": 100.0,
+        "p_value": 0.0001,
+        "supported": true
+      },
+      {
+        "comparison": "memory_planning \u2192 full",
+        "mean_lower": 0.6431,
+        "mean_upper": 0.6464,
+        "direction": "\u2191",
+        "u_stat": 58.0,
+        "p_value": 0.2854,
+        "supported": false
+      }
+    ],
+    "monotone_in_means": true,
+    "supported": true,
+    "note": "Mean believability is monotonically non-decreasing across available conditions: [0.3734, 0.5453, 0.6431, 0.6464]."
+  },
+  "H4": {
+    "hypothesis": "H4",
+    "description": "Memory coherence and behavioural consistency are stronger predictors of coordination score than planning plausibility or response naturalness.",
+    "correlations": {
+      "behavioural_consistency": {
+        "n": 40,
+        "rho": 0.4228,
+        "p_value": 0.0066,
+        "abs_rho": 0.4228
+      },
+      "memory_coherence": {
+        "n": 40,
+        "rho": -0.249,
+        "p_value": 0.1213,
+        "abs_rho": 0.249
+      },
+      "planning_plausibility": {
+        "n": 40,
+        "rho": 0.4993,
+        "p_value": 0.001,
+        "abs_rho": 0.4993
+      },
+      "response_naturalness": {
+        "n": 40,
+        "rho": 0.1929,
+        "p_value": 0.2329,
+        "abs_rho": 0.1929
+      }
+    },
+    "predictor_ranking": [
+      "planning_plausibility",
+      "behavioural_consistency",
+      "memory_coherence",
+      "response_naturalness"
+    ],
+    "supported": false,
+    "note": "Top-ranked predictors: ['planning_plausibility', 'behavioural_consistency', 'memory_coherence', 'response_naturalness']. H4 supported: False.",
+    "ols_regression": {
+      "n": 40,
+      "r_squared": 0.3066,
+      "intercept": 0.7651,
+      "predictors": {
+        "behavioural_consistency": {
+          "coefficient": -0.1281,
+          "p_value": 0.995
+        },
+        "memory_coherence": {
+          "coefficient": -0.0181,
+          "p_value": 0.9185
+        },
+        "planning_plausibility": {
+          "coefficient": 0.6224,
+          "p_value": 0.2072
+        },
+        "response_naturalness": {
+          "coefficient": -0.5173,
+          "p_value": 0.7955
+        }
+      }
+    },
+    "regression_predictor_ranking": [
+      "planning_plausibility",
+      "response_naturalness",
+      "behavioural_consistency",
+      "memory_coherence"
+    ],
+    "regression_supported": false
+  }
+}

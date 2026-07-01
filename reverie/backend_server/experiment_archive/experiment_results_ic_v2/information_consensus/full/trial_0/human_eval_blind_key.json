@@ -1,0 +1,170 @@
+{
+  "decision_980d5595a6": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_d9ebf806e7": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_4179c7f2ec": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_062956638f": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_59feca4ba0": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_ae26d9506c": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_34f85f75b5": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_f669a431bf": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_1ab722036f": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_025bc46a42": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_0a804e85a8": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_d99b4e03db": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_03c8e22cec": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_167f7e7cc4": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_659197436d": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_27f6510dfb": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_d8f090152b": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_400901806f": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_08cfb02882": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_78a5514f0f": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_245ae108c4": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_1cd055ae86": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_702f4b1295": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  },
+  "decision_009996be5e": {
+    "scenario": "information_consensus",
+    "trial": 0,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "full",
+    "sim_code": "ic_v2_full_trial_0"
+  }
+}

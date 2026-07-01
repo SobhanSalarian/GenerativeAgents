@@ -1,0 +1,170 @@
+{
+  "decision_cce9b12473": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_7581cf84df": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_3eac30c1f7": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Abigail Chen",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_18c061a4c0": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_fa9de188ed": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_6a37f3ca74": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Ayesha Khan",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_f6e06030b6": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_656fcc2595": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_4210f94725": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Carlos Gomez",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_ae1f70ee65": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_5ac511daf8": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_415134a259": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Francisco Lopez",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_310773d026": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_35405a9894": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_3b73da3ba4": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Giorgio Rossi",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_d12e0cfd06": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_83d82c83ed": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_1fc7bee8f3": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Sam Moore",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_cd0b419c87": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_07f8f7df44": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_df482ddf9e": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Wolfgang Schulz",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_032c8342c2": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_2911b2b628": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  },
+  "decision_3b9f8518c2": {
+    "scenario": "commons_dilemma",
+    "trial": 10,
+    "persona_name": "Yuriko Yamamoto",
+    "experimental_condition": "baseline",
+    "sim_code": "commons_experiment_scenario_memory_baseline_trial_10"
+  }
+}

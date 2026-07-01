@@ -1,0 +1,687 @@
+\documentclass[runningheads]{llncs}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage[hidelinks]{hyperref}
+\setlength{\textfloatsep}{12pt plus 2pt minus 4pt}
+\setlength{\abovecaptionskip}{6pt}
+\raggedbottom
+\newcommand{\figplaceholder}[2]{%
+  \fbox{\parbox[c][#1][c]{0.92\linewidth}{\centering\small\textit{Placeholder -- generate with \texttt{figures/make\_figures.py}}\\[2pt]\footnotesize #2}}}
+\begin{document}
+\title{Diagnosing the Believability--Reliability Gap in LLM-Agent Simulations of Online Communities}
+\titlerunning{Diagnosing the Believability--Reliability Gap}
+\author{Anonymous Author(s)}
+\authorrunning{Anonymous Author(s)}
+\institute{Anonymised for double-blind review}
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+Generative agents powered by large language models (LLMs) are increasingly used to
+simulate online communities for low-cost in silico Web research, and they readily
+\emph{look} convincing: they produce fluent reasoning, memories, and plans. We ask
+whether this surface plausibility can be trusted. We distinguish two levels: individual
+\emph{believability} (how human-plausible a single agent's behaviour is) and collective
+\emph{task outcome reliability} (whether the simulated community actually meets the
+task's success criterion). Using an instrument that scores both from the same event
+traces, we run two online-community coordination tasks (a shared-resource commons
+dilemma and a public-voting information-consensus task) across a four-condition
+architecture comparison plus one exploratory reflection variant (120 primary and 20
+exploratory trials). Believability and reliability are positively but weakly linked
+(Spearman $\rho=0.55$ and $0.75$), and the link is fragile: it is carried almost entirely
+by \emph{which cognitive modules an architecture has} rather than by how well an agent
+uses them, and it disappears or reverses when modules an architecture lacks are scored as
+not-applicable rather than zero. Believable agents are therefore neither necessary nor
+sufficient for reliable outcomes. The sharpest evidence is the voting task, where every
+agent reasons plausibly yet the group still fails: all runs converge unanimously on the
+\emph{wrong} option, with agents abandoning their own correct private information once
+they see the public tally (herding, or social-information lock-in). A coordination gain
+is \emph{associated with} an added reflection rule, but the rule simply restates the
+solution, so we do not claim it as a cause. An exploratory early-warning classifier can
+flag failures from a trial's first steps, but within a fixed architecture this signal
+comes from group-level state, not from believability. The practical warning is concrete:
+a believable simulation of an online community is not yet a reliable one, and the two must
+be measured separately.
+\keywords{Generative agents \and LLM multi-agent systems \and Agent-based simulation \and Simulation validation \and Herding and social-information lock-in \and Online communities \and Web analytics.}
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}\label{sec:intro}
+Web research increasingly uses \emph{generative agents}, LLM-driven simulated
+participants conditioned on a persona, memories, goals, and interaction history, in place
+of hand-coded rules~\cite{park2023generative,gao2024survey,ghaffarzadegan2024tutorial}.
+Platform-scale simulators now run up to a million such agents on X- and Reddit-style
+environments~\cite{yang2024oasis,piao2025agentsociety}, enabling in silico experiments
+that would be slow, costly, or unethical with real users. Because these agents look
+convincing, it is tempting to treat that surface plausibility as evidence that the
+simulation is sound. The agent-based modelling tradition warns against exactly this:
+validity is multi-faceted and must be established through verification and validation, not
+asserted from appearances~\cite{windrum2007empirical,moss2005towards}. We therefore keep
+two notions apart. \emph{Believability} is a \emph{micro}, individual-level property, how
+human-plausible a single agent's behaviour is. \emph{Collective task outcome reliability}
+is a \emph{macro}, group-level property, whether the community consistently meets the
+task's success criterion. These are not the same: a simulation can fail and still be
+realistic, or succeed for unrealistic reasons, so we make no claim about correspondence to
+any real system. The open question, which to our knowledge no prior work measures
+directly, is the within-simulation relationship between the two: does individual
+believability imply collective reliability?
+
+The question matters for the Web because many online mechanisms, ratings, sequential
+voting, trending lists, and comment threads, expose earlier choices to later participants.
+In such settings individually reasonable behaviour can produce a collectively wrong
+outcome, an \emph{information cascade}, in which agents discard their own private
+information and follow the visible majority~\cite{bikhchandani1992theory}; LLM agents
+reproduce this pattern~\cite{cho2025herd,jain2025social,zhong2025conformity}. A simulation
+can thus be full of individually believable agents while the community converges
+confidently on the wrong answer, hiding the failure behind plausible-looking behaviour. We
+make this risk measurable by placing generative agents in two structurally distinct
+coordination tasks, a shared-resource commons dilemma and a public-voting
+information-consensus task, under a \emph{cumulative} architecture comparison that adds one
+cognitive module at a time (baseline; $+$memory; $+$planning; $+$reflection), plus one
+exploratory variant that replaces the fixed reflection rule with LLM-generated reflection
+(120 primary and 20 exploratory trials in total). Because the conditions are cumulative
+they form a capability ladder, not a clean ablation. We contribute:
+\begin{enumerate}
+  \item \textbf{A dual-level measurement instrument} that scores, from the same event
+  traces, individual believability $B$ (from four automatically computed sub-dimensions,
+  with a cross-provider LLM-as-judge protocol~\cite{zheng2023judging}) and collective task
+  outcome reliability $V$. The instrument also specifies a blinded human-rating protocol
+  with a reliability gate (Krippendorff's $\alpha\geq0.67$); full multi-rater validation is
+  still pending, so present results use the automated scores, supported by a three-rater
+  pilot that shows preliminary agreement with human judgement.
+  \item \textbf{A measurable believability--outcome gap.} We summarise the relationship
+  with a signed discrepancy $\Delta=B-V$ (reported as a range, since it depends on
+  weighting and threshold choices) and a two-dimensional $(B,V)$ view. The strongest,
+  instrument-independent evidence is the voting task, where individually believable agents
+  unanimously converge on the wrong option (herding / social-information lock-in).
+  \item \textbf{An account of where reliable outcomes actually come from.} The
+  believability--reliability link is driven by which cognitive modules an architecture
+  \emph{has}, not by how well an agent expresses them: it disappears or reverses under
+  not-applicable scoring, and no believability threshold reliably separates success from
+  failure. A categorical jump in coordination ($10\%\rightarrow70\%$) is \emph{associated
+  with} adding a deterministic reflection rule, but that rule is a single repeated norm
+  (three unique strings across 47{,}040 instances), so we treat the gain as associated
+  with, not caused by, reflection~\cite{aharon2026tacit}.
+  \item \textbf{Exploratory trace-based diagnostics.} An early-warning classifier can
+  predict coordination failure from a trial's first $K$ steps (pooled ROC AUC up to
+  $0.94$), but within a single architecture the usable signal is modest ($\approx0.77$) and
+  comes from group-level state, not from believability traces; we also provide a
+  reproducible failure-trace taxonomy.
+\end{enumerate}
+\noindent An anonymised replication package (code, run manifests, raw event logs, and
+analysis scripts) accompanies this submission.\footnote{\url{https://anonymous.4open.science/r/believability-reliability-gap}}% TODO-1: replace with the real anonymised link before submission
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Related Work}\label{sec:related}
+\textbf{Validation in (generative) ABM.} Agent-based modelling studies how macro-level patterns emerge from interacting agents~\cite{epstein1996growing}, and its validation vocabulary is mature: it separates \emph{verification} (is the model built correctly?) from \emph{validation} (is it the right model?)~\cite{sargent2010verification,rand2011rigor}, and distinguishes conceptual-model, operational (output), and data validity, always relative to the intended use~\cite{sargent2010verification,augusiak2014evaludation}. Standard instruments include the ODD protocol for model description~\cite{grimm2006odd,grimm2020odd} and pattern-oriented modelling for matching real patterns~\cite{grimm2005pom}, alongside notions of generative sufficiency~\cite{moss2005towards}, mechanism plausibility~\cite{zhao2026mechanism}, and the distinction between \emph{micro-face} validity (plausible individual behaviour) and \emph{macro-face} validity (plausible aggregate outcomes)~\cite{windrum2007empirical}. Crucially for us, Kl\"ugl identifies the central open difficulty as the \emph{missing link between a model's micro and macro levels}~\cite{kluegl2008validation}: whether plausible individual behaviour actually produces the right collective outcome. That link is exactly where our study sits, and we measure task-outcome reliability rather than external fidelity~\cite{augusiak2014evaludation}. For generative ABMs specifically, recent reviews find validation largely unmet~\cite{larooij2025critical}, describe an ``uncanny valley'' in which fluent output substitutes for genuine emergence~\cite{zeng2026uncanny}, and note under-reported variance~\cite{wu2026boundary}. Proposed responses, validation workflows~\cite{adornetto2025overview}, replication-based validation~\cite{cross2025validating}, benchmark realism checks~\cite{munker2026benchmark}, and calibration against real platform data~\cite{tomasevic2026operational}, all target external fidelity (matching a real system), not the internal micro--macro relationship we study.
+
+\textbf{LLM-agent evaluation and coordination.} LLM-agent evaluation has matured around capability benchmarks that test agents in isolation~\cite{li2024agentbench,mohammadi2025evaluation}. Multi-agent settings, however, surface failures invisible at the individual level: a gap between communicating and reasoning~\cite{zhang2026silo}, destabilisation by a single uncooperative agent~\cite{kulshreshtha2026defection}, and memory-design effects on cooperation~\cite{hishiki2026memory}. Two mechanisms matter for our results. The first is \emph{informational herding}: agents discount their own private signals and follow the public majority~\cite{cho2025herd,jain2025social,zhong2025conformity}, echoing classical information cascades~\cite{bikhchandani1992theory} (we observe a repeated-voting variant, distinct from the canonical sequential cascade). The second is \emph{tacit focal-point coordination}, where agents coordinate on a salient shared cue rather than by reasoning~\cite{aharon2026tacit}. These underlie, respectively, our clearest believable-but-unreliable case and our largest architectural effect.
+
+\textbf{Trace-based evaluation.} Treating simulation logs as event traces connects GABM validation to predictive process monitoring~\cite{galanti2020explainable}: a single end-of-run score cannot explain \emph{why} a run failed~\cite{cemri2025fails}, and system-, trace-, and node-level evaluation has been systematised~\cite{yehudai2026clear}. Because automated judges can diverge from human experts~\cite{pan2025agentrewardbench}, we pair a cross-provider LLM judge~\cite{zheng2023judging} with a human-validation gate (piloted; full multi-rater validation pending), and extend this line with two simulation-specific failure types (Types~D and~E) and an exploratory early-warning analysis. Table~\ref{tab:related} positions our study on six evaluation dimensions; to our knowledge, no prior study jointly measures micro-level believability and macro-level collective outcomes \emph{at the trial level} and confronts the two directly.
+\begin{table}[t]
+\centering
+\caption{Where prior work sits on six evaluation dimensions ($\bullet$ = addressed, $\circ$ = partial). Micro = individual-behaviour evaluation; Macro = collective-outcome evaluation; Calib.\ = empirical calibration to a target system; Mech.\ = mechanism analysis; Trace = trace-based diagnostics; Human = human validation.}
+\label{tab:related}
+\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{lcccccc}
+\toprule
+Work & Micro & Macro & Calib. & Mech. & Trace & Human \\
+\midrule
+GABM critical review~\cite{larooij2025critical}      & $\circ$ & $\circ$ & $\circ$ & $\circ$ & --      & -- \\
+Operational calibration~\cite{tomasevic2026operational} & --      & $\bullet$ & $\bullet$ & $\circ$ & --   & -- \\
+ODD / pattern-oriented~\cite{grimm2020odd,grimm2005pom} & --   & $\bullet$ & $\bullet$ & $\circ$ & --   & -- \\
+Multi-agent failure taxonomy~\cite{cemri2025fails}   & --      & $\circ$ & --      & $\bullet$ & $\bullet$ & $\circ$ \\
+Agent eval surveys~\cite{mohammadi2025evaluation,yehudai2026clear} & $\bullet$ & $\circ$ & -- & $\circ$ & $\bullet$ & $\circ$ \\
+\textbf{This work} & $\bullet$ & $\bullet$ & -- & $\bullet$ & $\bullet$ & $\circ$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{A Dual-Level Validation Instrument}\label{sec:instrument}
+
+% Figure~\ref{fig:framework} summarises the instrument. Agents interact in a coordination task; every trial emits structured event traces; the micro instrument scores each agent--step for believability; the macro instrument scores the trial for collective task outcome reliability; and the two are confronted through a signed discrepancy metric, a two-dimensional view, and trace-based diagnostics.
+% \begin{figure}[t]
+% \centering
+% \resizebox{\textwidth}{!}{%
+% \begin{tikzpicture}[
+%   font=\scriptsize,
+%   box/.style={draw, rounded corners=2pt, align=center, inner sep=3.5pt, minimum height=9mm},
+%   arr/.style={-{Stealth[length=2mm]}, semithick}
+% ]
+% \node[box] (agents) {Generative agents\\5 conditions\\(C1--C5)};
+% \node[box, right=3.5mm of agents] (tasks) {Coordination tasks\\commons dilemma\\info.\ consensus};
+% \node[box, right=3.5mm of tasks] (traces) {Event traces\\micro $+$ macro\\logs, per step};
+% \node[box, above right=0.8mm and 3.5mm of traces.east, minimum width=40mm] (micro) {\textbf{Micro:} believability $B$\\consistency, memory,\\planning, naturalness};
+% \node[box, below right=0.8mm and 3.5mm of traces.east, minimum width=40mm] (macro) {\textbf{Macro:} task outcome\\reliability $V$\\coordination, sustainability,\\inequality, failure types};
+% \node[box, anchor=west] (diag) at ($(macro.east |- traces) + (4mm,0)$) {Diagnosis\\$\Delta = B - V$ gap cases,\\2-D view, early warning};
+% \draw[arr] (agents) -- (tasks);
+% \draw[arr] (tasks) -- (traces);
+% \draw[arr] (traces.east) -- (micro.west);
+% \draw[arr] (traces.east) -- (macro.west);
+% \draw[arr] (micro.east) -- ([yshift=2.5mm]diag.west);
+% \draw[arr] (macro.east) -- ([yshift=-2.5mm]diag.west);
+% \end{tikzpicture}}
+% \caption{The dual-level instrument. Believability $B$ and collective task outcome reliability $V$ are measured from the same event traces and confronted through the signed discrepancy $\Delta = B-V$, a two-dimensional $(B,V)$ view, and trace-based diagnostics.}
+% \label{fig:framework}
+% \end{figure}
+
+
+\subsection{Preliminaries}\label{sec:prelim}
+We study generative multi-agent simulations at two levels. A \emph{trial} $t$ is one
+complete run of a coordination task by a fixed group of $n$ generative agents under an
+architecture \emph{condition} $\kappa\in\{C_1,\dots,C_5\}$ that varies the agents' cognitive
+modules. Each trial proceeds in discrete \emph{steps}; at every step an agent emits a
+structured action, and the trial emits event traces from which all measures are computed.
+
+The \emph{micro level} concerns individual agents: how human-plausible a single agent's
+behaviour is, given its persona, memory, and goals. The \emph{macro level} concerns the group
+as a whole: whether the community succeeds at the task. The instrument assigns each trial two
+scalars in $[0,1]$, both derived from the same event traces:
+\begin{itemize}
+  \item \textbf{Individual believability} $B(t)$ --- the degree to which the agents'
+  behaviour is human-plausible at the micro level; and
+  \item \textbf{Collective task outcome reliability} $V(t)$ --- the degree to which the group
+  meets the task's success criterion at the macro level.
+\end{itemize}
+A trial is said to \emph{succeed} when $V(t)\geq\theta$ for a task-specific success threshold
+$\theta$. Throughout, ``believability'' refers to micro-level plausibility only and carries
+no claim about correspondence to a real target system; $B$ and $V$ are both internal,
+within-simulation measures.
+
+\subsection{Problem Statement}\label{sec:problem}
+The problem we address is whether individual-level believability $B$ (how human-plausible each
+agent's behaviour appears) implies collective-level task outcome reliability $V$ (how well the
+community meets the task's success criterion): whether agents that look believable in isolation
+in fact produce a community that reliably succeeds, or whether believable agents can coordinate
+into collectively unreliable outcomes.
+
+The premise we test is the one implicit in current practice: that high individual believability
+is sufficient for valid collective behaviour. Stated precisely, this is the existence of a single
+\emph{believability gate} --- a threshold $\tau$ such that, for every trial,
+\begin{equation}\label{eq:gate}
+B(t)\;\geq\;\tau \;\;\Longrightarrow\;\; V(t)\;\geq\;\theta .
+\end{equation}
+To examine the two scalars jointly we use their signed difference, the
+\emph{believability--outcome discrepancy}
+\begin{equation}\label{eq:discrepancy}
+\Delta(t)\;=\;B(t)-V(t).
+\end{equation}
+A trial in which believable agents nonetheless coordinate poorly --- a \emph{gap case} --- is
+one where $\Delta(t)>\delta$ for a fixed margin $\delta$, and we collect these into the set
+\begin{equation}\label{eq:gapset}
+\mathcal{G}\;=\;\{\, t : \Delta(t) > \delta \,\}.
+\end{equation}
+
+The problem is therefore to decide, across all trials, whether higher believability implies
+higher reliability --- equivalently, whether some gate $\tau$ satisfies the gate condition and
+the gap set is empty ($\mathcal{G}=\varnothing$), or whether instead believable agents can be
+collectively unreliable ($\mathcal{G}\neq\varnothing$, with no such $\tau$).
+
+
+
+\subsection{Micro Level: Individual Believability}\label{sec:micro}
+Believability $B$ is a weighted composite of four automatically-scored sub-dimensions
+$b_k\in[0,1]$ with weights $w_k$, fixed a priori rather than empirically tuned:
+\begin{equation}\label{eq:believability}
+B \;=\; \sum_{k=1}^{4} w_k\, b_k .
+\end{equation}
+The four sub-dimensions are as follows. \textbf{Behavioural consistency} $b_1$ is itself a
+weighted sum $b_1=\sum_{j=1}^{3}\gamma_j\, c_j$ of request consistency $c_1$, persona alignment
+$c_2$ (cosine similarity between the agent's action text and its persona profile, embedded with
+\texttt{text-embedding-3-small}), and cooperation rate $c_3$; because $c_3$ mechanically overlaps
+the macro outcome, we also report the believability--outcome association with it removed.
+\textbf{Memory coherence} $b_2$ combines the rate at which an agent cites prior events with the
+cosine relevance of the cited memories to its available history. \textbf{Planning plausibility}
+$b_3$ and \textbf{response naturalness} $b_4$ are each scored with an LLM-as-judge rubric; to
+avoid generator--judge circularity~\cite{zheng2023judging,pan2025agentrewardbench}, the judge
+(Claude) is from a different provider than the generator (GPT-4o-mini) and is blind to condition,
+outcome, and architecture.
+
+\textbf{Capability presence versus available-dimension scoring.} A dimension that an
+architecture lacks (for example, memory in the baseline) cannot be expressed, so scoring it as
+$0$ conflates \emph{capability absence} with \emph{poor use} and ties believability to
+architecture by construction. We therefore separate three constructs: capability \emph{presence}
+(whether a module exists); \emph{quality of use} (the sub-dimension score, computed only where
+the module is present); and \emph{architecture-independent} believability (consistency and
+naturalness, expressible in every condition). The composite is reported in two forms, a
+presence-inclusive form, in which absent dimensions score $0$, and a not-applicable form, in
+which the weights are renormalised over the available dimensions, so that no conclusion rests
+on a single scoring convention.
+
+\textbf{Instrument validation.} To validate the automated composite against human judgement, the
+instrument specifies a blinded human-rating protocol: condition-blinded decision packets,
+sampled in a balanced design over conditions, outcomes, phases, and personas, are rated by
+multiple trained raters on anchored $1$--$5$ rubrics. Inter-rater reliability is measured with
+Krippendorff's $\alpha$, and a human rating is blended into a dimension's score only when that
+dimension reaches an acceptable reliability level; convergent validity is assessed by the rank
+agreement between the mean human composite and the automated composite.
+
+
+
+
+\subsection{Macro Level: Collective Task Outcome Reliability}\label{sec:macro}
+Collective task outcome reliability $V$ is computed from observable simulation state, so it is
+reproducible, but it measures task outcomes rather than validity in the modelling sense. The
+underlying macro metrics are: \textbf{coordination success} and \textbf{coordination score} (the
+fraction of steps that are coordinated); \textbf{sustainability} (the resource pool level divided
+by its initial level, for the commons task); \textbf{demand pressure} (the extent to which demand
+exceeds replenishment); the \textbf{Gini coefficient} computed over \emph{granted} allocations;
+\textbf{convergence speed}; and \textbf{failure traceability}, which codes each failed trial
+against a taxonomy of agent-level causes~\cite{cemri2025fails}.
+
+For the commons task, $V$ is a weighted sum of three outcome terms $v_m$, namely coordination
+score $v_1$, sustainability $v_2$, and equity $v_3 = 1 - \text{Gini}$, with weights $\omega_m$
+fixed before the experiments:
+\begin{equation}\label{eq:vscore}
+V_{\mathrm{CD}} \;=\; \sum_{m=1}^{3} \omega_m\, v_m .
+\end{equation}
+For the consensus task, $V$ is the coordination score $v_1$ alone. Both forms lie in $[0,1]$, and
+a trial is counted as a success when $V \geq \theta$ for the task's success threshold $\theta$.
+
+\textbf{Failure taxonomy.} Alongside the inter-agent coordination, specification, and
+verification failures (Types~A to~C) already catalogued in prior work~\cite{cemri2025fails}, we
+add two simulation-specific, system-level types. \emph{Type~D} is persistent oversubscription, in
+which collective demand consistently exceeds replenishment. \emph{Type~E} is sub-threshold
+failure, in which agents are individually believable yet the collective outcome falls below the
+success criterion; this is the believability--outcome gap case. Failure types are assigned
+automatically from logged state, so no human coding reliability applies. Because Type~E is
+defined partly through the believability--outcome discrepancy, we treat it as descriptive rather
+than as independent evidence.
+
+
+% \subsection{Confronting the Two Levels}\label{sec:confront}
+% Because believability $B(t)$ and reliability $V(t)$ are computed from the same event traces of a
+% trial, every trial yields a pair $(B(t),V(t))$ that places it in the unit square $[0,1]\times[0,1]$,
+% which we call the \emph{believability--reliability plane}. We plot $B$ on the horizontal axis and
+% $V$ on the vertical axis. This plane is the primary object of the analysis. We also use the signed
+% discrepancy $\Delta(t)=B(t)-V(t)$, but only as a one-dimensional summary for counting and ranking
+% trials; we do not treat $\Delta$ as a calibrated quantity, since subtracting $V$ from $B$ presumes
+% the two scales are directly comparable, an assumption we do not make.
+
+% The plane makes the central question geometric. The believability gate of
+% Eq.~\eqref{eq:gate} (whether $B(t)\geq\tau$ implies success $V(t)\geq\theta$) would correspond to a
+% \emph{vertical} line $B=\tau$: a gate is a threshold on $B$ alone, so if one existed, all trials to
+% its right would have to lie at or above the success line $V=\theta$. A gap case, defined by
+% $\Delta(t)>\delta$, is a trial with high believability but a collective outcome that falls short of
+% success ($V(t)<\theta$); such trials occupy the lower-right of the plane (large $B$, small $V$). The
+% existence of trials in this region, equivalently a non-empty gap set $\mathcal{G}$, is exactly what
+% rules out any gate $\tau$.
+
+% Because $\delta$ is an analysis convention rather than a calibrated boundary, we do not rely on any
+% single value of it. Instead we report how the size of the gap set $\mathcal{G}$ changes as $\delta$
+% and the outcome weights $\omega_m$ are varied, and we regard as informative only the gap cases that
+% persist across this range.
+
+% Finally, the same per-trial traces support \emph{trace-based diagnostics}, that is, analyses of the
+% step-by-step record rather than the two summary scores $B$ and $V$. These let us examine why a
+% believable trial failed, attribute each failure to one of the agent-level failure types Type~A to
+% Type~E, and test whether an impending failure is already detectable from the early steps of a trial.
+
+
+
+\subsection{Confronting the Two Levels}\label{sec:confront}
+Since $B(t)$ and $V(t)$ derive from the same trial, each trial yields a pair $(B(t),V(t))$ that
+places it in the unit square $[0,1]\times[0,1]$, which we call the \emph{believability--reliability
+plane}. We plot $B$ on the horizontal axis and $V$ on the vertical axis. This plane is the primary
+object of the analysis. We also use the signed discrepancy $\Delta(t)=B(t)-V(t)$, but only as a
+one-dimensional summary for counting and ranking trials; we do not treat $\Delta$ as a calibrated
+quantity, since subtracting $V$ from $B$ presumes the two scales are directly comparable, an
+assumption we do not make.
+
+The plane makes the central question geometric. A believability gate is a threshold on $B$ alone,
+so it would correspond to a \emph{vertical} line $B=\tau$ to the right of which every trial also
+clears the success line $V=\theta$:
+\[
+\{\,t : B(t)\geq\tau\,\} \;\subseteq\; \{\,t : V(t)\geq\theta\,\}.
+\]
+A gap case, defined by $\Delta(t)>\delta$, is a trial with high believability but a collective
+outcome that falls short of success ($V(t)<\theta$); such trials occupy the lower-right of the plane
+(large $B$, small $V$). The existence of trials in this region, equivalently a non-empty gap set
+$\mathcal{G}$, is exactly what rules out any gate $\tau$.
+
+Because $\delta$ is an analysis convention rather than a calibrated boundary, we do not rely on any
+single value of it. Instead we report how the size of the gap set $\mathcal{G}$ changes as $\delta$
+and the outcome weights $\omega_m$ are varied, and we regard as informative only the gap cases that
+persist across this range.
+
+Finally, the same per-trial traces support \emph{trace-based diagnostics}, that is, analyses of the
+step-by-step record rather than the two summary scores $B$ and $V$. These let us examine why a
+believable trial failed, attribute each failure to one of the agent-level failure types Type~A to
+Type~E, and test whether an impending failure is already detectable from the early steps of a trial.
+
+
+
+
+\section{Experimental Design}\label{sec:design}
+
+\subsection{Agent Architecture and Conditions}
+Agents follow the generative-agent design of Park et al.~\cite{park2023generative} (persona,
+memory, planning, reflection). A fixed panel of $n=8$ personas was drawn once (deterministically,
+selection seed $42$) from a 25-persona environment and held constant across \emph{all} trials,
+which differ only in the per-trial simulation seed and LLM stochasticity; reusing one persona
+panel induces a dependence across trials that we account for in our statistical analysis.
+GPT-4o-mini (\texttt{gpt-4o-mini-2024-07-18}, temperature $0.7$) generates all behaviour; prompts,
+token limits, retries, and dates are in the replication package. Conditions are configuration
+objects over one codebase, forming a cumulative ladder: \textbf{C1} baseline; \textbf{C2}
+$+$memory; \textbf{C3} $+$planning; \textbf{C4} $+$\emph{deterministic} reflection (a fixed rule
+appending a fair-share statement after each round); and \textbf{C5} (exploratory) replacing C4's
+rule with LLM-\emph{generated} reflection. C1--C4 are primary and C5 exploratory. Because the
+ladder is cumulative, the conditions do not isolate any single module's effect; planning-only and
+reflection-control conditions are identified as a follow-up.
+
+
+
+
+\subsection{Task 1: Commons Dilemma (CD)}
+The $n=8$ agents share a renewable community fund, an \emph{abstraction} of Web
+resource-governance problems (mutual-aid groups, open-source maintainer pools, online commons),
+not a calibrated model. Defaults: initial pool 1000 credits, replenishment 50 per round,
+per-agent request cap 100, and capacity 1000. At each step the agents receive a plain-English
+resource context and emit a structured request; Algorithm~\ref{alg:env} (left) gives the
+environment update. A trial runs for 100 steps unless the pool collapses, and counts as a success
+when there is no collapse and the coordination score reaches the threshold $\theta_{\mathrm{CD}}=0.7$.
+Episodic memory (C2--C5) records prior rounds (demand versus replenishment, fair-share deviations,
+and over- and under-requesters). Primary data: $4 \times 20 = 80$ trials, plus 10 exploratory C5.
+
+
+
+\begin{algorithm}[t]
+\caption{Per-step environment update for both tasks. \emph{Left (CD):} full grants when affordable, else integer-floored proportional; pool reduced by grants, replenished, capped; collapse checked after; Gini over \emph{granted} allocations. \emph{Right (IC):} agents vote after seeing the previous public tally; a step is coordinated when $\geq\lceil 0.75n\rceil$ vote correctly, success requires a five-step streak.}
+\label{alg:env}
+\small
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{@{}p{0.46\linewidth}|p{0.46\linewidth}@{}}
+\centering\textbf{\footnotesize Commons dilemma (CD)}
+&
+\centering\textbf{\footnotesize Information consensus (IC)}
+\tabularnewline[2pt]
+\begin{minipage}[t]{\linewidth}
+\begin{algorithmic}[1]
+\Require pool $r$, replenishment $\rho$, capacity $\kappa$, agents $1,\dots,n$
+\State $\textit{fair} \gets \rho / n$ \Comment{$=6.25$}
+\State broadcast $(r,\ r/r_0,\ \rho,\ n,\ \textit{fair})$
+\State collect request $q_i$ capped at $100$
+\State $Q \gets \sum_i q_i$ \Comment{total demand}
+\If{$Q \le r$}
+\State $g_i \gets q_i$ \Comment{full grant}
+\Else
+\State $g_i \gets \lfloor q_i \cdot r / Q \rfloor$ \Comment{rationing}
+\EndIf
+\State $r \gets \min(\kappa,\ r - \sum_i g_i + \rho)$
+\If{$r \le 0$}
+\State \textbf{collapse}; end trial
+\EndIf
+\State $\textit{coordinated} \gets [\,Q \le \rho\,]$
+\State record $r/r_0$, $\mathrm{Gini}(g)$
+\end{algorithmic}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{algorithmic}[1]
+\Require correct option $a^\star$, signals $(A{:}4,B{:}2,C{:}2)$, agents $1,\dots,n$, streak $s \gets 0$
+\State broadcast previous public tally $T$
+\State collect vote $v_i$ from each agent $i$
+\State $T \gets$ tally of $\{v_i\}$ over options
+\State $c \gets |\{i : v_i = a^\star\}|$ \Comment{\# correct}
+\State $\textit{coordinated} \gets [\,c \ge \lceil 0.75n\rceil\,]$
+\If{\textit{coordinated}}
+\State $s \gets s+1$
+\Else
+\State $s \gets 0$
+\EndIf
+\If{$s \ge 5$}
+\State \textbf{success}; record convergence step
+\EndIf
+\State record $c/n$, $\mathrm{Gini}(T)$
+\end{algorithmic}
+\end{minipage}
+\end{tabular}
+\end{algorithm}
+
+
+
+\subsection{Task 2: Repeated Public-Voting / Information Consensus (IC)}
+The $n=8$ agents must collectively identify which of three options is correct. Private signals
+give the correct option a strict plurality (four agents receive the correct signal, two each the
+alternatives), so honest aggregation of the disclosed signals identifies it. Each round the agents
+vote after observing the current public tally, but not the private signals, a direct abstraction of
+repeated public voting on the Web (ratings, polls, upvote threads), in which herding and
+social-information lock-in can arise~\cite{bikhchandani1992theory}. This is \emph{repeated
+simultaneous} voting with a visible tally, not the canonical \emph{sequential} cascade, so we
+describe the outcomes as cascade-like. A step is coordinated when at least a fraction
+$\theta_{\mathrm{IC}}=0.75$ of the agents (six of eight) vote for the correct option, and a trial
+succeeds on a streak of five consecutive coordinated steps; the convergence step is the start of
+that streak. Algorithm~\ref{alg:env} (right) gives the per-step update. The option set and correct
+option are \emph{fixed} across trials; counterbalancing the correct option, randomising option
+labels and order, comparing meaningful versus neutral labels, adding a hidden-tally control, and
+adding a vote-only control without generated explanations are required follow-ups. Primary data:
+$4 \times 10 = 40$ trials, plus 10 exploratory C5.
+
+
+\subsection{Logging and Analysis}
+The composite weights were fixed a priori rather than tuned, with the ordering reflecting how
+directly each term reflects its construct rather than any optimisation. The believability weights
+are $w=(0.30,0.25,0.25,0.20)$ over $(b_1,\dots,b_4)$: behavioural consistency is weighted highest
+as the most fundamental marker of in-character behaviour, memory coherence and planning
+plausibility equally as the two cognitive capabilities, and response naturalness lowest as the
+most superficial and easiest-to-produce signal. The behavioural-consistency sub-weights are
+$\gamma=(0.45,0.35,0.20)$ over request consistency, persona alignment, and cooperation rate, with
+cooperation rate deliberately weighted least because it partly overlaps the macro outcome. The
+commons-task outcome weights are $\omega=(0.5,0.3,0.2)$ over coordination score, sustainability,
+and equity, placing the primary success signal above the secondary sustainability and fairness
+terms. Because these weights are judgement-based rather than validated, we do not rest any
+conclusion on them: the gap-case analysis reports robustness across a range of $\omega$.
+
+Each trial emits micro-level (per agent--step) and macro-level (pool, totals, sustainability,
+inequality, collapse) logs. Hypotheses were fixed in writing before analysis (timestamped in the
+replication package, as pre-stated intent, not formal preregistration), and we separate
+confirmatory analyses (pre-stated associations and condition comparisons) from exploratory ones
+(early-warning classifier, sub-dimension drivers, all C5). We use Spearman correlation and
+Mann--Whitney for association; Kruskal--Wallis and pairwise Mann--Whitney with Holm correction and
+Cliff's $\delta$; Wilson intervals for success rates; standardised-coefficient OLS for
+sub-dimension predictors; string deduplication for reflection repetition; and a random-forest
+classifier over $K$-step prefixes (trial-level leave-one-out, scaling in-fold, no tuning) with a
+within-condition test and simple baselines. Because trials share one persona panel, the effective
+sample size is below the nominal count and $p$-values are optimistic.
+
+
+
+\section{Results}\label{sec:results}
+Table~\ref{tab:results} reports per-condition outcomes and shows the central pattern:
+presence-inclusive believability rises with architecture but is nearly flat once memory and
+planning are present (C3 to C4: $+0.013$), while collective task outcomes move categorically, and
+in the consensus baseline the two visibly part company. The categorical outcomes (success rates,
+cascade-like convergence, reflection-repetition counts) are computed from objective simulation
+state and do not depend on the believability instrument; only the association and predictor
+analyses depend on it, and those are exactly where treating absent dimensions as zero versus
+not-applicable matters most.
+\begin{table}[t]
+\centering
+\caption{Condition-level results. CD: commons dilemma (20 trials/condition); IC: repeated
+public-voting (10 trials/condition). C5 is exploratory (10 trials each). Believ.\ = mean
+presence-inclusive composite believability (absent dimensions $=0$; the not-applicable form is
+analysed with the sub-dimension drivers); Sust.\ = sustainability; Succ.\ = coordination success
+(Wilson 95\% CIs in text); Conv.\ = convergence step.}
+\label{tab:results}
+\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{l rrr c rrr}
+\toprule
+ & \multicolumn{3}{c}{CD} & & \multicolumn{3}{c}{IC} \\
+\cmidrule{2-4}\cmidrule{6-8}
+Condition & Believ. & Sust. & Succ. & & Believ. & Succ. & Conv. \\
+\midrule
+C1 Baseline           & 0.347 & 0.138 & 0\%   & & 0.385 & \textbf{0\%} & timeout \\
+C2 Memory             & 0.543 & 0.264 & 5\%   & & 0.561 & 100\% & 1.0 \\
+C3 Memory + Planning  & 0.669 & 0.326 & 10\%  & & 0.669 & 100\% & 1.0 \\
+C4 Full (deterministic) & 0.682 & 0.931 & \textbf{70\%} & & 0.668 & 100\% & 1.0 \\
+\emph{C5 Full (LLM refl.)} & \emph{0.674} & \emph{0.988} & \emph{100\%} & & \emph{0.669} & \emph{100\%} & \emph{1.1} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\subsection{A Fragile, Presence-Driven Association; No Believability Gate}\label{sec:results-assoc}
+With the presence-inclusive composite (absent dimensions $=0$), believability is positively associated with coordination score: Spearman $\rho = 0.55$ in CD ($n=80$, $p<0.0001$; trial-bootstrap 95\% CI $[0.38, 0.69]$) and $\rho = 0.75$ in IC ($n=40$; CI $[0.57, 0.85]$) (Fig.~\ref{fig:scatter}); a persona-clustered bootstrap (resampling the eight personas, the dependence unit discussed among the limitations) leaves it positive ($\rho$ CI $[0.45,0.52]$ CD, $[0.75,0.75]$ IC), so the association is not an artefact of the shared panel. The association is \emph{fragile} and carried by capability presence, not architecture-independent believability: under not-applicable scoring the CD association falls to $\rho = -0.24$, and the architecture-independent composite (consistency and naturalness only) gives $\rho = 0.23$. Correspondingly there is \emph{no believability floor} gating success: within every architecture the most-believable failing trial scores \emph{above} the least-believable succeeding one (CD full: $0.698$ vs.\ $0.658$), and on the architecture-independent composite the orderings overlap entirely. The apparent ``floor'' near $0.36$--$0.39$ is an artifact of the always-failing baseline being depressed by its zero memory/planning sub-scores, not a behavioural threshold. Believability is thus neither necessary nor sufficient for reliable outcomes; we make no floor claim and test the drivers within condition below.
+\begin{figure}[t]
+\centering
+\IfFileExists{figures/fig_scatter.pdf}%
+  {\includegraphics[width=0.8\textwidth]{figures/fig_scatter.pdf}}%
+  {\figplaceholder{3.6cm}{Trial-level $(B,V)$ scatter: composite believability ($x$) vs.\ collective task outcome $V$ ($y$), marker shape by task, colour by condition; gap cases ($\Delta>0.20$) ring-highlighted.}}
+\caption{The two-dimensional $(B,V)$ view (the primary presentation). Horizontal axis: composite believability $B$; vertical axis: collective task outcome reliability $V$. Ringed points are gap cases ($\Delta > 0.20$), where individual believability exceeds delivered collective outcomes. Many individually believable trials sit at low $V$; there is no believability value above which success is assured (no gate).}
+\label{fig:scatter}
+\end{figure}
+
+
+
+
+\subsection{The Believability--Outcome Gap}\label{sec:results-gap}
+The association is positive but does not imply reliable outcomes (the central result). Per-trial $\Delta = B - V$ flags 51 of the 120 primary trials as gap cases at $\Delta > 0.20$ (41 in CD; all 10 IC baseline trials), but the CD count is choice-sensitive: across thresholds $\Delta > 0.15/0.20/0.25$ it moves $56/41/37$, across plausible $V$-weightings it ranges $30$--$59$, and a trial bootstrap puts the default at $41$ (95\% CI $[32,50]$). We therefore report a range: a large minority of CD trials, and every IC baseline trial, pair believable agents with poor outcomes. The IC count is invariant to threshold and weighting (10 at every cut, since those trials have $V=0$); failed gap cases are coded Type~E. The point is qualitative and robust: believability does not deliver reliable outcomes on its own.
+
+The IC baseline is the sharpest, instrument-independent demonstration (Fig.~\ref{fig:cascade}). Every agent is persona-consistent and reasons plausibly, yet coordination success is 0\%: all 10 trials converge \emph{unanimously on an incorrect option} (by step 2 in 7 of 10, step 3 in all 10), despite the correct option starting with a strict plurality of both signals and first-round votes. Two trace observations support a social-information reading: all 80 baseline first-round votes follow the agent's \emph{own private signal} (abandonment begins only after the tally is observed), and the agents are not behaviourally implausible (consistency 0.69, naturalness 0.89; their composite is depressed only because memory and planning are structurally zero). The behaviour is cascade-like~\cite{bikhchandani1992theory} but in repeated simultaneous voting, not the canonical sequential design: the correct option \emph{leads} step-0, agents aggregate the alternatives into a perceived opposing majority (one flip verbatim in Fig.~\ref{fig:cascade}), and the tally locks the group in. Eight of ten runs land on the \emph{same} option, consistent with salience steering the herd~\cite{cho2025herd,aharon2026tacit}; but with a fixed option set, option wording, order, and semantic preference cannot be excluded, and the demonstration does not depend on which option wins. This failure is invisible individually and exists only collectively: the regime face-validity practice~\cite{kluegl2008validation,larooij2025critical,zeng2026uncanny} is poorly placed to detect. Enriched conditions (C2--C5) all reach 100\% success at convergence ${\approx}1$: episodic memory records the running tally and flags the standing plurality, performing part of the \emph{aggregation}, so they test memory-as-aggregation-aid, and a no-flag memory condition plus a direct aggregation-aid condition are needed to separate the two. Fine-grained statistics therefore draw on CD.
+\begin{figure}[t]
+\centering
+\IfFileExists{figures/fig_cascade.pdf}%
+  {\includegraphics[width=0.8\textwidth]{figures/fig_cascade.pdf}}%
+  {\figplaceholder{3.6cm}{Vote-tally trajectories of one representative IC baseline trial.}}
+\vspace{-2.5mm}
+\caption{Anatomy of a believable-but-unreliable trial (IC baseline, trial 0). The correct option starts with a strict plurality of private signals (4/8) and of first-round votes, yet the public tally tips to an alternative and locks in unanimously by step 2. One agent's flip is verbatim: ``\emph{While my private signal points to Option A, the combined support for [the alternatives] suggests a stronger collective inclination\,\ldots}'' (individually plausible, collectively wrong). The quoted text is reproduced verbatim from the trial log.}
+\label{fig:cascade}
+\vspace{-4mm}
+\end{figure}
+
+
+
+
+\subsection{Capability Presence, Not Expressed Quality, Carries the Association}\label{sec:results-drivers}
+Separating presence, quality of use, and architecture-independent believability (CD primary, $n=80$; IC enriched conditions are degenerate, so sub-dimension ranking is uninformative there) isolates what drives the association. \textbf{Presence} is the strongest signal: a planning-present indicator correlates with coordination at $\rho = 0.51$ ($p<0.001$), a memory-present indicator at $\rho = 0.35$ ($p=0.0015$). \textbf{Quality of use} is module-specific: among memory-bearing trials, memory coherence predicts coordination ($\rho = 0.46$, $p=0.0002$), whereas among planning-bearing trials, planning plausibility does not ($\rho = 0.13$, $p=0.44$). \textbf{Architecture-independent} believability is only weakly associated ($\rho = 0.23$, $p=0.04$), carried by consistency ($\rho=0.25$) not naturalness ($\rho=-0.11$, n.s.). The pooled picture (planning surviving a joint OLS at $\beta=0.45$ while memory does not, contra our pre-stated memory-centred expectation~\cite{park2023generative,hishiki2026memory}) is thus largely attributable to \emph{between-condition} differences in which capabilities exist. Within architecture the associations are unstable and uninformative at this sample size (planning drops to $\rho=0.13$, n.s.; within C3, $\rho=-0.52$ on only two successes with a wide CI, which we do not interpret; within C4 the CI straddles zero, $[-0.10,0.82]$); these nulls reflect low power, not absence of effect. The unifying reading: capability \emph{presence} moves both believability and outcomes, while trial-to-trial \emph{expressed} quality moves believability far more than outcomes (believability is nearly flat C3 to C4, $0.669$ vs.\ $0.682$; coordination jumps 60 points; the only robust pairwise gain is into the reflection condition, Cliff's $\delta\geq0.79$, Holm $p<0.0001$). For builders, sub-dimension believability metrics are most useful as a check on \emph{what an architecture has}, not as a predictor of how reliably it will coordinate.
+
+
+\subsection{Coordination Gain Associated with Repetitive Normative Reflection}\label{sec:results-reflection}
+The deterministic-reflection condition (C3$\rightarrow$C4) is associated with a categorical rise in CD coordination success, from 10\% to 70\% (the only robust pairwise condition gain), with sustainability rising from 0.326 to 0.931. The reflection signal is highly repetitive: across the 47{,}040 logged reflection instances, after exact-match normalisation, only \textbf{three unique strings} occur, two covering 95.8\% (the dominant, ``\emph{Requesting at or below fair share helped keep the group within the replenishment limit}'', 70.2\%), saturating by step~2 (Fig.~\ref{fig:saturation}). Low diversity is partly by construction (the rule is fixed); the observation is that the categorical gain coincides with no more than a static, repeated norm. We do \emph{not} claim the repetition explains the gain: the norm is close to stating the solution, so a direct-instruction effect cannot be separated from a coordination effect without controls. One interpretation, consistent with the traces, is a \emph{focal point}: a shared lexical anchor of the kind LLM agents coordinate on through salience rather than strategic reasoning~\cite{aharon2026tacit}. The exploratory C5 condition is suggestive: free LLM-generated reflection produces 1{,}190 unique strings yet 94.9\% of \emph{instances} repeat a small set restating the fair-share norm, also reaching 100\% success. Establishing the mechanism requires a matched-control experiment (the exact fair-share statement vs.\ a tone-, length-, and position-matched placebo, a direct numerical instruction, a non-normative reflection, and shared-identical vs.\ paraphrased wording), which we specify as the key follow-up. Until then we describe the result as a gain \emph{associated with} the condition.
+\begin{figure}[t]
+\centering
+\IfFileExists{figures/fig_saturation.pdf}%
+  {\includegraphics[width=0.8\textwidth]{figures/fig_saturation.pdf}}%
+  {\figplaceholder{3.2cm}{Cumulative unique reflection strings vs.\ step, C4 and C5.}}
+\caption{Reflection repetition. C4 (deterministic): three unique strings across 47{,}040 instances, saturated by step 2 (low diversity is partly by construction). C5 (LLM-generated, exploratory): 1{,}190 unique strings, yet 94.9\% of instances repeat a small set expressing the same fair-share norm in varied words. The coordination gain is \emph{associated with} repetitive normative content; a matched-control experiment is needed to establish causation.}
+\label{fig:saturation}
+\end{figure}
+
+
+
+\subsection{Early Warning from Trial Traces (Exploratory)}\label{sec:results-warning}
+We ask, exploratorily, whether coordination failure is predictable from the first $K$ steps. A random forest over prefix features from the 80 primary CD trials (leave-one-out cross-validation at trial level; scaling fit inside each fold; no tuning) reaches pooled ROC AUC $\approx 0.84$ at $K{=}5$ and $\approx 0.94$ at $K{=}20$, beating a majority-class baseline (failure base rate 79\%; PR-AUC 0.95/0.97, Brier 0.12/0.07). But pooled performance can recover condition identity from architecture-correlated features, so the honest test is \emph{within} a fixed condition: within the full condition at $K{=}20$ ($n=20$, 6 failures) the combined model reaches ROC AUC $\approx 0.79$ (95\% CI $[0.57,0.99]$), \emph{macro-only} $\approx 0.77$ ($[0.57,0.96]$, label-permutation $p\approx0.07$), and the \emph{micro-only} (believability-trace) model collapses to chance ($\approx 0.51$, $[0.18,1.00]$). The within-condition signal is thus modest and carried by \emph{macro} state (oversubscription, resource slope), not believability traces; with this few trials the point estimates are unstable, so we report it as exploratory and do not headline the pooled figure. The failure taxonomy grounds the aim retrospectively: of the 63 failed CD trials, 38 are Type~D (mean believability 0.459) and 25 are Type~E (0.641, the gap cases). Together these suggest a monitoring loop for long-running GABM studies: track macro state and the discrepancy, and flag runs likely to fail the criterion early, recognising that believability traces alone add little within a fixed architecture.
+
+
+
+
+\section{Discussion and Threats to Validity}\label{sec:discussion}
+\textbf{Implications for Web simulation practice.} (1)~Face validity alone is insufficient: believable agents reproduced a unanimous wrong consensus. (2)~Believability is a useful \emph{diagnostic signal} but does not gate collective outcomes, which must be established separately. (3)~Report the $(B,V)$ plane (and discrepancy range) alongside outcome metrics, since gap cases are what a face-validity reading is most likely to mis-certify. (4)~Where a simulation exposes public information (votes, ratings, trends), test explicitly for herding / social-information lock-in. (5)~Architecture can improve outcomes through unintended mechanisms (our deterministic reflection appears to act as a shared norm, not reasoning), so mechanism-level trace inspection~\cite{zhao2026mechanism,cemri2025fails} should accompany outcome metrics.
+
+
+
+
+\subsection{Limitations}
+\emph{Construct:} we measure collective task outcome reliability, not simulation validity, with no external-fidelity claim. \emph{Confounding:} believability covaries with architecture, so pooled associations largely reflect between-condition differences, and null within-condition correlations indicate low power, not no effect; relatedly, the conditions form a cumulative ladder rather than a clean ablation, so individual module effects are not separately identified. \emph{Persona dependence:} all trials use one fixed 8-persona panel; with LLM homogenisation~\cite{wu2026boundary} observations are not independent and $p$-values are optimistic, and a persona-clustered bootstrap over only eight personas is itself unstable, so cross-persona replication is needed. \emph{Task evidence:} IC is a binary baseline-vs-enriched contrast (fine-grained statistics rest on CD); with a fixed option set, option wording, order, and semantic preference cannot be excluded; and in the enriched conditions episodic memory also flags the standing plurality, so its effect conflates memory with an aggregation aid that a no-flag-memory control would separate. \emph{Generality and drift:} one architecture~\cite{park2023generative} and one generator (GPT-4o-mini) on two tasks; model and judge drift and prompt sensitivity could move the numbers, so cross-architecture and cross-model replication is future work. \emph{Instrument:} the believability composite uses an a-priori weighting and is validated only by a small three-rater, 15-packet pilot whose inter-rater agreement does not reach the reliability gate on two dimensions, so full multi-rater validation remains outstanding; the macro-overlapping cooperation-rate component (6\%) can be removed without changing the association (CD $\rho=0.44$), and the categorical results are instrument-independent. \emph{Statistics:} given the large multiple-testing surface we foreground effect sizes and instrument-independent results. \emph{Classifier:} exploratory only. \emph{Mechanism and predictor status:} the matched-control experiment is required for the focal-point account; Type~E is defined partly through the discrepancy criterion and is therefore descriptive rather than independent evidence; and the presence-versus-quality distinction is observational, not causally identified.
+
+
+\section{Conclusion}\label{sec:conclusion}
+We asked whether individual believability in LLM multi-agent simulations implies reliable collective task outcomes; it does not. A dual-level instrument over 140 trials shows a positive but fragile believability--outcome association ($\rho = 0.55$/$0.75$) that is largely attributable to capability presence and disappears or reverses under not-applicable scoring; believability does not gate collective success, and the apparent floor is a presence artifact. The clearest, instrument-independent evidence is a repeated public-voting task in which individually believable agents unanimously produce a cascade-like collapse (herding / social-information lock-in) onto a wrong option. Sub-dimension associations are consistent with between-architecture confounding (planning survives the pooled regression at $\beta = 0.45$ but no dimension is a stable within-architecture predictor), and a categorical coordination gain is \emph{associated with} the deterministic-reflection condition, whose reflection signal is highly repetitive in a way consistent with a focal-point interpretation. Exploratory diagnostics show preliminary predictive signal for failure (within-condition macro-state AUC $\approx0.77$). The message is constructive: believability is a usable diagnostic signal, but reliable collective outcomes must be established separately. Several controls would strengthen the claims and should ideally move into the study: the matched-control reflection experiment, the IC counterbalancing / hidden-tally / vote-only and no-flag-memory conditions, multi-rater human validation, and cross-persona, cross-architecture, and cross-model replication.
+\begin{thebibliography}{99}\setlength{\itemsep}{1.5pt}
+\bibitem{park2023generative}
+Park, J.S., O'Brien, J.C., Cai, C.J., et al.: Generative agents: interactive simulacra of human behavior. In: Proc. ACM UIST (2023). doi:10.1145/3586183.3606763
+\bibitem{gao2024survey}
+Gao, C., et al.: Large language models empowered agent-based modeling and simulation: a survey and perspectives. Humanit. Soc. Sci. Commun. \textbf{11} (2024). doi:10.1057/s41599-024-03611-3
+\bibitem{ghaffarzadegan2024tutorial}
+Ghaffarzadegan, N., Majumdar, A., Williams, R., Hosseinichimeh, N.: Generative agent-based modeling: an introduction and tutorial. System Dynamics Review \textbf{40}(4) (2024). doi:10.1002/sdr.1761
+\bibitem{yang2024oasis}
+Yang, Z., et al.: OASIS: open agent social interaction simulations with one million agents. arXiv:2411.11581 (2024)
+\bibitem{piao2025agentsociety}
+Piao, J., et al.: AgentSociety: large-scale simulation of LLM-driven generative agents advances understanding of human behaviors and society. arXiv:2502.08691 (2025)
+\bibitem{windrum2007empirical}
+Windrum, P., Fagiolo, G., Moneta, A.: Empirical validation of agent-based models: alternatives and prospects. J. Artif. Soc. Social Simul. \textbf{10}(2) (2007)
+\bibitem{moss2005towards}
+Moss, S., Edmonds, B.: Towards good social science. J. Artif. Soc. Social Simul. \textbf{8}(4) (2005)
+\bibitem{bikhchandani1992theory}
+Bikhchandani, S., Hirshleifer, D., Welch, I.: A theory of fads, fashion, custom, and cultural change as informational cascades. J. Political Economy \textbf{100}(5), 992--1026 (1992). doi:10.1086/261849
+\bibitem{cho2025herd}
+Cho, Y., Guntuku, S.C., Ungar, L.: Herd behavior: investigating peer influence in LLM-based multi-agent systems. arXiv:2505.21588 (2025)
+\bibitem{jain2025social}
+Jain, A., Krishnamurthy, V.: Interacting large language model agents: interpretable models and social learning. arXiv:2411.01271 (2025)
+\bibitem{zhong2025conformity}
+Zhong, H., et al.: Disentangling the drivers of LLM social conformity. arXiv:2508.14918 (2025)
+\bibitem{zheng2023judging}
+Zheng, L., et al.: Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. In: Proc. NeurIPS (2023). arXiv:2306.05685
+\bibitem{aharon2026tacit}
+Aharon, I., La Malfa, E., Wooldridge, M., et al.: Tacit coordination of large language models. arXiv:2601.22184 (2026)
+\bibitem{epstein1996growing}
+Epstein, J.M., Axtell, R.: Growing Artificial Societies: Social Science from the Bottom Up. Brookings Institution Press (1996)
+\bibitem{sargent2010verification}
+Sargent, R.G.: Verification and validation of simulation models. In: Proc. Winter Simulation Conf. (WSC), pp. 166--183 (2010). doi:10.1109/WSC.2010.5679166
+\bibitem{rand2011rigor}
+Rand, W., Rust, R.T.: Agent-based modeling in marketing: guidelines for rigor. Int. J. Research in Marketing \textbf{28}(3), 181--193 (2011). doi:10.1016/j.ijresmar.2011.04.002
+\bibitem{augusiak2014evaludation}
+Augusiak, J., Van den Brink, P.J., Grimm, V.: Merging validation and evaluation of ecological models to `evaludation'. Ecol. Modelling \textbf{280}, 117--128 (2014). doi:10.1016/j.ecolmodel.2013.11.009
+\bibitem{zhao2026mechanism}
+Zhao, P., Pham, D.H., Vincent, N.: Mechanism plausibility in generative agent-based modeling. In: Proc. ACM FAccT (2026). doi:10.1145/3805689.3812388
+\bibitem{grimm2006odd}
+Grimm, V., Berger, U., Bastiansen, F., et al.: A standard protocol for describing individual-based and agent-based models. Ecol. Modelling \textbf{198}(1--2), 115--126 (2006). doi:10.1016/j.ecolmodel.2006.04.023
+\bibitem{grimm2020odd}
+Grimm, V., Railsback, S.F., Vincenot, C.E., et al.: The ODD protocol for describing agent-based and other simulation models: a second update. J. Artif. Soc. Social Simul. \textbf{23}(2), 7 (2020). doi:10.18564/jasss.4259
+\bibitem{grimm2005pom}
+Grimm, V., Revilla, E., Berger, U., et al.: Pattern-oriented modeling of agent-based complex systems: lessons from ecology. Science \textbf{310}(5750), 987--991 (2005). doi:10.1126/science.1116681
+\bibitem{kluegl2008validation}
+Kl\"ugl, F.: A validation methodology for agent-based simulations. In: Proc. ACM Symp. Applied Computing (SAC), pp. 39--43 (2008). doi:10.1145/1363686.1363696
+\bibitem{larooij2025critical}
+Larooij, M., T{\"o}rnberg, P.: Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling. Artif. Intell. Review \textbf{59}(1), article 15 (2026). doi:10.1007/s10462-025-11412-6
+\bibitem{zeng2026uncanny}
+Zeng, Y., Brown, C., Rounsevell, M.: Too human to model: the uncanny valley of large language models in simulating human systems. npj Complexity \textbf{3}, article 13 (2026). doi:10.1038/s44260-026-00075-1
+\bibitem{wu2026boundary}
+Wu, Z., et al.: LLM-based social simulations require a boundary. arXiv:2506.19806 (2025)
+\bibitem{adornetto2025overview}
+Adornetto, C., et al.: Generative agents in agent-based modeling: overview, validation, and emerging challenges. IEEE Trans. Artif. Intell. \textbf{6}(12), 3165--3183 (2025). doi:10.1109/TAI.2025.3566362
+\bibitem{cross2025validating}
+Cross, L., Haber, N., Yamins, D.L.K.: Validating generative agent-based models of social norm enforcement: from replication to novel predictions. arXiv:2507.22049 (2025)
+\bibitem{munker2026benchmark}
+M{\"u}nker, S., Schwager, N., Rettinger, A.: Don't trust generative agents to mimic communication on social networks unless you benchmarked their empirical realism. In: Proc. EACL, pp. 1141--1151 (2026). doi:10.18653/v1/2026.eacl-long.51
+\bibitem{tomasevic2026operational}
+Toma\v{s}evi\'c, A., et al.: Towards operational validation of LLM-agent social simulations: a replicated study of a Reddit-like technology forum. arXiv:2508.21740 (2026)
+\bibitem{li2024agentbench}
+Liu, X., et al.: AgentBench: evaluating LLMs as agents. In: Proc. ICLR (2024). arXiv:2308.03688
+\bibitem{mohammadi2025evaluation}
+Mohammadi, M., Li, Y., Lo, J., Yip, W.: Evaluation and benchmarking of LLM agents: a survey. In: Proc. ACM KDD (2025). doi:10.1145/3711896.3736570
+\bibitem{zhang2026silo}
+Zhang, Y., et al.: Silo-Bench: a scalable environment for evaluating distributed coordination in multi-agent LLM systems. arXiv:2603.01045 (2026)
+\bibitem{kulshreshtha2026defection}
+Kulshreshtha, D., et al.: The subtle art of defection: understanding uncooperative behaviors in LLM-based multi-agent systems. arXiv:2511.15862 (2026)
+\bibitem{hishiki2026memory}
+Hishiki, T., Arita, T., Suzuki, R.: How memory can affect collective and cooperative behaviors in an LLM-based social particle swarm. arXiv:2604.12250 (2026)
+\bibitem{galanti2020explainable}
+Galanti, R., Coma-Puig, B., de Leoni, M., et al.: Explainable predictive process monitoring. In: Proc. 2nd Int. Conf. Process Mining (2020). doi:10.1109/ICPM49681.2020.00012
+\bibitem{cemri2025fails}
+Cemri, M., Pan, M.Z., Yang, S., et al.: Why do multi-agent LLM systems fail? arXiv:2503.13657 (2025)
+\bibitem{yehudai2026clear}
+Yehudai, A., et al.: Agentic CLEAR: automating multi-level evaluation of LLM agents. arXiv:2605.22608 (2026)
+\bibitem{pan2025agentrewardbench}
+L\`u, X.H., Kazemnejad, A., Meade, N., et al.: AgentRewardBench: evaluating automatic evaluations of web agent trajectories. arXiv:2504.08942 (2025)
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,24 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code_prefix": "ic_counterbalance_correct_C",
+  "scenario": "information_consensus",
+  "scenario_parameters": {
+    "true_option": "C",
+    "signal_counts": {
+      "C": 4,
+      "A": 2,
+      "B": 2
+    }
+  },
+  "experimental_conditions": [
+    "baseline",
+    "full"
+  ],
+  "n_steps": 30,
+  "n_trials": 5,
+  "persona_names": null,
+  "persona_sample_size": 8,
+  "selection_seed": 42,
+  "base_seed": 20260630,
+  "export_human_eval": false
+}

@@ -1,0 +1,52 @@
+==============================================================
+MRes EARLY WARNING REPORT  (H7 / C4)
+==============================================================
+Scenario : commons_dilemma
+Label    : coordination_success
+
+==============================================================
+H7: Coordination failure is predictable from first-K-step micro traces, beyond what architectural condition alone explains.
+--------------------------------------------------------------
+  Note: Best pooled AUC at K=20: 0.9188 (P=0.9265, R=1.0, F1=0.9618). Within-condition (full): AUC=0.7857, P=0.4286, R=0.5. Within-condition (memory_planning): AUC=0.6111, P=0.9, R=1.0. Lead time (P>0.6 & R>0.6 first met): K=5.
+  Lead time (first K with P>0.6 & R>0.6): 5
+
+     K      n   Fail    Prec     Rec      F1     AUC
+  ----  -----  -----  ------  ------  ------  ------
+     5     80     63   0.849   0.984   0.912  0.7965
+    10     80     63   0.886   0.984   0.932  0.8562
+    15     80     63   0.886   0.984   0.932  0.8964
+    20     80     63   0.926   1.000   0.962  0.9188
+
+  Within-condition test (K=max, condition held fixed):
+    baseline                All 20 trials have label=1; within-condition test uninformative.
+    full                    n=20  Fail=6  P=0.429  R=0.500  AUC=0.7857
+    memory_planning         n=20  Fail=18  P=0.900  R=1.000  AUC=0.6111
+
+  Top features (|coefficient| at K=5, trained on all data):
+    mean_coordinated_rate           |coef|=1.0731
+    plan_citation_rate              |coef|=0.8024
+    memory_citation_rate            |coef|=0.4349
+    request_ratio_slope             |coef|=0.3239
+    mean_gini                       |coef|=0.2712
+    sustainability_slope            |coef|=0.1179
+
+==============================================================
+C4: Recurring micro-level failure patterns linking believability breakdown to macro-level coordination failure.
+--------------------------------------------------------------
+  Total failed trials analysed: 63
+
+  [ 38 trials]  D_persistent_oversubscription
+    Requests consistently and heavily exceed replenishment; resource stressed throughout; coordination threshold not met.
+    Conditions: baseline, memory, memory_planning
+    Mean believability: 0.459
+    Representative: baseline/trial_0
+      sust_slope=-0.0036  mean_osub=62.16  mean_ratio=2.243  collapse_step=None
+
+  [ 25 trials]  E_subthreshold_coordination_failure
+    Agents request just above fair share; no collapse, but cumulative pressure keeps coordination below threshold. Typical of high-believability gap cases (full condition).
+    Conditions: full, memory, memory_planning
+    Mean believability: 0.641
+    Representative: full/trial_0
+      sust_slope=-0.0021  mean_osub=3.78  mean_ratio=1.076  collapse_step=None
+
+==============================================================

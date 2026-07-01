@@ -1,0 +1,21 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code_prefix": "commons_experiment_llm_reflection",
+  "scenario": "commons_dilemma",
+  "scenario_parameters": {
+    "initial_resource": 1000,
+    "replenishment_rate": 50,
+    "max_request": 100,
+    "capacity": 1000
+  },
+  "experimental_conditions": [
+    "full_llm_reflection"
+  ],
+  "n_steps": 100,
+  "n_trials": 20,
+  "persona_names": null,
+  "persona_sample_size": 8,
+  "selection_seed": 42,
+  "base_seed": 20260430,
+  "export_human_eval": true
+}

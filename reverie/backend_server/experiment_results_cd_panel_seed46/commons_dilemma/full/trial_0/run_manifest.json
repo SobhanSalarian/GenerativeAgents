@@ -1,0 +1,314 @@
+{
+  "fork_sim_code": "base_the_ville_n25",
+  "sim_code": "cd_panel_seed46_full_trial_0",
+  "experimental_condition": "full",
+  "selected_personas": [
+    "Adam Smith",
+    "Arthur Burton",
+    "Carlos Gomez",
+    "Francisco Lopez",
+    "Jennifer Moore",
+    "Maria Lopez",
+    "Rajiv Patel",
+    "Tamara Taylor"
+  ],
+  "maze_name": "the_ville",
+  "persona_count": 8,
+  "run_seed": 20260524,
+  "start_time": "February 13, 2023, 00:00:00",
+  "curr_time": "February 13, 2023, 09:16:40",
+  "step": 100,
+  "llm_usage": {
+    "chat_requests": 1185,
+    "embedding_requests": 2103,
+    "chat_prompt_tokens": 755830,
+    "chat_completion_tokens": 75089,
+    "chat_total_tokens": 830919,
+    "embedding_prompt_tokens": 68242,
+    "embedding_total_tokens": 68242,
+    "estimated_cost_usd": 0.0,
+    "models": {
+      "text-embedding-3-small": {
+        "chat_requests": 0,
+        "embedding_requests": 2103,
+        "prompt_tokens": 68242,
+        "completion_tokens": 0,
+        "total_tokens": 68242
+      },
+      "gpt-4o-mini": {
+        "chat_requests": 1185,
+        "embedding_requests": 0,
+        "prompt_tokens": 755830,
+        "completion_tokens": 75089,
+        "total_tokens": 830919
+      }
+    },
+    "errors": [
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      },
+      {
+        "kind": "chat",
+        "model": "gpt-4o-mini",
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-aSu6vnO1arkPII9EvkAppgTO on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'request"
+      }
+    ]
+  },
+  "notes": "MRes experiment run with deterministic persona selection and seeded local RNGs.",
+  "scenario": "commons_dilemma",
+  "trial": 0,
+  "output_dir": "experiment_results_cd_panel_seed46/commons_dilemma/full/trial_0",
+  "selection_strategy": "deterministic_sample",
+  "selection_seed": 46,
+  "base_seed": 20260524,
+  "trial_seed": 20260524,
+  "python_random_seed_applied": true,
+  "numpy_random_seed_applied": true
+}

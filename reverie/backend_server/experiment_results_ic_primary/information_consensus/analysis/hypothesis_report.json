@@ -1,0 +1,815 @@
+{
+  "scenario": "information_consensus",
+  "n_trials": 50,
+  "conditions_found": [
+    "baseline",
+    "full",
+    "full_llm_reflection",
+    "memory",
+    "memory_planning"
+  ],
+  "H1": {
+    "hypothesis": "H1",
+    "description": "Higher composite believability predicts higher coordination score.",
+    "n": 50,
+    "test": "Spearman rank correlation",
+    "rho": 0.6154,
+    "p_value": 0.0,
+    "supported": true,
+    "note": "Spearman rho=0.615, p=0.0000. Positive rho with p < 0.05 supports H1.",
+    "group_comparison": {
+      "status": "insufficient_data",
+      "note": "Need \u2265 2 runs in both high (\u2265 0.7) and low (< 0.4) believability bands. Found 0 high, 10 low."
+    }
+  },
+  "H2": {
+    "hypothesis": "H2",
+    "description": "Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).",
+    "n": 50,
+    "band_cutoffs": {
+      "low_max": 0.561,
+      "high_min": 0.6691
+    },
+    "band_stats": {
+      "low": {
+        "n": 17,
+        "success_rate": 0.412,
+        "fail_rate": 0.588
+      },
+      "mid": {
+        "n": 17,
+        "success_rate": 1.0,
+        "fail_rate": 0.0
+      },
+      "high": {
+        "n": 16,
+        "success_rate": 1.0,
+        "fail_rate": 0.0
+      }
+    },
+    "empirical_threshold": 0.3885,
+    "supported": true,
+    "note": "Empirical threshold (all runs below fail): 0.389."
+  },
+  "H3": {
+    "hypothesis": "H3",
+    "description": "Believability increases monotonically: baseline < memory < memory_planning < full.",
+    "condition_means": {
+      "baseline": 0.3845,
+      "memory": 0.5608,
+      "memory_planning": 0.6692,
+      "full": 0.6676
+    },
+    "condition_n": {
+      "baseline": 10,
+      "memory": 10,
+      "memory_planning": 10,
+      "full": 10
+    },
+    "kruskal_wallis": {
+      "test": "Kruskal-Wallis H",
+      "h_stat": 32.9596,
+      "p_value": 0.0,
+      "significant": true
+    },
+    "pairwise": [
+      {
+        "comparison": "baseline \u2192 memory",
+        "mean_lower": 0.3845,
+        "mean_upper": 0.5608,
+        "direction": "\u2191",
+        "u_stat": 100.0,
+        "p_value": 0.0001,
+        "supported": true
+      },
+      {
+        "comparison": "memory \u2192 memory_planning",
+        "mean_lower": 0.5608,
+        "mean_upper": 0.6692,
+        "direction": "\u2191",
+        "u_stat": 100.0,
+        "p_value": 0.0001,
+        "supported": true
+      },
+      {
+        "comparison": "memory_planning \u2192 full",
+        "mean_lower": 0.6692,
+        "mean_upper": 0.6676,
+        "direction": "\u2193 (unexpected)",
+        "u_stat": 45.5,
+        "p_value": 0.6473,
+        "supported": false
+      }
+    ],
+    "monotone_in_means": false,
+    "supported": false,
+    "note": "Mean believability does NOT follow the expected monotone order."
+  },
+  "H4": {
+    "hypothesis": "H4",
+    "description": "Memory coherence and behavioural consistency are stronger predictors of coordination score than planning plausibility or response naturalness.",
+    "correlations": {
+      "behavioural_consistency": {
+        "n": 50,
+        "rho": 0.6369,
+        "p_value": 0.0,
+        "abs_rho": 0.6369
+      },
+      "memory_coherence": {
+        "n": 50,
+        "rho": 0.6179,
+        "p_value": 0.0,
+        "abs_rho": 0.6179
+      },
+      "planning_plausibility": {
+        "n": 50,
+        "rho": 0.4656,
+        "p_value": 0.0007,
+        "abs_rho": 0.4656
+      },
+      "response_naturalness": {
+        "n": 50,
+        "rho": 0.5431,
+        "p_value": 0.0,
+        "abs_rho": 0.5431
+      }
+    },
+    "predictor_ranking": [
+      "behavioural_consistency",
+      "memory_coherence",
+      "response_naturalness",
+      "planning_plausibility"
+    ],
+    "supported": true,
+    "note": "Top-ranked predictors: ['behavioural_consistency', 'memory_coherence', 'response_naturalness', 'planning_plausibility']. H4 supported: True.",
+    "ols_regression": {
+      "n": 50,
+      "r_squared": 0.9964,
+      "intercept": -0.7136,
+      "predictors": {
+        "behavioural_consistency": {
+          "coefficient": 1.2617,
+          "p_value": 0.492
+        },
+        "memory_coherence": {
+          "coefficient": 1.2118,
+          "p_value": 0.0
+        },
+        "planning_plausibility": {
+          "coefficient": -0.0465,
+          "p_value": 0.4583
+        },
+        "response_naturalness": {
+          "coefficient": -0.1789,
+          "p_value": 0.5456
+        }
+      }
+    },
+    "regression_predictor_ranking": [
+      "behavioural_consistency",
+      "memory_coherence",
+      "response_naturalness",
+      "planning_plausibility"
+    ],
+    "regression_supported": true
+  },
+  "H5": {
+    "hypothesis": "H5",
+    "description": "Individual believability and collective validity decouple in identifiable regimes, quantified by a signed discrepancy metric.",
+    "n": 50,
+    "gap_threshold": 0.2,
+    "per_trial": [
+      {
+        "condition": "baseline",
+        "trial": "trial_0",
+        "believability": 0.3881,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3881,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_1",
+        "believability": 0.3844,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3844,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_2",
+        "believability": 0.3864,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3864,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_3",
+        "believability": 0.3815,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3815,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_4",
+        "believability": 0.3831,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3831,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_5",
+        "believability": 0.3854,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3854,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_6",
+        "believability": 0.3885,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3885,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_7",
+        "believability": 0.3836,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3836,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_8",
+        "believability": 0.3819,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3819,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_9",
+        "believability": 0.3821,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3821,
+        "gap_case": true
+      },
+      {
+        "condition": "full",
+        "trial": "trial_0",
+        "believability": 0.6696,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1634,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_1",
+        "believability": 0.6804,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1526,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_2",
+        "believability": 0.6718,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1612,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_3",
+        "believability": 0.6647,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1683,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_4",
+        "believability": 0.66,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.173,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_5",
+        "believability": 0.6741,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1589,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_6",
+        "believability": 0.6558,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1772,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_7",
+        "believability": 0.6548,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1782,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_8",
+        "believability": 0.6759,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1571,
+        "gap_case": false
+      },
+      {
+        "condition": "full",
+        "trial": "trial_9",
+        "believability": 0.6691,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1639,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_0",
+        "believability": 0.566,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.267,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_1",
+        "believability": 0.5575,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.2755,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_2",
+        "believability": 0.5601,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.2729,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_3",
+        "believability": 0.5597,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.2733,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_4",
+        "believability": 0.558,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.275,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_5",
+        "believability": 0.5618,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.2712,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_6",
+        "believability": 0.5645,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.2685,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_7",
+        "believability": 0.561,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.272,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_8",
+        "believability": 0.5593,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.2737,
+        "gap_case": false
+      },
+      {
+        "condition": "memory",
+        "trial": "trial_9",
+        "believability": 0.5605,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.2725,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_0",
+        "believability": 0.682,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.151,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_1",
+        "believability": 0.6683,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1647,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_2",
+        "believability": 0.6761,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1569,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_3",
+        "believability": 0.6614,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1716,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_4",
+        "believability": 0.6779,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1551,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_5",
+        "believability": 0.67,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.163,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_6",
+        "believability": 0.6534,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1796,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_7",
+        "believability": 0.6597,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1733,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_8",
+        "believability": 0.6739,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1591,
+        "gap_case": false
+      },
+      {
+        "condition": "memory_planning",
+        "trial": "trial_9",
+        "believability": 0.6691,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1639,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_0",
+        "believability": 0.6668,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1662,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_1",
+        "believability": 0.6761,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1569,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_2",
+        "believability": 0.6709,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1621,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_3",
+        "believability": 0.6576,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1754,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_4",
+        "believability": 0.6697,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1633,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_5",
+        "believability": 0.6731,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1599,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_6",
+        "believability": 0.6593,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1737,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_7",
+        "believability": 0.657,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.176,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_8",
+        "believability": 0.6833,
+        "coordination_validity_score": 0.714,
+        "discrepancy": -0.0307,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_9",
+        "believability": 0.6811,
+        "coordination_validity_score": 0.833,
+        "discrepancy": -0.1519,
+        "gap_case": false
+      }
+    ],
+    "gap_cases": [
+      {
+        "condition": "baseline",
+        "trial": "trial_0",
+        "believability": 0.3881,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3881,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_1",
+        "believability": 0.3844,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3844,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_2",
+        "believability": 0.3864,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3864,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_3",
+        "believability": 0.3815,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3815,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_4",
+        "believability": 0.3831,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3831,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_5",
+        "believability": 0.3854,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3854,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_6",
+        "believability": 0.3885,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3885,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_7",
+        "believability": 0.3836,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3836,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_8",
+        "believability": 0.3819,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3819,
+        "gap_case": true
+      },
+      {
+        "condition": "baseline",
+        "trial": "trial_9",
+        "believability": 0.3821,
+        "coordination_validity_score": 0.0,
+        "discrepancy": 0.3821,
+        "gap_case": true
+      }
+    ],
+    "n_gap_cases": 10,
+    "mean_discrepancy_by_condition": {
+      "baseline": 0.3845,
+      "full": -0.1654,
+      "memory": -0.2722,
+      "memory_planning": -0.1638,
+      "full_llm_reflection": -0.1516
+    },
+    "max_discrepancy": 0.3885,
+    "supported": true,
+    "note": "10 gap case(s) found (discrepancy > 0.2). Largest: baseline/trial_6 (believability=0.3885, validity=0.0, discrepancy=0.3885)."
+  },
+  "H6": {
+    "hypothesis": "H6",
+    "description": "The categorical coordination gain from reflection coincides with reflection saturation \u2014 convergence on a static focal-point norm.",
+    "conditions": {
+      "full": {
+        "total_reflections": 960,
+        "unique_count": 3,
+        "repetition_rate": 0.9969,
+        "top_1_share": 0.75,
+        "top_strings": [
+          {
+            "string": "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreemen",
+            "count": 720,
+            "share": 0.75
+          },
+          {
+            "string": "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+            "count": 120,
+            "share": 0.125
+          },
+          {
+            "string": "Other community members appear to favour a different option; their private signals may contain important evidence worth ",
+            "count": 120,
+            "share": 0.125
+          }
+        ],
+        "diversity_curve": [
+          {
+            "step": 1,
+            "cumulative_unique": 2
+          },
+          {
+            "step": 2,
+            "cumulative_unique": 3
+          },
+          {
+            "step": 3,
+            "cumulative_unique": 3
+          },
+          {
+            "step": 4,
+            "cumulative_unique": 3
+          },
+          {
+            "step": 5,
+            "cumulative_unique": 3
+          }
+        ],
+        "saturation_step_90pct": 2
+      },
+      "full_llm_reflection": {
+        "total_reflections": 984,
+        "unique_count": 408,
+        "repetition_rate": 0.5854,
+        "top_1_share": 0.003,
+        "top_strings": [
+          {
+            "string": "I need to emphasize the benefits of a shared creative studio to align my reasoning with the group's support and encourag",
+            "count": 3,
+            "share": 0.003
+          },
+          {
+            "string": "I realize the importance of expressing my support clearly and being open to how others interpret our shared goals to str",
+            "count": 3,
+            "share": 0.003
+          },
+          {
+            "string": "I realize the importance of vocalizing my support and reasoning to foster consensus and encourage others to share as wel",
+            "count": 3,
+            "share": 0.003
+          },
+          {
+            "string": "I should emphasize the value of the shared creative studio in fostering collaboration and innovation to sway others and ",
+            "count": 3,
+            "share": 0.003
+          },
+          {
+            "string": "I need to consider how the group's majority view might influence my own analysis and be open to revisiting my preference",
+            "count": 3,
+            "share": 0.003
+          },
+          {
+            "string": "It's important to listen carefully to others' insights and adjust my perspective based on the group's consensus and shar",
+            "count": 3,
+            "share": 0.003
+          },
+          {
+            "string": "I need to consider the group's sentiments and focus on how my perspective aligns with the shared goals before updating m",
+            "count": 3,
+            "share": 0.003
+          },
+          {
+            "string": "I need to be more open to sharing my reasoning and actively encouraging dialogue to better understand others' perspectiv",
+            "count": 3,
+            "share": 0.003
+          },
+          {
+            "string": "I learned that being open to feedback and aligning with the group's shared vision can strengthen our collective creativi",
+            "count": 3,
+            "share": 0.003
+          },
+          {
+            "string": "Recognizing the group's overwhelming support for Option A reinforces the importance of aligning my votes with collective",
+            "count": 3,
+            "share": 0.003
+          }
+        ],
+        "diversity_curve": [
+          {
+            "step": 1,
+            "cumulative_unique": 80
+          },
+          {
+            "step": 2,
+            "cumulative_unique": 160
+          },
+          {
+            "step": 3,
+            "cumulative_unique": 240
+          },
+          {
+            "step": 4,
+            "cumulative_unique": 320
+          },
+          {
+            "step": 5,
+            "cumulative_unique": 400
+          },
+          {
+            "step": 6,
+            "cumulative_unique": 408
+          }
+        ],
+        "saturation_step_90pct": 5
+      }
+    },
+    "note": "Deterministic 'full': 3 unique strings, repetition=0.997. LLM 'full_llm_reflection': 408 unique strings, repetition=0.585. Both show saturation; deterministic condition is more extreme."
+  }
+}

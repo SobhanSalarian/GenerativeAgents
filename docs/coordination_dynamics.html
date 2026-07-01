@@ -1,0 +1,574 @@
+<title>Coordination Dynamics — GABM</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ground:   #0A1C1A;
+  --surface:  #111F1D;
+  --border:   #1E3530;
+  --text:     #C9DCDA;
+  --dim:      #4A6560;
+  --accent:   #3ECFA0;
+  --b-col:    #7BA7E8;
+  --c-col:    #B07AF0;
+  --danger:   #E8944A;
+  --white:    #EEF7F5;
+}
+
+body {
+  background: var(--ground);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px 44px;
+  gap: 28px;
+}
+
+.site-head { text-align: center; max-width: 600px; }
+
+.site-eye {
+  font-family: Georgia, 'Times New Roman', serif;
+  text-transform: uppercase;
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  color: var(--dim);
+  margin-bottom: 9px;
+}
+
+.site-title {
+  font-size: clamp(21px, 3.6vw, 30px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.site-sub {
+  margin-top: 7px;
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.sim-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  max-width: 880px;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-head {
+  padding: 14px 20px 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.p-eye {
+  font-family: Georgia, 'Times New Roman', serif;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  color: var(--dim);
+  flex-shrink: 0;
+}
+
+.p-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.readout {
+  padding: 7px 20px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-family: 'Courier New', 'SF Mono', monospace;
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+.readout .lbl { color: var(--dim); }
+
+.controls {
+  padding: 10px 14px;
+  display: flex;
+  gap: 6px;
+}
+
+.tog {
+  flex: 1;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--dim);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s, border-color 0.16s;
+}
+.tog.active { background: var(--border); color: var(--text); border-color: transparent; }
+.tog:hover:not(.active) { border-color: var(--dim); color: var(--text); }
+.tog:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--dim);
+}
+.li { display: flex; align-items: center; gap: 6px; }
+.sw { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+@media (max-width: 560px) { .sim-grid { grid-template-columns: 1fr; } }
+</style>
+
+<header class="site-head">
+  <div class="site-eye">Generative Agent-Based Modelling</div>
+  <h1 class="site-title">Coordination Dynamics</h1>
+  <p class="site-sub">Two live simulations &mdash; individual agents, collective outcomes</p>
+</header>
+
+<div class="sim-grid">
+
+  <div class="panel">
+    <div class="panel-head">
+      <span class="p-eye">Task 1</span>
+      <span class="p-title">Commons Dilemma</span>
+    </div>
+    <canvas id="cdC" width="500" height="500"></canvas>
+    <div class="readout" id="cdR"><span class="lbl">pool</span>&nbsp;&mdash;</div>
+    <div class="controls">
+      <button class="tog active" id="cdCB" onclick="cdSwitch('coordinated')">Coordinated</button>
+      <button class="tog"        id="cdFB" onclick="cdSwitch('failing')">Failing</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head">
+      <span class="p-eye">Task 2</span>
+      <span class="p-title">Information Consensus</span>
+    </div>
+    <canvas id="icC" width="500" height="500"></canvas>
+    <div class="readout" id="icR"><span class="lbl">votes</span>&nbsp;&mdash;</div>
+    <div class="controls">
+      <button class="tog active" id="icEB" onclick="icSwitch('enriched')">Enriched</button>
+      <button class="tog"        id="icBB" onclick="icSwitch('baseline')">Baseline</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="legend">
+  <div class="li"><div class="sw" style="background:#3ECFA0"></div>Option A &mdash; correct</div>
+  <div class="li"><div class="sw" style="background:#7BA7E8"></div>Option B</div>
+  <div class="li"><div class="sw" style="background:#B07AF0"></div>Option C</div>
+  <div class="li"><div class="sw" style="background:#E8944A"></div>Over-extraction / collapse</div>
+</div>
+
+<script>
+const P = {
+  ground:  '#0A1C1A',
+  surface: '#111F1D',
+  border:  '#1E3530',
+  text:    '#C9DCDA',
+  dim:     '#4A6560',
+  a:       '#3ECFA0',
+  b:       '#7BA7E8',
+  c:       '#B07AF0',
+  danger:  '#E8944A',
+  white:   '#EEF7F5',
+};
+const VC = { A: P.a, B: P.b, C: P.c };
+const h2 = n => Math.round(Math.max(0, Math.min(1, n)) * 255).toString(16).padStart(2, '0');
+
+/* ── Commons Dilemma ──────────────────────────────────────────── */
+
+const CD = {
+  cv:     document.getElementById('cdC'),
+  mode:   'coordinated',
+  pool:   0.80,
+  t:      0,
+  phase:  'run',
+  phaseT: 0,
+  agents: Array.from({ length: 8 }, (_, i) => ({
+    a: (i / 8) * Math.PI * 2,
+    s: 0.0055 + i * 0.00042,
+  })),
+};
+
+function cdReset() {
+  CD.pool = 0.80; CD.t = 0; CD.phase = 'run'; CD.phaseT = 0;
+}
+
+function cdSwitch(mode) {
+  CD.mode = mode; cdReset();
+  document.getElementById('cdCB').classList.toggle('active', mode === 'coordinated');
+  document.getElementById('cdFB').classList.toggle('active', mode === 'failing');
+}
+
+function cdUpdate(dt) {
+  CD.t += dt;
+  CD.agents.forEach(a => { a.a += a.s * dt * 60 * 0.016; });
+  if (CD.mode === 'coordinated') {
+    const tgt = 0.77 + 0.10 * Math.sin(CD.t * 0.33);
+    CD.pool += (tgt - CD.pool) * 0.025;
+  } else {
+    if (CD.phase === 'run') {
+      CD.pool = Math.max(0, CD.pool - dt * 0.088);
+      if (CD.pool <= 0.002) { CD.phase = 'collapsed'; CD.phaseT = 0; }
+    } else {
+      CD.phaseT += dt;
+      if (CD.phaseT > 2.4) cdReset();
+    }
+  }
+}
+
+function cdDraw() {
+  const cv = CD.cv, ctx = cv.getContext('2d');
+  const W = cv.width, H = cv.height;
+  const cx = W * 0.5, cy = H * 0.5;
+  const PR = W * 0.165, OR = W * 0.360, AR = W * 0.042;
+  const pool = CD.pool;
+  const pC = pool > 0.55 ? P.a : pool > 0.27 ? P.danger : pool > 0.07 ? '#C04818' : P.dim;
+
+  ctx.clearRect(0, 0, W, H);
+  ctx.fillStyle = P.ground; ctx.fillRect(0, 0, W, H);
+
+  // Ambient glow
+  const gl = ctx.createRadialGradient(cx, cy, 0, cx, cy, PR * 3.4);
+  gl.addColorStop(0, pC + '20'); gl.addColorStop(1, pC + '00');
+  ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(cx, cy, PR * 3.4, 0, Math.PI * 2); ctx.fill();
+
+  // Orbit track
+  ctx.beginPath(); ctx.arc(cx, cy, OR, 0, Math.PI * 2);
+  ctx.strokeStyle = P.border; ctx.lineWidth = 1;
+  ctx.setLineDash([2, 9]); ctx.stroke(); ctx.setLineDash([]);
+
+  // Extraction beams
+  for (const ag of CD.agents) {
+    const ax = cx + Math.cos(ag.a) * OR, ay = cy + Math.sin(ag.a) * OR;
+    const bx = cx + Math.cos(ag.a) * (PR + 6), by = cy + Math.sin(ag.a) * (PR + 6);
+    let bW, bA, bCol;
+    if (CD.mode === 'coordinated') {
+      bW = 1.2; bA = 0.17 + 0.07 * Math.sin(ag.a * 2.2 + CD.t * 1.7); bCol = P.a;
+    } else {
+      const pull = 1 - pool;
+      bW = 1.5 + pull * 6; bA = 0.28 + pull * 0.44;
+      bCol = pool > 0.38 ? P.danger : '#B03810';
+    }
+    const bg = ctx.createLinearGradient(ax, ay, bx, by);
+    bg.addColorStop(0, bCol + '00'); bg.addColorStop(1, bCol + h2(bA));
+    ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by);
+    ctx.strokeStyle = bg; ctx.lineWidth = bW; ctx.lineCap = 'round'; ctx.stroke();
+  }
+
+  // Pulsing critical ring
+  if (CD.mode === 'failing' && pool < 0.22 && CD.phase === 'run') {
+    const pulse = 0.5 + 0.5 * Math.sin(CD.t * 11);
+    ctx.beginPath(); ctx.arc(cx, cy, PR * (1.16 + pulse * 0.13), 0, Math.PI * 2);
+    ctx.strokeStyle = pC + h2(pulse * 0.55); ctx.lineWidth = 2; ctx.stroke();
+  }
+
+  // Pool track ring
+  ctx.beginPath(); ctx.arc(cx, cy, PR, 0, Math.PI * 2);
+  ctx.strokeStyle = P.border; ctx.lineWidth = 6; ctx.stroke();
+
+  // Pool fill arc
+  if (pool > 0.003) {
+    const sa = -Math.PI / 2;
+    ctx.beginPath(); ctx.arc(cx, cy, PR, sa, sa + pool * Math.PI * 2);
+    ctx.strokeStyle = pC; ctx.lineWidth = 7; ctx.lineCap = 'round'; ctx.stroke();
+  }
+
+  // Inner fill
+  ctx.beginPath(); ctx.arc(cx, cy, PR * 0.67, 0, Math.PI * 2);
+  ctx.fillStyle = P.surface; ctx.fill();
+
+  // Pool label
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.font = '800 ' + (W * 0.048) + 'px system-ui'; ctx.fillStyle = pC;
+  ctx.fillText(pool < 0.04 ? '!' : Math.round(pool * 100) + '%', cx, cy - W * 0.014);
+  ctx.font = (W * 0.022) + 'px system-ui'; ctx.fillStyle = P.dim;
+  ctx.fillText('pool', cx, cy + W * 0.027);
+
+  // Agents
+  for (let i = 0; i < 8; i++) {
+    const ag = CD.agents[i];
+    const ax = cx + Math.cos(ag.a) * OR, ay = cy + Math.sin(ag.a) * OR;
+    const aC = CD.mode === 'coordinated' ? P.a : (pool > 0.32 ? P.danger : '#A03010');
+    const gg = ctx.createRadialGradient(ax, ay, 0, ax, ay, AR * 2.2);
+    gg.addColorStop(0, aC + '40'); gg.addColorStop(1, aC + '00');
+    ctx.fillStyle = gg; ctx.beginPath(); ctx.arc(ax, ay, AR * 2.2, 0, Math.PI * 2); ctx.fill();
+    ctx.beginPath(); ctx.arc(ax, ay, AR, 0, Math.PI * 2);
+    ctx.fillStyle = P.surface; ctx.fill();
+    ctx.strokeStyle = aC; ctx.lineWidth = 1.8; ctx.stroke();
+    ctx.font = '500 ' + (W * 0.021) + 'px system-ui';
+    ctx.fillStyle = P.dim; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(i + 1, ax, ay);
+  }
+
+  // Collapsed overlay
+  if (CD.phase === 'collapsed') {
+    ctx.fillStyle = 'rgba(10,28,26,0.75)'; ctx.fillRect(0, 0, W, H);
+    ctx.font = '800 ' + (W * 0.048) + 'px system-ui'; ctx.fillStyle = P.danger;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText('POOL COLLAPSED', cx, cy - W * 0.028);
+    ctx.font = (W * 0.024) + 'px system-ui'; ctx.fillStyle = P.dim;
+    ctx.fillText('resetting in ' + Math.max(0, Math.ceil(2.4 - CD.phaseT)) + 's', cx, cy + W * 0.040);
+  }
+
+  const rnd = Math.min(20, Math.floor(CD.t / (CD.mode === 'failing' ? 0.44 : 1.1)));
+  const st  = CD.phase === 'collapsed' ? 'collapsed'
+             : CD.mode === 'coordinated' ? 'stable'
+             : pool < 0.25 ? 'critical' : 'draining';
+  document.getElementById('cdR').innerHTML =
+    '<span class="lbl">pool</span>&nbsp;' + Math.round(pool * 100) + '%&nbsp;&nbsp;' +
+    '<span class="lbl">round</span>&nbsp;' + rnd + '&nbsp;&nbsp;' +
+    '<span class="lbl">state</span>&nbsp;' + st;
+}
+
+/* ── Information Consensus ────────────────────────────────────── */
+
+const NAMES   = ['Abigail','Ayesha','Carlos','Francisco','Giorgio','Sam','Wolfgang','Yuriko'];
+const SIGNALS = ['A','A','A','A','B','B','C','C'];
+
+const IC = {
+  cv:     document.getElementById('icC'),
+  mode:   'enriched',
+  t:      0,
+  phase:  'run',
+  phaseT: 0,
+  agents: NAMES.map((name, i) => ({
+    name, signal: SIGNALS[i], vote: SIGNALS[i], flash: 0,
+    angle: (i / 8) * Math.PI * 2 - Math.PI / 2,
+  })),
+  sparks: [],
+  queue:  [],
+};
+
+function enrichedQ() {
+  return [
+    { idx: 4, at: 3.0, to: 'A' },
+    { idx: 5, at: 5.2, to: 'A' },
+    { idx: 6, at: 8.0, to: 'A' },
+    { idx: 7, at: 11.0, to: 'A' },
+  ];
+}
+
+function baselineQ() {
+  return [
+    { idx: 0, at: 2.0, to: 'C' },
+    { idx: 1, at: 3.0, to: 'C' },
+    { idx: 5, at: 3.2, to: 'C' },
+    { idx: 3, at: 4.8, to: 'C' },
+    { idx: 4, at: 6.0, to: 'C' },
+    { idx: 2, at: 7.8, to: 'C' },
+  ];
+}
+
+function icFlip(idx, to) {
+  const a = IC.agents[idx];
+  if (a.vote === to) return;
+  a.vote = to; a.flash = 1;
+  if (IC.mode === 'enriched') {
+    const src = IC.agents.findIndex((ag, j) => j !== idx && ag.vote === to);
+    if (src >= 0) IC.sparks.push({ from: src, to: idx, p: 0, speed: 1.55 });
+  }
+}
+
+function icCounts() {
+  const c = { A: 0, B: 0, C: 0 };
+  IC.agents.forEach(a => { c[a.vote]++; });
+  return c;
+}
+
+function icReset() {
+  IC.agents.forEach((a, i) => { a.vote = SIGNALS[i]; a.flash = 0; });
+  IC.sparks = []; IC.t = 0; IC.phase = 'run'; IC.phaseT = 0;
+  IC.queue = IC.mode === 'enriched' ? enrichedQ() : baselineQ();
+}
+
+function icSwitch(mode) {
+  IC.mode = mode; icReset();
+  document.getElementById('icEB').classList.toggle('active', mode === 'enriched');
+  document.getElementById('icBB').classList.toggle('active', mode === 'baseline');
+}
+
+IC.queue = enrichedQ();
+
+function icUpdate(dt) {
+  IC.t += dt;
+  IC.agents.forEach(a => { a.flash = Math.max(0, a.flash - dt * 1.7); });
+  IC.sparks.forEach(s => { s.p = Math.min(1, s.p + dt * s.speed); });
+  IC.sparks = IC.sparks.filter(s => s.p < 1);
+
+  if (IC.phase === 'end') {
+    IC.phaseT += dt;
+    if (IC.phaseT > 2.7) icReset();
+    return;
+  }
+
+  for (let i = IC.queue.length - 1; i >= 0; i--) {
+    if (IC.t >= IC.queue[i].at) { icFlip(IC.queue[i].idx, IC.queue[i].to); IC.queue.splice(i, 1); }
+  }
+
+  if (!IC.queue.length && IC.phase === 'run') {
+    const c = icCounts();
+    if ((IC.mode === 'enriched' && c.A >= 8) || (IC.mode === 'baseline' && c.C >= 8)) {
+      IC.phase = 'end'; IC.phaseT = 0;
+    }
+  }
+}
+
+function icDraw() {
+  const cv = IC.cv, ctx = cv.getContext('2d');
+  const W = cv.width, H = cv.height;
+  const cx = W * 0.5, cy = H * 0.5;
+  const OR = W * 0.345, AR = W * 0.052;
+  const cnts = icCounts();
+
+  ctx.clearRect(0, 0, W, H);
+  ctx.fillStyle = P.ground; ctx.fillRect(0, 0, W, H);
+
+  // Orbit ring
+  ctx.beginPath(); ctx.arc(cx, cy, OR, 0, Math.PI * 2);
+  ctx.strokeStyle = P.border; ctx.lineWidth = 1;
+  ctx.setLineDash([2, 9]); ctx.stroke(); ctx.setLineDash([]);
+
+  // Same-vote connection lines
+  for (let i = 0; i < 8; i++) {
+    for (let j = i + 1; j < 8; j++) {
+      if (IC.agents[i].vote !== IC.agents[j].vote) continue;
+      const ai = IC.agents[i], aj = IC.agents[j];
+      const x0 = cx + Math.cos(ai.angle) * OR, y0 = cy + Math.sin(ai.angle) * OR;
+      const x1 = cx + Math.cos(aj.angle) * OR, y1 = cy + Math.sin(aj.angle) * OR;
+      ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1);
+      ctx.strokeStyle = VC[ai.vote] + '1E'; ctx.lineWidth = 1.2; ctx.stroke();
+    }
+  }
+
+  // Sparks (enriched mode only)
+  for (const s of IC.sparks) {
+    const fa = IC.agents[s.from], ta = IC.agents[s.to];
+    const fx = cx + Math.cos(fa.angle) * OR, fy = cy + Math.sin(fa.angle) * OR;
+    const tx = cx + Math.cos(ta.angle) * OR, ty = cy + Math.sin(ta.angle) * OR;
+    const px = fx + (tx - fx) * s.p,         py = fy + (ty - fy) * s.p;
+    const t0 = Math.max(0, s.p - 0.22);
+    const qx = fx + (tx - fx) * t0,          qy = fy + (ty - fy) * t0;
+    const sg = ctx.createLinearGradient(qx, qy, px, py);
+    sg.addColorStop(0, P.a + '00'); sg.addColorStop(1, P.a + 'CC');
+    ctx.beginPath(); ctx.moveTo(qx, qy); ctx.lineTo(px, py);
+    ctx.strokeStyle = sg; ctx.lineWidth = 2.4; ctx.stroke();
+    ctx.beginPath(); ctx.arc(px, py, 3.2, 0, Math.PI * 2);
+    ctx.fillStyle = P.white; ctx.fill();
+  }
+
+  // Centre vote display
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  const dom = Object.entries(cnts).sort((a, b) => b[1] - a[1])[0][0];
+  ctx.font = '800 ' + (W * 0.040) + 'px \'Courier New\', monospace';
+  ctx.fillStyle = VC[dom];
+  ctx.fillText(cnts.A + ' · ' + cnts.B + ' · ' + cnts.C, cx, cy - W * 0.018);
+  ctx.font = (W * 0.019) + 'px system-ui'; ctx.fillStyle = P.dim;
+  ctx.fillText('A   ·   B   ·   C', cx, cy + W * 0.022);
+
+  // Agents
+  for (let i = 0; i < 8; i++) {
+    const a  = IC.agents[i];
+    const ax = cx + Math.cos(a.angle) * OR, ay = cy + Math.sin(a.angle) * OR;
+    const vc = VC[a.vote];
+
+    // Flash burst on flip
+    if (a.flash > 0) {
+      const fg = ctx.createRadialGradient(ax, ay, 0, ax, ay, AR * 3.3);
+      fg.addColorStop(0, vc + h2(a.flash * 0.55)); fg.addColorStop(1, vc + '00');
+      ctx.fillStyle = fg; ctx.beginPath(); ctx.arc(ax, ay, AR * 3.3, 0, Math.PI * 2); ctx.fill();
+    }
+
+    // Ambient glow
+    const ag = ctx.createRadialGradient(ax, ay, 0, ax, ay, AR * 2.1);
+    ag.addColorStop(0, vc + '3A'); ag.addColorStop(1, vc + '00');
+    ctx.fillStyle = ag; ctx.beginPath(); ctx.arc(ax, ay, AR * 2.1, 0, Math.PI * 2); ctx.fill();
+
+    // Body
+    ctx.beginPath(); ctx.arc(ax, ay, AR, 0, Math.PI * 2);
+    ctx.fillStyle = P.surface; ctx.fill();
+    ctx.strokeStyle = vc; ctx.lineWidth = 2; ctx.stroke();
+
+    // Vote letter
+    ctx.font = '700 ' + (W * 0.034) + 'px system-ui';
+    ctx.fillStyle = vc; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(a.vote, ax, ay);
+
+    // Name
+    const nr = OR + AR * 1.90;
+    ctx.font = (W * 0.019) + 'px system-ui'; ctx.fillStyle = P.dim;
+    ctx.fillText(a.name, cx + Math.cos(a.angle) * nr, cy + Math.sin(a.angle) * nr);
+  }
+
+  // End overlay
+  if (IC.phase === 'end') {
+    const ok = IC.mode === 'enriched';
+    ctx.fillStyle = 'rgba(10,28,26,0.74)'; ctx.fillRect(0, 0, W, H);
+    ctx.font = '800 ' + (W * 0.046) + 'px system-ui';
+    ctx.fillStyle = ok ? P.a : P.c; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(ok ? 'CONSENSUS REACHED' : 'WRONG CONSENSUS', cx, cy - W * 0.022);
+    ctx.font = (W * 0.023) + 'px system-ui'; ctx.fillStyle = P.dim;
+    ctx.fillText(ok ? 'all 8 agents on Option A' : 'all 8 agents cascaded to Option C', cx, cy + W * 0.038);
+  }
+
+  const rnd = Math.floor(IC.t / 1.05);
+  const st  = IC.phase === 'end'
+    ? (IC.mode === 'enriched' ? 'converged ✓' : 'wrong ✗')
+    : IC.mode === 'enriched' ? 'updating' : 'cascading';
+  document.getElementById('icR').innerHTML =
+    '<span class="lbl">A</span>&nbsp;' + cnts.A + '&nbsp;' +
+    '<span class="lbl">B</span>&nbsp;' + cnts.B + '&nbsp;' +
+    '<span class="lbl">C</span>&nbsp;' + cnts.C + '&nbsp;&nbsp;' +
+    '<span class="lbl">round</span>&nbsp;' + rnd + '&nbsp;&nbsp;' +
+    '<span class="lbl">state</span>&nbsp;' + st;
+}
+
+/* ── Loop ─────────────────────────────────────────────────────── */
+
+const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let lastT = null;
+
+function loop(ts) {
+  const dt = lastT != null ? Math.min((ts - lastT) / 1000, 0.05) : 0.016;
+  lastT = ts;
+  if (!REDUCED) { cdUpdate(dt); icUpdate(dt); }
+  cdDraw(); icDraw();
+  requestAnimationFrame(loop);
+}
+
+requestAnimationFrame(loop);
+</script>

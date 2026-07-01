@@ -1,0 +1,85 @@
+==============================================================
+MRes HYPOTHESIS TEST REPORT
+==============================================================
+Scenario        : commons_dilemma
+Trials analysed : 80
+Conditions found: baseline, full, memory, memory_planning
+
+==============================================================
+H1: Higher composite believability predicts higher coordination score.
+--------------------------------------------------------------
+  STATUS : SUPPORTED
+  n      : 80
+  Note   : Spearman rho=0.549, p=0.0000. Positive rho with p < 0.05 supports H1.
+  Spearman  rho=+0.549, p=0.0000
+
+==============================================================
+H2: Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).
+--------------------------------------------------------------
+  STATUS : SUPPORTED
+  n      : 80
+  Note   : Empirical threshold (all runs below fail): 0.363.
+  Band cutoffs: low ≤ 0.541 < mid ≤ 0.671 < high
+  Low  band: n=27, success_rate=0.04, fail_rate=0.96
+  Mid  band: n=27, success_rate=0.11, fail_rate=0.89
+  High band: n=26, success_rate=0.50, fail_rate=0.50
+  Empirical threshold: 0.363
+
+==============================================================
+H3: Believability increases monotonically: baseline < memory < memory_planning < full.
+--------------------------------------------------------------
+  STATUS : SUPPORTED
+  n      : —
+  Note   : Mean believability is monotonically non-decreasing across available conditions: [0.3471, 0.5434, 0.6691, 0.6825].
+  baseline              mean=0.347  n=20
+  memory                mean=0.543  n=20
+  memory_planning       mean=0.669  n=20
+  full                  mean=0.682  n=20
+  Kruskal-Wallis  H=68.911, p=0.0000, significant=True
+  Monotone in means: True
+    baseline → memory                   ↑ p=0.0000  ✓
+    memory → memory_planning            ↑ p=0.0000  ✓
+    memory_planning → full              ↑ p=0.0015  ✓
+
+==============================================================
+H4: Memory coherence and behavioural consistency are stronger predictors of coordination score than planning plausibility or response naturalness.
+--------------------------------------------------------------
+  STATUS : NOT SUPPORTED
+  n      : —
+  Note   : Top-ranked predictors: ['memory_coherence', 'planning_plausibility', 'behavioural_consistency', 'response_naturalness']. H4 supported: False.
+  Sub-dimension correlations with coordination_score:
+    behavioural_consistency         rho=+0.248, p=0.0263
+    memory_coherence                rho=+0.544, p=0.0000
+    planning_plausibility           rho=+0.501, p=0.0000
+    response_naturalness            rho=-0.109, p=0.3374
+  Spearman ranking : memory_coherence > planning_plausibility > behavioural_consistency > response_naturalness
+  OLS R²           : 0.2641  (n=80)
+    behavioural_consistency         β=-0.4521, p=0.7494
+    memory_coherence                β=+0.1907, p=0.5560
+    planning_plausibility           β=+0.6447, p=0.0012
+    response_naturalness            β=+0.1716, p=0.9555
+  Regression rank  : planning_plausibility > behavioural_consistency > memory_coherence > response_naturalness
+  Regression H4 supported: False
+
+==============================================================
+H5: Individual believability and collective validity decouple in identifiable regimes, quantified by a signed discrepancy metric.
+--------------------------------------------------------------
+  STATUS        : SUPPORTED
+  n             : 80
+  Gap threshold : discrepancy > 0.2
+  Gap cases     : 54
+  Max discrepancy: 0.5352
+  Note          : 54 gap case(s) found (discrepancy > 0.2). Largest: memory_planning/trial_3 (believability=0.6799, validity=0.1447, discrepancy=0.5352).
+  Mean discrepancy by condition:
+    baseline                   +0.2056
+    full                       -0.0513
+    memory                     +0.3314
+    memory_planning            +0.4288
+  Gap cases (believability >> validity):
+    memory_planning      trial_3     B=0.680  V=0.145  Δ=+0.535
+    memory_planning      trial_10    B=0.685  V=0.166  Δ=+0.519
+    memory_planning      trial_4     B=0.690  V=0.178  Δ=+0.512
+    memory_planning      trial_8     B=0.681  V=0.170  Δ=+0.511
+    memory_planning      trial_6     B=0.675  V=0.171  Δ=+0.503
+
+==============================================================

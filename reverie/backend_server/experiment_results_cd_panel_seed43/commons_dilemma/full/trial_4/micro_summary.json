@@ -1,0 +1,244 @@
+{
+  "average_request": {
+    "Adam Smith": 6.14,
+    "Ayesha Khan": 6.04,
+    "Carlos Gomez": 9.07,
+    "Hailey Johnson": 6.14,
+    "Jane Moreno": 6.04,
+    "Klaus Mueller": 6.0,
+    "Sam Moore": 6.03,
+    "Tom Moreno": 6.06
+  },
+  "consistency_score": {
+    "Adam Smith": 0.773,
+    "Ayesha Khan": 0.934,
+    "Carlos Gomez": 0.737,
+    "Hailey Johnson": 0.773,
+    "Jane Moreno": 0.934,
+    "Klaus Mueller": 1.0,
+    "Sam Moore": 0.932,
+    "Tom Moreno": 0.532
+  },
+  "request_consistency": {
+    "Adam Smith": 0.773,
+    "Ayesha Khan": 0.934,
+    "Carlos Gomez": 0.737,
+    "Hailey Johnson": 0.773,
+    "Jane Moreno": 0.934,
+    "Klaus Mueller": 1.0,
+    "Sam Moore": 0.932,
+    "Tom Moreno": 0.532
+  },
+  "cooperation_rate": {
+    "Adam Smith": 0.99,
+    "Ayesha Khan": 0.99,
+    "Carlos Gomez": 0.27,
+    "Hailey Johnson": 0.99,
+    "Jane Moreno": 0.99,
+    "Klaus Mueller": 1.0,
+    "Sam Moore": 0.99,
+    "Tom Moreno": 0.97
+  },
+  "profile_alignment": {
+    "Adam Smith": 0.182,
+    "Ayesha Khan": 0.277,
+    "Carlos Gomez": 0.229,
+    "Hailey Johnson": 0.244,
+    "Jane Moreno": 0.166,
+    "Klaus Mueller": 0.183,
+    "Sam Moore": 0.233,
+    "Tom Moreno": 0.221
+  },
+  "behavioural_consistency": {
+    "Sam Moore": 0.699,
+    "Adam Smith": 0.61,
+    "Hailey Johnson": 0.631,
+    "Jane Moreno": 0.676,
+    "Carlos Gomez": 0.466,
+    "Ayesha Khan": 0.715,
+    "Klaus Mueller": 0.714,
+    "Tom Moreno": 0.511
+  },
+  "behavioural_consistency_band": {
+    "Sam Moore": "medium",
+    "Adam Smith": "medium",
+    "Hailey Johnson": "medium",
+    "Jane Moreno": "medium",
+    "Carlos Gomez": "medium",
+    "Ayesha Khan": "high",
+    "Klaus Mueller": "high",
+    "Tom Moreno": "medium"
+  },
+  "memory_reference_rate": {
+    "Adam Smith": 1.0,
+    "Ayesha Khan": 1.0,
+    "Carlos Gomez": 1.0,
+    "Hailey Johnson": 1.0,
+    "Jane Moreno": 1.0,
+    "Klaus Mueller": 0.99,
+    "Sam Moore": 1.0,
+    "Tom Moreno": 0.98
+  },
+  "memory_reference_relevance": {
+    "Adam Smith": 0.513,
+    "Ayesha Khan": 0.485,
+    "Carlos Gomez": 0.443,
+    "Hailey Johnson": 0.481,
+    "Jane Moreno": 0.502,
+    "Klaus Mueller": 0.465,
+    "Sam Moore": 0.406,
+    "Tom Moreno": 0.461
+  },
+  "memory_coherence": {
+    "Adam Smith": 0.704,
+    "Ayesha Khan": 0.687,
+    "Carlos Gomez": 0.662,
+    "Hailey Johnson": 0.684,
+    "Jane Moreno": 0.697,
+    "Klaus Mueller": 0.675,
+    "Sam Moore": 0.639,
+    "Tom Moreno": 0.665
+  },
+  "memory_coherence_band": {
+    "Adam Smith": "high",
+    "Ayesha Khan": "high",
+    "Carlos Gomez": "high",
+    "Hailey Johnson": "high",
+    "Jane Moreno": "high",
+    "Klaus Mueller": "high",
+    "Sam Moore": "high",
+    "Tom Moreno": "high"
+  },
+  "planning_reference_rate": {
+    "Adam Smith": 1.0,
+    "Ayesha Khan": 1.0,
+    "Carlos Gomez": 1.0,
+    "Hailey Johnson": 1.0,
+    "Jane Moreno": 1.0,
+    "Klaus Mueller": 1.0,
+    "Sam Moore": 1.0,
+    "Tom Moreno": 1.0
+  },
+  "planning_alignment": {
+    "Adam Smith": 0.206,
+    "Ayesha Khan": 0.143,
+    "Carlos Gomez": 0.372,
+    "Hailey Johnson": 0.364,
+    "Jane Moreno": 0.193,
+    "Klaus Mueller": 0.268,
+    "Sam Moore": 0.159,
+    "Tom Moreno": 0.249
+  },
+  "planning_plausibility": {
+    "Adam Smith": 0.512,
+    "Ayesha Khan": 0.337,
+    "Carlos Gomez": 0.686,
+    "Hailey Johnson": 0.653,
+    "Jane Moreno": 0.602,
+    "Klaus Mueller": 0.593,
+    "Sam Moore": 0.467,
+    "Tom Moreno": 0.619
+  },
+  "planning_plausibility_llm": {
+    "Adam Smith": 0.5,
+    "Ayesha Khan": 0.188,
+    "Carlos Gomez": 0.75,
+    "Hailey Johnson": 0.688,
+    "Jane Moreno": 0.688,
+    "Klaus Mueller": 0.625,
+    "Sam Moore": 0.438,
+    "Tom Moreno": 0.688
+  },
+  "planning_plausibility_rubric": {
+    "Adam Smith": 3.048,
+    "Ayesha Khan": 2.348,
+    "Carlos Gomez": 3.744,
+    "Hailey Johnson": 3.612,
+    "Jane Moreno": 3.408,
+    "Klaus Mueller": 3.372,
+    "Sam Moore": 2.868,
+    "Tom Moreno": 3.476
+  },
+  "planning_plausibility_band": {
+    "Adam Smith": "medium",
+    "Ayesha Khan": "low",
+    "Carlos Gomez": "medium",
+    "Hailey Johnson": "medium",
+    "Jane Moreno": "medium",
+    "Klaus Mueller": "medium",
+    "Sam Moore": "medium",
+    "Tom Moreno": "medium"
+  },
+  "response_naturalness": {
+    "Adam Smith": 0.91,
+    "Ayesha Khan": 0.955,
+    "Carlos Gomez": 0.939,
+    "Hailey Johnson": 0.895,
+    "Jane Moreno": 0.97,
+    "Klaus Mueller": 0.955,
+    "Sam Moore": 0.895,
+    "Tom Moreno": 0.925
+  },
+  "response_naturalness_proxy": {
+    "Adam Smith": 0.91,
+    "Ayesha Khan": 0.955,
+    "Carlos Gomez": 0.939,
+    "Hailey Johnson": 0.895,
+    "Jane Moreno": 0.97,
+    "Klaus Mueller": 0.955,
+    "Sam Moore": 0.895,
+    "Tom Moreno": 0.925
+  },
+  "response_naturalness_llm": {
+    "Adam Smith": 0.85,
+    "Ayesha Khan": 0.925,
+    "Carlos Gomez": 0.9,
+    "Hailey Johnson": 0.825,
+    "Jane Moreno": 0.95,
+    "Klaus Mueller": 0.925,
+    "Sam Moore": 0.825,
+    "Tom Moreno": 0.875
+  },
+  "response_naturalness_band": {
+    "Adam Smith": "high",
+    "Ayesha Khan": "high",
+    "Carlos Gomez": "high",
+    "Hailey Johnson": "high",
+    "Jane Moreno": "high",
+    "Klaus Mueller": "high",
+    "Sam Moore": "high",
+    "Tom Moreno": "high"
+  },
+  "composite_believability": {
+    "Sam Moore": 0.665,
+    "Adam Smith": 0.669,
+    "Hailey Johnson": 0.703,
+    "Jane Moreno": 0.722,
+    "Carlos Gomez": 0.665,
+    "Ayesha Khan": 0.661,
+    "Klaus Mueller": 0.722,
+    "Tom Moreno": 0.659
+  },
+  "composite_believability_band": {
+    "Sam Moore": "medium",
+    "Adam Smith": "medium",
+    "Hailey Johnson": "high",
+    "Jane Moreno": "high",
+    "Carlos Gomez": "medium",
+    "Ayesha Khan": "medium",
+    "Klaus Mueller": "high",
+    "Tom Moreno": "medium"
+  },
+  "believability_proxy": {
+    "Sam Moore": 0.665,
+    "Adam Smith": 0.669,
+    "Hailey Johnson": 0.703,
+    "Jane Moreno": 0.722,
+    "Carlos Gomez": 0.665,
+    "Ayesha Khan": 0.661,
+    "Klaus Mueller": 0.722,
+    "Tom Moreno": 0.659
+  },
+  "llm_judges_used": true,
+  "embedding_method": "cosine"
+}
