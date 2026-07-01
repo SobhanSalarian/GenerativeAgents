@@ -1,22 +1,21 @@
 {
   "scenario": "information_consensus",
-  "n_trials": 50,
+  "n_trials": 40,
   "conditions_found": [
     "baseline",
     "full",
-    "full_llm_reflection",
     "memory",
     "memory_planning"
   ],
   "H1": {
     "hypothesis": "H1",
     "description": "Higher composite believability predicts higher coordination score.",
-    "n": 50,
+    "n": 40,
     "test": "Spearman rank correlation",
-    "rho": 0.6154,
+    "rho": 0.7503,
     "p_value": 0.0,
     "supported": true,
-    "note": "Spearman rho=0.615, p=0.0000. Positive rho with p < 0.05 supports H1.",
+    "note": "Spearman rho=0.750, p=0.0000. Positive rho with p < 0.05 supports H1.",
     "group_comparison": {
       "status": "insufficient_data",
       "note": "Need \u2265 2 runs in both high (\u2265 0.7) and low (< 0.4) believability bands. Found 0 high, 10 low."
@@ -25,24 +24,24 @@
   "H2": {
     "hypothesis": "H2",
     "description": "Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).",
-    "n": 50,
+    "n": 40,
     "band_cutoffs": {
-      "low_max": 0.561,
-      "high_min": 0.6691
+      "low_max": 0.5597,
+      "high_min": 0.6647
     },
     "band_stats": {
       "low": {
-        "n": 17,
-        "success_rate": 0.412,
-        "fail_rate": 0.588
+        "n": 14,
+        "success_rate": 0.286,
+        "fail_rate": 0.714
       },
       "mid": {
-        "n": 17,
+        "n": 13,
         "success_rate": 1.0,
         "fail_rate": 0.0
       },
       "high": {
-        "n": 16,
+        "n": 13,
         "success_rate": 1.0,
         "fail_rate": 0.0
       }
@@ -110,64 +109,68 @@
     "description": "Memory coherence and behavioural consistency are stronger predictors of coordination score than planning plausibility or response naturalness.",
     "correlations": {
       "behavioural_consistency": {
-        "n": 50,
-        "rho": 0.6369,
+        "n": 40,
+        "rho": 0.7505,
         "p_value": 0.0,
-        "abs_rho": 0.6369
+        "abs_rho": 0.7505
       },
       "memory_coherence": {
-        "n": 50,
-        "rho": 0.6179,
+        "n": 40,
+        "rho": 0.7562,
         "p_value": 0.0,
-        "abs_rho": 0.6179
+        "abs_rho": 0.7562
       },
       "planning_plausibility": {
-        "n": 50,
-        "rho": 0.4656,
-        "p_value": 0.0007,
-        "abs_rho": 0.4656
+        "n": 40,
+        "rho": 0.5346,
+        "p_value": 0.0004,
+        "abs_rho": 0.5346
       },
       "response_naturalness": {
-        "n": 50,
-        "rho": 0.5431,
+        "n": 40,
+        "rho": 0.608,
         "p_value": 0.0,
-        "abs_rho": 0.5431
+        "abs_rho": 0.608
       }
     },
     "predictor_ranking": [
-      "behavioural_consistency",
       "memory_coherence",
+      "behavioural_consistency",
       "response_naturalness",
       "planning_plausibility"
     ],
     "supported": true,
-    "note": "Top-ranked predictors: ['behavioural_consistency', 'memory_coherence', 'response_naturalness', 'planning_plausibility']. H4 supported: True.",
+    "note": "Top-ranked predictors: ['memory_coherence', 'behavioural_consistency', 'response_naturalness', 'planning_plausibility']. H4 supported: True.",
     "ols_regression": {
-      "n": 50,
-      "r_squared": 0.9964,
-      "intercept": -0.7136,
+      "n": 40,
+      "r_squared": 0.9998,
+      "intercept": 0.1241,
       "predictors": {
         "behavioural_consistency": {
-          "coefficient": 1.2617,
-          "p_value": 0.492
+          "coefficient": -0.0875,
+          "standardized_coefficient": -0.0022,
+          "p_value": 0.8954
         },
         "memory_coherence": {
-          "coefficient": 1.2118,
+          "coefficient": 1.2248,
+          "standardized_coefficient": 1.001,
           "p_value": 0.0
         },
         "planning_plausibility": {
-          "coefficient": -0.0465,
-          "p_value": 0.4583
+          "coefficient": 0.0078,
+          "standardized_coefficient": 0.0045,
+          "p_value": 0.7165
         },
         "response_naturalness": {
-          "coefficient": -0.1789,
-          "p_value": 0.5456
+          "coefficient": -0.0718,
+          "standardized_coefficient": -0.0029,
+          "p_value": 0.4188
         }
       }
     },
     "regression_predictor_ranking": [
-      "behavioural_consistency",
       "memory_coherence",
+      "behavioural_consistency",
       "response_naturalness",
       "planning_plausibility"
     ],
@@ -176,7 +179,7 @@
   "H5": {
     "hypothesis": "H5",
     "description": "Individual believability and collective validity decouple in identifiable regimes, quantified by a signed discrepancy metric.",
-    "n": 50,
+    "n": 40,
     "gap_threshold": 0.2,
     "per_trial": [
       {
@@ -498,86 +501,6 @@
         "coordination_validity_score": 0.833,
         "discrepancy": -0.1639,
         "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_0",
-        "believability": 0.6668,
-        "coordination_validity_score": 0.833,
-        "discrepancy": -0.1662,
-        "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_1",
-        "believability": 0.6761,
-        "coordination_validity_score": 0.833,
-        "discrepancy": -0.1569,
-        "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_2",
-        "believability": 0.6709,
-        "coordination_validity_score": 0.833,
-        "discrepancy": -0.1621,
-        "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_3",
-        "believability": 0.6576,
-        "coordination_validity_score": 0.833,
-        "discrepancy": -0.1754,
-        "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_4",
-        "believability": 0.6697,
-        "coordination_validity_score": 0.833,
-        "discrepancy": -0.1633,
-        "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_5",
-        "believability": 0.6731,
-        "coordination_validity_score": 0.833,
-        "discrepancy": -0.1599,
-        "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_6",
-        "believability": 0.6593,
-        "coordination_validity_score": 0.833,
-        "discrepancy": -0.1737,
-        "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_7",
-        "believability": 0.657,
-        "coordination_validity_score": 0.833,
-        "discrepancy": -0.176,
-        "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_8",
-        "believability": 0.6833,
-        "coordination_validity_score": 0.714,
-        "discrepancy": -0.0307,
-        "gap_case": false
-      },
-      {
-        "condition": "full_llm_reflection",
-        "trial": "trial_9",
-        "believability": 0.6811,
-        "coordination_validity_score": 0.833,
-        "discrepancy": -0.1519,
-        "gap_case": false
       }
     ],
     "gap_cases": [
@@ -667,149 +590,10 @@
       "baseline": 0.3845,
       "full": -0.1654,
       "memory": -0.2722,
-      "memory_planning": -0.1638,
-      "full_llm_reflection": -0.1516
+      "memory_planning": -0.1638
     },
     "max_discrepancy": 0.3885,
     "supported": true,
     "note": "10 gap case(s) found (discrepancy > 0.2). Largest: baseline/trial_6 (believability=0.3885, validity=0.0, discrepancy=0.3885)."
-  },
-  "H6": {
-    "hypothesis": "H6",
-    "description": "The categorical coordination gain from reflection coincides with reflection saturation \u2014 convergence on a static focal-point norm.",
-    "conditions": {
-      "full": {
-        "total_reflections": 960,
-        "unique_count": 3,
-        "repetition_rate": 0.9969,
-        "top_1_share": 0.75,
-        "top_strings": [
-          {
-            "string": "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreemen",
-            "count": 720,
-            "share": 0.75
-          },
-          {
-            "string": "The group remains divided; sharing more evidence about the best option may help others update their positions.",
-            "count": 120,
-            "share": 0.125
-          },
-          {
-            "string": "Other community members appear to favour a different option; their private signals may contain important evidence worth ",
-            "count": 120,
-            "share": 0.125
-          }
-        ],
-        "diversity_curve": [
-          {
-            "step": 1,
-            "cumulative_unique": 2
-          },
-          {
-            "step": 2,
-            "cumulative_unique": 3
-          },
-          {
-            "step": 3,
-            "cumulative_unique": 3
-          },
-          {
-            "step": 4,
-            "cumulative_unique": 3
-          },
-          {
-            "step": 5,
-            "cumulative_unique": 3
-          }
-        ],
-        "saturation_step_90pct": 2
-      },
-      "full_llm_reflection": {
-        "total_reflections": 984,
-        "unique_count": 408,
-        "repetition_rate": 0.5854,
-        "top_1_share": 0.003,
-        "top_strings": [
-          {
-            "string": "I need to emphasize the benefits of a shared creative studio to align my reasoning with the group's support and encourag",
-            "count": 3,
-            "share": 0.003
-          },
-          {
-            "string": "I realize the importance of expressing my support clearly and being open to how others interpret our shared goals to str",
-            "count": 3,
-            "share": 0.003
-          },
-          {
-            "string": "I realize the importance of vocalizing my support and reasoning to foster consensus and encourage others to share as wel",
-            "count": 3,
-            "share": 0.003
-          },
-          {
-            "string": "I should emphasize the value of the shared creative studio in fostering collaboration and innovation to sway others and ",
-            "count": 3,
-            "share": 0.003
-          },
-          {
-            "string": "I need to consider how the group's majority view might influence my own analysis and be open to revisiting my preference",
-            "count": 3,
-            "share": 0.003
-          },
-          {
-            "string": "It's important to listen carefully to others' insights and adjust my perspective based on the group's consensus and shar",
-            "count": 3,
-            "share": 0.003
-          },
-          {
-            "string": "I need to consider the group's sentiments and focus on how my perspective aligns with the shared goals before updating m",
-            "count": 3,
-            "share": 0.003
-          },
-          {
-            "string": "I need to be more open to sharing my reasoning and actively encouraging dialogue to better understand others' perspectiv",
-            "count": 3,
-            "share": 0.003
-          },
-          {
-            "string": "I learned that being open to feedback and aligning with the group's shared vision can strengthen our collective creativi",
-            "count": 3,
-            "share": 0.003
-          },
-          {
-            "string": "Recognizing the group's overwhelming support for Option A reinforces the importance of aligning my votes with collective",
-            "count": 3,
-            "share": 0.003
-          }
-        ],
-        "diversity_curve": [
-          {
-            "step": 1,
-            "cumulative_unique": 80
-          },
-          {
-            "step": 2,
-            "cumulative_unique": 160
-          },
-          {
-            "step": 3,
-            "cumulative_unique": 240
-          },
-          {
-            "step": 4,
-            "cumulative_unique": 320
-          },
-          {
-            "step": 5,
-            "cumulative_unique": 400
-          },
-          {
-            "step": 6,
-            "cumulative_unique": 408
-          }
-        ],
-        "saturation_step_90pct": 5
-      }
-    },
-    "note": "Deterministic 'full': 3 unique strings, repetition=0.997. LLM 'full_llm_reflection': 408 unique strings, repetition=0.585. Both show saturation; deterministic condition is more extreme."
   }
 }

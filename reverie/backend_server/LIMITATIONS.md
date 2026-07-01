@@ -149,13 +149,24 @@ paper handles it, and the residual risk. Grouped by severity. Items marked "in W
 
 ## Tier 4 — Measurement / instrument internals
 
-### L13. LLM-as-judge dependence
-- **What:** planning and naturalness use a Claude judge.
-- **Why it matters:** judge drift, prompt sensitivity, and judge–generator interaction
-  can move sub-scores even with cross-provider separation.
-- **Current handling:** cross-provider judge (Claude vs GPT-4o-mini); WISE §6 notes judge
-  drift.
-- **Residual risk:** low–moderate; multi-judge agreement would strengthen it.
+### L13. LLM-as-judge dependence AND generator–judge circularity (CORRECTED)
+- **What:** planning and naturalness are scored by an inline LLM judge. In the reported
+  runs that judge is **gpt-4o-mini** (`measurement/micro.py` -> `ChatGPT_request` ->
+  `DEFAULT_CHAT_MODEL = gpt-4o-mini`), i.e. the SAME model as the generator. The
+  cross-provider Claude judge (`llm_judge.py`, `claude-haiku-4-5-20251001`) is a separate,
+  standalone script and was NOT run for the reported composite (no Claude/Anthropic outputs,
+  usage logs, or rating files exist in the results tree).
+- **Why it matters:** the earlier "cross-provider (Claude vs GPT-4o-mini)" claim was
+  inaccurate. Planning and naturalness are self-judged by the generator's own model family,
+  so those two sub-dimensions are NOT judge-independent — the exact generator–judge
+  circularity the design claimed to avoid.
+- **Current handling:** the judge is blind to condition/outcome/architecture; the main
+  claims rest on categorical, instrument-independent results; the two affected sub-dimensions
+  are only 45% of the composite (planning 0.25 + naturalness 0.20). Paper §3 and §6 now state
+  the judge is gpt-4o-mini and list the circularity as a limitation.
+- **Residual risk:** moderate — the honest fix is to run the Claude judge in `llm_judge.py`
+  and recompute the composite (cross-provider), which would restore judge-independence and
+  may shift planning/naturalness sub-scores (and thus the headline rho) slightly.
 
 ### L14. Cooperation-rate overlaps the macro outcome
 - **What:** one behavioural-consistency sub-component (cooperation rate, 6% of the
@@ -205,6 +216,32 @@ paper handles it, and the residual risk. Grouped by severity. Items marked "in W
 - **Why it matters:** Type E is descriptive, not independent evidence.
 - **Current handling:** stated in §3.4; NOT in §6.
 - **Residual risk:** low — already framed as descriptive.
+
+### L18. `full` vs `full_llm_reflection` differ in more than the generation method
+- **What:** verified directly against `scenarios/commons_dilemma.py`. `_deterministic_reflection()`
+  (C4) is a stateless lookup keyed only on the *current* round's own request vs. fair share and
+  whether the group coordinated — no memory history, no persona identity, same 3 fixed strings for
+  every agent. `_generate_llm_reflection()` (C5) is given the persona's identity (`get_str_iss()`)
+  plus their actual last 5 rounds of scenario memory (group/pool/coordination/self/peer status) and
+  is explicitly prompted to state an insight, not restate numbers. It falls back to the deterministic
+  string only on LLM failure; confirmed via `compare_reflection_conditions.py` that this fallback
+  fired **zero times** across all 10 C5 trials (`trials with fallback: 0`), so C5's reflections are
+  genuinely 100% LLM-generated, not partially the C4 template.
+- **Why it matters:** the paper (§4.1) describes the two conditions as differing only in
+  "deterministic vs. LLM-generated" reflection. That's behaviourally true but understates it — C4's
+  reflection is amnesic and persona-blind by construction, while C5's is grounded in real multi-round
+  history and persona identity. The placebo/"step not content" control (L11) was run only against
+  C4's fixed strings; it does not by itself establish that C5's richer, memory-grounded generation
+  works through the same mechanism (though C5's own result — 94.9% of its paraphrases still restate
+  the same fair-share norm — is suggestive that it converges to a similar place anyway).
+- **Current handling:** NOT in the WISE paper. Decided (2026-07-01) not to add a clarifying clause,
+  since C5 is already labelled exploratory throughout, is not part of the confirmatory analysis, and
+  the paper never claims the placebo result generalises to C5 — so there's no overreaching claim to
+  correct, and the paper is already page-constrained. Recorded here for defence/reviewer-question
+  prep in case Amin or an examiner specifically probes what the C4-vs-C5 comparison does and doesn't
+  establish.
+- **Residual risk:** low for the paper as submitted (no false claim); moderate if asked directly in
+  defence — have the L18 explanation ready.
 
 ---
 

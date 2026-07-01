@@ -1,0 +1,66 @@
+==============================================================
+MRes HYPOTHESIS TEST REPORT
+==============================================================
+Scenario        : commons_dilemma
+Trials analysed : 10
+Conditions found: full_llm_reflection
+
+==============================================================
+H1: Higher composite believability predicts higher coordination score.
+--------------------------------------------------------------
+  STATUS : NOT SUPPORTED
+  n      : 10
+  Note   : Spearman rho=0.355, p=0.3136. Positive rho with p < 0.05 supports H1.
+  Spearman  rho=+0.355, p=0.3136
+
+==============================================================
+H2: Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).
+--------------------------------------------------------------
+  STATUS : NOT SUPPORTED
+  n      : 10
+  Note   : No clear failure threshold found in the current data.
+  Band cutoffs: low ≤ 0.669 < mid ≤ 0.672 < high
+  Low  band: n=4, success_rate=1.00, fail_rate=0.00
+  Mid  band: n=3, success_rate=1.00, fail_rate=0.00
+  High band: n=3, success_rate=1.00, fail_rate=0.00
+  Empirical threshold: none found
+
+==============================================================
+H3: Believability increases monotonically: baseline < memory < memory_planning < full.
+--------------------------------------------------------------
+  STATUS : INSUFFICIENT DATA
+  Note   : Need data from ≥ 2 conditions.
+
+==============================================================
+H4: Memory coherence and behavioural consistency are stronger predictors of coordination score than planning plausibility or response naturalness.
+--------------------------------------------------------------
+  STATUS : NOT SUPPORTED
+  n      : —
+  Note   : Top-ranked predictors: ['planning_plausibility', 'response_naturalness', 'behavioural_consistency', 'memory_coherence']. H4 supported: False.
+  Sub-dimension correlations with coordination_score:
+    behavioural_consistency         rho=+0.071, p=0.8453
+    memory_coherence                rho=+0.000, p=1.0000
+    planning_plausibility           rho=+0.426, p=0.2191
+    response_naturalness            rho=-0.108, p=0.7660
+  Spearman ranking : planning_plausibility > response_naturalness > behavioural_consistency > memory_coherence
+  OLS R²           : 0.4309  (n=10)
+    behavioural_consistency         β=+0.0054, p=0.9739
+    memory_coherence                β=+0.0086, p=0.9797
+    planning_plausibility           β=+0.1135, p=0.1355
+    response_naturalness            β=-0.1820, p=0.5121
+  Regression rank  : response_naturalness > planning_plausibility > memory_coherence > behavioural_consistency
+  Regression H4 supported: False
+
+==============================================================
+H5: Individual believability and collective validity decouple in identifiable regimes, quantified by a signed discrepancy metric.
+--------------------------------------------------------------
+  STATUS        : NOT SUPPORTED
+  n             : 10
+  Gap threshold : discrepancy > 0.2
+  Gap cases     : 0
+  Max discrepancy: -0.2009
+  Note          : No gap cases found (discrepancy > 0.2) in this dataset. H5 is best evidenced by the IC cascade (separate scenario).
+  Mean discrepancy by condition:
+    full_llm_reflection        -0.2147
+
+==============================================================

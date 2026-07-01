@@ -1,0 +1,1325 @@
+{
+  "sustainability_score": 0.917,
+  "coordination_score": 0.833,
+  "coordination_score_band": "high",
+  "coordination_success": true,
+  "collapse_step": null,
+  "average_gini": 0.584,
+  "demand_pressure": 0.0,
+  "convergence_step": 1,
+  "convergence_speed": 1,
+  "convergence_timeout": false,
+  "emergent_role_differentiation": {
+    "roles_by_persona": {
+      "Abigail Chen": "conserver",
+      "Ayesha Khan": "conserver",
+      "Carlos Gomez": "conserver",
+      "Francisco Lopez": "conserver",
+      "Giorgio Rossi": "conserver",
+      "Sam Moore": "conserver",
+      "Wolfgang Schulz": "conserver",
+      "Yuriko Yamamoto": "conserver"
+    },
+    "role_counts": {
+      "conserver": 8
+    },
+    "role_entropy": 0.0,
+    "normalized_role_entropy": 0.0,
+    "unique_role_count": 1
+  },
+  "influence_network": {
+    "matrix": {
+      "Abigail Chen": {
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Ayesha Khan": {
+        "Abigail Chen": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Carlos Gomez": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Francisco Lopez": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Giorgio Rossi": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Sam Moore": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Wolfgang Schulz": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Wolfgang Schulz": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Yuriko Yamamoto": 0.0
+      },
+      "Yuriko Yamamoto": {
+        "Abigail Chen": 0.0,
+        "Ayesha Khan": 0.0,
+        "Carlos Gomez": 0.0,
+        "Francisco Lopez": 0.0,
+        "Giorgio Rossi": 0.0,
+        "Sam Moore": 0.0,
+        "Wolfgang Schulz": 0.0
+      }
+    },
+    "descriptors": {
+      "edge_count": 0,
+      "possible_edges": 56,
+      "density": 0.0,
+      "in_degree": {
+        "Abigail Chen": 0,
+        "Ayesha Khan": 0,
+        "Carlos Gomez": 0,
+        "Francisco Lopez": 0,
+        "Giorgio Rossi": 0,
+        "Sam Moore": 0,
+        "Wolfgang Schulz": 0,
+        "Yuriko Yamamoto": 0
+      },
+      "out_degree": {
+        "Abigail Chen": 0,
+        "Ayesha Khan": 0,
+        "Carlos Gomez": 0,
+        "Francisco Lopez": 0,
+        "Giorgio Rossi": 0,
+        "Sam Moore": 0,
+        "Wolfgang Schulz": 0,
+        "Yuriko Yamamoto": 0
+      },
+      "reciprocal_pairs": 0,
+      "reciprocity": 0.0,
+      "max_influence_pair": null,
+      "threshold_used": 0.3
+    },
+    "baseline": {
+      "observed_density": 0.0,
+      "baseline_mean": 0.0,
+      "baseline_std": 0.0,
+      "p_value": 1.0,
+      "above_chance": false,
+      "n_permutations": 100
+    },
+    "group_state_responsiveness": {
+      "Abigail Chen": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Ayesha Khan": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Carlos Gomez": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Francisco Lopez": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Giorgio Rossi": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Sam Moore": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Wolfgang Schulz": {
+        "r": 0.0,
+        "interpretation": "independent"
+      },
+      "Yuriko Yamamoto": {
+        "r": 0.0,
+        "interpretation": "independent"
+      }
+    }
+  },
+  "failure_traceability": {
+    "failure_detected": false,
+    "critical_step": 0,
+    "likely_causes": [
+      "allocation_inequality"
+    ],
+    "agent_contributions": {
+      "Abigail Chen": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 1
+      },
+      "Ayesha Khan": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 1
+      },
+      "Carlos Gomez": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 3,
+        "plan_references": 3
+      },
+      "Francisco Lopez": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 2
+      },
+      "Giorgio Rossi": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 2
+      },
+      "Sam Moore": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 3
+      },
+      "Wolfgang Schulz": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 2
+      },
+      "Yuriko Yamamoto": {
+        "requested": 0,
+        "granted": 0,
+        "parse_errors": 0,
+        "memory_references": 2,
+        "plan_references": 1
+      }
+    },
+    "dominant_agents": [
+      "Abigail Chen",
+      "Ayesha Khan",
+      "Carlos Gomez"
+    ],
+    "critical_window": [
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Abigail Chen",
+        "vote": "A",
+        "correct": false,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "My private signal points to Option X, and I have not yet seen any compelling evidence from others that would suggest a need to change my vote.",
+        "shared_statement": "I believe Option X is a strong choice based on my perspective and current information.",
+        "memory_reference": "",
+        "plan_reference": "",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "begin work on the animation project at 9:00 am",
+          "take a short break at 11:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Ayesha Khan",
+        "vote": "A",
+        "correct": false,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "My private signal supports Option X, and since there hasn't been any shared evidence from others yet, I still believe it could be a strong option for the community.",
+        "shared_statement": "I am supporting Option X based on my private signal evidence and am curious to see what others will provide.",
+        "memory_reference": "",
+        "plan_reference": "",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go to the library for classes from 10:00 am to 2:00 pm",
+          "have lunch and a short break from 2:00 pm to 3:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Carlos Gomez",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "While my private signal indicated some preference for Option Y, I believe it aligns with the emerging consensus among community members, suggesting overall support for this option.",
+        "shared_statement": "I think we should consider going with Option Y, as I've seen it gaining traction in discussions and feedback.",
+        "memory_reference": "Previously, there were diverse opinions, but the sentiment seems to be shifting toward Option Y.",
+        "plan_reference": "Supporting this choice reflects my commitment to enhancing community collaboration.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "have breakfast at 8:30 am",
+          "spend the morning writing poetry from 9:00 am to 12:00 pm, focusing on themes from nature"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Francisco Lopez",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "While my private signal indicated Option Y, I recognize that the group's discussions may reveal different perspectives that could outweigh my individual input. I'm leaning towards Option Y as a result, considering it reflects what may be best for the community's shared facility.",
+        "shared_statement": "I have received evidence suggesting that Option Y could be favorable for our community development.",
+        "memory_reference": "",
+        "plan_reference": "Aligning with the collective decision supports my goal of fostering community collaboration.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Giorgio Rossi",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "My private signal points to Option Y, and with no other shared statements yet, I believe we need to consider the potential support from others as a strong indicator of collective preference.",
+        "shared_statement": "I have received evidence suggesting we should lean toward Option Y based on its potential benefits.",
+        "memory_reference": "",
+        "plan_reference": "",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "start working on his research project at 8:30 am, focusing on identifying mathematical patterns in nature",
+          "take a break at 10:30 am for a light snack and to reflect on his progress"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Sam Moore",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "My private signal points to Option Y, and I believe that the outcomes shared by others may likely corroborate this choice, suggesting a collective leaning toward this proposal.",
+        "shared_statement": "I believe Option Y provides the best potential for meeting our community's needs, and I'm excited to hear what others think as well.",
+        "memory_reference": "",
+        "plan_reference": "Supporting this proposal aligns with my values of community development and engagement.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 5:00 am",
+          "take a walk around Johnson Park from 5:30 am to 6:30 am",
+          "have breakfast with Jennifer at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Wolfgang Schulz",
+        "vote": "C",
+        "correct": false,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "Despite my signal favoring Option Z, the vote tally and the absence of shared statements indicate there's still uncertainty among community members, meaning further discussion might be needed before a strong consensus can be reached.",
+        "shared_statement": "I believe my signal points towards Option Z and am open to discussing it further with community input.",
+        "memory_reference": "",
+        "plan_reference": "",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go for a run in the park from 5:30 am to 6:30 am",
+          "have breakfast at 6:45 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "persona": "Yuriko Yamamoto",
+        "vote": "C",
+        "correct": false,
+        "prior_vote": null,
+        "position_change": false,
+        "reasoning": "Based on my private signal of Option Z, I believe it has potential despite the current vote tally being at zero. As no shared statements have swayed my position yet, I maintain my initial preference for Option Z.",
+        "shared_statement": "I have received evidence favoring Option Z and believe it merits consideration.",
+        "memory_reference": "",
+        "plan_reference": "",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": false,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "get to work on the tax compliance project at 9:00 am",
+          "take a break for a snack at 11:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Abigail Chen",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": true,
+        "reasoning": "While my initial signal favoured Option X, the strong consensus around Option Y from other community members suggests that it may better meet our community's needs.",
+        "shared_statement": "I'm shifting my support to Option Y based on the compelling evidence presented by others in this discussion.",
+        "memory_reference": "I remember that the current vote tally shows Option Y as the leading choice.",
+        "plan_reference": "",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option X: 2, Option Y: 4, Option Z: 2.",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe Option X is a strong choice based on my perspective and current information. | I am supporting Option X based on my private signal evidence and am curious to see what others will provide. | I think we should consider going with Option Y, as I've seen it gaining traction in discussions and feedback.",
+          "You voted for Option X at step 0: My private signal points to Option X, and I have not yet seen any compelling evidence from others th"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "begin work on the animation project at 9:00 am",
+          "take a short break at 11:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "Other community members appear to favour a different option; their private signals may contain important evidence worth considering."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Ayesha Khan",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "A",
+        "position_change": true,
+        "reasoning": "Although my private signal supports Option X, the majority of community members are favoring Option Y based on their shared evidence, indicating a stronger collective preference.",
+        "shared_statement": "Given the weight of evidence and community support, I'm updating my position to Option Y.",
+        "memory_reference": "In the previous discussion, multiple members indicated a preference for Option Y, which has gained traction.",
+        "plan_reference": "",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option X: 2, Option Y: 4, Option Z: 2.",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe Option X is a strong choice based on my perspective and current information. | I am supporting Option X based on my private signal evidence and am curious to see what others will provide. | I think we should consider going with Option Y, as I've seen it gaining traction in discussions and feedback.",
+          "You voted for Option X at step 0: My private signal supports Option X, and since there hasn't been any shared evidence from others yet"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go to the library for classes from 10:00 am to 2:00 pm",
+          "have lunch and a short break from 2:00 pm to 3:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "Other community members appear to favour a different option; their private signals may contain important evidence worth considering."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Carlos Gomez",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "While my private signal pointed towards Option Y, I see that the majority of community members have expressed favoring it, which suggests it aligns better with shared evidence.",
+        "shared_statement": "I am inclined to support Option Y as I believe it meets our community's needs effectively based on the discussions we've had.",
+        "memory_reference": "In the previous round, Option Y was already gaining traction among members.",
+        "plan_reference": "Aligning with the collective decision supports the community's best interests.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option X: 2, Option Y: 4, Option Z: 2.",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe Option X is a strong choice based on my perspective and current information. | I am supporting Option X based on my private signal evidence and am curious to see what others will provide. | I think we should consider going with Option Y, as I've seen it gaining traction in discussions and feedback.",
+          "You voted for Option Y at step 0: While my private signal indicated some preference for Option Y, I believe it aligns with the emergin"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "have breakfast at 8:30 am",
+          "spend the morning writing poetry from 9:00 am to 12:00 pm, focusing on themes from nature"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "The group remains divided; sharing more evidence about the best option may help others update their positions."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Francisco Lopez",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "While my private signal initially indicated favoring a different option, the discussions show a strong lean toward Option Y, supported by multiple community members, which suggests it is likely the most effective choice for our community's needs.",
+        "shared_statement": "I'm shifting my support to Option Y based on the strong consensus forming around it and its potential to serve our community well.",
+        "memory_reference": "In the previous round, I noted that the majority were inclined towards Option Y.",
+        "plan_reference": "Choosing the most suitable option for the community aligns with my goals as we develop the shared facility.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option X: 2, Option Y: 4, Option Z: 2.",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe Option X is a strong choice based on my perspective and current information. | I am supporting Option X based on my private signal evidence and am curious to see what others will provide. | I think we should consider going with Option Y, as I've seen it gaining traction in discussions and feedback.",
+          "You voted for Option Y at step 0: While my private signal indicated Option Y, I recognize that the group's discussions may reveal diff"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "The group remains divided; sharing more evidence about the best option may help others update their positions."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Giorgio Rossi",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "Considering the majority of shared evidence leans toward Option Y, I believe it aligns with the community's needs more effectively than my private signal.",
+        "shared_statement": "I am supporting Option Y based on the strong interest and supporting evidence from others in our discussion.",
+        "memory_reference": "In the previous rounds, there was significant support emerging for Option Y.",
+        "plan_reference": "Choosing the best option for the community aligns with my analytical orientation to foster a constructive outcome.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option X: 2, Option Y: 4, Option Z: 2.",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe Option X is a strong choice based on my perspective and current information. | I am supporting Option X based on my private signal evidence and am curious to see what others will provide. | I think we should consider going with Option Y, as I've seen it gaining traction in discussions and feedback.",
+          "You voted for Option Y at step 0: My private signal points to Option Y, and with no other shared statements yet, I believe we need to "
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "start working on his research project at 8:30 am, focusing on identifying mathematical patterns in nature",
+          "take a break at 10:30 am for a light snack and to reflect on his progress"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "The group remains divided; sharing more evidence about the best option may help others update their positions."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Sam Moore",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "I believe Option Y continues to have the most support from the group, and its potential to meet community needs strongly aligns with my observations as more evidence has emerged supporting it.",
+        "shared_statement": "I'm still firmly supporting Option Y based on the strong backing and feedback from others in our community discussions.",
+        "memory_reference": "In the last round, Option Y had the most votes, indicating clear support.",
+        "plan_reference": "Choosing an option that reflects community needs aligns with my goals as I prepare for the mayoral election.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option X: 2, Option Y: 4, Option Z: 2.",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe Option X is a strong choice based on my perspective and current information. | I am supporting Option X based on my private signal evidence and am curious to see what others will provide. | I think we should consider going with Option Y, as I've seen it gaining traction in discussions and feedback.",
+          "You voted for Option Y at step 0: My private signal points to Option Y, and I believe that the outcomes shared by others may likely co"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 5:00 am",
+          "take a walk around Johnson Park from 5:30 am to 6:30 am",
+          "have breakfast with Jennifer at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "The group remains divided; sharing more evidence about the best option may help others update their positions."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Wolfgang Schulz",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "C",
+        "position_change": true,
+        "reasoning": "While my private signal pointed towards Option Z, the majority of the community is favoring Option Y, indicating strong support for its potential benefits.",
+        "shared_statement": "Given the feedback from others, I am reconsidering my stance and leaning toward Option Y as it appears to meet the community's needs effectively.",
+        "memory_reference": "In the previous discussion, I noted that many members expressed enthusiasm for Option Y.",
+        "plan_reference": "My priority is to contribute to a decision that reflects the collective interests of the community.",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option X: 2, Option Y: 4, Option Z: 2.",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe Option X is a strong choice based on my perspective and current information. | I am supporting Option X based on my private signal evidence and am curious to see what others will provide. | I think we should consider going with Option Y, as I've seen it gaining traction in discussions and feedback.",
+          "You voted for Option Z at step 0: Despite my signal favoring Option Z, the vote tally and the absence of shared statements indicate th"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go for a run in the park from 5:30 am to 6:30 am",
+          "have breakfast at 6:45 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "Other community members appear to favour a different option; their private signals may contain important evidence worth considering."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "persona": "Yuriko Yamamoto",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "C",
+        "position_change": true,
+        "reasoning": "While my private signal favored Option Z, the growing support and compelling evidence shared by multiple community members for Option Y suggests it is a better choice for meeting our community's needs.",
+        "shared_statement": "Given the feedback from others, I am inclined to support Option Y as it seems to align with the community's interests.",
+        "memory_reference": "I noted that Option Y had already garnered significant support in the earlier discussions.",
+        "plan_reference": "Supporting the community's decision aligns with my goal of fostering effective collaboration.",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "At step 0, the vote tally was: Option X: 2, Option Y: 4, Option Z: 2.",
+          "The group has not yet reached consensus this round.",
+          "Statements shared this round: I believe Option X is a strong choice based on my perspective and current information. | I am supporting Option X based on my private signal evidence and am curious to see what others will provide. | I think we should consider going with Option Y, as I've seen it gaining traction in discussions and feedback.",
+          "You voted for Option Z at step 0: Based on my private signal of Option Z, I believe it has potential despite the current vote tally be"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "get to work on the tax compliance project at 9:00 am",
+          "take a break for a snack at 11:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "Other community members appear to favour a different option; their private signals may contain important evidence worth considering."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Abigail Chen",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "Despite my initial signal supporting Option X, the strong consensus and compelling evidence from the community have led me to favor Option Y, as it aligns more closely with the needs expressed by others.",
+        "shared_statement": "I am shifting my support to Option Y based on the consensus and compelling feedback from our discussions.",
+        "memory_reference": "Previously, I noted a significant shift in support toward Option Y from the community members.",
+        "plan_reference": "Collaborating effectively with the community aligns with my values as an artist and a member of this group.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Abigail Chen\nAge: 25\nInnate traits: open-minded, curious, determined\nLearned traits: Abigail Chen is a digital artist and animator who loves to explore how technology can be used to express ideas. She is always looking for new ways to combine art and technology.\nCurrently: Abigail Chen is working on an animation project for a client. She is also experimenting with different tools and techniques to create interactive art.\nLifestyle: Abigail Chen goes to bed around midnight, awakes up around 8am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option X at step 0: My private signal points to Option X, and I have not yet seen any compelling evidence from others th",
+          "At step 1, the vote tally was: Option X: 0, Option Y: 8, Option Z: 0.",
+          "The group reached coordinated consensus this round.",
+          "Statements shared this round: I'm shifting my support to Option Y based on the compelling evidence presented by others in this discussion. | Given the weight of evidence and community support, I'm updating my position to Option Y. | I am inclined to support Option Y as I believe it meets our community's needs effectively based on the discussions we've had.",
+          "You voted for Option Y at step 1: While my initial signal favoured Option X, the strong consensus around Option Y from other community"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "begin work on the animation project at 9:00 am",
+          "take a short break at 11:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+          "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Ayesha Khan",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "Despite my initial preference for Option X, the collective evidence and strong support for Option Y among community members suggest it aligns better with our shared needs.",
+        "shared_statement": "I am updating my support to Option Y based on the compelling arguments and consensus expressed by others in our discussions.",
+        "memory_reference": "I remember that the majority was leaning toward Option Y in the previous round.",
+        "plan_reference": "Emphasizing collaboration and community interests reflects my values as I work towards understanding diverse perspectives.",
+        "signal": "A",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Ayesha Khan\nAge: 20\nInnate traits: curious, determined, independent\nLearned traits: Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.\nCurrently: Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u2019s plays. She is also taking classes to learn more about writing.\nLifestyle: Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.\nDaily plan requirement: Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option X at step 0: My private signal supports Option X, and since there hasn't been any shared evidence from others yet",
+          "At step 1, the vote tally was: Option X: 0, Option Y: 8, Option Z: 0.",
+          "The group reached coordinated consensus this round.",
+          "Statements shared this round: I'm shifting my support to Option Y based on the compelling evidence presented by others in this discussion. | Given the weight of evidence and community support, I'm updating my position to Option Y. | I am inclined to support Option Y as I believe it meets our community's needs effectively based on the discussions we've had.",
+          "You voted for Option Y at step 1: Although my private signal supports Option X, the majority of community members are favoring Option "
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go to the library for classes from 10:00 am to 2:00 pm",
+          "have lunch and a short break from 2:00 pm to 3:00 pm"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+          "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Carlos Gomez",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "With the majority of the community supporting Option Y and compelling evidence pointing in its direction, I believe it is the best choice for the collective.",
+        "shared_statement": "I am maintaining my support for Option Y, as it aligns with the strong consensus and feedback from our discussions.",
+        "memory_reference": "In the previous round, the vote tally significantly favored Option Y, indicating a clear community preference.",
+        "plan_reference": "Supporting the community's decision reflects my commitment to collaborative expression in poetry.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Carlos Gomez\nAge: 32\nInnate traits: loud, rude, toxic\nLearned traits: Carlos Gomez is a poet who loves to explore his inner thoughts and feelings. He is always looking for new ways to express himself.\nCurrently: Carlos Gomez is working on a collection of poetry that explores the beauty of the natural world. He is also attending creative writing workshops to hone his skills.\nLifestyle: Carlos Gomez goes to bed around 10pm, awakes up around 7am, eats dinner around 5pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option Y at step 0: While my private signal indicated some preference for Option Y, I believe it aligns with the emergin",
+          "At step 1, the vote tally was: Option X: 0, Option Y: 8, Option Z: 0.",
+          "The group reached coordinated consensus this round.",
+          "Statements shared this round: I'm shifting my support to Option Y based on the compelling evidence presented by others in this discussion. | Given the weight of evidence and community support, I'm updating my position to Option Y. | I am inclined to support Option Y as I believe it meets our community's needs effectively based on the discussions we've had.",
+          "You voted for Option Y at step 1: While my private signal pointed towards Option Y, I see that the majority of community members have "
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "have breakfast at 8:30 am",
+          "spend the morning writing poetry from 9:00 am to 12:00 pm, focusing on themes from nature"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+          "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Francisco Lopez",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "The strong backing from other community members for Option Y, combined with their compelling evidence, has influenced my view, leading me to align with the majority.",
+        "shared_statement": "I am supporting Option Y as the discussions and feedback from others indicate that it aligns well with our community's needs.",
+        "memory_reference": "In the previous discussion, I noted a clear majority leaning toward Option Y.",
+        "plan_reference": "",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Francisco Lopez\nAge: 23\nInnate traits: outgoing, friendly, honest\nLearned traits: Francisco Lopez is an actor and comedian who loves to entertain others. They are always looking for new ways to make people laugh.\nCurrently: Francisco Lopez is working on a web series about life in a co-living space. They are also exploring improvisational comedy classes.\nLifestyle: Francisco Lopez goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option Y at step 0: While my private signal indicated Option Y, I recognize that the group's discussions may reveal diff",
+          "At step 1, the vote tally was: Option X: 0, Option Y: 8, Option Z: 0.",
+          "The group reached coordinated consensus this round.",
+          "Statements shared this round: I'm shifting my support to Option Y based on the compelling evidence presented by others in this discussion. | Given the weight of evidence and community support, I'm updating my position to Option Y. | I am inclined to support Option Y as I believe it meets our community's needs effectively based on the discussions we've had.",
+          "You voted for Option Y at step 1: While my private signal initially indicated favoring a different option, the discussions show a stro"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "wake up and complete the morning routine at 6:00 am",
+          "eat breakfast at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+          "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Giorgio Rossi",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "The overwhelming support for Option Y from various community members suggests that it aligns best with the collective needs and preferences. Their shared evidence has influenced my decision to continue supporting this option.",
+        "shared_statement": "I reaffirm my support for Option Y as the majority of our community sees it as the most beneficial option.",
+        "memory_reference": "I remember that in the previous round, the majority also leaned toward Option Y.",
+        "plan_reference": "Backing the option that best reflects the community's desires is in line with my values.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Giorgio Rossi\nAge: 41\nInnate traits: analytical, logical, eccentric\nLearned traits: Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.\nCurrently: Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.\nLifestyle: Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option Y at step 0: My private signal points to Option Y, and with no other shared statements yet, I believe we need to ",
+          "At step 1, the vote tally was: Option X: 0, Option Y: 8, Option Z: 0.",
+          "The group reached coordinated consensus this round.",
+          "Statements shared this round: I'm shifting my support to Option Y based on the compelling evidence presented by others in this discussion. | Given the weight of evidence and community support, I'm updating my position to Option Y. | I am inclined to support Option Y as I believe it meets our community's needs effectively based on the discussions we've had.",
+          "You voted for Option Y at step 1: Considering the majority of shared evidence leans toward Option Y, I believe it aligns with the comm"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "start working on his research project at 8:30 am, focusing on identifying mathematical patterns in nature",
+          "take a break at 10:30 am for a light snack and to reflect on his progress"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+          "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Sam Moore",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "The overwhelming support for Option Y from fellow community members suggests it best meets our collective needs, and I am in favor of this consensus.",
+        "shared_statement": "I continue to support Option Y based on the strong backing and thoughtful feedback from the community discussions.",
+        "memory_reference": "In previous rounds, I noted that Option Y was already gathering considerable support.",
+        "plan_reference": "Fostering community involvement aligns with my values as I prepare for my mayoral run.",
+        "signal": "B",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Sam Moore\nAge: 65\nInnate traits: wise, resourceful, humorous\nLearned traits: Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.\nCurrently: Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it\nLifestyle: Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.\nDaily plan requirement: Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.\nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option Y at step 0: My private signal points to Option Y, and I believe that the outcomes shared by others may likely co",
+          "At step 1, the vote tally was: Option X: 0, Option Y: 8, Option Z: 0.",
+          "The group reached coordinated consensus this round.",
+          "Statements shared this round: I'm shifting my support to Option Y based on the compelling evidence presented by others in this discussion. | Given the weight of evidence and community support, I'm updating my position to Option Y. | I am inclined to support Option Y as I believe it meets our community's needs effectively based on the discussions we've had.",
+          "You voted for Option Y at step 1: I believe Option Y continues to have the most support from the group, and its potential to meet comm"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 5:00 am",
+          "take a walk around Johnson Park from 5:30 am to 6:30 am",
+          "have breakfast with Jennifer at 7:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "The group remains divided; sharing more evidence about the best option may help others update their positions.",
+          "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Wolfgang Schulz",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "Others' strong backing for Option Y and its alignment with community needs have influenced my decision to support it despite my initial private signal.",
+        "shared_statement": "I am shifting my support to Option Y as it addresses our community's interests effectively based on the compelling evidence presented by others.",
+        "memory_reference": "In the previous round, I noted that the group reached a consensus towards Option Y.",
+        "plan_reference": "Choosing a proposal that meets community needs aligns with my values of dedication and collaboration.",
+        "signal": "C",
+        "signal_disclosed": false,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Wolfgang Schulz\nAge: 21\nInnate traits: Hardworking, passionate, dedicated\nLearned traits: Wolfgang Schulz is a student at Oak Hill College studying chemistry and a student athlete. He is very dedicated to both his academics and his sport.\nCurrently: Wolfgang Schulz is training for his next competition and studying for his exams. He is also looking for ways to make his studies more efficient.\nLifestyle: Wolfgang Schulz goes to bed around 9pm, awakes up around 5am, eats dinner around 6pm.\nDaily plan requirement: Wolfgang Schulz goes for a run at the part in the morning, studies during the day, and exercises at his room at night \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option Z at step 0: Despite my signal favoring Option Z, the vote tally and the absence of shared statements indicate th",
+          "At step 1, the vote tally was: Option X: 0, Option Y: 8, Option Z: 0.",
+          "The group reached coordinated consensus this round.",
+          "Statements shared this round: I'm shifting my support to Option Y based on the compelling evidence presented by others in this discussion. | Given the weight of evidence and community support, I'm updating my position to Option Y. | I am inclined to support Option Y as I believe it meets our community's needs effectively based on the discussions we've had.",
+          "You voted for Option Y at step 1: While my private signal pointed towards Option Z, the majority of the community is favoring Option Y"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "go for a run in the park from 5:30 am to 6:30 am",
+          "have breakfast at 6:45 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+          "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "persona": "Yuriko Yamamoto",
+        "vote": "B",
+        "correct": true,
+        "prior_vote": "B",
+        "position_change": false,
+        "reasoning": "Despite my initial support for Option Z, the cumulative evidence and strong community backing for Option Y have influenced my decision to align with the majority.",
+        "shared_statement": "I am shifting my support to Option Y as it addresses our community's needs effectively based on the compelling evidence presented by others.",
+        "memory_reference": "I noted that many community members expressed their support for Option Y in the previous discussions.",
+        "plan_reference": "",
+        "signal": "C",
+        "signal_disclosed": true,
+        "experimental_condition": "full",
+        "parse_error": false,
+        "requested": 0,
+        "granted": 0,
+        "persona_profile": "Name: Yuriko Yamamoto\nAge: 28\nInnate traits: organized, reliable, detail-oriented\nLearned traits: Yuriko Yamamoto is a tax lawyer who loves to help people navigate the complex world of taxes. She is very organized and detail-oriented when it comes to her work.\nCurrently: Yuriko Yamamoto is working on a tax compliance project for a local business. She is also taking classes to stay up to date on new tax laws. Yuriko is also curious about who will be running for the local mayor election next month.\nLifestyle: Yuriko Yamamoto goes to bed around 11pm, awakes up around 7am, eats dinner around 6pm.\nDaily plan requirement: \nCurrent Date: Monday February 13\n",
+        "recent_memories": [
+          "You voted for Option Z at step 0: Based on my private signal of Option Z, I believe it has potential despite the current vote tally be",
+          "At step 1, the vote tally was: Option X: 0, Option Y: 8, Option Z: 0.",
+          "The group reached coordinated consensus this round.",
+          "Statements shared this round: I'm shifting my support to Option Y based on the compelling evidence presented by others in this discussion. | Given the weight of evidence and community support, I'm updating my position to Option Y. | I am inclined to support Option Y as I believe it meets our community's needs effectively based on the discussions we've had.",
+          "You voted for Option Y at step 1: While my private signal favored Option Z, the growing support and compelling evidence shared by mult"
+        ],
+        "memory_scope": "scenario_episodic",
+        "memory_context_available": true,
+        "planning_context_available": true,
+        "daily_goals": [
+          "wake up and complete the morning routine at 8:00 am",
+          "get to work on the tax compliance project at 9:00 am",
+          "take a break for a snack at 11:00 am"
+        ],
+        "current_activity": "",
+        "scenario_reflections": [
+          "Other community members appear to favour a different option; their private signals may contain important evidence worth considering.",
+          "The group is converging toward the majority-supported option \u2014 sharing signals appears to be helping collective agreement."
+        ],
+        "condition_capabilities": {
+          "use_memory": true,
+          "use_planning": true,
+          "use_reflection": true
+        }
+      }
+    ],
+    "macro_window": [
+      {
+        "step": 0,
+        "time": "2023-02-13 09:00:00",
+        "vote_tally": {
+          "A": 2,
+          "B": 4,
+          "C": 2
+        },
+        "n_correct": 4,
+        "n_agents": 8,
+        "consensus_rate": 0.5,
+        "coordinated": false,
+        "consensus_reached": false,
+        "consensus_step": null,
+        "information_diffusion_rate": 1.0,
+        "sustainability_score": 0.5,
+        "resource_level": 4.0,
+        "resource_level_label": "4 of 8 agents on Option B",
+        "total_requested": 0,
+        "total_granted": 0,
+        "oversubscription": 0.0,
+        "collapsed": false,
+        "gini": 0.167,
+        "coordination_score": 0.5
+      },
+      {
+        "step": 1,
+        "time": "2023-02-13 09:00:10",
+        "vote_tally": {
+          "A": 0,
+          "B": 8,
+          "C": 0
+        },
+        "n_correct": 8,
+        "n_agents": 8,
+        "consensus_rate": 1.0,
+        "coordinated": true,
+        "consensus_reached": false,
+        "consensus_step": null,
+        "information_diffusion_rate": 1.0,
+        "sustainability_score": 1.0,
+        "resource_level": 8.0,
+        "resource_level_label": "8 of 8 agents on Option B",
+        "total_requested": 0,
+        "total_granted": 0,
+        "oversubscription": 0.0,
+        "collapsed": false,
+        "gini": 0.667,
+        "coordination_score": 1.0
+      },
+      {
+        "step": 2,
+        "time": "2023-02-13 09:00:20",
+        "vote_tally": {
+          "A": 0,
+          "B": 8,
+          "C": 0
+        },
+        "n_correct": 8,
+        "n_agents": 8,
+        "consensus_rate": 1.0,
+        "coordinated": true,
+        "consensus_reached": false,
+        "consensus_step": null,
+        "information_diffusion_rate": 0.875,
+        "sustainability_score": 1.0,
+        "resource_level": 8.0,
+        "resource_level_label": "8 of 8 agents on Option B",
+        "total_requested": 0,
+        "total_granted": 0,
+        "oversubscription": 0.0,
+        "collapsed": false,
+        "gini": 0.667,
+        "coordination_score": 1.0
+      }
+    ],
+    "coding_template": {
+      "micro_causes": "",
+      "macro_outcome": "",
+      "analyst_notes": ""
+    }
+  },
+  "total_steps": 6,
+  "final_resource_level": 8.0
+}

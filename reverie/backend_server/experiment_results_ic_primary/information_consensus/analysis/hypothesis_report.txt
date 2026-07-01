@@ -2,27 +2,27 @@
 MRes HYPOTHESIS TEST REPORT
 ==============================================================
 Scenario        : information_consensus
-Trials analysed : 50
-Conditions found: baseline, full, full_llm_reflection, memory, memory_planning
+Trials analysed : 40
+Conditions found: baseline, full, memory, memory_planning
 
 ==============================================================
 H1: Higher composite believability predicts higher coordination score.
 --------------------------------------------------------------
   STATUS : SUPPORTED
-  n      : 50
-  Note   : Spearman rho=0.615, p=0.0000. Positive rho with p < 0.05 supports H1.
-  Spearman  rho=+0.615, p=0.0000
+  n      : 40
+  Note   : Spearman rho=0.750, p=0.0000. Positive rho with p < 0.05 supports H1.
+  Spearman  rho=+0.750, p=0.0000
 
 ==============================================================
 H2: Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).
 --------------------------------------------------------------
   STATUS : SUPPORTED
-  n      : 50
+  n      : 40
   Note   : Empirical threshold (all runs below fail): 0.389.
-  Band cutoffs: low ≤ 0.561 < mid ≤ 0.669 < high
-  Low  band: n=17, success_rate=0.41, fail_rate=0.59
-  Mid  band: n=17, success_rate=1.00, fail_rate=0.00
-  High band: n=16, success_rate=1.00, fail_rate=0.00
+  Band cutoffs: low ≤ 0.560 < mid ≤ 0.665 < high
+  Low  band: n=14, success_rate=0.29, fail_rate=0.71
+  Mid  band: n=13, success_rate=1.00, fail_rate=0.00
+  High band: n=13, success_rate=1.00, fail_rate=0.00
   Empirical threshold: 0.389
 
 ==============================================================
@@ -46,26 +46,26 @@ H4: Memory coherence and behavioural consistency are stronger predictors of coor
 --------------------------------------------------------------
   STATUS : SUPPORTED
   n      : —
-  Note   : Top-ranked predictors: ['behavioural_consistency', 'memory_coherence', 'response_naturalness', 'planning_plausibility']. H4 supported: True.
+  Note   : Top-ranked predictors: ['memory_coherence', 'behavioural_consistency', 'response_naturalness', 'planning_plausibility']. H4 supported: True.
   Sub-dimension correlations with coordination_score:
-    behavioural_consistency         rho=+0.637, p=0.0000
-    memory_coherence                rho=+0.618, p=0.0000
-    planning_plausibility           rho=+0.466, p=0.0007
-    response_naturalness            rho=+0.543, p=0.0000
-  Spearman ranking : behavioural_consistency > memory_coherence > response_naturalness > planning_plausibility
-  OLS R²           : 0.9964  (n=50)
-    behavioural_consistency         β=+1.2617, p=0.4920
-    memory_coherence                β=+1.2118, p=0.0000
-    planning_plausibility           β=-0.0465, p=0.4583
-    response_naturalness            β=-0.1789, p=0.5456
-  Regression rank  : behavioural_consistency > memory_coherence > response_naturalness > planning_plausibility
+    behavioural_consistency         rho=+0.750, p=0.0000
+    memory_coherence                rho=+0.756, p=0.0000
+    planning_plausibility           rho=+0.535, p=0.0004
+    response_naturalness            rho=+0.608, p=0.0000
+  Spearman ranking : memory_coherence > behavioural_consistency > response_naturalness > planning_plausibility
+  OLS R²           : 0.9998  (n=40)
+    behavioural_consistency         β=-0.0875, p=0.8954
+    memory_coherence                β=+1.2248, p=0.0000
+    planning_plausibility           β=+0.0078, p=0.7165
+    response_naturalness            β=-0.0718, p=0.4188
+  Regression rank  : memory_coherence > behavioural_consistency > response_naturalness > planning_plausibility
   Regression H4 supported: True
 
 ==============================================================
 H5: Individual believability and collective validity decouple in identifiable regimes, quantified by a signed discrepancy metric.
 --------------------------------------------------------------
   STATUS        : SUPPORTED
-  n             : 50
+  n             : 40
   Gap threshold : discrepancy > 0.2
   Gap cases     : 10
   Max discrepancy: 0.3885
@@ -73,7 +73,6 @@ H5: Individual believability and collective validity decouple in identifiable re
   Mean discrepancy by condition:
     baseline                   +0.3845
     full                       -0.1654
-    full_llm_reflection        -0.1516
     memory                     -0.2722
     memory_planning            -0.1638
   Gap cases (believability >> validity):
@@ -82,30 +81,5 @@ H5: Individual believability and collective validity decouple in identifiable re
     baseline             trial_2     B=0.386  V=0.000  Δ=+0.386
     baseline             trial_5     B=0.385  V=0.000  Δ=+0.385
     baseline             trial_1     B=0.384  V=0.000  Δ=+0.384
-
-==============================================================
-H6: The categorical coordination gain from reflection coincides with reflection saturation — convergence on a static focal-point norm.
---------------------------------------------------------------
-  full:
-    Total reflections  : 960
-    Unique strings     : 3
-    Repetition rate    : 0.997
-    Top-1 share        : 0.750
-    Saturation step(90%): 2
-    Top strings:
-      [  720x  75.0%]  The group is converging toward the majority-supported option — sharing signals appears to 
-      [  120x  12.5%]  The group remains divided; sharing more evidence about the best option may help others upd
-      [  120x  12.5%]  Other community members appear to favour a different option; their private signals may con
-  full_llm_reflection:
-    Total reflections  : 984
-    Unique strings     : 408
-    Repetition rate    : 0.585
-    Top-1 share        : 0.003
-    Saturation step(90%): 5
-    Top strings:
-      [    3x  0.3%]  I need to emphasize the benefits of a shared creative studio to align my reasoning with th
-      [    3x  0.3%]  I realize the importance of expressing my support clearly and being open to how others int
-      [    3x  0.3%]  I realize the importance of vocalizing my support and reasoning to foster consensus and en
-  Note: Deterministic 'full': 3 unique strings, repetition=0.997. LLM 'full_llm_reflection': 408 unique strings, repetition=0.585. Both show saturation; deterministic condition is more extreme.
 
 ==============================================================

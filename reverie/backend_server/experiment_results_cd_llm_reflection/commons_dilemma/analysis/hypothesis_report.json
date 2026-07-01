@@ -1,0 +1,226 @@
+{
+  "scenario": "commons_dilemma",
+  "n_trials": 10,
+  "conditions_found": [
+    "full_llm_reflection"
+  ],
+  "H1": {
+    "hypothesis": "H1",
+    "description": "Higher composite believability predicts higher coordination score.",
+    "n": 10,
+    "test": "Spearman rank correlation",
+    "rho": 0.3553,
+    "p_value": 0.3136,
+    "supported": false,
+    "note": "Spearman rho=0.355, p=0.3136. Positive rho with p < 0.05 supports H1.",
+    "group_comparison": {
+      "status": "insufficient_data",
+      "note": "Need \u2265 2 runs in both high (\u2265 0.7) and low (< 0.4) believability bands. Found 0 high, 0 low."
+    }
+  },
+  "H2": {
+    "hypothesis": "H2",
+    "description": "Below a believability threshold, coordination fails regardless of other factors (non-linear / threshold effect).",
+    "n": 10,
+    "band_cutoffs": {
+      "low_max": 0.6693,
+      "high_min": 0.6717
+    },
+    "band_stats": {
+      "low": {
+        "n": 4,
+        "success_rate": 1.0,
+        "fail_rate": 0.0
+      },
+      "mid": {
+        "n": 3,
+        "success_rate": 1.0,
+        "fail_rate": 0.0
+      },
+      "high": {
+        "n": 3,
+        "success_rate": 1.0,
+        "fail_rate": 0.0
+      }
+    },
+    "empirical_threshold": null,
+    "supported": false,
+    "note": "No clear failure threshold found in the current data."
+  },
+  "H3": {
+    "hypothesis": "H3",
+    "description": "Believability increases monotonically: baseline < memory < memory_planning < full.",
+    "condition_means": {},
+    "condition_n": {},
+    "status": "insufficient_data",
+    "note": "Need data from \u2265 2 conditions."
+  },
+  "H4": {
+    "hypothesis": "H4",
+    "description": "Memory coherence and behavioural consistency are stronger predictors of coordination score than planning plausibility or response naturalness.",
+    "correlations": {
+      "behavioural_consistency": {
+        "n": 10,
+        "rho": 0.0711,
+        "p_value": 0.8453,
+        "abs_rho": 0.0711
+      },
+      "memory_coherence": {
+        "n": 10,
+        "rho": 0.0,
+        "p_value": 1.0,
+        "abs_rho": 0.0
+      },
+      "planning_plausibility": {
+        "n": 10,
+        "rho": 0.4264,
+        "p_value": 0.2191,
+        "abs_rho": 0.4264
+      },
+      "response_naturalness": {
+        "n": 10,
+        "rho": -0.1083,
+        "p_value": 0.766,
+        "abs_rho": 0.1083
+      }
+    },
+    "predictor_ranking": [
+      "planning_plausibility",
+      "response_naturalness",
+      "behavioural_consistency",
+      "memory_coherence"
+    ],
+    "supported": false,
+    "note": "Top-ranked predictors: ['planning_plausibility', 'response_naturalness', 'behavioural_consistency', 'memory_coherence']. H4 supported: False.",
+    "ols_regression": {
+      "n": 10,
+      "r_squared": 0.4309,
+      "intercept": 1.0855,
+      "predictors": {
+        "behavioural_consistency": {
+          "coefficient": 0.0054,
+          "standardized_coefficient": 0.024,
+          "p_value": 0.9739
+        },
+        "memory_coherence": {
+          "coefficient": 0.0086,
+          "standardized_coefficient": 0.0168,
+          "p_value": 0.9797
+        },
+        "planning_plausibility": {
+          "coefficient": 0.1135,
+          "standardized_coefficient": 0.6521,
+          "p_value": 0.1355
+        },
+        "response_naturalness": {
+          "coefficient": -0.182,
+          "standardized_coefficient": -0.3205,
+          "p_value": 0.5121
+        }
+      }
+    },
+    "regression_predictor_ranking": [
+      "response_naturalness",
+      "planning_plausibility",
+      "memory_coherence",
+      "behavioural_consistency"
+    ],
+    "regression_supported": false
+  },
+  "H5": {
+    "hypothesis": "H5",
+    "description": "Individual believability and collective validity decouple in identifiable regimes, quantified by a signed discrepancy metric.",
+    "n": 10,
+    "gap_threshold": 0.2,
+    "per_trial": [
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_0",
+        "believability": 0.6917,
+        "coordination_validity_score": 0.8926,
+        "discrepancy": -0.2009,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_1",
+        "believability": 0.6717,
+        "coordination_validity_score": 0.889,
+        "discrepancy": -0.2173,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_2",
+        "believability": 0.6709,
+        "coordination_validity_score": 0.8816,
+        "discrepancy": -0.2107,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_3",
+        "believability": 0.6673,
+        "coordination_validity_score": 0.8879,
+        "discrepancy": -0.2206,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_4",
+        "believability": 0.6794,
+        "coordination_validity_score": 0.8891,
+        "discrepancy": -0.2097,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_5",
+        "believability": 0.6708,
+        "coordination_validity_score": 0.8888,
+        "discrepancy": -0.218,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_6",
+        "believability": 0.6572,
+        "coordination_validity_score": 0.8947,
+        "discrepancy": -0.2375,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_7",
+        "believability": 0.6693,
+        "coordination_validity_score": 0.8831,
+        "discrepancy": -0.2138,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_8",
+        "believability": 0.6899,
+        "coordination_validity_score": 0.8932,
+        "discrepancy": -0.2033,
+        "gap_case": false
+      },
+      {
+        "condition": "full_llm_reflection",
+        "trial": "trial_9",
+        "believability": 0.6688,
+        "coordination_validity_score": 0.884,
+        "discrepancy": -0.2152,
+        "gap_case": false
+      }
+    ],
+    "gap_cases": [],
+    "n_gap_cases": 0,
+    "mean_discrepancy_by_condition": {
+      "full_llm_reflection": -0.2147
+    },
+    "max_discrepancy": -0.2009,
+    "supported": false,
+    "note": "No gap cases found (discrepancy > 0.2) in this dataset. H5 is best evidenced by the IC cascade (separate scenario)."
+  }
+}

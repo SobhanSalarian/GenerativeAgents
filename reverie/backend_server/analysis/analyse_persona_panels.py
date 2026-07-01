@@ -8,7 +8,10 @@ Comment 7 asks for genuinely independent panels: >=5-10 panel seeds for the main
 conditions, ideally analysed with a mixed-effects model (condition as fixed
 effect, panel seed as random effect).
 
-We ran baseline + full on panel seeds 42 (primary), 43, 44, 45, 46.  This script:
+We ran baseline + full on panel seeds 42 (primary), 43, 44, 45, 46.  Seed 46's "full"
+condition run was interrupted (trial_2 has only raw logs, no macro_summary.json/
+run_manifest.json; only 2 of the intended 5 trials completed) and is EXCLUDED from
+this analysis (2026-07-01) rather than reported as a partial/short panel. This script:
   1. reports per-panel baseline vs full coordination success and mean coord;
   2. fits a linear mixed-effects model
          coordination_score ~ is_full  + (1 | panel_seed)
@@ -31,7 +34,8 @@ PANELS = {
     43: "experiment_results_cd_panel_seed43",
     44: "experiment_results_cd_panel_seed44",
     45: "experiment_results_cd_panel_seed45",
-    46: "experiment_results_cd_panel_seed46",
+    # 46: EXCLUDED -- run incomplete (only 2/5 "full" trials finished; trial_2 has
+    # no macro_summary.json). Do not include in the paper's panel count or stats.
 }
 SCEN = "commons_dilemma"
 

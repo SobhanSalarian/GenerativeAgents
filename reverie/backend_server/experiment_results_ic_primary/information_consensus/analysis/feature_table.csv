@@ -39,13 +39,3 @@ memory_planning,trial_6,0.6534,0.7129,0.6764,0.356,0.9081,0.833,True,0.917,1,Fal
 memory_planning,trial_7,0.6597,0.7116,0.6901,0.3731,0.9025,0.833,True,0.917,1,False
 memory_planning,trial_8,0.6739,0.7149,0.684,0.4284,0.9069,0.833,True,0.917,1,False
 memory_planning,trial_9,0.6691,0.7124,0.672,0.4339,0.895,0.833,True,0.875,1,False
-full_llm_reflection,trial_0,0.6668,0.7121,0.6815,0.4049,0.9081,0.833,True,0.917,1,False
-full_llm_reflection,trial_1,0.6761,0.7162,0.6839,0.4185,0.9287,0.833,True,0.896,1,False
-full_llm_reflection,trial_2,0.6709,0.7122,0.6869,0.4151,0.9087,0.833,True,0.896,1,False
-full_llm_reflection,trial_3,0.6576,0.7162,0.6779,0.3745,0.8988,0.833,True,0.917,1,False
-full_llm_reflection,trial_4,0.6697,0.7141,0.6824,0.4015,0.9231,0.833,True,0.917,1,False
-full_llm_reflection,trial_5,0.6731,0.7137,0.6835,0.4286,0.905,0.833,True,0.917,1,False
-full_llm_reflection,trial_6,0.6593,0.715,0.6766,0.3655,0.9213,0.833,True,0.896,1,False
-full_llm_reflection,trial_7,0.657,0.7159,0.6555,0.3901,0.9031,0.833,True,0.875,1,False
-full_llm_reflection,trial_8,0.6833,0.7146,0.6939,0.451,0.9136,0.714,True,0.875,2,False
-full_llm_reflection,trial_9,0.6811,0.7161,0.6744,0.4666,0.905,0.833,True,0.917,1,False
