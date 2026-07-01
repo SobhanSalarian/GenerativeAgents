@@ -17,7 +17,7 @@ Use this section if you want the most practical local run flow for this reposito
 
 ### 1. Go to the repository
 ```bash
-cd /mnt/shared/Sayedali/Github_projects/full_smallville
+cd /mnt/shared/Anonymous Authors/Github_projects/full_smallville
 ```
 
 ### 2. Create and activate a virtual environment
@@ -60,7 +60,7 @@ export OPENAI_EMBED_MODEL="text-embedding-3-small"
 Open Terminal A:
 
 ```bash
-cd /mnt/shared/Sayedali/Github_projects/full_smallville/environment/frontend_server
+cd /mnt/shared/Anonymous Authors/Github_projects/full_smallville/environment/frontend_server
 python3.10 manage.py runserver
 ```
 
@@ -72,7 +72,7 @@ If it starts correctly, open:
 Open Terminal B:
 
 ```bash
-cd /mnt/shared/Sayedali/Github_projects/full_smallville/reverie/backend_server
+cd /mnt/shared/Anonymous Authors/Github_projects/full_smallville/reverie/backend_server
 python3.10 reverie.py
 ```
 
